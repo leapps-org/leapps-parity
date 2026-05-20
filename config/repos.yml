@@ -1,0 +1,51 @@
+# LEAPP parity scanner configuration
+
+output_dir: reports
+
+repos:
+  ileapp:
+    url: https://github.com/abrignoni/iLEAPP.git
+    baseline: true
+  aleapp:
+    url: https://github.com/abrignoni/aLEAPP.git
+    baseline: false
+
+# Default comparison pair (overridable via CLI)
+default_baseline: ileapp
+default_comparison: aleapp
+
+include:
+  - "*.py"
+  - "scripts/**/*.py"
+
+exclude:
+  - "scripts/artifacts/**"
+  - "admin/**"
+  - "tests/**"
+  - "docs/**"
+  - "assets/**"
+  - "build/**"
+  - "dist/**"
+  - "__pycache__/**"
+  - ".venv/**"
+
+# Map repo-specific entry filenames to a shared logical path for comparison
+path_aliases:
+  ileapp.py: main_entry.py
+  aleapp.py: main_entry.py
+
+# Files expected only in a given repo (not parity failures)
+expected_repo_specific:
+  aleapp:
+    - "scripts/example_android.py"
+
+# Normalize tool/platform tokens before AST comparison
+token_normalization:
+  - pattern: "(?i)\\bileapp\\b"
+    replacement: "{TOOL_NAME}"
+  - pattern: "(?i)\\baleapp\\b"
+    replacement: "{TOOL_NAME}"
+  - pattern: "(?i)\\bios\\b"
+    replacement: "{PLATFORM}"
+  - pattern: "(?i)\\bandroid\\b"
+    replacement: "{PLATFORM}"

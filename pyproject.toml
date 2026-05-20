@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leapps-parity"
+version = "0.1.0"
+description = "Compare core/framework Python code across LEAPP repositories"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "PyYAML>=6.0",
+]
+
+[project.scripts]
+leapps-parity = "scanner.run:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scanner*"]
