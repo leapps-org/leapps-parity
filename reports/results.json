@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-05-20T17:56:13.083035+00:00",
+  "generated_at": "2026-05-25T14:30:01.571174+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "fc78d9e0b03ac35640d80470b80fd8195fb53204",
-      "path": "/Users/jameshabben/Documents/GitHub/leapps-parity/.work/repos/ileapp"
+      "commit": "158233bcd2c7988c8537ba32ac071c93548c59c2",
+      "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "1662331456947c7371471103e77cde719ecff2a8",
-      "path": "/Users/jameshabben/Documents/GitHub/leapps-parity/.work/repos/aleapp"
+      "commit": "195252ad02a8c8c82b4fa7cdd09e442a4472c702",
+      "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
@@ -25,7 +25,7 @@
     "same": 14,
     "signature_changed": 10,
     "symbol_extra_in_comparison": 23,
-    "symbol_missing_from_comparison": 40
+    "symbol_missing_from_comparison": 43
   },
   "import_dependency_gaps": [
     {
@@ -893,6 +893,24 @@
           "status": "logic_changed",
           "baseline_signature": "def lava_finalize_output(output_path)",
           "comparison_signature": "def lava_finalize_output(output_path)"
+        },
+        {
+          "qualified_name": "lava_insert_sqlite_artifact_link_pattern_to_file",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def lava_insert_sqlite_artifact_link_pattern_to_file(artifact_regex_id, file_id)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "lava_insert_sqlite_artifact_search_pattern",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "lava_insert_sqlite_file_path",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def lava_insert_sqlite_file_path(file_id, file_path)",
+          "comparison_signature": null
         },
         {
           "qualified_name": "lava_insert_sqlite_media_item",

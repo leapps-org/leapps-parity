@@ -89,6 +89,9 @@
 - logic changed: `initialize_lava`
 - only in aleapp: `lava_create_view` — `def lava_create_view(table_name, artifact_query)`
 - logic changed: `lava_finalize_output`
+- only in ileapp: `lava_insert_sqlite_artifact_link_pattern_to_file` — `def lava_insert_sqlite_artifact_link_pattern_to_file(artifact_regex_id, file_id)`
+- only in ileapp: `lava_insert_sqlite_artifact_search_pattern` — `def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)`
+- only in ileapp: `lava_insert_sqlite_file_path` — `def lava_insert_sqlite_file_path(file_id, file_path)`
 - logic changed: `lava_insert_sqlite_media_item`
 - logic changed: `lava_insert_sqlite_media_references`
 

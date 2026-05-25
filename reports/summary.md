@@ -1,15 +1,15 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1779299773.svg)
+![Parity summary](parity.1779719401.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-05-20T17:56:13.083035+00:00
+- **Generated**: 2026-05-25T14:30:01.571174+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `fc78d9e0b03a` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `166233145694` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `158233bcd2c7` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `195252ad02a8` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
@@ -37,7 +37,7 @@
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 40 |
+| symbol_missing_from_comparison | 43 |
 | symbol_extra_in_comparison | 23 |
 | signature_changed | 10 |
 | logic_changed | 30 |
@@ -67,7 +67,7 @@ Baseline files that import modules missing from the comparison repo (for example
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` | (4 symbol diffs)
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (55 symbol diffs)
-| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (7 symbol diffs)
+| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (10 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (13 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
