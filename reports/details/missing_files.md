@@ -12,6 +12,5 @@
 - `scripts/ccl_segb/ccl_segb_common.py` (baseline: `scripts/ccl_segb/ccl_segb_common.py`)
 - `scripts/ccl_simplesnappy.py` (baseline: `scripts/ccl_simplesnappy.py`)
 - `scripts/chat_rendering.py` (baseline: `scripts/chat_rendering.py`)
-- `scripts/context.py` (baseline: `scripts/context.py`)
 - `scripts/ktx/ios_ktx2png.py` (baseline: `scripts/ktx/ios_ktx2png.py`)
 - `scripts/tz_offset.py` (baseline: `scripts/tz_offset.py`)

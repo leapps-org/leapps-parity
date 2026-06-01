@@ -22,7 +22,21 @@
 - only in aleapp: `ArtifactHtmlReport.add_timeline` — `def add_timeline(self, id, dataDict)`
 - only in aleapp: `ArtifactHtmlReport.add_timeline_script` — `def add_timeline_script(self)`
 - only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
-- logic changed: `ArtifactHtmlReport.start_artifact_report`
+
+### `scripts/context.py`
+
+- module-level logic changed
+- only in ileapp: `Context._set_device_boards` — `@@def _set_device_boards()`
+- only in ileapp: `Context._set_device_ids` — `@@def _set_device_ids()`
+- only in ileapp: `Context._set_os_builds` — `@@def _set_os_builds()`
+- only in ileapp: `Context.get_data_folder` — `@@def get_data_folder()`
+- only in ileapp: `Context.get_device_model` — `@@def get_device_model(identifier)`
+- only in ileapp: `Context.get_device_model_from_board` — `@@def get_device_model_from_board(board_id)`
+- only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
+- only in ileapp: `Context.get_os_version` — `@@def get_os_version(build, device_family=...)`
+- only in ileapp: `Context.get_relative_path` — `@@def get_relative_path(full_path)`
+- only in ileapp: `Context.set_installed_os_version` — `@@def set_installed_os_version(os_version)`
+- logic changed: `Context.set_output_params`
 
 ### `scripts/html_parts.py`
 
@@ -31,16 +45,10 @@
 ### `scripts/ilapfuncs.py`
 
 - module-level logic changed
-- logic changed: `MediaItem.__init__`
-- logic changed: `MediaItem.set_values`
-- logic changed: `MediaReferences.__init__`
-- logic changed: `MediaReferences.set_values`
 - logic changed: `OutputParameters.__init__`
-- only in ileapp: `_check_in_media` — `def _check_in_media(media_id, source_path, is_embedded, name, media_data=..., converted_file_path=..., force_type=..., force_extension=..., force_creation_date=..., force_modification_date=...)`
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
 - only in aleapp: `check_internet_connection` — `def check_internet_connection()`
-- logic changed: `check_output_types`
 - only in aleapp: `check_raw_fields` — `def check_raw_fields(latitude, longitude, c)`
 - only in aleapp: `checkabx` — `def checkabx(in_path)`
 - only in ileapp: `convert_bytes_to_unit` — `def convert_bytes_to_unit(size)`
@@ -59,8 +67,6 @@
 - only in aleapp: `get_binary_file_content` — `def get_binary_file_content(file_path)`
 - only in ileapp: `get_birthdate` — `def get_birthdate(date)`
 - only in ileapp: `get_birthdate_from_unix_ts` — `def get_birthdate_from_unix_ts(date)`
-- logic changed: `get_data_list_with_media`
-- logic changed: `get_file_path`
 - only in aleapp: `get_file_path_list_checking_uid` — `def get_file_path_list_checking_uid(files_found, filename, position, skip=...)`
 - only in ileapp: `get_plist_content` — `def get_plist_content(data)`
 - only in ileapp: `get_plist_file_content` — `def get_plist_file_content(file_path)`
@@ -69,13 +75,10 @@
 - only in aleapp: `get_results_with_extra_sourcepath_if_needed` — `def get_results_with_extra_sourcepath_if_needed(path_list, query, data_headers)`
 - logic changed: `get_sqlite_db_records`
 - only in ileapp: `get_sqlite_multiple_db_records` — `def get_sqlite_multiple_db_records(path_list, query, data_headers)`
-- logic changed: `get_txt_file_content`
-- logic changed: `html_media_tag`
 - only in ileapp: `iOS` — `class iOS`
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`
 - only in ileapp: `lava_only_info` — `def lava_only_info(category, artifact_name, table_name, records)`
-- logic changed: `logfunc`
 - only in aleapp: `store_raw_fields` — `def store_raw_fields(latitude_value, longitude_value, road_value, city_value, postcode_value, country_value, c, conn)`
 - only in ileapp: `strings` — `def strings(data)`
 - only in ileapp: `strings_raw` — `def strings_raw(data)`
@@ -86,14 +89,19 @@
 ### `scripts/lavafuncs.py`
 
 - module-level logic changed
-- logic changed: `initialize_lava`
-- only in aleapp: `lava_create_view` — `def lava_create_view(table_name, artifact_query)`
+- logic changed: `lava_add_module`
+- logic changed: `lava_create_sqlite_table`
 - logic changed: `lava_finalize_output`
-- only in ileapp: `lava_insert_sqlite_artifact_link_pattern_to_file` — `def lava_insert_sqlite_artifact_link_pattern_to_file(artifact_regex_id, file_id)`
-- only in ileapp: `lava_insert_sqlite_artifact_search_pattern` — `def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)`
-- only in ileapp: `lava_insert_sqlite_file_path` — `def lava_insert_sqlite_file_path(file_id, file_path)`
+- logic changed: `lava_get_full_media_info`
+- logic changed: `lava_get_media_item`
+- logic changed: `lava_get_media_references`
+- logic changed: `lava_insert_sqlite_artifact_link_pattern_to_file`
+- logic changed: `lava_insert_sqlite_artifact_search_pattern`
+- logic changed: `lava_insert_sqlite_data`
+- logic changed: `lava_insert_sqlite_file_path`
 - logic changed: `lava_insert_sqlite_media_item`
 - logic changed: `lava_insert_sqlite_media_references`
+- logic changed: `lava_process_artifact`
 
 ### `scripts/modules_to_exclude.py`
 

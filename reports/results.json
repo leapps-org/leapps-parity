@@ -1,39 +1,33 @@
 {
-  "generated_at": "2026-05-25T14:30:01.571174+00:00",
+  "generated_at": "2026-06-01T17:13:19.925546+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "158233bcd2c7988c8537ba32ac071c93548c59c2",
+      "commit": "d2fdbc9391ba4d0031027f7aa62cd08b07856eda",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "195252ad02a8c8c82b4fa7cdd09e442a4472c702",
+      "commit": "dd009da42aa0fb6fc26aa2a17f31127564fb05c0",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
     "files_total": 46,
-    "import_dependency_gaps": 6,
+    "import_dependency_gaps": 2,
     "file_extra_in_comparison": 6,
-    "file_missing_from_comparison": 15,
-    "logic_changed": 30,
+    "file_missing_from_comparison": 14,
+    "logic_changed": 29,
     "same": 14,
-    "signature_changed": 10,
-    "symbol_extra_in_comparison": 23,
-    "symbol_missing_from_comparison": 43
+    "signature_changed": 4,
+    "symbol_extra_in_comparison": 22,
+    "symbol_missing_from_comparison": 49
   },
   "import_dependency_gaps": [
-    {
-      "source_logical_path": "ileappGUI.py",
-      "source_physical": "ileappGUI.py",
-      "import_statement": "scripts.context:Context",
-      "missing_logical_path": "scripts/context.py"
-    },
     {
       "source_logical_path": "ileappGUI.py",
       "source_physical": "ileappGUI.py",
@@ -41,28 +35,10 @@
       "missing_logical_path": "scripts/tz_offset.py"
     },
     {
-      "source_logical_path": "main_entry.py",
-      "source_physical": "ileapp.py",
-      "import_statement": "scripts.context:Context",
-      "missing_logical_path": "scripts/context.py"
-    },
-    {
       "source_logical_path": "scripts/ccl_leveldb.py",
       "source_physical": "scripts/ccl_leveldb.py",
       "import_statement": "scripts.ccl_simplesnappy",
       "missing_logical_path": "scripts/ccl_simplesnappy.py"
-    },
-    {
-      "source_logical_path": "scripts/ilapfuncs.py",
-      "source_physical": "scripts/ilapfuncs.py",
-      "import_statement": "scripts.context:Context",
-      "missing_logical_path": "scripts/context.py"
-    },
-    {
-      "source_logical_path": "scripts/lavafuncs.py",
-      "source_physical": "scripts/lavafuncs.py",
-      "import_statement": "scripts.context:Context",
-      "missing_logical_path": "scripts/context.py"
     }
   ],
   "files": [
@@ -201,12 +177,6 @@
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
           "comparison_signature": "def filter_by_date(self, id, col1)"
-        },
-        {
-          "qualified_name": "ArtifactHtmlReport.start_artifact_report",
-          "status": "logic_changed",
-          "baseline_signature": "def start_artifact_report(self, report_folder, artifact_file_name, artifact_description=...)",
-          "comparison_signature": "def start_artifact_report(self, report_folder, artifact_file_name, artifact_description=...)"
         }
       ]
     },
@@ -362,13 +332,80 @@
     },
     {
       "logical_path": "scripts/context.py",
-      "status": "file_missing_from_comparison",
+      "status": "logic_changed",
       "baseline_physical": "scripts/context.py",
-      "comparison_physical": null,
+      "comparison_physical": "scripts/context.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "Context._set_device_boards",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def _set_device_boards()",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context._set_device_ids",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def _set_device_ids()",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context._set_os_builds",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def _set_os_builds()",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.get_data_folder",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def get_data_folder()",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.get_device_model",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def get_device_model(identifier)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.get_device_model_from_board",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def get_device_model_from_board(board_id)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.get_installed_os_version",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def get_installed_os_version()",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.get_os_version",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def get_os_version(build, device_family=...)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.get_relative_path",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def get_relative_path(full_path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.set_installed_os_version",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def set_installed_os_version(os_version)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.set_output_params",
+          "status": "logic_changed",
+          "baseline_signature": "@@def set_output_params(output_params)",
+          "comparison_signature": "@@def set_output_params(output_params)"
+        }
+      ]
     },
     {
       "logical_path": "scripts/filetype.py",
@@ -520,40 +557,10 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "MediaItem.__init__",
-          "status": "logic_changed",
-          "baseline_signature": "def __init__(self, id)",
-          "comparison_signature": "def __init__(self, id)"
-        },
-        {
-          "qualified_name": "MediaItem.set_values",
-          "status": "logic_changed",
-          "baseline_signature": "def set_values(self, media_info)",
-          "comparison_signature": "def set_values(self, media_info)"
-        },
-        {
-          "qualified_name": "MediaReferences.__init__",
-          "status": "logic_changed",
-          "baseline_signature": "def __init__(self, id)",
-          "comparison_signature": "def __init__(self, id)"
-        },
-        {
-          "qualified_name": "MediaReferences.set_values",
-          "status": "logic_changed",
-          "baseline_signature": "def set_values(self, media_ref_info)",
-          "comparison_signature": "def set_values(self, media_ref_info)"
-        },
-        {
           "qualified_name": "OutputParameters.__init__",
           "status": "logic_changed",
           "baseline_signature": "def __init__(self, output_folder, custom_folder_name=...)",
           "comparison_signature": "def __init__(self, output_folder, custom_folder_name=...)"
-        },
-        {
-          "qualified_name": "_check_in_media",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def _check_in_media(media_id, source_path, is_embedded, name, media_data=..., converted_file_path=..., force_type=..., force_extension=..., force_creation_date=..., force_modification_date=...)",
-          "comparison_signature": null
         },
         {
           "qualified_name": "abxread",
@@ -568,28 +575,10 @@
           "comparison_signature": "def artifact_processor(func)"
         },
         {
-          "qualified_name": "check_in_embedded_media",
-          "status": "signature_changed",
-          "baseline_signature": "def check_in_embedded_media(source_file, data, name=..., force_type=..., force_extension=..., force_creation_date=..., force_modification_date=...)",
-          "comparison_signature": "def check_in_embedded_media(artifact_info, report_folder, seeker, source_file, data, name=..., updated_at=...)"
-        },
-        {
-          "qualified_name": "check_in_media",
-          "status": "signature_changed",
-          "baseline_signature": "def check_in_media(file_path, name=..., converted_file_path=..., force_type=..., force_extension=..., force_creation_date=..., force_modification_date=...)",
-          "comparison_signature": "def check_in_media(artifact_info, report_folder, seeker, files_found, file_path, name=..., converted_file_path=...)"
-        },
-        {
           "qualified_name": "check_internet_connection",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
           "comparison_signature": "def check_internet_connection()"
-        },
-        {
-          "qualified_name": "check_output_types",
-          "status": "logic_changed",
-          "baseline_signature": "def check_output_types(type, output_types)",
-          "comparison_signature": "def check_output_types(type, output_types)"
         },
         {
           "qualified_name": "check_raw_fields",
@@ -700,28 +689,10 @@
           "comparison_signature": null
         },
         {
-          "qualified_name": "get_data_list_with_media",
-          "status": "logic_changed",
-          "baseline_signature": "def get_data_list_with_media(media_header_info, data_list)",
-          "comparison_signature": "def get_data_list_with_media(media_header_info, data_list)"
-        },
-        {
-          "qualified_name": "get_file_path",
-          "status": "logic_changed",
-          "baseline_signature": "def get_file_path(files_found, filename, skip=...)",
-          "comparison_signature": "def get_file_path(files_found, filename, skip=...)"
-        },
-        {
           "qualified_name": "get_file_path_list_checking_uid",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
           "comparison_signature": "def get_file_path_list_checking_uid(files_found, filename, position, skip=...)"
-        },
-        {
-          "qualified_name": "get_media_references_id",
-          "status": "signature_changed",
-          "baseline_signature": "def get_media_references_id(media_id, artifact_name, name)",
-          "comparison_signature": "def get_media_references_id(media_id, artifact_info, name)"
         },
         {
           "qualified_name": "get_plist_content",
@@ -766,18 +737,6 @@
           "comparison_signature": null
         },
         {
-          "qualified_name": "get_txt_file_content",
-          "status": "logic_changed",
-          "baseline_signature": "def get_txt_file_content(file_path)",
-          "comparison_signature": "def get_txt_file_content(file_path)"
-        },
-        {
-          "qualified_name": "html_media_tag",
-          "status": "logic_changed",
-          "baseline_signature": "def html_media_tag(media_path, mimetype, style, title=...)",
-          "comparison_signature": "def html_media_tag(media_path, mimetype, style, title=...)"
-        },
-        {
           "qualified_name": "iOS",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "class iOS",
@@ -800,18 +759,6 @@
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def lava_only_info(category, artifact_name, table_name, records)",
           "comparison_signature": null
-        },
-        {
-          "qualified_name": "logfunc",
-          "status": "logic_changed",
-          "baseline_signature": "def logfunc(message=...)",
-          "comparison_signature": "def logfunc(message=...)"
-        },
-        {
-          "qualified_name": "set_media_references",
-          "status": "signature_changed",
-          "baseline_signature": "def set_media_references(media_ref_id, media_id, module_name, artifact_name, name)",
-          "comparison_signature": "def set_media_references(media_ref_id, media_id, artifact_info, name, media_path)"
         },
         {
           "qualified_name": "store_raw_fields",
@@ -871,22 +818,16 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "initialize_lava",
+          "qualified_name": "lava_add_module",
           "status": "logic_changed",
-          "baseline_signature": "def initialize_lava(input_path, output_path, input_type)",
-          "comparison_signature": "def initialize_lava(input_path, output_path, input_type)"
+          "baseline_signature": "def lava_add_module(module_name, module_status, file_count=...)",
+          "comparison_signature": "def lava_add_module(module_name, module_status, file_count=...)"
         },
         {
           "qualified_name": "lava_create_sqlite_table",
-          "status": "signature_changed",
+          "status": "logic_changed",
           "baseline_signature": "def lava_create_sqlite_table(table_name, data)",
-          "comparison_signature": "def lava_create_sqlite_table(table_name, data, create_table=...)"
-        },
-        {
-          "qualified_name": "lava_create_view",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def lava_create_view(table_name, artifact_query)"
+          "comparison_signature": "def lava_create_sqlite_table(table_name, data)"
         },
         {
           "qualified_name": "lava_finalize_output",
@@ -895,22 +836,46 @@
           "comparison_signature": "def lava_finalize_output(output_path)"
         },
         {
+          "qualified_name": "lava_get_full_media_info",
+          "status": "logic_changed",
+          "baseline_signature": "def lava_get_full_media_info(media_ref_id)",
+          "comparison_signature": "def lava_get_full_media_info(media_ref_id)"
+        },
+        {
+          "qualified_name": "lava_get_media_item",
+          "status": "logic_changed",
+          "baseline_signature": "def lava_get_media_item(media_id)",
+          "comparison_signature": "def lava_get_media_item(media_id)"
+        },
+        {
+          "qualified_name": "lava_get_media_references",
+          "status": "logic_changed",
+          "baseline_signature": "def lava_get_media_references(media_ref)",
+          "comparison_signature": "def lava_get_media_references(media_ref)"
+        },
+        {
           "qualified_name": "lava_insert_sqlite_artifact_link_pattern_to_file",
-          "status": "symbol_missing_from_comparison",
+          "status": "logic_changed",
           "baseline_signature": "def lava_insert_sqlite_artifact_link_pattern_to_file(artifact_regex_id, file_id)",
-          "comparison_signature": null
+          "comparison_signature": "def lava_insert_sqlite_artifact_link_pattern_to_file(artifact_regex_id, file_id)"
         },
         {
           "qualified_name": "lava_insert_sqlite_artifact_search_pattern",
-          "status": "symbol_missing_from_comparison",
+          "status": "logic_changed",
           "baseline_signature": "def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)",
-          "comparison_signature": null
+          "comparison_signature": "def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)"
+        },
+        {
+          "qualified_name": "lava_insert_sqlite_data",
+          "status": "logic_changed",
+          "baseline_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)",
+          "comparison_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)"
         },
         {
           "qualified_name": "lava_insert_sqlite_file_path",
-          "status": "symbol_missing_from_comparison",
+          "status": "logic_changed",
           "baseline_signature": "def lava_insert_sqlite_file_path(file_id, file_path)",
-          "comparison_signature": null
+          "comparison_signature": "def lava_insert_sqlite_file_path(file_id, file_path)"
         },
         {
           "qualified_name": "lava_insert_sqlite_media_item",
@@ -926,9 +891,9 @@
         },
         {
           "qualified_name": "lava_process_artifact",
-          "status": "signature_changed",
+          "status": "logic_changed",
           "baseline_signature": "def lava_process_artifact(category, module_name, artifact_name, data, record_count=..., func_name=..., data_views=..., artifact_icon=..., source_path=...)",
-          "comparison_signature": "def lava_process_artifact(category, module_name, artifact_name, data, record_count=..., data_views=..., create_table=...)"
+          "comparison_signature": "def lava_process_artifact(category, module_name, artifact_name, data, record_count=..., func_name=..., data_views=..., artifact_icon=..., source_path=...)"
         }
       ]
     },

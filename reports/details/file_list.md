@@ -6,6 +6,7 @@
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` |
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` |
+| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` |
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` |
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` |
@@ -27,7 +28,6 @@
 | `scripts/ccl_segb/ccl_segb_common.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb_common.py` | `—` |
 | `scripts/ccl_simplesnappy.py` | file_missing_from_comparison | `scripts/ccl_simplesnappy.py` | `—` |
 | `scripts/chat_rendering.py` | file_missing_from_comparison | `scripts/chat_rendering.py` | `—` |
-| `scripts/context.py` | file_missing_from_comparison | `scripts/context.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | file_missing_from_comparison | `scripts/ktx/ios_ktx2png.py` | `—` |
 | `scripts/tz_offset.py` | file_missing_from_comparison | `scripts/tz_offset.py` | `—` |
 | `aleappGUI.py` | file_extra_in_comparison | `—` | `aleappGUI.py` |
