@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-06-01T17:13:19.925546+00:00",
+  "generated_at": "2026-06-08T15:24:05.682065+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "d2fdbc9391ba4d0031027f7aa62cd08b07856eda",
+      "commit": "7e8691761ada26f24142f0a8c13900bfc644b8d0",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "dd009da42aa0fb6fc26aa2a17f31127564fb05c0",
+      "commit": "4a2654800cad70367b1a2249f9547ce00da5905a",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 46,
+    "files_total": 48,
     "import_dependency_gaps": 2,
     "file_extra_in_comparison": 6,
-    "file_missing_from_comparison": 14,
-    "logic_changed": 29,
+    "file_missing_from_comparison": 16,
+    "logic_changed": 28,
     "same": 14,
-    "signature_changed": 4,
+    "signature_changed": 6,
     "symbol_extra_in_comparison": 22,
-    "symbol_missing_from_comparison": 49
+    "symbol_missing_from_comparison": 44
   },
   "import_dependency_gaps": [
     {
@@ -340,39 +340,9 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "Context._set_device_boards",
+          "qualified_name": "Context.get_apple_os_version",
           "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def _set_device_boards()",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "Context._set_device_ids",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def _set_device_ids()",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "Context._set_os_builds",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def _set_os_builds()",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "Context.get_data_folder",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def get_data_folder()",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "Context.get_device_model",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def get_device_model(identifier)",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "Context.get_device_model_from_board",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def get_device_model_from_board(board_id)",
+          "baseline_signature": "@@def get_apple_os_version(build, device_family=...)",
           "comparison_signature": null
         },
         {
@@ -382,15 +352,15 @@
           "comparison_signature": null
         },
         {
-          "qualified_name": "Context.get_os_version",
+          "qualified_name": "Context.get_metadata",
           "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def get_os_version(build, device_family=...)",
+          "baseline_signature": "@@def get_metadata(collection)",
           "comparison_signature": null
         },
         {
-          "qualified_name": "Context.get_relative_path",
+          "qualified_name": "Context.lookup_metadata",
           "status": "symbol_missing_from_comparison",
-          "baseline_signature": "@@def get_relative_path(full_path)",
+          "baseline_signature": "@@def lookup_metadata(collection, key, group=...)",
           "comparison_signature": null
         },
         {
@@ -398,12 +368,6 @@
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "@@def set_installed_os_version(os_version)",
           "comparison_signature": null
-        },
-        {
-          "qualified_name": "Context.set_output_params",
-          "status": "logic_changed",
-          "baseline_signature": "@@def set_output_params(output_params)",
-          "comparison_signature": "@@def set_output_params(output_params)"
         }
       ]
     },
@@ -927,10 +891,22 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
+          "qualified_name": "PluginLoader.__init__",
+          "status": "signature_changed",
+          "baseline_signature": "def __init__(self, plugin_paths=...)",
+          "comparison_signature": "def __init__(self, plugin_path=...)"
+        },
+        {
           "qualified_name": "PluginLoader._load_plugins",
-          "status": "logic_changed",
-          "baseline_signature": "def _load_plugins(self)",
+          "status": "signature_changed",
+          "baseline_signature": "def _load_plugins(self, plugin_path)",
           "comparison_signature": "def _load_plugins(self)"
+        },
+        {
+          "qualified_name": "PluginLoader.load_module_lazy",
+          "status": "logic_changed",
+          "baseline_signature": "@@def load_module_lazy(path)",
+          "comparison_signature": "@@def load_module_lazy(path)"
         }
       ]
     },
@@ -1113,6 +1089,26 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/test_artifacts/__init__.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/test_artifacts/__init__.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/test_artifacts/image_list.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/test_artifacts/image_list.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/tz_offset.py",

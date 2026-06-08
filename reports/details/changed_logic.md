@@ -26,17 +26,11 @@
 ### `scripts/context.py`
 
 - module-level logic changed
-- only in ileapp: `Context._set_device_boards` — `@@def _set_device_boards()`
-- only in ileapp: `Context._set_device_ids` — `@@def _set_device_ids()`
-- only in ileapp: `Context._set_os_builds` — `@@def _set_os_builds()`
-- only in ileapp: `Context.get_data_folder` — `@@def get_data_folder()`
-- only in ileapp: `Context.get_device_model` — `@@def get_device_model(identifier)`
-- only in ileapp: `Context.get_device_model_from_board` — `@@def get_device_model_from_board(board_id)`
+- only in ileapp: `Context.get_apple_os_version` — `@@def get_apple_os_version(build, device_family=...)`
 - only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
-- only in ileapp: `Context.get_os_version` — `@@def get_os_version(build, device_family=...)`
-- only in ileapp: `Context.get_relative_path` — `@@def get_relative_path(full_path)`
+- only in ileapp: `Context.get_metadata` — `@@def get_metadata(collection)`
+- only in ileapp: `Context.lookup_metadata` — `@@def lookup_metadata(collection, key, group=...)`
 - only in ileapp: `Context.set_installed_os_version` — `@@def set_installed_os_version(os_version)`
-- logic changed: `Context.set_output_params`
 
 ### `scripts/html_parts.py`
 
@@ -110,7 +104,7 @@
 ### `scripts/plugin_loader.py`
 
 - module-level logic changed
-- logic changed: `PluginLoader._load_plugins`
+- logic changed: `PluginLoader.load_module_lazy`
 
 ### `scripts/report.py`
 

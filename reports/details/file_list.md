@@ -29,6 +29,8 @@
 | `scripts/ccl_simplesnappy.py` | file_missing_from_comparison | `scripts/ccl_simplesnappy.py` | `—` |
 | `scripts/chat_rendering.py` | file_missing_from_comparison | `scripts/chat_rendering.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | file_missing_from_comparison | `scripts/ktx/ios_ktx2png.py` | `—` |
+| `scripts/test_artifacts/__init__.py` | file_missing_from_comparison | `scripts/test_artifacts/__init__.py` | `—` |
+| `scripts/test_artifacts/image_list.py` | file_missing_from_comparison | `scripts/test_artifacts/image_list.py` | `—` |
 | `scripts/tz_offset.py` | file_missing_from_comparison | `scripts/tz_offset.py` | `—` |
 | `aleappGUI.py` | file_extra_in_comparison | `—` | `aleappGUI.py` |
 | `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |

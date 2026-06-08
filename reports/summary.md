@@ -1,24 +1,24 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1780333999.svg)
+![Parity summary](parity.1780932245.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-06-01T17:13:19.925546+00:00
+- **Generated**: 2026-06-08T15:24:05.682065+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `d2fdbc9391ba` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `dd009da42aa0` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `7e8691761ada` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `4a2654800cad` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 46 |
+| Files scanned (union) | 48 |
 | Same | 14 |
 | Changed (logic/file) | 12 |
-| Missing from comparison | 14 |
+| Missing from comparison | 16 |
 | Extra in comparison | 6 |
 | Expected repo-specific | 0 |
 | Parse errors | 0 |
@@ -30,21 +30,21 @@
 |---|---:|
 | same | 14 |
 | logic_changed | 12 |
-| file_missing_from_comparison | 14 |
+| file_missing_from_comparison | 16 |
 | file_extra_in_comparison | 6 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 49 |
+| symbol_missing_from_comparison | 44 |
 | symbol_extra_in_comparison | 22 |
-| signature_changed | 4 |
-| logic_changed | 29 |
+| signature_changed | 6 |
+| logic_changed | 28 |
 
 ## All compared files
 
-46 file(s). See [details/file_list.md](details/file_list.md).
+48 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -63,12 +63,12 @@ Baseline files that import modules missing from the comparison repo (for example
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` | (4 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
-| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (11 symbol diffs)
+| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (5 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (40 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (13 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
-| `scripts/plugin_loader.py` | logic_changed | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` | (1 symbol diffs)
+| `scripts/plugin_loader.py` | logic_changed | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` | (3 symbol diffs)
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (3 symbol diffs)
 | `scripts/report_icons.py` | logic_changed | `scripts/report_icons.py` | `scripts/report_icons.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (20 symbol diffs)
@@ -110,17 +110,11 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
 ### `scripts/context.py`
 - module-level logic changed
-- only in ileapp: `Context._set_device_boards` — `@@def _set_device_boards()`
-- only in ileapp: `Context._set_device_ids` — `@@def _set_device_ids()`
-- only in ileapp: `Context._set_os_builds` — `@@def _set_os_builds()`
-- only in ileapp: `Context.get_data_folder` — `@@def get_data_folder()`
-- only in ileapp: `Context.get_device_model` — `@@def get_device_model(identifier)`
-- only in ileapp: `Context.get_device_model_from_board` — `@@def get_device_model_from_board(board_id)`
+- only in ileapp: `Context.get_apple_os_version` — `@@def get_apple_os_version(build, device_family=...)`
 - only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
-- only in ileapp: `Context.get_os_version` — `@@def get_os_version(build, device_family=...)`
-- only in ileapp: `Context.get_relative_path` — `@@def get_relative_path(full_path)`
+- only in ileapp: `Context.get_metadata` — `@@def get_metadata(collection)`
+- only in ileapp: `Context.lookup_metadata` — `@@def lookup_metadata(collection, key, group=...)`
 - only in ileapp: `Context.set_installed_os_version` — `@@def set_installed_os_version(os_version)`
-- logic changed: `Context.set_output_params`
 ### `scripts/html_parts.py`
 - module-level logic changed
 ### `scripts/ilapfuncs.py`
@@ -129,12 +123,18 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
 - only in aleapp: `check_internet_connection` — `def check_internet_connection()`
+- only in aleapp: `check_raw_fields` — `def check_raw_fields(latitude, longitude, c)`
+- only in aleapp: `checkabx` — `def checkabx(in_path)`
+- only in ileapp: `convert_bytes_to_unit` — `def convert_bytes_to_unit(size)`
+- only in ileapp: `convert_cocoa_core_data_ts_to_utc` — `def convert_cocoa_core_data_ts_to_utc(cocoa_core_data_ts)`
+- only in ileapp: `convert_log_ts_to_utc` — `def convert_log_ts_to_utc(str_dt)`
+- only in ileapp: `convert_plist_date_to_timezone_offset` — `def convert_plist_date_to_timezone_offset(plist_date, timezone_offset)`
 
 </details>
 
 ## Missing files
 
-14 file(s). See [details/missing_files.md](details/missing_files.md).
+16 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -152,6 +152,8 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/ccl_simplesnappy.py` (baseline: `scripts/ccl_simplesnappy.py`)
 - `scripts/chat_rendering.py` (baseline: `scripts/chat_rendering.py`)
 - `scripts/ktx/ios_ktx2png.py` (baseline: `scripts/ktx/ios_ktx2png.py`)
+- `scripts/test_artifacts/__init__.py` (baseline: `scripts/test_artifacts/__init__.py`)
+- `scripts/test_artifacts/image_list.py` (baseline: `scripts/test_artifacts/image_list.py`)
 - `scripts/tz_offset.py` (baseline: `scripts/tz_offset.py`)
 
 </details>
@@ -189,4 +191,4 @@ _None._
 
 ## Signature changes
 
-4 symbol(s). See [details/signature_changes.md](details/signature_changes.md).
+6 symbol(s). See [details/signature_changes.md](details/signature_changes.md).
