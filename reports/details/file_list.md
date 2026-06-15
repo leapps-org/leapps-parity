@@ -38,6 +38,7 @@
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
 | `scripts/googleKeepNotes.py` | file_extra_in_comparison | `—` | `scripts/googleKeepNotes.py` |
+| `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
 | `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
 | `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |

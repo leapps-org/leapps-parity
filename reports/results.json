@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-08T15:24:05.682065+00:00",
+  "generated_at": "2026-06-15T16:51:50.617303+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "7e8691761ada26f24142f0a8c13900bfc644b8d0",
+      "commit": "9d2392e13bfb526a24a492a72fe5dc2320442fb7",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "4a2654800cad70367b1a2249f9547ce00da5905a",
+      "commit": "c595969e6cb3c302722992234473c4e3dc78e961",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 48,
+    "files_total": 49,
     "import_dependency_gaps": 2,
     "file_extra_in_comparison": 6,
     "file_missing_from_comparison": 16,
     "logic_changed": 28,
-    "same": 14,
+    "same": 15,
     "signature_changed": 6,
     "symbol_extra_in_comparison": 22,
     "symbol_missing_from_comparison": 44
@@ -57,6 +57,16 @@
       "status": "file_missing_from_comparison",
       "baseline_physical": "ileappGUI.py",
       "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/lava_launcher.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/lava_launcher.py",
+      "comparison_physical": "leapp_functions/lava_launcher.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
