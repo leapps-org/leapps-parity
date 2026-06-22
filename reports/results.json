@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-15T16:51:50.617303+00:00",
+  "generated_at": "2026-06-22T16:24:06.674082+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "9d2392e13bfb526a24a492a72fe5dc2320442fb7",
+      "commit": "356198dff8b896bae1e227271518eae2464b4f69",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "c595969e6cb3c302722992234473c4e3dc78e961",
+      "commit": "d00444f73609e3a2f5816197d8c4f63450afd9e5",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
