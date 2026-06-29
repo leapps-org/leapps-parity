@@ -1,28 +1,28 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1782145446.svg)
+![Parity summary](parity.1782746762.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-06-22T16:24:06.674082+00:00
+- **Generated**: 2026-06-29T15:26:02.053267+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `356198dff8b8` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `d00444f73609` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `196b7a3754dc` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `6224bae7e5a0` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 49 |
+| Files scanned (union) | 54 |
 | Same | 15 |
 | Changed (logic/file) | 12 |
-| Missing from comparison | 16 |
-| Extra in comparison | 6 |
+| Missing from comparison | 20 |
+| Extra in comparison | 7 |
 | Expected repo-specific | 0 |
 | Parse errors | 0 |
-| Import dependency gaps | 2 |
+| Import dependency gaps | 4 |
 
 ## File-level summary
 
@@ -30,31 +30,33 @@
 |---|---:|
 | same | 15 |
 | logic_changed | 12 |
-| file_missing_from_comparison | 16 |
-| file_extra_in_comparison | 6 |
+| file_missing_from_comparison | 20 |
+| file_extra_in_comparison | 7 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 44 |
+| symbol_missing_from_comparison | 40 |
 | symbol_extra_in_comparison | 22 |
-| signature_changed | 6 |
-| logic_changed | 28 |
+| signature_changed | 5 |
+| logic_changed | 23 |
 
 ## All compared files
 
-49 file(s). See [details/file_list.md](details/file_list.md).
+54 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
 Baseline files that import modules missing from the comparison repo (for example `ilapfuncs.py` → `context.py`).
 
-2 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
+4 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
 
 | Baseline file | Import | Missing in comparison |
 |---|---|---|
+| `ileappGUI.py` | `leapps.functions.history` | `leapps/functions/history.py` |
 | `ileappGUI.py` | `scripts.tz_offset:tzvalues` | `scripts/tz_offset.py` |
+| `main_entry.py` | `leapps.functions.history` | `leapps/functions/history.py` |
 | `scripts/ccl_leveldb.py` | `scripts.ccl_simplesnappy` | `scripts/ccl_simplesnappy.py` |
 
 ## Top mismatches
@@ -71,16 +73,16 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/plugin_loader.py` | logic_changed | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` | (3 symbol diffs)
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (3 symbol diffs)
 | `scripts/report_icons.py` | logic_changed | `scripts/report_icons.py` | `scripts/report_icons.py` |
-| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (20 symbol diffs)
+| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `ileappGUI.py` | file_missing_from_comparison | `ileappGUI.py` | `—` |
 | `scripts/ccl_leveldb.py` | file_missing_from_comparison | `scripts/ccl_leveldb.py` | `—` |
+| `leapp_functions/parsers/apple_atx.py` | file_missing_from_comparison | `leapp_functions/parsers/apple_atx.py` | `—` |
+| `leapps/__init__.py` | file_missing_from_comparison | `leapps/__init__.py` | `—` |
+| `leapps/functions/__init__.py` | file_missing_from_comparison | `leapps/functions/__init__.py` | `—` |
+| `leapps/functions/history.py` | file_missing_from_comparison | `leapps/functions/history.py` | `—` |
 | `scripts/ccl/ccl_bplist.py` | file_missing_from_comparison | `scripts/ccl/ccl_bplist.py` | `—` |
 | `scripts/ccl/ccl_segb1.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb1.py` | `—` |
-| `scripts/ccl/ccl_segb2.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb2.py` | `—` |
-| `scripts/ccl_segb/__init__.py` | file_missing_from_comparison | `scripts/ccl_segb/__init__.py` | `—` |
-| `scripts/ccl_segb/ccl_segb.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb.py` | `—` |
-| `scripts/ccl_segb/ccl_segb1.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb1.py` | `—` |
 
 ## Changed logic files
 
@@ -134,12 +136,16 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-16 file(s). See [details/missing_files.md](details/missing_files.md).
+20 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
 - `ileappGUI.py` (baseline: `ileappGUI.py`)
+- `leapp_functions/parsers/apple_atx.py` (baseline: `leapp_functions/parsers/apple_atx.py`)
+- `leapps/__init__.py` (baseline: `leapps/__init__.py`)
+- `leapps/functions/__init__.py` (baseline: `leapps/functions/__init__.py`)
+- `leapps/functions/history.py` (baseline: `leapps/functions/history.py`)
 - `scripts/ccl/ccl_bplist.py` (baseline: `scripts/ccl/ccl_bplist.py`)
 - `scripts/ccl/ccl_segb1.py` (baseline: `scripts/ccl/ccl_segb1.py`)
 - `scripts/ccl/ccl_segb2.py` (baseline: `scripts/ccl/ccl_segb2.py`)
@@ -160,7 +166,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-6 file(s). See [details/extra_files.md](details/extra_files.md).
+7 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -170,6 +176,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/ccl/ccl_leveldb.py` (comparison: `scripts/ccl/ccl_leveldb.py`)
 - `scripts/ccl/ccl_protobuff.py` (comparison: `scripts/ccl/ccl_protobuff.py`)
 - `scripts/ccl/ccl_simplesnappy.py` (comparison: `scripts/ccl/ccl_simplesnappy.py`)
+- `scripts/geo_utils.py` (comparison: `scripts/geo_utils.py`)
 - `scripts/googleKeepNotes.py` (comparison: `scripts/googleKeepNotes.py`)
 
 </details>
@@ -191,4 +198,4 @@ _None._
 
 ## Signature changes
 
-6 symbol(s). See [details/signature_changes.md](details/signature_changes.md).
+5 symbol(s). See [details/signature_changes.md](details/signature_changes.md).

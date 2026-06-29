@@ -34,10 +34,3 @@
 |:---|:---|
 | Baseline | `def generate_report(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)` |
 | Comparison | `def generate_report(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, casedata, profile_filename, icons)` |
-
-### `scripts/search_files.py` — `FileSeekerBase.search`
-
-| | Signature |
-|:---|:---|
-| Baseline | `def search(self, filepattern, return_on_first_hit=...)` |
-| Comparison | `def search(self, filepattern_to_search, return_on_first_hit=...)` |

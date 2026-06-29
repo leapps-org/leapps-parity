@@ -1,38 +1,50 @@
 {
-  "generated_at": "2026-06-22T16:24:06.674082+00:00",
+  "generated_at": "2026-06-29T15:26:02.053267+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "356198dff8b896bae1e227271518eae2464b4f69",
+      "commit": "196b7a3754dc4b3c0ecc83788cb97675e5cc2dcf",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "d00444f73609e3a2f5816197d8c4f63450afd9e5",
+      "commit": "6224bae7e5a0a7249a8e04ee4f8b65d4e61e4174",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 49,
-    "import_dependency_gaps": 2,
-    "file_extra_in_comparison": 6,
-    "file_missing_from_comparison": 16,
-    "logic_changed": 28,
+    "files_total": 54,
+    "import_dependency_gaps": 4,
+    "file_extra_in_comparison": 7,
+    "file_missing_from_comparison": 20,
+    "logic_changed": 23,
     "same": 15,
-    "signature_changed": 6,
+    "signature_changed": 5,
     "symbol_extra_in_comparison": 22,
-    "symbol_missing_from_comparison": 44
+    "symbol_missing_from_comparison": 40
   },
   "import_dependency_gaps": [
     {
       "source_logical_path": "ileappGUI.py",
       "source_physical": "ileappGUI.py",
+      "import_statement": "leapps.functions.history",
+      "missing_logical_path": "leapps/functions/history.py"
+    },
+    {
+      "source_logical_path": "ileappGUI.py",
+      "source_physical": "ileappGUI.py",
       "import_statement": "scripts.tz_offset:tzvalues",
       "missing_logical_path": "scripts/tz_offset.py"
+    },
+    {
+      "source_logical_path": "main_entry.py",
+      "source_physical": "ileapp.py",
+      "import_statement": "leapps.functions.history",
+      "missing_logical_path": "leapps/functions/history.py"
     },
     {
       "source_logical_path": "scripts/ccl_leveldb.py",
@@ -67,6 +79,46 @@
       "status": "same",
       "baseline_physical": "leapp_functions/lava_launcher.py",
       "comparison_physical": "leapp_functions/lava_launcher.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/parsers/apple_atx.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/parsers/apple_atx.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapps/__init__.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapps/__init__.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapps/functions/__init__.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapps/functions/__init__.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapps/functions/history.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapps/functions/history.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -496,6 +548,16 @@
       "status": "same",
       "baseline_physical": "scripts/filetypes/video.py",
       "comparison_physical": "scripts/filetypes/video.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/geo_utils.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/geo_utils.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -979,54 +1041,6 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "FileSeekerBase.cleanup",
-          "status": "logic_changed",
-          "baseline_signature": "def cleanup(self)",
-          "comparison_signature": "def cleanup(self)"
-        },
-        {
-          "qualified_name": "FileSeekerBase.search",
-          "status": "signature_changed",
-          "baseline_signature": "def search(self, filepattern, return_on_first_hit=...)",
-          "comparison_signature": "def search(self, filepattern_to_search, return_on_first_hit=...)"
-        },
-        {
-          "qualified_name": "FileSeekerDir.build_files_list",
-          "status": "logic_changed",
-          "baseline_signature": "def build_files_list(self, directory)",
-          "comparison_signature": "def build_files_list(self, directory)"
-        },
-        {
-          "qualified_name": "FileSeekerDir.search",
-          "status": "logic_changed",
-          "baseline_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)",
-          "comparison_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)"
-        },
-        {
-          "qualified_name": "FileSeekerFile",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "class FileSeekerFile",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "FileSeekerFile.__init__",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def __init__(self, file_path, data_folder)",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "FileSeekerFile.cleanup",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def cleanup(self)",
-          "comparison_signature": null
-        },
-        {
-          "qualified_name": "FileSeekerFile.search",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)",
-          "comparison_signature": null
-        },
-        {
           "qualified_name": "FileSeekerItunes",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "class FileSeekerItunes",
@@ -1061,18 +1075,6 @@
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)",
           "comparison_signature": null
-        },
-        {
-          "qualified_name": "FileSeekerTar.search",
-          "status": "logic_changed",
-          "baseline_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)",
-          "comparison_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)"
-        },
-        {
-          "qualified_name": "FileSeekerZip.search",
-          "status": "logic_changed",
-          "baseline_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)",
-          "comparison_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)"
         },
         {
           "qualified_name": "check_itunes_backup_status",

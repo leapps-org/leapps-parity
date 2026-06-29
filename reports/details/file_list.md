@@ -17,6 +17,10 @@
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `ileappGUI.py` | file_missing_from_comparison | `ileappGUI.py` | `—` |
+| `leapp_functions/parsers/apple_atx.py` | file_missing_from_comparison | `leapp_functions/parsers/apple_atx.py` | `—` |
+| `leapps/__init__.py` | file_missing_from_comparison | `leapps/__init__.py` | `—` |
+| `leapps/functions/__init__.py` | file_missing_from_comparison | `leapps/functions/__init__.py` | `—` |
+| `leapps/functions/history.py` | file_missing_from_comparison | `leapps/functions/history.py` | `—` |
 | `scripts/ccl/ccl_bplist.py` | file_missing_from_comparison | `scripts/ccl/ccl_bplist.py` | `—` |
 | `scripts/ccl/ccl_segb1.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb1.py` | `—` |
 | `scripts/ccl/ccl_segb2.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb2.py` | `—` |
@@ -37,6 +41,7 @@
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
+| `scripts/geo_utils.py` | file_extra_in_comparison | `—` | `scripts/geo_utils.py` |
 | `scripts/googleKeepNotes.py` | file_extra_in_comparison | `—` | `scripts/googleKeepNotes.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |

@@ -118,21 +118,12 @@
 ### `scripts/search_files.py`
 
 - module-level logic changed
-- logic changed: `FileSeekerBase.cleanup`
-- logic changed: `FileSeekerDir.build_files_list`
-- logic changed: `FileSeekerDir.search`
-- only in ileapp: `FileSeekerFile` — `class FileSeekerFile`
-- only in ileapp: `FileSeekerFile.__init__` — `def __init__(self, file_path, data_folder)`
-- only in ileapp: `FileSeekerFile.cleanup` — `def cleanup(self)`
-- only in ileapp: `FileSeekerFile.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
 - only in ileapp: `FileSeekerItunes` — `class FileSeekerItunes`
 - only in ileapp: `FileSeekerItunes.__init__` — `def __init__(self, directory, data_folder, backup_type, decryption_keys)`
 - only in ileapp: `FileSeekerItunes.build_files_list_from_manifest_db` — `def build_files_list_from_manifest_db(self, manifest_path)`
 - only in ileapp: `FileSeekerItunes.build_files_list_from_manifest_mbdb` — `def build_files_list_from_manifest_mbdb(self, manifest_path)`
 - only in ileapp: `FileSeekerItunes.get_root_path_from_domain` — `def get_root_path_from_domain(self, domain)`
 - only in ileapp: `FileSeekerItunes.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
-- logic changed: `FileSeekerTar.search`
-- logic changed: `FileSeekerZip.search`
 - only in ileapp: `check_itunes_backup_status` — `def check_itunes_backup_status(directory, backup_type)`
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`

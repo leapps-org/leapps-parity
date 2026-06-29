@@ -1,6 +1,10 @@
 # Missing files
 
 - `ileappGUI.py` (baseline: `ileappGUI.py`)
+- `leapp_functions/parsers/apple_atx.py` (baseline: `leapp_functions/parsers/apple_atx.py`)
+- `leapps/__init__.py` (baseline: `leapps/__init__.py`)
+- `leapps/functions/__init__.py` (baseline: `leapps/functions/__init__.py`)
+- `leapps/functions/history.py` (baseline: `leapps/functions/history.py`)
 - `scripts/ccl/ccl_bplist.py` (baseline: `scripts/ccl/ccl_bplist.py`)
 - `scripts/ccl/ccl_segb1.py` (baseline: `scripts/ccl/ccl_segb1.py`)
 - `scripts/ccl/ccl_segb2.py` (baseline: `scripts/ccl/ccl_segb2.py`)
