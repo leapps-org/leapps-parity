@@ -25,12 +25,12 @@
 
 | | Signature |
 |:---|:---|
-| Baseline | `def create_index_html(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)` |
-| Comparison | `def create_index_html(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, nav_list_data, casedata, profile_filename)` |
+| Baseline | `def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)` |
+| Comparison | `def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename)` |
 
 ### `scripts/report.py` — `generate_report`
 
 | | Signature |
 |:---|:---|
-| Baseline | `def generate_report(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)` |
-| Comparison | `def generate_report(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, casedata, profile_filename, icons)` |
+| Baseline | `def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)` |
+| Comparison | `def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons)` |

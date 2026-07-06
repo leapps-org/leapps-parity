@@ -109,11 +109,6 @@
 ### `scripts/report.py`
 
 - module-level logic changed
-- logic changed: `generate_authors_table_code`
-
-### `scripts/report_icons.py`
-
-- module-level logic changed
 
 ### `scripts/search_files.py`
 

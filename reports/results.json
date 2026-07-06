@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-29T15:26:02.053267+00:00",
+  "generated_at": "2026-07-06T14:53:29.305364+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "196b7a3754dc4b3c0ecc83788cb97675e5cc2dcf",
+      "commit": "a0f91f5165dde000e4188918e70c858675be46df",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "6224bae7e5a0a7249a8e04ee4f8b65d4e61e4174",
+      "commit": "3fc67a4a95491f9dcfbca402d041829b4e153596",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 54,
+    "files_total": 55,
     "import_dependency_gaps": 4,
     "file_extra_in_comparison": 7,
     "file_missing_from_comparison": 20,
-    "logic_changed": 23,
-    "same": 15,
+    "logic_changed": 22,
+    "same": 17,
     "signature_changed": 5,
     "symbol_extra_in_comparison": 22,
     "symbol_missing_from_comparison": 40
@@ -69,6 +69,26 @@
       "status": "file_missing_from_comparison",
       "baseline_physical": "ileappGUI.py",
       "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/data_sources/json_files.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/data_sources/json_files.py",
+      "comparison_physical": "leapp_functions/data_sources/json_files.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/data_sources/text_files.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/data_sources/text_files.py",
+      "comparison_physical": "leapp_functions/data_sources/text_files.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1004,32 +1024,16 @@
         {
           "qualified_name": "create_index_html",
           "status": "signature_changed",
-          "baseline_signature": "def create_index_html(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)",
-          "comparison_signature": "def create_index_html(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, nav_list_data, casedata, profile_filename)"
-        },
-        {
-          "qualified_name": "generate_authors_table_code",
-          "status": "logic_changed",
-          "baseline_signature": "def generate_authors_table_code(ileapp_contributors)",
-          "comparison_signature": "def generate_authors_table_code(ileapp_contributors)"
+          "baseline_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)",
+          "comparison_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename)"
         },
         {
           "qualified_name": "generate_report",
           "status": "signature_changed",
-          "baseline_signature": "def generate_report(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)",
-          "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_HMS, extraction_type, image_input_path, casedata, profile_filename, icons)"
+          "baseline_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)",
+          "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons)"
         }
       ]
-    },
-    {
-      "logical_path": "scripts/report_icons.py",
-      "status": "logic_changed",
-      "baseline_physical": "scripts/report_icons.py",
-      "comparison_physical": "scripts/report_icons.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": true,
-      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/search_files.py",
