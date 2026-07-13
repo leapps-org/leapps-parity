@@ -7,6 +7,27 @@
 - logic changed: `main`
 - logic changed: `validate_args`
 
+### `scripts/alternate_artifacts/appInventory.py`
+
+- module-level logic changed
+- only in ileapp: `_build_guid_map` — `def _build_guid_map(seeker)`
+- only in ileapp: `_container_type_from_path` — `def _container_type_from_path(path)`
+- logic changed: `_format_utc`
+- only in ileapp: `_guids_from_device_path` — `def _guids_from_device_path(device_path)`
+- logic changed: `_iter_extraction_files`
+- only in ileapp: `_map_path_to_app` — `def _map_path_to_app(path, guid_map)`
+- only in aleapp: `_map_path_to_package` — `def _map_path_to_package(path)`
+- only in ileapp: `_parse_application_state` — `def _parse_application_state(db_path)`
+- only in ileapp: `_parse_blob` — `def _parse_blob(appid, blob)`
+- only in aleapp: `_parse_packages_xml` — `def _parse_packages_xml(file_path)`
+- only in aleapp: `_read_build_prop` — `def _read_build_prop(file_path)`
+- only in ileapp: `_read_container_metadata` — `def _read_container_metadata(plist_path)`
+- only in aleapp: `_read_unix_time_ms` — `def _read_unix_time_ms(unix_time_ms)`
+- logic changed: `_seeker_kind`
+- logic changed: `appFileInventory`
+- logic changed: `extractionInfo`
+- logic changed: `installedAppInventory`
+
 ### `scripts/artifact_report.py`
 
 - module-level logic changed
@@ -100,11 +121,6 @@
 ### `scripts/modules_to_exclude.py`
 
 - module-level logic changed
-
-### `scripts/plugin_loader.py`
-
-- module-level logic changed
-- logic changed: `PluginLoader.load_module_lazy`
 
 ### `scripts/report.py`
 

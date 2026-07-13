@@ -1,62 +1,60 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1783349609.svg)
+![Parity summary](parity.1783951136.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-07-06T14:53:29.305364+00:00
+- **Generated**: 2026-07-13T13:58:56.309690+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `a0f91f5165dd` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `3fc67a4a9549` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `41551e67d316` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `021d1efe464c` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 55 |
-| Same | 17 |
+| Files scanned (union) | 58 |
+| Same | 21 |
 | Changed (logic/file) | 11 |
-| Missing from comparison | 20 |
-| Extra in comparison | 7 |
+| Missing from comparison | 17 |
+| Extra in comparison | 9 |
 | Expected repo-specific | 0 |
 | Parse errors | 0 |
-| Import dependency gaps | 4 |
+| Import dependency gaps | 2 |
 
 ## File-level summary
 
 | Status | Count |
 |---|---:|
-| same | 17 |
+| same | 21 |
 | logic_changed | 11 |
-| file_missing_from_comparison | 20 |
-| file_extra_in_comparison | 7 |
+| file_missing_from_comparison | 17 |
+| file_extra_in_comparison | 9 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 40 |
-| symbol_extra_in_comparison | 22 |
-| signature_changed | 5 |
-| logic_changed | 22 |
+| symbol_missing_from_comparison | 47 |
+| symbol_extra_in_comparison | 26 |
+| signature_changed | 3 |
+| logic_changed | 27 |
 
 ## All compared files
 
-55 file(s). See [details/file_list.md](details/file_list.md).
+58 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
 Baseline files that import modules missing from the comparison repo (for example `ilapfuncs.py` → `context.py`).
 
-4 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
+2 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
 
 | Baseline file | Import | Missing in comparison |
 |---|---|---|
-| `ileappGUI.py` | `leapps.functions.history` | `leapps/functions/history.py` |
 | `ileappGUI.py` | `scripts.tz_offset:tzvalues` | `scripts/tz_offset.py` |
-| `main_entry.py` | `leapps.functions.history` | `leapps/functions/history.py` |
 | `scripts/ccl_leveldb.py` | `scripts.ccl_simplesnappy` | `scripts/ccl_simplesnappy.py` |
 
 ## Top mismatches
@@ -64,25 +62,25 @@ Baseline files that import modules missing from the comparison repo (for example
 | Logical path | Status | Baseline file | Comparison file |
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` | (4 symbol diffs)
+| `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` | (17 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (5 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (40 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (13 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
-| `scripts/plugin_loader.py` | logic_changed | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` | (3 symbol diffs)
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `ileappGUI.py` | file_missing_from_comparison | `ileappGUI.py` | `—` |
 | `scripts/ccl_leveldb.py` | file_missing_from_comparison | `scripts/ccl_leveldb.py` | `—` |
 | `leapp_functions/parsers/apple_atx.py` | file_missing_from_comparison | `leapp_functions/parsers/apple_atx.py` | `—` |
-| `leapps/__init__.py` | file_missing_from_comparison | `leapps/__init__.py` | `—` |
-| `leapps/functions/__init__.py` | file_missing_from_comparison | `leapps/functions/__init__.py` | `—` |
-| `leapps/functions/history.py` | file_missing_from_comparison | `leapps/functions/history.py` | `—` |
 | `scripts/ccl/ccl_bplist.py` | file_missing_from_comparison | `scripts/ccl/ccl_bplist.py` | `—` |
 | `scripts/ccl/ccl_segb1.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb1.py` | `—` |
 | `scripts/ccl/ccl_segb2.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb2.py` | `—` |
+| `scripts/ccl_segb/__init__.py` | file_missing_from_comparison | `scripts/ccl_segb/__init__.py` | `—` |
+| `scripts/ccl_segb/ccl_segb.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb.py` | `—` |
+| `scripts/ccl_segb/ccl_segb1.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb1.py` | `—` |
 
 ## Changed logic files
 
@@ -96,6 +94,25 @@ Baseline files that import modules missing from the comparison repo (for example
 - logic changed: `create_profile`
 - logic changed: `main`
 - logic changed: `validate_args`
+### `scripts/alternate_artifacts/appInventory.py`
+- module-level logic changed
+- only in ileapp: `_build_guid_map` — `def _build_guid_map(seeker)`
+- only in ileapp: `_container_type_from_path` — `def _container_type_from_path(path)`
+- logic changed: `_format_utc`
+- only in ileapp: `_guids_from_device_path` — `def _guids_from_device_path(device_path)`
+- logic changed: `_iter_extraction_files`
+- only in ileapp: `_map_path_to_app` — `def _map_path_to_app(path, guid_map)`
+- only in aleapp: `_map_path_to_package` — `def _map_path_to_package(path)`
+- only in ileapp: `_parse_application_state` — `def _parse_application_state(db_path)`
+- only in ileapp: `_parse_blob` — `def _parse_blob(appid, blob)`
+- only in aleapp: `_parse_packages_xml` — `def _parse_packages_xml(file_path)`
+- only in aleapp: `_read_build_prop` — `def _read_build_prop(file_path)`
+- only in ileapp: `_read_container_metadata` — `def _read_container_metadata(plist_path)`
+- only in aleapp: `_read_unix_time_ms` — `def _read_unix_time_ms(unix_time_ms)`
+- logic changed: `_seeker_kind`
+- logic changed: `appFileInventory`
+- logic changed: `extractionInfo`
+- logic changed: `installedAppInventory`
 ### `scripts/artifact_report.py`
 - module-level logic changed
 - only in aleapp: `ArtifactHtmlReport.add_chart` — `def add_chart(self, height=...)`
@@ -112,40 +129,18 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
 ### `scripts/context.py`
 - module-level logic changed
-- only in ileapp: `Context.get_apple_os_version` — `@@def get_apple_os_version(build, device_family=...)`
-- only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
-- only in ileapp: `Context.get_metadata` — `@@def get_metadata(collection)`
-- only in ileapp: `Context.lookup_metadata` — `@@def lookup_metadata(collection, key, group=...)`
-- only in ileapp: `Context.set_installed_os_version` — `@@def set_installed_os_version(os_version)`
-### `scripts/html_parts.py`
-- module-level logic changed
-### `scripts/ilapfuncs.py`
-- module-level logic changed
-- logic changed: `OutputParameters.__init__`
-- only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
-- logic changed: `artifact_processor`
-- only in aleapp: `check_internet_connection` — `def check_internet_connection()`
-- only in aleapp: `check_raw_fields` — `def check_raw_fields(latitude, longitude, c)`
-- only in aleapp: `checkabx` — `def checkabx(in_path)`
-- only in ileapp: `convert_bytes_to_unit` — `def convert_bytes_to_unit(size)`
-- only in ileapp: `convert_cocoa_core_data_ts_to_utc` — `def convert_cocoa_core_data_ts_to_utc(cocoa_core_data_ts)`
-- only in ileapp: `convert_log_ts_to_utc` — `def convert_log_ts_to_utc(str_dt)`
-- only in ileapp: `convert_plist_date_to_timezone_offset` — `def convert_plist_date_to_timezone_offset(plist_date, timezone_offset)`
 
 </details>
 
 ## Missing files
 
-20 file(s). See [details/missing_files.md](details/missing_files.md).
+17 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
 - `ileappGUI.py` (baseline: `ileappGUI.py`)
 - `leapp_functions/parsers/apple_atx.py` (baseline: `leapp_functions/parsers/apple_atx.py`)
-- `leapps/__init__.py` (baseline: `leapps/__init__.py`)
-- `leapps/functions/__init__.py` (baseline: `leapps/functions/__init__.py`)
-- `leapps/functions/history.py` (baseline: `leapps/functions/history.py`)
 - `scripts/ccl/ccl_bplist.py` (baseline: `scripts/ccl/ccl_bplist.py`)
 - `scripts/ccl/ccl_segb1.py` (baseline: `scripts/ccl/ccl_segb1.py`)
 - `scripts/ccl/ccl_segb2.py` (baseline: `scripts/ccl/ccl_segb2.py`)
@@ -166,12 +161,14 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-7 file(s). See [details/extra_files.md](details/extra_files.md).
+9 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
 
 - `aleappGUI.py` (comparison: `aleappGUI.py`)
+- `leapp_functions/__init__.py` (comparison: `leapp_functions/__init__.py`)
+- `leapp_functions/app/__init__.py` (comparison: `leapp_functions/app/__init__.py`)
 - `scripts/ccl/ccl_android_fcm_queued_messages.py` (comparison: `scripts/ccl/ccl_android_fcm_queued_messages.py`)
 - `scripts/ccl/ccl_leveldb.py` (comparison: `scripts/ccl/ccl_leveldb.py`)
 - `scripts/ccl/ccl_protobuff.py` (comparison: `scripts/ccl/ccl_protobuff.py`)
@@ -198,4 +195,4 @@ _None._
 
 ## Signature changes
 
-5 symbol(s). See [details/signature_changes.md](details/signature_changes.md).
+3 symbol(s). See [details/signature_changes.md](details/signature_changes.md).

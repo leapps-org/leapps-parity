@@ -1,50 +1,38 @@
 {
-  "generated_at": "2026-07-06T14:53:29.305364+00:00",
+  "generated_at": "2026-07-13T13:58:56.309690+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "a0f91f5165dde000e4188918e70c858675be46df",
+      "commit": "41551e67d316a5ed8f1e31ebc3de0d6ede2693e6",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "3fc67a4a95491f9dcfbca402d041829b4e153596",
+      "commit": "021d1efe464c100dc1d94ac3ef51cfa06652f353",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 55,
-    "import_dependency_gaps": 4,
-    "file_extra_in_comparison": 7,
-    "file_missing_from_comparison": 20,
-    "logic_changed": 22,
-    "same": 17,
-    "signature_changed": 5,
-    "symbol_extra_in_comparison": 22,
-    "symbol_missing_from_comparison": 40
+    "files_total": 58,
+    "import_dependency_gaps": 2,
+    "file_extra_in_comparison": 9,
+    "file_missing_from_comparison": 17,
+    "logic_changed": 27,
+    "same": 21,
+    "signature_changed": 3,
+    "symbol_extra_in_comparison": 26,
+    "symbol_missing_from_comparison": 47
   },
   "import_dependency_gaps": [
     {
       "source_logical_path": "ileappGUI.py",
       "source_physical": "ileappGUI.py",
-      "import_statement": "leapps.functions.history",
-      "missing_logical_path": "leapps/functions/history.py"
-    },
-    {
-      "source_logical_path": "ileappGUI.py",
-      "source_physical": "ileappGUI.py",
       "import_statement": "scripts.tz_offset:tzvalues",
       "missing_logical_path": "scripts/tz_offset.py"
-    },
-    {
-      "source_logical_path": "main_entry.py",
-      "source_physical": "ileapp.py",
-      "import_statement": "leapps.functions.history",
-      "missing_logical_path": "leapps/functions/history.py"
     },
     {
       "source_logical_path": "scripts/ccl_leveldb.py",
@@ -69,6 +57,56 @@
       "status": "file_missing_from_comparison",
       "baseline_physical": "ileappGUI.py",
       "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/__init__.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "leapp_functions/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/__init__.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "leapp_functions/app/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/history.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/history.py",
+      "comparison_physical": "leapp_functions/app/history.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/output.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/output.py",
+      "comparison_physical": "leapp_functions/app/output.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/platform.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/platform.py",
+      "comparison_physical": "leapp_functions/app/platform.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -115,36 +153,6 @@
       "symbol_diffs": []
     },
     {
-      "logical_path": "leapps/__init__.py",
-      "status": "file_missing_from_comparison",
-      "baseline_physical": "leapps/__init__.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "leapps/functions/__init__.py",
-      "status": "file_missing_from_comparison",
-      "baseline_physical": "leapps/functions/__init__.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "leapps/functions/history.py",
-      "status": "file_missing_from_comparison",
-      "baseline_physical": "leapps/functions/history.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
       "logical_path": "main_entry.py",
       "status": "logic_changed",
       "baseline_physical": "ileapp.py",
@@ -176,6 +184,119 @@
           "status": "logic_changed",
           "baseline_signature": "def validate_args(args)",
           "comparison_signature": "def validate_args(args)"
+        }
+      ]
+    },
+    {
+      "logical_path": "scripts/alternate_artifacts/appInventory.py",
+      "status": "logic_changed",
+      "baseline_physical": "scripts/alternate_artifacts/appInventory.py",
+      "comparison_physical": "scripts/alternate_artifacts/appInventory.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "_build_guid_map",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _build_guid_map(seeker)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_container_type_from_path",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _container_type_from_path(path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_format_utc",
+          "status": "logic_changed",
+          "baseline_signature": "def _format_utc(epoch)",
+          "comparison_signature": "def _format_utc(epoch)"
+        },
+        {
+          "qualified_name": "_guids_from_device_path",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _guids_from_device_path(device_path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_iter_extraction_files",
+          "status": "logic_changed",
+          "baseline_signature": "def _iter_extraction_files(seeker)",
+          "comparison_signature": "def _iter_extraction_files(seeker)"
+        },
+        {
+          "qualified_name": "_map_path_to_app",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _map_path_to_app(path, guid_map)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_map_path_to_package",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def _map_path_to_package(path)"
+        },
+        {
+          "qualified_name": "_parse_application_state",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _parse_application_state(db_path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_parse_blob",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _parse_blob(appid, blob)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_parse_packages_xml",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def _parse_packages_xml(file_path)"
+        },
+        {
+          "qualified_name": "_read_build_prop",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def _read_build_prop(file_path)"
+        },
+        {
+          "qualified_name": "_read_container_metadata",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _read_container_metadata(plist_path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_read_unix_time_ms",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def _read_unix_time_ms(unix_time_ms)"
+        },
+        {
+          "qualified_name": "_seeker_kind",
+          "status": "logic_changed",
+          "baseline_signature": "def _seeker_kind(seeker)",
+          "comparison_signature": "def _seeker_kind(seeker)"
+        },
+        {
+          "qualified_name": "appFileInventory",
+          "status": "logic_changed",
+          "baseline_signature": "@@def appFileInventory(context)",
+          "comparison_signature": "@@def appFileInventory(context)"
+        },
+        {
+          "qualified_name": "extractionInfo",
+          "status": "logic_changed",
+          "baseline_signature": "@@def extractionInfo(context)",
+          "comparison_signature": "@@def extractionInfo(context)"
+        },
+        {
+          "qualified_name": "installedAppInventory",
+          "status": "logic_changed",
+          "baseline_signature": "@@def installedAppInventory(context)",
+          "comparison_signature": "@@def installedAppInventory(context)"
         }
       ]
     },
@@ -975,32 +1096,13 @@
     },
     {
       "logical_path": "scripts/plugin_loader.py",
-      "status": "logic_changed",
+      "status": "same",
       "baseline_physical": "scripts/plugin_loader.py",
       "comparison_physical": "scripts/plugin_loader.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
-      "module_logic_changed": true,
-      "symbol_diffs": [
-        {
-          "qualified_name": "PluginLoader.__init__",
-          "status": "signature_changed",
-          "baseline_signature": "def __init__(self, plugin_paths=...)",
-          "comparison_signature": "def __init__(self, plugin_path=...)"
-        },
-        {
-          "qualified_name": "PluginLoader._load_plugins",
-          "status": "signature_changed",
-          "baseline_signature": "def _load_plugins(self, plugin_path)",
-          "comparison_signature": "def _load_plugins(self)"
-        },
-        {
-          "qualified_name": "PluginLoader.load_module_lazy",
-          "status": "logic_changed",
-          "baseline_signature": "@@def load_module_lazy(path)",
-          "comparison_signature": "@@def load_module_lazy(path)"
-        }
-      ]
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/pyinstaller/hook-plugin_loader.py",

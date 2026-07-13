@@ -1,6 +1,8 @@
 # Extra / repo-specific files
 
 - `aleappGUI.py` (comparison: `aleappGUI.py`)
+- `leapp_functions/__init__.py` (comparison: `leapp_functions/__init__.py`)
+- `leapp_functions/app/__init__.py` (comparison: `leapp_functions/app/__init__.py`)
 - `scripts/ccl/ccl_android_fcm_queued_messages.py` (comparison: `scripts/ccl/ccl_android_fcm_queued_messages.py`)
 - `scripts/ccl/ccl_leveldb.py` (comparison: `scripts/ccl/ccl_leveldb.py`)
 - `scripts/ccl/ccl_protobuff.py` (comparison: `scripts/ccl/ccl_protobuff.py`)

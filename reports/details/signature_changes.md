@@ -7,20 +7,6 @@
 | Baseline | `def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=...)` |
 | Comparison | `def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename)` |
 
-### `scripts/plugin_loader.py` — `PluginLoader.__init__`
-
-| | Signature |
-|:---|:---|
-| Baseline | `def __init__(self, plugin_paths=...)` |
-| Comparison | `def __init__(self, plugin_path=...)` |
-
-### `scripts/plugin_loader.py` — `PluginLoader._load_plugins`
-
-| | Signature |
-|:---|:---|
-| Baseline | `def _load_plugins(self, plugin_path)` |
-| Comparison | `def _load_plugins(self)` |
-
 ### `scripts/report.py` — `create_index_html`
 
 | | Signature |
