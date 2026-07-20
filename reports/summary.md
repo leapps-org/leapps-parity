@@ -1,22 +1,22 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1783951136.svg)
+![Parity summary](parity.1784555067.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-07-13T13:58:56.309690+00:00
+- **Generated**: 2026-07-20T13:44:27.326884+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `41551e67d316` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `021d1efe464c` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `04a359479446` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `07c5773ca3df` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 58 |
-| Same | 21 |
+| Files scanned (union) | 59 |
+| Same | 22 |
 | Changed (logic/file) | 11 |
 | Missing from comparison | 17 |
 | Extra in comparison | 9 |
@@ -28,7 +28,7 @@
 
 | Status | Count |
 |---|---:|
-| same | 21 |
+| same | 22 |
 | logic_changed | 11 |
 | file_missing_from_comparison | 17 |
 | file_extra_in_comparison | 9 |
@@ -40,11 +40,11 @@
 | symbol_missing_from_comparison | 47 |
 | symbol_extra_in_comparison | 26 |
 | signature_changed | 3 |
-| logic_changed | 27 |
+| logic_changed | 28 |
 
 ## All compared files
 
-58 file(s). See [details/file_list.md](details/file_list.md).
+59 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -69,7 +69,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (40 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (13 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
-| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
+| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (3 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `ileappGUI.py` | file_missing_from_comparison | `ileappGUI.py` | `—` |

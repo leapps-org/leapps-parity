@@ -125,6 +125,7 @@
 ### `scripts/report.py`
 
 - module-level logic changed
+- logic changed: `get_tabler_icon_names`
 
 ### `scripts/search_files.py`
 

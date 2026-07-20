@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-07-13T13:58:56.309690+00:00",
+  "generated_at": "2026-07-20T13:44:27.326884+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "41551e67d316a5ed8f1e31ebc3de0d6ede2693e6",
+      "commit": "04a3594794463e306fa1f1564d2ed204be0865f2",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "021d1efe464c100dc1d94ac3ef51cfa06652f353",
+      "commit": "07c5773ca3dfacd65ae2530fe88c5a6232081db6",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 58,
+    "files_total": 59,
     "import_dependency_gaps": 2,
     "file_extra_in_comparison": 9,
     "file_missing_from_comparison": 17,
-    "logic_changed": 27,
-    "same": 21,
+    "logic_changed": 28,
+    "same": 22,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 26,
     "symbol_missing_from_comparison": 47
@@ -725,6 +725,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/html_safe.py",
+      "status": "same",
+      "baseline_physical": "scripts/html_safe.py",
+      "comparison_physical": "scripts/html_safe.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/ilapfuncs.py",
       "status": "logic_changed",
       "baseline_physical": "scripts/ilapfuncs.py",
@@ -1134,6 +1144,12 @@
           "status": "signature_changed",
           "baseline_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)",
           "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons)"
+        },
+        {
+          "qualified_name": "get_tabler_icon_names",
+          "status": "logic_changed",
+          "baseline_signature": "def get_tabler_icon_names()",
+          "comparison_signature": "def get_tabler_icon_names()"
         }
       ]
     },
