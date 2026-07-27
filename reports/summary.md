@@ -1,60 +1,61 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1784555067.svg)
+![Parity summary](parity.1785161232.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-07-20T13:44:27.326884+00:00
+- **Generated**: 2026-07-27T14:07:12.272710+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `04a359479446` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `07c5773ca3df` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `81a31a27608a` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `1ec418ac0d64` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 59 |
-| Same | 22 |
+| Files scanned (union) | 69 |
+| Same | 31 |
 | Changed (logic/file) | 11 |
-| Missing from comparison | 17 |
+| Missing from comparison | 18 |
 | Extra in comparison | 9 |
 | Expected repo-specific | 0 |
 | Parse errors | 0 |
-| Import dependency gaps | 2 |
+| Import dependency gaps | 3 |
 
 ## File-level summary
 
 | Status | Count |
 |---|---:|
-| same | 22 |
+| same | 31 |
 | logic_changed | 11 |
-| file_missing_from_comparison | 17 |
+| file_missing_from_comparison | 18 |
 | file_extra_in_comparison | 9 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 47 |
-| symbol_extra_in_comparison | 26 |
+| symbol_missing_from_comparison | 51 |
+| symbol_extra_in_comparison | 28 |
 | signature_changed | 3 |
-| logic_changed | 28 |
+| logic_changed | 16 |
 
 ## All compared files
 
-59 file(s). See [details/file_list.md](details/file_list.md).
+69 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
 Baseline files that import modules missing from the comparison repo (for example `ilapfuncs.py` → `context.py`).
 
-2 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
+3 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
 
 | Baseline file | Import | Missing in comparison |
 |---|---|---|
 | `ileappGUI.py` | `scripts.tz_offset:tzvalues` | `scripts/tz_offset.py` |
+| `main_entry.py` | `scripts.ios_keychain:report_supplied_keychain` | `scripts/ios_keychain.py` |
 | `scripts/ccl_leveldb.py` | `scripts.ccl_simplesnappy` | `scripts/ccl_simplesnappy.py` |
 
 ## Top mismatches
@@ -64,12 +65,12 @@ Baseline files that import modules missing from the comparison repo (for example
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` | (4 symbol diffs)
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` | (17 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
-| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (5 symbol diffs)
+| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (40 symbol diffs)
-| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (13 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (43 symbol diffs)
+| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (1 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
-| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (3 symbol diffs)
+| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (4 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `ileappGUI.py` | file_missing_from_comparison | `ileappGUI.py` | `—` |
@@ -134,7 +135,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-17 file(s). See [details/missing_files.md](details/missing_files.md).
+18 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -152,6 +153,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/ccl_segb/ccl_segb_common.py` (baseline: `scripts/ccl_segb/ccl_segb_common.py`)
 - `scripts/ccl_simplesnappy.py` (baseline: `scripts/ccl_simplesnappy.py`)
 - `scripts/chat_rendering.py` (baseline: `scripts/chat_rendering.py`)
+- `scripts/ios_keychain.py` (baseline: `scripts/ios_keychain.py`)
 - `scripts/ktx/ios_ktx2png.py` (baseline: `scripts/ktx/ios_ktx2png.py`)
 - `scripts/test_artifacts/__init__.py` (baseline: `scripts/test_artifacts/__init__.py`)
 - `scripts/test_artifacts/image_list.py` (baseline: `scripts/test_artifacts/image_list.py`)

@@ -13,6 +13,7 @@
 - `scripts/ccl_segb/ccl_segb_common.py` (baseline: `scripts/ccl_segb/ccl_segb_common.py`)
 - `scripts/ccl_simplesnappy.py` (baseline: `scripts/ccl_simplesnappy.py`)
 - `scripts/chat_rendering.py` (baseline: `scripts/chat_rendering.py`)
+- `scripts/ios_keychain.py` (baseline: `scripts/ios_keychain.py`)
 - `scripts/ktx/ios_ktx2png.py` (baseline: `scripts/ktx/ios_ktx2png.py`)
 - `scripts/test_artifacts/__init__.py` (baseline: `scripts/test_artifacts/__init__.py`)
 - `scripts/test_artifacts/image_list.py` (baseline: `scripts/test_artifacts/image_list.py`)

@@ -28,6 +28,7 @@
 | `scripts/ccl_segb/ccl_segb_common.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb_common.py` | `—` |
 | `scripts/ccl_simplesnappy.py` | file_missing_from_comparison | `scripts/ccl_simplesnappy.py` | `—` |
 | `scripts/chat_rendering.py` | file_missing_from_comparison | `scripts/chat_rendering.py` | `—` |
+| `scripts/ios_keychain.py` | file_missing_from_comparison | `scripts/ios_keychain.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | file_missing_from_comparison | `scripts/ktx/ios_ktx2png.py` | `—` |
 | `scripts/test_artifacts/__init__.py` | file_missing_from_comparison | `scripts/test_artifacts/__init__.py` | `—` |
 | `scripts/test_artifacts/image_list.py` | file_missing_from_comparison | `scripts/test_artifacts/image_list.py` | `—` |
@@ -47,6 +48,14 @@
 | `leapp_functions/data_sources/json_files.py` | same | `leapp_functions/data_sources/json_files.py` | `leapp_functions/data_sources/json_files.py` |
 | `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
+| `scripts/blackboxprotobuf/__init__.py` | same | `scripts/blackboxprotobuf/__init__.py` | `scripts/blackboxprotobuf/__init__.py` |
+| `scripts/blackboxprotobuf/lib/__init__.py` | same | `scripts/blackboxprotobuf/lib/__init__.py` | `scripts/blackboxprotobuf/lib/__init__.py` |
+| `scripts/blackboxprotobuf/lib/interface.py` | same | `scripts/blackboxprotobuf/lib/interface.py` | `scripts/blackboxprotobuf/lib/interface.py` |
+| `scripts/blackboxprotobuf/lib/types/__init__.py` | same | `scripts/blackboxprotobuf/lib/types/__init__.py` | `scripts/blackboxprotobuf/lib/types/__init__.py` |
+| `scripts/blackboxprotobuf/lib/types/fixed.py` | same | `scripts/blackboxprotobuf/lib/types/fixed.py` | `scripts/blackboxprotobuf/lib/types/fixed.py` |
+| `scripts/blackboxprotobuf/lib/types/length_delim.py` | same | `scripts/blackboxprotobuf/lib/types/length_delim.py` | `scripts/blackboxprotobuf/lib/types/length_delim.py` |
+| `scripts/blackboxprotobuf/lib/types/type_maps.py` | same | `scripts/blackboxprotobuf/lib/types/type_maps.py` | `scripts/blackboxprotobuf/lib/types/type_maps.py` |
+| `scripts/blackboxprotobuf/lib/types/varint.py` | same | `scripts/blackboxprotobuf/lib/types/varint.py` | `scripts/blackboxprotobuf/lib/types/varint.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
 | `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
 | `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |
@@ -63,3 +72,4 @@
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
 | `scripts/pyinstaller/hook-plugin_loader.py` | same | `scripts/pyinstaller/hook-plugin_loader.py` | `scripts/pyinstaller/hook-plugin_loader.py` |
+| `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |

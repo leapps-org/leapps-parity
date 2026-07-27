@@ -49,9 +49,11 @@
 - module-level logic changed
 - only in ileapp: `Context.get_apple_os_version` — `@@def get_apple_os_version(build, device_family=...)`
 - only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
+- only in ileapp: `Context.get_keychain_path` — `@@def get_keychain_path()`
 - only in ileapp: `Context.get_metadata` — `@@def get_metadata(collection)`
 - only in ileapp: `Context.lookup_metadata` — `@@def lookup_metadata(collection, key, group=...)`
 - only in ileapp: `Context.set_installed_os_version` — `@@def set_installed_os_version(os_version)`
+- only in ileapp: `Context.set_keychain_path` — `@@def set_keychain_path(keychain_path)`
 
 ### `scripts/html_parts.py`
 
@@ -61,6 +63,7 @@
 
 - module-level logic changed
 - logic changed: `OutputParameters.__init__`
+- only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
 - only in aleapp: `check_internet_connection` — `def check_internet_connection()`
@@ -77,6 +80,7 @@
 - only in ileapp: `convert_unix_ts_to_str` — `def convert_unix_ts_to_str(ts)`
 - only in ileapp: `convert_unix_ts_to_timezone` — `def convert_unix_ts_to_timezone(ts, timezone_offset)`
 - logic changed: `convert_unix_ts_to_utc`
+- only in aleapp: `decode_protobuf` — `def decode_protobuf(data, typedef=...)`
 - only in ileapp: `generate_hexdump` — `def generate_hexdump(data, char_per_row=...)`
 - only in ileapp: `generate_thumbnail` — `def generate_thumbnail(imDirectory, imFilename, seeker, report_folder)`
 - only in aleapp: `get_binary_file_content` — `def get_binary_file_content(file_path)`
@@ -98,25 +102,14 @@
 - only in ileapp: `strings` — `def strings(data)`
 - only in ileapp: `strings_raw` — `def strings_raw(data)`
 - only in aleapp: `timestampsconv` — `def timestampsconv(webkittime)`
+- logic changed: `tsv`
 - only in ileapp: `webkit_timestampsconv` — `def webkit_timestampsconv(webkittime)`
 - only in ileapp: `write_lava_only_log` — `def write_lava_only_log()`
 
 ### `scripts/lavafuncs.py`
 
 - module-level logic changed
-- logic changed: `lava_add_module`
-- logic changed: `lava_create_sqlite_table`
-- logic changed: `lava_finalize_output`
-- logic changed: `lava_get_full_media_info`
-- logic changed: `lava_get_media_item`
-- logic changed: `lava_get_media_references`
-- logic changed: `lava_insert_sqlite_artifact_link_pattern_to_file`
-- logic changed: `lava_insert_sqlite_artifact_search_pattern`
 - logic changed: `lava_insert_sqlite_data`
-- logic changed: `lava_insert_sqlite_file_path`
-- logic changed: `lava_insert_sqlite_media_item`
-- logic changed: `lava_insert_sqlite_media_references`
-- logic changed: `lava_process_artifact`
 
 ### `scripts/modules_to_exclude.py`
 
@@ -125,7 +118,8 @@
 ### `scripts/report.py`
 
 - module-level logic changed
-- logic changed: `get_tabler_icon_names`
+- only in aleapp: `insert_sidebar_code` — `def insert_sidebar_code(data, sidebar_code, filename)`
+- only in ileapp: `stream_insert_sidebar_code` — `def stream_insert_sidebar_code(src_path, dest_path, sidebar_code)`
 
 ### `scripts/search_files.py`
 

@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-07-20T13:44:27.326884+00:00",
+  "generated_at": "2026-07-27T14:07:12.272710+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "04a3594794463e306fa1f1564d2ed204be0865f2",
+      "commit": "81a31a27608ab3a0f906f0f8402c5668a2cfd604",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "07c5773ca3dfacd65ae2530fe88c5a6232081db6",
+      "commit": "1ec418ac0d64a38c393c015a0598b538d489c5be",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 59,
-    "import_dependency_gaps": 2,
+    "files_total": 69,
+    "import_dependency_gaps": 3,
     "file_extra_in_comparison": 9,
-    "file_missing_from_comparison": 17,
-    "logic_changed": 28,
-    "same": 22,
+    "file_missing_from_comparison": 18,
+    "logic_changed": 16,
+    "same": 31,
     "signature_changed": 3,
-    "symbol_extra_in_comparison": 26,
-    "symbol_missing_from_comparison": 47
+    "symbol_extra_in_comparison": 28,
+    "symbol_missing_from_comparison": 51
   },
   "import_dependency_gaps": [
     {
@@ -33,6 +33,12 @@
       "source_physical": "ileappGUI.py",
       "import_statement": "scripts.tz_offset:tzvalues",
       "missing_logical_path": "scripts/tz_offset.py"
+    },
+    {
+      "source_logical_path": "main_entry.py",
+      "source_physical": "ileapp.py",
+      "import_statement": "scripts.ios_keychain:report_supplied_keychain",
+      "missing_logical_path": "scripts/ios_keychain.py"
     },
     {
       "source_logical_path": "scripts/ccl_leveldb.py",
@@ -384,6 +390,86 @@
       ]
     },
     {
+      "logical_path": "scripts/blackboxprotobuf/__init__.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/__init__.py",
+      "comparison_physical": "scripts/blackboxprotobuf/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/blackboxprotobuf/lib/__init__.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/lib/__init__.py",
+      "comparison_physical": "scripts/blackboxprotobuf/lib/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/blackboxprotobuf/lib/interface.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/lib/interface.py",
+      "comparison_physical": "scripts/blackboxprotobuf/lib/interface.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/blackboxprotobuf/lib/types/__init__.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/lib/types/__init__.py",
+      "comparison_physical": "scripts/blackboxprotobuf/lib/types/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/blackboxprotobuf/lib/types/fixed.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/lib/types/fixed.py",
+      "comparison_physical": "scripts/blackboxprotobuf/lib/types/fixed.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/blackboxprotobuf/lib/types/length_delim.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/lib/types/length_delim.py",
+      "comparison_physical": "scripts/blackboxprotobuf/lib/types/length_delim.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/blackboxprotobuf/lib/types/type_maps.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/lib/types/type_maps.py",
+      "comparison_physical": "scripts/blackboxprotobuf/lib/types/type_maps.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/blackboxprotobuf/lib/types/varint.py",
+      "status": "same",
+      "baseline_physical": "scripts/blackboxprotobuf/lib/types/varint.py",
+      "comparison_physical": "scripts/blackboxprotobuf/lib/types/varint.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/ccl/ccl_android_fcm_queued_messages.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
@@ -555,6 +641,12 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "Context.get_keychain_path",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def get_keychain_path()",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "Context.get_metadata",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "@@def get_metadata(collection)",
@@ -570,6 +662,12 @@
           "qualified_name": "Context.set_installed_os_version",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "@@def set_installed_os_version(os_version)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "Context.set_keychain_path",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def set_keychain_path(keychain_path)",
           "comparison_signature": null
         }
       ]
@@ -750,6 +848,12 @@
           "comparison_signature": "def __init__(self, output_folder, custom_folder_name=...)"
         },
         {
+          "qualified_name": "_deserialize_nska",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _deserialize_nska(data)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "abxread",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
@@ -844,6 +948,12 @@
           "status": "logic_changed",
           "baseline_signature": "def convert_unix_ts_to_utc(ts)",
           "comparison_signature": "def convert_unix_ts_to_utc(ts)"
+        },
+        {
+          "qualified_name": "decode_protobuf",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def decode_protobuf(data, typedef=...)"
         },
         {
           "qualified_name": "generate_hexdump",
@@ -972,6 +1082,12 @@
           "comparison_signature": "def timestampsconv(webkittime)"
         },
         {
+          "qualified_name": "tsv",
+          "status": "logic_changed",
+          "baseline_signature": "def tsv(report_folder, data_headers, data_list, tsvname, source_file=...)",
+          "comparison_signature": "def tsv(report_folder, data_headers, data_list, tsvname, source_file=...)"
+        },
+        {
           "qualified_name": "webkit_timestampsconv",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def webkit_timestampsconv(webkittime)",
@@ -984,6 +1100,16 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/ios_keychain.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/ios_keychain.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/ktx/ios_ktx2png.py",
@@ -1005,82 +1131,10 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "lava_add_module",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_add_module(module_name, module_status, file_count=...)",
-          "comparison_signature": "def lava_add_module(module_name, module_status, file_count=...)"
-        },
-        {
-          "qualified_name": "lava_create_sqlite_table",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_create_sqlite_table(table_name, data)",
-          "comparison_signature": "def lava_create_sqlite_table(table_name, data)"
-        },
-        {
-          "qualified_name": "lava_finalize_output",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_finalize_output(output_path)",
-          "comparison_signature": "def lava_finalize_output(output_path)"
-        },
-        {
-          "qualified_name": "lava_get_full_media_info",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_get_full_media_info(media_ref_id)",
-          "comparison_signature": "def lava_get_full_media_info(media_ref_id)"
-        },
-        {
-          "qualified_name": "lava_get_media_item",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_get_media_item(media_id)",
-          "comparison_signature": "def lava_get_media_item(media_id)"
-        },
-        {
-          "qualified_name": "lava_get_media_references",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_get_media_references(media_ref)",
-          "comparison_signature": "def lava_get_media_references(media_ref)"
-        },
-        {
-          "qualified_name": "lava_insert_sqlite_artifact_link_pattern_to_file",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_artifact_link_pattern_to_file(artifact_regex_id, file_id)",
-          "comparison_signature": "def lava_insert_sqlite_artifact_link_pattern_to_file(artifact_regex_id, file_id)"
-        },
-        {
-          "qualified_name": "lava_insert_sqlite_artifact_search_pattern",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)",
-          "comparison_signature": "def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)"
-        },
-        {
           "qualified_name": "lava_insert_sqlite_data",
           "status": "logic_changed",
           "baseline_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)",
           "comparison_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)"
-        },
-        {
-          "qualified_name": "lava_insert_sqlite_file_path",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_file_path(file_id, file_path)",
-          "comparison_signature": "def lava_insert_sqlite_file_path(file_id, file_path)"
-        },
-        {
-          "qualified_name": "lava_insert_sqlite_media_item",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_media_item(media_item)",
-          "comparison_signature": "def lava_insert_sqlite_media_item(media_item)"
-        },
-        {
-          "qualified_name": "lava_insert_sqlite_media_references",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_media_references(media_references)",
-          "comparison_signature": "def lava_insert_sqlite_media_references(media_references)"
-        },
-        {
-          "qualified_name": "lava_process_artifact",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_process_artifact(category, module_name, artifact_name, data, record_count=..., func_name=..., data_views=..., artifact_icon=..., source_path=...)",
-          "comparison_signature": "def lava_process_artifact(category, module_name, artifact_name, data, record_count=..., func_name=..., data_views=..., artifact_icon=..., source_path=...)"
         }
       ]
     },
@@ -1146,10 +1200,16 @@
           "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons)"
         },
         {
-          "qualified_name": "get_tabler_icon_names",
-          "status": "logic_changed",
-          "baseline_signature": "def get_tabler_icon_names()",
-          "comparison_signature": "def get_tabler_icon_names()"
+          "qualified_name": "insert_sidebar_code",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def insert_sidebar_code(data, sidebar_code, filename)"
+        },
+        {
+          "qualified_name": "stream_insert_sidebar_code",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def stream_insert_sidebar_code(src_path, dest_path, sidebar_code)",
+          "comparison_signature": null
         }
       ]
     },
@@ -1223,6 +1283,16 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/sqlcipher_decrypt.py",
+      "status": "same",
+      "baseline_physical": "scripts/sqlcipher_decrypt.py",
+      "comparison_physical": "scripts/sqlcipher_decrypt.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/test_artifacts/__init__.py",
