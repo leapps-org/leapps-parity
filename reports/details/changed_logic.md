@@ -63,9 +63,11 @@
 
 - module-level logic changed
 - logic changed: `OutputParameters.__init__`
+- only in ileapp: `_batched` — `def _batched(iterable, size)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
+- only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - only in aleapp: `check_internet_connection` — `def check_internet_connection()`
 - only in aleapp: `check_raw_fields` — `def check_raw_fields(latitude, longitude, c)`
 - only in aleapp: `checkabx` — `def checkabx(in_path)`
@@ -110,6 +112,7 @@
 
 - module-level logic changed
 - logic changed: `lava_insert_sqlite_data`
+- only in ileapp: `lava_update_record_count` — `def lava_update_record_count(category, tablename, record_count)`
 
 ### `scripts/modules_to_exclude.py`
 

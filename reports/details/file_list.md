@@ -30,9 +30,11 @@
 | `scripts/chat_rendering.py` | file_missing_from_comparison | `scripts/chat_rendering.py` | `—` |
 | `scripts/ios_keychain.py` | file_missing_from_comparison | `scripts/ios_keychain.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | file_missing_from_comparison | `scripts/ktx/ios_ktx2png.py` | `—` |
+| `scripts/pyinstaller/unifiedlog_binary.py` | file_missing_from_comparison | `scripts/pyinstaller/unifiedlog_binary.py` | `—` |
 | `scripts/test_artifacts/__init__.py` | file_missing_from_comparison | `scripts/test_artifacts/__init__.py` | `—` |
 | `scripts/test_artifacts/image_list.py` | file_missing_from_comparison | `scripts/test_artifacts/image_list.py` | `—` |
 | `scripts/tz_offset.py` | file_missing_from_comparison | `scripts/tz_offset.py` | `—` |
+| `scripts/unifiedlogs.py` | file_missing_from_comparison | `scripts/unifiedlogs.py` | `—` |
 | `aleappGUI.py` | file_extra_in_comparison | `—` | `aleappGUI.py` |
 | `leapp_functions/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/__init__.py` |
 | `leapp_functions/app/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/app/__init__.py` |

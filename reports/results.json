@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-07-27T14:07:12.272710+00:00",
+  "generated_at": "2026-08-03T14:11:19.124578+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "81a31a27608ab3a0f906f0f8402c5668a2cfd604",
+      "commit": "1b9fa0cd5badb534594d37aedbd1a70acd42f1ae",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "1ec418ac0d64a38c393c015a0598b538d489c5be",
+      "commit": "8c89053153d6d2798dc2fce06946b98abd6770b4",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 69,
+    "files_total": 71,
     "import_dependency_gaps": 3,
     "file_extra_in_comparison": 9,
-    "file_missing_from_comparison": 18,
+    "file_missing_from_comparison": 20,
     "logic_changed": 16,
     "same": 31,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 28,
-    "symbol_missing_from_comparison": 51
+    "symbol_missing_from_comparison": 54
   },
   "import_dependency_gaps": [
     {
@@ -848,6 +848,12 @@
           "comparison_signature": "def __init__(self, output_folder, custom_folder_name=...)"
         },
         {
+          "qualified_name": "_batched",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _batched(iterable, size)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "_deserialize_nska",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def _deserialize_nska(data)",
@@ -864,6 +870,12 @@
           "status": "logic_changed",
           "baseline_signature": "def artifact_processor(func)",
           "comparison_signature": "def artifact_processor(func)"
+        },
+        {
+          "qualified_name": "artifact_processor_streaming",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def artifact_processor_streaming(func)",
+          "comparison_signature": null
         },
         {
           "qualified_name": "check_internet_connection",
@@ -1135,6 +1147,12 @@
           "status": "logic_changed",
           "baseline_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)",
           "comparison_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)"
+        },
+        {
+          "qualified_name": "lava_update_record_count",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def lava_update_record_count(category, tablename, record_count)",
+          "comparison_signature": null
         }
       ]
     },
@@ -1173,6 +1191,16 @@
       "status": "same",
       "baseline_physical": "scripts/pyinstaller/hook-plugin_loader.py",
       "comparison_physical": "scripts/pyinstaller/hook-plugin_loader.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/pyinstaller/unifiedlog_binary.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/pyinstaller/unifiedlog_binary.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1318,6 +1346,16 @@
       "logical_path": "scripts/tz_offset.py",
       "status": "file_missing_from_comparison",
       "baseline_physical": "scripts/tz_offset.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/unifiedlogs.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/unifiedlogs.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
