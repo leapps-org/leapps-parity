@@ -57,8 +57,16 @@ def sync_sets(root: Path, self_repo: Path):
     ]
 
 
-def collect(root: Path, self_repo: Path):
+def collect(root: Path, self_repo: Path, skip_repos: set[str] | None = None):
+    skip_repos = skip_repos or set()
     for label, base, lister, dest_sub, dests in sync_sets(root, self_repo):
+        # A set whose canonical source is in an unavailable repo cannot be checked at
+        # all; one whose destination is unavailable is checked for the rest.
+        if any(f"/{r}/" in f"{base}/" for r in skip_repos):
+            continue
+        dests = [d for d in dests if d not in skip_repos]
+        if not dests:
+            continue
         if not base.is_dir():
             yield label, base, None, "missing-canonical-dir"
             continue
@@ -91,18 +99,28 @@ def main() -> int:
                     help="directory containing the repo checkouts "
                          "(default: the parent of this repo)")
     ap.add_argument("--json", action="store_true", help="machine-readable output")
+    ap.add_argument("--skip-missing", action="store_true",
+                    help="skip sets whose repo is not checked out instead of failing. "
+                         "Skips are reported loudly and never counted as in sync")
     args = ap.parse_args()
 
     self_repo = Path(__file__).resolve().parent.parent
     root = (args.root or self_repo.parent).resolve()
 
     missing = [r for r in ALL_REPOS if not (root / r).is_dir()]
-    if missing:
+    if missing and not args.skip_missing:
         print(f"error: no checkout for {', '.join(missing)} under {root}", file=sys.stderr)
-        print("hint: pass --root <dir containing the checkouts>", file=sys.stderr)
+        print("hint: pass --root <dir containing the checkouts>, or --skip-missing",
+              file=sys.stderr)
         return 2
 
-    results = list(collect(root, self_repo))
+    results = list(collect(root, self_repo, skip_repos=set(missing)))
+    if missing:
+        # Loud, because a check that silently covers less than it claims is worse
+        # than no check at all.
+        for repo in missing:
+            print(f"SKIPPED  no {repo} checkout: any set canonical in or synced to "
+                  f"it was NOT verified", file=sys.stderr)
     fatal = [r for r in results if r[3] in ("missing-canonical-dir", "no-canonical-files")]
     problems = [r for r in results if r[3] != "ok"]
 

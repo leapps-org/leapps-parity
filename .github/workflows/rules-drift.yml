@@ -52,14 +52,33 @@ jobs:
         uses: actions/checkout@v4
         with: { repository: abrignoni/DLEAPP, path: DLEAPP, fetch-depth: 1 }
 
+      # LAVA is a private repo in a different owner, so the default GITHUB_TOKEN
+      # cannot read it. Set a LEAPP_SYNC_TOKEN secret with read access to check the
+      # lava- sets too; without it this step is skipped and the check covers only
+      # the leapp- sets, which it reports loudly rather than passing silently.
       - name: Checkout LAVA
+        id: lava
+        continue-on-error: true
         uses: actions/checkout@v4
-        with: { repository: abrignoni/LAVA, path: LAVA, fetch-depth: 1 }
+        with:
+          repository: abrignoni/LAVA
+          path: LAVA
+          fetch-depth: 1
+          token: ${{ secrets.LEAPP_SYNC_TOKEN || github.token }}
+
+      - name: Warn when LAVA could not be checked out
+        if: steps.lava.outcome == 'failure'
+        run: |
+          echo "::warning title=lava- sets not verified::LAVA could not be checked \
+          out, so lava- rules and skills were NOT compared. Set a LEAPP_SYNC_TOKEN \
+          secret with read access to abrignoni/LAVA to cover them."
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Check for rule drift
-        run: python3 leapps-parity/scanner/sync_shared.py --check --root "$GITHUB_WORKSPACE"
+      - name: Check for rule and skill drift
+        run: |
+          python3 leapps-parity/scanner/sync_shared.py \
+            --check --skip-missing --root "$GITHUB_WORKSPACE"
