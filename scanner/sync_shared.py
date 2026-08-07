@@ -107,10 +107,16 @@ def main() -> int:
     self_repo = Path(__file__).resolve().parent.parent
     root = (args.root or self_repo.parent).resolve()
 
-    # A failed actions/checkout still creates its target directory, so an empty dir
-    # is not a checkout. Require the .git entry, which is a file in a worktree and a
-    # directory in a clone.
-    missing = [r for r in ALL_REPOS if not (root / r / ".git").exists()]
+    # A failed actions/checkout leaves both the target directory and a .git behind,
+    # because it runs git init before the fetch that fails. Neither is evidence of a
+    # checkout. Require at least one tracked-looking entry beside .git.
+    def checked_out(repo: str) -> bool:
+        path = root / repo
+        if not path.is_dir():
+            return False
+        return any(child.name != ".git" for child in path.iterdir())
+
+    missing = [r for r in ALL_REPOS if not checked_out(r)]
     if missing and not args.skip_missing:
         print(f"error: no checkout for {', '.join(missing)} under {root}", file=sys.stderr)
         print("hint: pass --root <dir containing the checkouts>, or --skip-missing",
