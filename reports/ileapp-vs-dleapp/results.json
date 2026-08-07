@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-07T05:02:51.435881+00:00",
+  "generated_at": "2026-08-07T05:56:16.804825+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "06fb6314ab916c2df9a26697c3082e5fda76dbc4",
+      "commit": "0dfa5d6967f56729a64a9af0c743139be6d6d5e8",
       "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "3c7d5a43061cd7f0494924137a1debb113aae670",
+      "commit": "6d62cc6178460f99e3053cf72c9c820e4722fcbc",
       "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/dleapp"
     }
   },
@@ -24,8 +24,8 @@
     "logic_changed": 36,
     "same": 23,
     "signature_changed": 1,
-    "symbol_extra_in_comparison": 12,
-    "symbol_missing_from_comparison": 28
+    "symbol_extra_in_comparison": 11,
+    "symbol_missing_from_comparison": 27
   },
   "import_dependency_gaps": [
     {
@@ -1174,18 +1174,6 @@
           "status": "logic_changed",
           "baseline_signature": "def get_tabler_icon_names()",
           "comparison_signature": "def get_tabler_icon_names()"
-        },
-        {
-          "qualified_name": "insert_sidebar_code",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def insert_sidebar_code(data, sidebar_code, filename)"
-        },
-        {
-          "qualified_name": "stream_insert_sidebar_code",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def stream_insert_sidebar_code(src_path, dest_path, sidebar_code)",
-          "comparison_signature": null
         }
       ]
     },

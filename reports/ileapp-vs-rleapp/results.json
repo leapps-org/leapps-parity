@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-07T05:02:47.949919+00:00",
+  "generated_at": "2026-08-07T05:56:10.348998+00:00",
   "baseline": "ileapp",
   "comparison": "rleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "06fb6314ab916c2df9a26697c3082e5fda76dbc4",
+      "commit": "0dfa5d6967f56729a64a9af0c743139be6d6d5e8",
       "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/ileapp"
     },
     "rleapp": {
       "url": "https://github.com/abrignoni/RLEAPP.git",
       "branch": "main",
-      "commit": "fc2e36891ad57e411cceab6422fb3fe8aafd8227",
+      "commit": "27312405d6d72790e5b868ecfc3c7a0f48b27aa7",
       "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/rleapp"
     }
   },
@@ -20,11 +20,11 @@
     "files_total": 63,
     "import_dependency_gaps": 11,
     "expected_repo_specific": 30,
-    "logic_changed": 34,
+    "logic_changed": 33,
     "same": 22,
     "signature_changed": 1,
-    "symbol_extra_in_comparison": 7,
-    "symbol_missing_from_comparison": 28
+    "symbol_extra_in_comparison": 6,
+    "symbol_missing_from_comparison": 27
   },
   "import_dependency_gaps": [
     {
@@ -995,24 +995,6 @@
           "status": "logic_changed",
           "baseline_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)",
           "comparison_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)"
-        },
-        {
-          "qualified_name": "generate_report",
-          "status": "logic_changed",
-          "baseline_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)",
-          "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)"
-        },
-        {
-          "qualified_name": "insert_sidebar_code",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def insert_sidebar_code(data, sidebar_code, filename)"
-        },
-        {
-          "qualified_name": "stream_insert_sidebar_code",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def stream_insert_sidebar_code(src_path, dest_path, sidebar_code)",
-          "comparison_signature": null
         }
       ]
     },

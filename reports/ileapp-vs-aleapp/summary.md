@@ -1,15 +1,15 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1786079004.svg)
+![Parity summary](parity.1786082167.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-07T05:03:24.492736+00:00
+- **Generated**: 2026-08-07T05:56:07.116613+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `06fb6314ab91` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `805e7d424bb5` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `0dfa5d6967f5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `215eebadf228` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
@@ -37,8 +37,8 @@
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 56 |
-| symbol_extra_in_comparison | 28 |
+| symbol_missing_from_comparison | 55 |
+| symbol_extra_in_comparison | 23 |
 | signature_changed | 3 |
 | logic_changed | 20 |
 
@@ -68,10 +68,10 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (45 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (41 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (2 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
-| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (4 symbol diffs)
+| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `leapp_functions/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/__init__.py` |

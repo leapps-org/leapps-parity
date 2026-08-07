@@ -1,15 +1,15 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1786078971.svg)
+![Parity summary](parity.1786082176.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-07T05:02:51.435881+00:00
+- **Generated**: 2026-08-07T05:56:16.804825+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `dleapp`
 
-- **ileapp**: `06fb6314ab91` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **dleapp**: `3c7d5a43061c` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
+- **ileapp**: `0dfa5d6967f5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **dleapp**: `6d62cc617846` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
 
 ## Overall counts
 
@@ -37,8 +37,8 @@
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 28 |
-| symbol_extra_in_comparison | 12 |
+| symbol_missing_from_comparison | 27 |
+| symbol_extra_in_comparison | 11 |
 | signature_changed | 1 |
 | logic_changed | 36 |
 
@@ -78,7 +78,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (24 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (15 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
-| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (5 symbol diffs)
+| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (3 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |

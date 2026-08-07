@@ -86,9 +86,6 @@
 
 - module-level logic changed
 - logic changed: `create_index_html`
-- logic changed: `generate_report`
-- only in vleapp: `insert_sidebar_code` — `def insert_sidebar_code(data, sidebar_code, filename)`
-- only in ileapp: `stream_insert_sidebar_code` — `def stream_insert_sidebar_code(src_path, dest_path, sidebar_code)`
 
 ### `scripts/search_files.py`
 

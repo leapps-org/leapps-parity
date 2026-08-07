@@ -39,7 +39,9 @@ comparison defines. It is not about extra files. Classified by hand on 2026-08-0
   key-input plumbing. All legitimate.
 - `insert_sidebar_code` appearing as extra in all four siblings was the inverted tell of
   real drift: iLEAPP had *replaced* it with a streaming version to fix a MemoryError on
-  multi-GB pages (issue #1746), and no sibling got the fix.
+  multi-GB pages (issue #1746), and no sibling got the fix. **Ported and closed
+  2026-08-07**; the scan reports zero sidebar symbol diffs across all four pairs, which
+  is what closing a finding should look like here.
 
 The lesson generalises: a symbol extra in the comparison can mean the **baseline renamed
 or replaced it**, so read the paired missing-symbol diff in the same file before

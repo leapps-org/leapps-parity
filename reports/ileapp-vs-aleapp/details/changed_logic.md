@@ -78,8 +78,6 @@
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
 - only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
-- only in aleapp: `check_internet_connection` — `def check_internet_connection()`
-- only in aleapp: `check_raw_fields` — `def check_raw_fields(latitude, longitude, c)`
 - only in aleapp: `checkabx` — `def checkabx(in_path)`
 - only in ileapp: `convert_bytes_to_unit` — `def convert_bytes_to_unit(size)`
 - only in ileapp: `convert_cocoa_core_data_ts_to_utc` — `def convert_cocoa_core_data_ts_to_utc(cocoa_core_data_ts)`
@@ -101,7 +99,6 @@
 - only in aleapp: `get_file_path_list_checking_uid` — `def get_file_path_list_checking_uid(files_found, filename, position, skip=...)`
 - only in ileapp: `get_plist_content` — `def get_plist_content(data)`
 - only in ileapp: `get_plist_file_content` — `def get_plist_file_content(file_path)`
-- only in aleapp: `get_raw_fields` — `def get_raw_fields(latitude, longitude, c, conn)`
 - only in ileapp: `get_resolution_for_model_id` — `def get_resolution_for_model_id(model_id)`
 - only in aleapp: `get_results_with_extra_sourcepath_if_needed` — `def get_results_with_extra_sourcepath_if_needed(path_list, query, data_headers)`
 - logic changed: `get_sqlite_db_records`
@@ -110,7 +107,6 @@
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`
 - only in ileapp: `lava_only_info` — `def lava_only_info(category, artifact_name, table_name, records)`
-- only in aleapp: `store_raw_fields` — `def store_raw_fields(latitude_value, longitude_value, road_value, city_value, postcode_value, country_value, c, conn)`
 - only in ileapp: `strings` — `def strings(data)`
 - only in ileapp: `strings_raw` — `def strings_raw(data)`
 - only in aleapp: `timestampsconv` — `def timestampsconv(webkittime)`
@@ -131,8 +127,6 @@
 ### `scripts/report.py`
 
 - module-level logic changed
-- only in aleapp: `insert_sidebar_code` — `def insert_sidebar_code(data, sidebar_code, filename)`
-- only in ileapp: `stream_insert_sidebar_code` — `def stream_insert_sidebar_code(src_path, dest_path, sidebar_code)`
 
 ### `scripts/search_files.py`
 

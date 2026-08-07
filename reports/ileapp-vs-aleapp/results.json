@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-07T05:03:24.492736+00:00",
+  "generated_at": "2026-08-07T05:56:07.116613+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "06fb6314ab916c2df9a26697c3082e5fda76dbc4",
+      "commit": "0dfa5d6967f56729a64a9af0c743139be6d6d5e8",
       "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "805e7d424bb543983bbd83f87991711d9e9f0ea0",
+      "commit": "215eebadf228ab028d1be8faa570716028d8b5ae",
       "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/aleapp"
     }
   },
@@ -24,8 +24,8 @@
     "logic_changed": 20,
     "same": 31,
     "signature_changed": 3,
-    "symbol_extra_in_comparison": 28,
-    "symbol_missing_from_comparison": 56
+    "symbol_extra_in_comparison": 23,
+    "symbol_missing_from_comparison": 55
   },
   "import_dependency_gaps": [
     {
@@ -905,18 +905,6 @@
           "comparison_signature": null
         },
         {
-          "qualified_name": "check_internet_connection",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def check_internet_connection()"
-        },
-        {
-          "qualified_name": "check_raw_fields",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def check_raw_fields(latitude, longitude, c)"
-        },
-        {
           "qualified_name": "checkabx",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
@@ -1043,12 +1031,6 @@
           "comparison_signature": null
         },
         {
-          "qualified_name": "get_raw_fields",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def get_raw_fields(latitude, longitude, c, conn)"
-        },
-        {
           "qualified_name": "get_resolution_for_model_id",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def get_resolution_for_model_id(model_id)",
@@ -1095,12 +1077,6 @@
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def lava_only_info(category, artifact_name, table_name, records)",
           "comparison_signature": null
-        },
-        {
-          "qualified_name": "store_raw_fields",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def store_raw_fields(latitude_value, longitude_value, road_value, city_value, postcode_value, country_value, c, conn)"
         },
         {
           "qualified_name": "strings",
@@ -1263,18 +1239,6 @@
           "status": "signature_changed",
           "baseline_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)",
           "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons)"
-        },
-        {
-          "qualified_name": "insert_sidebar_code",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def insert_sidebar_code(data, sidebar_code, filename)"
-        },
-        {
-          "qualified_name": "stream_insert_sidebar_code",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def stream_insert_sidebar_code(src_path, dest_path, sidebar_code)",
-          "comparison_signature": null
         }
       ]
     },
