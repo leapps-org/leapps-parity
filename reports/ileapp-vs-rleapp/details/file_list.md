@@ -1,0 +1,69 @@
+# All compared files
+
+**ileapp** (baseline) vs **rleapp** (comparison)
+
+| Logical path | Status | Baseline | Comparison |
+|---|---|---|---|
+| `main_entry.py` | logic_changed | `ileapp.py` | `rleapp.py` |
+| `main_gui.py` | logic_changed | `ileappGUI.py` | `rleappGUI.py` |
+| `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` |
+| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` |
+| `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` |
+| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` |
+| `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
+| `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
+| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
+| `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
+| `scripts/alternate_artifacts/appInventory.py` | expected_repo_specific | `scripts/alternate_artifacts/appInventory.py` | `—` |
+| `scripts/blackboxprotobuf/__init__.py` | expected_repo_specific | `scripts/blackboxprotobuf/__init__.py` | `—` |
+| `scripts/blackboxprotobuf/lib/__init__.py` | expected_repo_specific | `scripts/blackboxprotobuf/lib/__init__.py` | `—` |
+| `scripts/blackboxprotobuf/lib/interface.py` | expected_repo_specific | `scripts/blackboxprotobuf/lib/interface.py` | `—` |
+| `scripts/blackboxprotobuf/lib/types/__init__.py` | expected_repo_specific | `scripts/blackboxprotobuf/lib/types/__init__.py` | `—` |
+| `scripts/blackboxprotobuf/lib/types/fixed.py` | expected_repo_specific | `scripts/blackboxprotobuf/lib/types/fixed.py` | `—` |
+| `scripts/blackboxprotobuf/lib/types/length_delim.py` | expected_repo_specific | `scripts/blackboxprotobuf/lib/types/length_delim.py` | `—` |
+| `scripts/blackboxprotobuf/lib/types/type_maps.py` | expected_repo_specific | `scripts/blackboxprotobuf/lib/types/type_maps.py` | `—` |
+| `scripts/blackboxprotobuf/lib/types/varint.py` | expected_repo_specific | `scripts/blackboxprotobuf/lib/types/varint.py` | `—` |
+| `scripts/ccl/ccl_bplist.py` | expected_repo_specific | `scripts/ccl/ccl_bplist.py` | `—` |
+| `scripts/ccl/ccl_segb1.py` | expected_repo_specific | `scripts/ccl/ccl_segb1.py` | `—` |
+| `scripts/ccl/ccl_segb2.py` | expected_repo_specific | `scripts/ccl/ccl_segb2.py` | `—` |
+| `scripts/ccl_leveldb.py` | expected_repo_specific | `scripts/ccl_leveldb.py` | `—` |
+| `scripts/ccl_segb/__init__.py` | expected_repo_specific | `scripts/ccl_segb/__init__.py` | `—` |
+| `scripts/ccl_segb/ccl_segb.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb.py` | `—` |
+| `scripts/ccl_segb/ccl_segb1.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb1.py` | `—` |
+| `scripts/ccl_segb/ccl_segb2.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb2.py` | `—` |
+| `scripts/ccl_segb/ccl_segb_common.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb_common.py` | `—` |
+| `scripts/ccl_simplesnappy.py` | expected_repo_specific | `scripts/ccl_simplesnappy.py` | `—` |
+| `scripts/chat_rendering.py` | expected_repo_specific | `scripts/chat_rendering.py` | `—` |
+| `scripts/ios_keychain.py` | expected_repo_specific | `scripts/ios_keychain.py` | `—` |
+| `scripts/ktx/ios_ktx2png.py` | expected_repo_specific | `scripts/ktx/ios_ktx2png.py` | `—` |
+| `scripts/pyinstaller/unifiedlog_binary.py` | expected_repo_specific | `scripts/pyinstaller/unifiedlog_binary.py` | `—` |
+| `scripts/realm_parser.py` | expected_repo_specific | `scripts/realm_parser.py` | `—` |
+| `scripts/sqlcipher_decrypt.py` | expected_repo_specific | `scripts/sqlcipher_decrypt.py` | `—` |
+| `scripts/test_artifacts/__init__.py` | expected_repo_specific | `scripts/test_artifacts/__init__.py` | `—` |
+| `scripts/test_artifacts/image_list.py` | expected_repo_specific | `scripts/test_artifacts/image_list.py` | `—` |
+| `scripts/tz_offset.py` | expected_repo_specific | `scripts/tz_offset.py` | `—` |
+| `scripts/unifiedlogs.py` | expected_repo_specific | `scripts/unifiedlogs.py` | `—` |
+| `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
+| `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
+| `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
+| `leapp_functions/data_sources/json_files.py` | same | `leapp_functions/data_sources/json_files.py` | `leapp_functions/data_sources/json_files.py` |
+| `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
+| `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
+| `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
+| `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
+| `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |
+| `scripts/filetypes/archive.py` | same | `scripts/filetypes/archive.py` | `scripts/filetypes/archive.py` |
+| `scripts/filetypes/audio.py` | same | `scripts/filetypes/audio.py` | `scripts/filetypes/audio.py` |
+| `scripts/filetypes/base.py` | same | `scripts/filetypes/base.py` | `scripts/filetypes/base.py` |
+| `scripts/filetypes/document.py` | same | `scripts/filetypes/document.py` | `scripts/filetypes/document.py` |
+| `scripts/filetypes/font.py` | same | `scripts/filetypes/font.py` | `scripts/filetypes/font.py` |
+| `scripts/filetypes/image.py` | same | `scripts/filetypes/image.py` | `scripts/filetypes/image.py` |
+| `scripts/filetypes/isobmff.py` | same | `scripts/filetypes/isobmff.py` | `scripts/filetypes/isobmff.py` |
+| `scripts/filetypes/text.py` | same | `scripts/filetypes/text.py` | `scripts/filetypes/text.py` |
+| `scripts/filetypes/video.py` | same | `scripts/filetypes/video.py` | `scripts/filetypes/video.py` |
+| `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
+| `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
+| `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
+| `scripts/pyinstaller/hook-plugin_loader.py` | same | `scripts/pyinstaller/hook-plugin_loader.py` | `scripts/pyinstaller/hook-plugin_loader.py` |

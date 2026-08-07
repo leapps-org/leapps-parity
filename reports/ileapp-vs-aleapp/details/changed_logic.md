@@ -3,9 +3,19 @@
 ### `main_entry.py`
 
 - module-level logic changed
-- logic changed: `create_profile`
 - logic changed: `main`
 - logic changed: `validate_args`
+
+### `main_gui.py`
+
+- module-level logic changed
+- logic changed: `ValidateInput`
+- logic changed: `case_data`
+- only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `filter_modules`
+- logic changed: `pickModules`
+- logic changed: `process`
+- only in ileapp: `select_keychain` — `def select_keychain()`
 
 ### `scripts/alternate_artifacts/appInventory.py`
 

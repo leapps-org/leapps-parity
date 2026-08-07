@@ -1,15 +1,15 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1785766279.svg)
+![Parity summary](parity.1786079004.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-03T14:11:19.124578+00:00
+- **Generated**: 2026-08-07T05:03:24.492736+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `1b9fa0cd5bad` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `8c89053153d6` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `06fb6314ab91` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `805e7d424bb5` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
@@ -17,10 +17,10 @@
 |---|---:|
 | Files scanned (union) | 71 |
 | Same | 31 |
-| Changed (logic/file) | 11 |
-| Missing from comparison | 20 |
-| Extra in comparison | 9 |
-| Expected repo-specific | 0 |
+| Changed (logic/file) | 12 |
+| Missing from comparison | 0 |
+| Extra in comparison | 6 |
+| Expected repo-specific | 22 |
 | Parse errors | 0 |
 | Import dependency gaps | 3 |
 
@@ -29,18 +29,18 @@
 | Status | Count |
 |---|---:|
 | same | 31 |
-| logic_changed | 11 |
-| file_missing_from_comparison | 20 |
-| file_extra_in_comparison | 9 |
+| logic_changed | 12 |
+| file_extra_in_comparison | 6 |
+| expected_repo_specific | 22 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 54 |
+| symbol_missing_from_comparison | 56 |
 | symbol_extra_in_comparison | 28 |
 | signature_changed | 3 |
-| logic_changed | 16 |
+| logic_changed | 20 |
 
 ## All compared files
 
@@ -54,15 +54,16 @@ Baseline files that import modules missing from the comparison repo (for example
 
 | Baseline file | Import | Missing in comparison |
 |---|---|---|
-| `ileappGUI.py` | `scripts.tz_offset:tzvalues` | `scripts/tz_offset.py` |
 | `main_entry.py` | `scripts.ios_keychain:report_supplied_keychain` | `scripts/ios_keychain.py` |
+| `main_gui.py` | `scripts.tz_offset:tzvalues` | `scripts/tz_offset.py` |
 | `scripts/ccl_leveldb.py` | `scripts.ccl_simplesnappy` | `scripts/ccl_simplesnappy.py` |
 
 ## Top mismatches
 
 | Logical path | Status | Baseline file | Comparison file |
 |---|---|---|---|
-| `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` | (4 symbol diffs)
+| `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` | (3 symbol diffs)
+| `main_gui.py` | logic_changed | `ileappGUI.py` | `aleappGUI.py` | (7 symbol diffs)
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` | (17 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
@@ -73,28 +74,33 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (4 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
-| `ileappGUI.py` | file_missing_from_comparison | `ileappGUI.py` | `—` |
-| `scripts/ccl_leveldb.py` | file_missing_from_comparison | `scripts/ccl_leveldb.py` | `—` |
-| `leapp_functions/parsers/apple_atx.py` | file_missing_from_comparison | `leapp_functions/parsers/apple_atx.py` | `—` |
-| `scripts/ccl/ccl_bplist.py` | file_missing_from_comparison | `scripts/ccl/ccl_bplist.py` | `—` |
-| `scripts/ccl/ccl_segb1.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb1.py` | `—` |
-| `scripts/ccl/ccl_segb2.py` | file_missing_from_comparison | `scripts/ccl/ccl_segb2.py` | `—` |
-| `scripts/ccl_segb/__init__.py` | file_missing_from_comparison | `scripts/ccl_segb/__init__.py` | `—` |
-| `scripts/ccl_segb/ccl_segb.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb.py` | `—` |
-| `scripts/ccl_segb/ccl_segb1.py` | file_missing_from_comparison | `scripts/ccl_segb/ccl_segb1.py` | `—` |
+| `leapp_functions/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/__init__.py` |
+| `leapp_functions/app/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/app/__init__.py` |
+| `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
+| `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
+| `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
+| `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
 
 ## Changed logic files
 
-11 file(s). See [details/changed_logic.md](details/changed_logic.md).
+12 file(s). See [details/changed_logic.md](details/changed_logic.md).
 
 <details>
 <summary>Preview</summary>
 
 ### `main_entry.py`
 - module-level logic changed
-- logic changed: `create_profile`
 - logic changed: `main`
 - logic changed: `validate_args`
+### `main_gui.py`
+- module-level logic changed
+- logic changed: `ValidateInput`
+- logic changed: `case_data`
+- only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `filter_modules`
+- logic changed: `pickModules`
+- logic changed: `process`
+- only in ileapp: `select_keychain` — `def select_keychain()`
 ### `scripts/alternate_artifacts/appInventory.py`
 - module-level logic changed
 - only in ileapp: `_build_guid_map` — `def _build_guid_map(seeker)`
@@ -122,69 +128,53 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in aleapp: `ArtifactHtmlReport.add_chat_invisble` — `def add_chat_invisble(self, id, text)`
 - only in aleapp: `ArtifactHtmlReport.add_chat_window` — `def add_chat_window(self, head, body)`
 - only in aleapp: `ArtifactHtmlReport.add_heat_map` — `def add_heat_map(self, json)`
-- only in aleapp: `ArtifactHtmlReport.add_image_file` — `def add_image_file(self, param, param1, param2, secondImage=...)`
-- only in aleapp: `ArtifactHtmlReport.add_json_to_artifact` — `def add_json_to_artifact(self, param, param1, hidden=..., idJ=..., gcm=...)`
-- only in aleapp: `ArtifactHtmlReport.add_map` — `def add_map(self, param)`
-- only in aleapp: `ArtifactHtmlReport.add_timeline` — `def add_timeline(self, id, dataDict)`
-- only in aleapp: `ArtifactHtmlReport.add_timeline_script` — `def add_timeline_script(self)`
-- only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
-### `scripts/context.py`
-- module-level logic changed
 
 </details>
 
 ## Missing files
 
-20 file(s). See [details/missing_files.md](details/missing_files.md).
+0 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
-- `ileappGUI.py` (baseline: `ileappGUI.py`)
-- `leapp_functions/parsers/apple_atx.py` (baseline: `leapp_functions/parsers/apple_atx.py`)
-- `scripts/ccl/ccl_bplist.py` (baseline: `scripts/ccl/ccl_bplist.py`)
-- `scripts/ccl/ccl_segb1.py` (baseline: `scripts/ccl/ccl_segb1.py`)
-- `scripts/ccl/ccl_segb2.py` (baseline: `scripts/ccl/ccl_segb2.py`)
-- `scripts/ccl_leveldb.py` (baseline: `scripts/ccl_leveldb.py`)
-- `scripts/ccl_segb/__init__.py` (baseline: `scripts/ccl_segb/__init__.py`)
-- `scripts/ccl_segb/ccl_segb.py` (baseline: `scripts/ccl_segb/ccl_segb.py`)
-- `scripts/ccl_segb/ccl_segb1.py` (baseline: `scripts/ccl_segb/ccl_segb1.py`)
-- `scripts/ccl_segb/ccl_segb2.py` (baseline: `scripts/ccl_segb/ccl_segb2.py`)
-- `scripts/ccl_segb/ccl_segb_common.py` (baseline: `scripts/ccl_segb/ccl_segb_common.py`)
-- `scripts/ccl_simplesnappy.py` (baseline: `scripts/ccl_simplesnappy.py`)
-- `scripts/chat_rendering.py` (baseline: `scripts/chat_rendering.py`)
-- `scripts/ios_keychain.py` (baseline: `scripts/ios_keychain.py`)
-- `scripts/ktx/ios_ktx2png.py` (baseline: `scripts/ktx/ios_ktx2png.py`)
-- `scripts/pyinstaller/unifiedlog_binary.py` (baseline: `scripts/pyinstaller/unifiedlog_binary.py`)
-- `scripts/test_artifacts/__init__.py` (baseline: `scripts/test_artifacts/__init__.py`)
-- `scripts/test_artifacts/image_list.py` (baseline: `scripts/test_artifacts/image_list.py`)
-- `scripts/tz_offset.py` (baseline: `scripts/tz_offset.py`)
-- `scripts/unifiedlogs.py` (baseline: `scripts/unifiedlogs.py`)
+_None._
 
 </details>
 
 ## Extra files
 
-9 file(s). See [details/extra_files.md](details/extra_files.md).
+6 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
 
-- `aleappGUI.py` (comparison: `aleappGUI.py`)
 - `leapp_functions/__init__.py` (comparison: `leapp_functions/__init__.py`)
 - `leapp_functions/app/__init__.py` (comparison: `leapp_functions/app/__init__.py`)
+- `leapp_functions/parsers/apple_atx.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_android_fcm_queued_messages.py` (comparison: `scripts/ccl/ccl_android_fcm_queued_messages.py`)
+- `scripts/ccl/ccl_bplist.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_leveldb.py` (comparison: `scripts/ccl/ccl_leveldb.py`)
 - `scripts/ccl/ccl_protobuff.py` (comparison: `scripts/ccl/ccl_protobuff.py`)
+- `scripts/ccl/ccl_segb1.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl/ccl_segb2.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_simplesnappy.py` (comparison: `scripts/ccl/ccl_simplesnappy.py`)
-- `scripts/geo_utils.py` (comparison: `scripts/geo_utils.py`)
-- `scripts/googleKeepNotes.py` (comparison: `scripts/googleKeepNotes.py`)
+- `scripts/ccl_leveldb.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/__init__.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb1.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb2.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb_common.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_simplesnappy.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
+- `scripts/googleKeepNotes.py` _(expected repo-specific)_ (comparison: `scripts/googleKeepNotes.py`)
 
 </details>
 
 ## Expected repo-specific files
 
-0 file(s).
+22 file(s).
 
 ## Parse errors
 

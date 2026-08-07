@@ -67,6 +67,12 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Directory for cloned repos (default: .work/repos)",
     )
+    parser.add_argument(
+        "--out-dir",
+        default=None,
+        help="Report output directory "
+             "(default: <output_dir>/<baseline>-vs-<comparison>)",
+    )
     return parser
 
 
@@ -116,7 +122,12 @@ def main(argv: list[str] | None = None) -> int:
 
     result = run_comparison(config, baseline_checkout, comparison_checkout)
 
-    out_dir = config.output_dir
+    # One directory per pair, so scanning several pairs does not overwrite earlier
+    # runs. Pass --out-dir to override.
+    if args.out_dir:
+        out_dir = Path(args.out_dir)
+    else:
+        out_dir = config.output_dir / f"{baseline_name}-vs-{comparison_name}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     results_path = out_dir / "results.json"

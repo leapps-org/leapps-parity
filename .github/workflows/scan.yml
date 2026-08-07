@@ -26,8 +26,17 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run parity scanner
+        # The scanner is pairwise, so loop iLEAPP against each sibling. iLEAPP is the
+        # baseline because shared infrastructure lands there first, which makes
+        # "missing from the comparison" the signal worth reading. Each pair writes to
+        # reports/<baseline>-vs-<comparison>/ so runs do not overwrite each other.
         run: |
-          python -m scanner.run --verbose
+          set -e
+          for comparison in aleapp rleapp vleapp dleapp; do
+            echo "::group::ileapp vs $comparison"
+            python -m scanner.run --comparison "$comparison" --verbose
+            echo "::endgroup::"
+          done
 
       - name: Commit updated reports
         run: |

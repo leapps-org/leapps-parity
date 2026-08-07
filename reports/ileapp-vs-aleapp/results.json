@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-08-03T14:11:19.124578+00:00",
+  "generated_at": "2026-08-07T05:03:24.492736+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "1b9fa0cd5badb534594d37aedbd1a70acd42f1ae",
-      "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
+      "commit": "06fb6314ab916c2df9a26697c3082e5fda76dbc4",
+      "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "8c89053153d6d2798dc2fce06946b98abd6770b4",
-      "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
+      "commit": "805e7d424bb543983bbd83f87991711d9e9f0ea0",
+      "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
     "files_total": 71,
     "import_dependency_gaps": 3,
-    "file_extra_in_comparison": 9,
-    "file_missing_from_comparison": 20,
-    "logic_changed": 16,
+    "expected_repo_specific": 22,
+    "file_extra_in_comparison": 6,
+    "logic_changed": 20,
     "same": 31,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 28,
-    "symbol_missing_from_comparison": 54
+    "symbol_missing_from_comparison": 56
   },
   "import_dependency_gaps": [
-    {
-      "source_logical_path": "ileappGUI.py",
-      "source_physical": "ileappGUI.py",
-      "import_statement": "scripts.tz_offset:tzvalues",
-      "missing_logical_path": "scripts/tz_offset.py"
-    },
     {
       "source_logical_path": "main_entry.py",
       "source_physical": "ileapp.py",
       "import_statement": "scripts.ios_keychain:report_supplied_keychain",
       "missing_logical_path": "scripts/ios_keychain.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "scripts.tz_offset:tzvalues",
+      "missing_logical_path": "scripts/tz_offset.py"
     },
     {
       "source_logical_path": "scripts/ccl_leveldb.py",
@@ -48,26 +48,6 @@
     }
   ],
   "files": [
-    {
-      "logical_path": "aleappGUI.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "aleappGUI.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "ileappGUI.py",
-      "status": "file_missing_from_comparison",
-      "baseline_physical": "ileappGUI.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
     {
       "logical_path": "leapp_functions/__init__.py",
       "status": "file_extra_in_comparison",
@@ -150,7 +130,7 @@
     },
     {
       "logical_path": "leapp_functions/parsers/apple_atx.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "leapp_functions/parsers/apple_atx.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -168,12 +148,6 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "create_profile",
-          "status": "logic_changed",
-          "baseline_signature": "def create_profile(plugins, path)",
-          "comparison_signature": "def create_profile(plugins, path)"
-        },
-        {
           "qualified_name": "crunch_artifacts",
           "status": "signature_changed",
           "baseline_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=...)",
@@ -190,6 +164,59 @@
           "status": "logic_changed",
           "baseline_signature": "def validate_args(args)",
           "comparison_signature": "def validate_args(args)"
+        }
+      ]
+    },
+    {
+      "logical_path": "main_gui.py",
+      "status": "logic_changed",
+      "baseline_physical": "ileappGUI.py",
+      "comparison_physical": "aleappGUI.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "ValidateInput",
+          "status": "logic_changed",
+          "baseline_signature": "def ValidateInput()",
+          "comparison_signature": "def ValidateInput()"
+        },
+        {
+          "qualified_name": "case_data",
+          "status": "logic_changed",
+          "baseline_signature": "def case_data()",
+          "comparison_signature": "def case_data()"
+        },
+        {
+          "qualified_name": "clear_keychain",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def clear_keychain()",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "filter_modules",
+          "status": "logic_changed",
+          "baseline_signature": "def filter_modules(*args)",
+          "comparison_signature": "def filter_modules(*args)"
+        },
+        {
+          "qualified_name": "pickModules",
+          "status": "logic_changed",
+          "baseline_signature": "def pickModules()",
+          "comparison_signature": "def pickModules()"
+        },
+        {
+          "qualified_name": "process",
+          "status": "logic_changed",
+          "baseline_signature": "def process(casedata)",
+          "comparison_signature": "def process(casedata)"
+        },
+        {
+          "qualified_name": "select_keychain",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def select_keychain()",
+          "comparison_signature": null
         }
       ]
     },
@@ -481,7 +508,7 @@
     },
     {
       "logical_path": "scripts/ccl/ccl_bplist.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl/ccl_bplist.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -511,7 +538,7 @@
     },
     {
       "logical_path": "scripts/ccl/ccl_segb1.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl/ccl_segb1.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -521,7 +548,7 @@
     },
     {
       "logical_path": "scripts/ccl/ccl_segb2.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl/ccl_segb2.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -541,7 +568,7 @@
     },
     {
       "logical_path": "scripts/ccl_leveldb.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_leveldb.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -551,7 +578,7 @@
     },
     {
       "logical_path": "scripts/ccl_segb/__init__.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/__init__.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -561,7 +588,7 @@
     },
     {
       "logical_path": "scripts/ccl_segb/ccl_segb.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/ccl_segb.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -571,7 +598,7 @@
     },
     {
       "logical_path": "scripts/ccl_segb/ccl_segb1.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/ccl_segb1.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -581,7 +608,7 @@
     },
     {
       "logical_path": "scripts/ccl_segb/ccl_segb2.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/ccl_segb2.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -591,7 +618,7 @@
     },
     {
       "logical_path": "scripts/ccl_segb/ccl_segb_common.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/ccl_segb_common.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -601,7 +628,7 @@
     },
     {
       "logical_path": "scripts/ccl_simplesnappy.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_simplesnappy.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -611,7 +638,7 @@
     },
     {
       "logical_path": "scripts/chat_rendering.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/chat_rendering.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -794,7 +821,7 @@
     },
     {
       "logical_path": "scripts/geo_utils.py",
-      "status": "file_extra_in_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": null,
       "comparison_physical": "scripts/geo_utils.py",
       "baseline_parse_error": null,
@@ -804,7 +831,7 @@
     },
     {
       "logical_path": "scripts/googleKeepNotes.py",
-      "status": "file_extra_in_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": null,
       "comparison_physical": "scripts/googleKeepNotes.py",
       "baseline_parse_error": null,
@@ -1115,7 +1142,7 @@
     },
     {
       "logical_path": "scripts/ios_keychain.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ios_keychain.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -1125,7 +1152,7 @@
     },
     {
       "logical_path": "scripts/ktx/ios_ktx2png.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/ktx/ios_ktx2png.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -1198,8 +1225,18 @@
     },
     {
       "logical_path": "scripts/pyinstaller/unifiedlog_binary.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/pyinstaller/unifiedlog_binary.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/realm_parser.py",
+      "status": "expected_repo_specific",
+      "baseline_physical": "scripts/realm_parser.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
@@ -1324,7 +1361,7 @@
     },
     {
       "logical_path": "scripts/test_artifacts/__init__.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/test_artifacts/__init__.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -1334,7 +1371,7 @@
     },
     {
       "logical_path": "scripts/test_artifacts/image_list.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/test_artifacts/image_list.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -1344,7 +1381,7 @@
     },
     {
       "logical_path": "scripts/tz_offset.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/tz_offset.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
@@ -1354,7 +1391,7 @@
     },
     {
       "logical_path": "scripts/unifiedlogs.py",
-      "status": "file_missing_from_comparison",
+      "status": "expected_repo_specific",
       "baseline_physical": "scripts/unifiedlogs.py",
       "comparison_physical": null,
       "baseline_parse_error": null,

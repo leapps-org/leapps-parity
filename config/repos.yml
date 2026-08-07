@@ -9,8 +9,19 @@ repos:
   aleapp:
     url: https://github.com/abrignoni/aLEAPP.git
     baseline: false
+  rleapp:
+    url: https://github.com/abrignoni/RLEAPP.git
+    baseline: false
+  vleapp:
+    url: https://github.com/abrignoni/VLEAPP.git
+    baseline: false
+  dleapp:
+    url: https://github.com/abrignoni/DLEAPP.git
+    baseline: false
 
-# Default comparison pair (overridable via CLI)
+# Default comparison pair (overridable via CLI). The scanner is pairwise: one run
+# compares one baseline against one comparison. CI loops iLEAPP against each of the
+# other four, since iLEAPP is where shared infrastructure lands first.
 default_baseline: ileapp
 default_comparison: aleapp
 
@@ -29,15 +40,79 @@ exclude:
   - "__pycache__/**"
   - ".venv/**"
 
-# Map repo-specific entry filenames to a shared logical path for comparison
+# Map repo-specific entry filenames to a shared logical path for comparison.
+# The GUI entry points are aliased too, or every pair reports them as one missing
+# and one extra file.
 path_aliases:
   ileapp.py: main_entry.py
   aleapp.py: main_entry.py
+  rleapp.py: main_entry.py
+  vleapp.py: main_entry.py
+  dleapp.py: main_entry.py
+  ileappGUI.py: main_gui.py
+  aleappGUI.py: main_gui.py
+  rleappGUI.py: main_gui.py
+  vleappGUI.py: main_gui.py
+  dleappGUI.py: main_gui.py
 
-# Files expected only in a given repo (not parity failures)
+# Files expected only in a given repo (not parity failures).
+# Verified against the checkouts on 2026-08-07; RLEAPP has no scripts/ files that
+# iLEAPP lacks, so it needs no entry.
 expected_repo_specific:
   aleapp:
-    - "scripts/example_android.py"
+    - "scripts/geo_utils.py"
+    - "scripts/googleKeepNotes.py"
+  vleapp:
+    - "scripts/report_icons.py"
+  dleapp:
+    - "scripts/roblox.py"
+    - "scripts/signal_desktop.py"
+    - "scripts/telegram.py"
+    - "scripts/whatsapp.py"
+
+# Files that legitimately exist only in the baseline. Applied to the
+# file-missing-from-comparison branch, so an entry is honoured only for a pair where
+# the file is genuinely absent: listing blackboxprotobuf below suppresses it for
+# RLEAPP/VLEAPP/DLEAPP, which deliberately have no protobuf dependency, and has no
+# effect on the ALEAPP pair, which carries it.
+# Classified against all four pairs on 2026-08-07. Without this the widened scan
+# reports 30 known-correct divergences per pair and the real signal is buried.
+expected_baseline_only:
+  ileapp:
+    # iOS-only parsers and helpers, absent from all four siblings
+    - "leapp_functions/parsers/apple_atx.py"
+    - "scripts/ccl/ccl_bplist.py"
+    - "scripts/ccl/ccl_segb1.py"
+    - "scripts/ccl/ccl_segb2.py"
+    - "scripts/ccl_leveldb.py"
+    - "scripts/ccl_segb/__init__.py"
+    - "scripts/ccl_segb/ccl_segb.py"
+    - "scripts/ccl_segb/ccl_segb1.py"
+    - "scripts/ccl_segb/ccl_segb2.py"
+    - "scripts/ccl_segb/ccl_segb_common.py"
+    - "scripts/ccl_simplesnappy.py"
+    - "scripts/chat_rendering.py"
+    - "scripts/ios_keychain.py"
+    - "scripts/ktx/ios_ktx2png.py"
+    - "scripts/pyinstaller/unifiedlog_binary.py"
+    - "scripts/realm_parser.py"
+    - "scripts/test_artifacts/__init__.py"
+    - "scripts/test_artifacts/image_list.py"
+    - "scripts/tz_offset.py"
+    - "scripts/unifiedlogs.py"
+    # Vendored protobuf: dropped from RLEAPP/VLEAPP/DLEAPP in the CVE cleanup
+    - "scripts/blackboxprotobuf/__init__.py"
+    - "scripts/blackboxprotobuf/lib/__init__.py"
+    - "scripts/blackboxprotobuf/lib/interface.py"
+    - "scripts/blackboxprotobuf/lib/types/__init__.py"
+    - "scripts/blackboxprotobuf/lib/types/fixed.py"
+    - "scripts/blackboxprotobuf/lib/types/length_delim.py"
+    - "scripts/blackboxprotobuf/lib/types/type_maps.py"
+    - "scripts/blackboxprotobuf/lib/types/varint.py"
+    # Mobile-only
+    - "scripts/alternate_artifacts/appInventory.py"
+    # SQLCipher: RLEAPP and VLEAPP have no encrypted-store parsers
+    - "scripts/sqlcipher_decrypt.py"
 
 # Normalize tool/platform tokens before AST comparison
 token_normalization:
@@ -45,7 +120,25 @@ token_normalization:
     replacement: "{TOOL_NAME}"
   - pattern: "(?i)\\baleapp\\b"
     replacement: "{TOOL_NAME}"
+  - pattern: "(?i)\\brleapp\\b"
+    replacement: "{TOOL_NAME}"
+  - pattern: "(?i)\\bvleapp\\b"
+    replacement: "{TOOL_NAME}"
+  - pattern: "(?i)\\bdleapp\\b"
+    replacement: "{TOOL_NAME}"
   - pattern: "(?i)\\bios\\b"
     replacement: "{PLATFORM}"
   - pattern: "(?i)\\bandroid\\b"
     replacement: "{PLATFORM}"
+  # RLEAPP parses provider returns and VLEAPP vehicle systems, so their platform
+  # nouns differ from the mobile pair.
+  - pattern: "(?i)\\bilprofile\\b"
+    replacement: "{PROFILE_EXT}"
+  - pattern: "(?i)\\balprofile\\b"
+    replacement: "{PROFILE_EXT}"
+  - pattern: "(?i)\\brlprofile\\b"
+    replacement: "{PROFILE_EXT}"
+  - pattern: "(?i)\\bvlprofile\\b"
+    replacement: "{PROFILE_EXT}"
+  - pattern: "(?i)\\bdlprofile\\b"
+    replacement: "{PROFILE_EXT}"

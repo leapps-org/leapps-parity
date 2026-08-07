@@ -31,6 +31,7 @@ class ScannerConfig:
     exclude: list[str]
     path_aliases: dict[str, str]
     expected_repo_specific: dict[str, list[str]]
+    expected_baseline_only: dict[str, list[str]]
     token_normalization: list[TokenRule]
     config_path: Path
     project_root: Path
@@ -43,6 +44,16 @@ class ScannerConfig:
 
     def expected_specific_for(self, repo_name: str) -> set[str]:
         paths = self.expected_repo_specific.get(repo_name, [])
+        return {self._normalize_expected_path(p) for p in paths}
+
+    def expected_baseline_only_for(self, repo_name: str) -> set[str]:
+        """Files that legitimately exist only in this repo when it is the baseline.
+
+        Applied to the file-missing-from-comparison branch, so an entry is only
+        honoured for a pair where the file is genuinely absent. Listing a file that
+        the comparison does have has no effect on that pair.
+        """
+        paths = self.expected_baseline_only.get(repo_name, [])
         return {self._normalize_expected_path(p) for p in paths}
 
     @staticmethod
@@ -93,6 +104,10 @@ def load_config(path: str | Path) -> ScannerConfig:
         exclude=[str(p) for p in raw.get("exclude") or []],
         path_aliases=path_aliases,
         expected_repo_specific=expected,
+        expected_baseline_only={
+            str(k): [str(p) for p in (v or [])]
+            for k, v in (raw.get("expected_baseline_only") or {}).items()
+        },
         token_normalization=token_rules,
         config_path=config_path,
         project_root=project_root,

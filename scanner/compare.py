@@ -229,10 +229,15 @@ def _find_import_dependency_gaps(
     baseline_checkout: RepoCheckout,
     comparisons: list[FileComparison],
 ) -> list[ImportDependencyGap]:
+    # A file marked expected_baseline_only is still absent from the comparison, so
+    # anything the comparison shares that imports it is still broken. Suppressing the
+    # file from the missing list must not suppress the import gap it causes, which is
+    # the actionable half of the finding.
     missing = {
         fc.logical_path
         for fc in comparisons
         if fc.status == Status.FILE_MISSING_FROM_COMPARISON
+        or (fc.status == Status.EXPECTED_REPO_SPECIFIC and fc.baseline_physical)
     }
     if not missing:
         return []
@@ -310,6 +315,7 @@ def run_comparison(
     )
 
     expected_specific = config.expected_specific_for(comparison_checkout.name)
+    expected_baseline_only = config.expected_baseline_only_for(baseline_checkout.name)
 
     all_logical = sorted(set(baseline_files) | set(comparison_files))
     comparisons: list[FileComparison] = []
@@ -319,10 +325,13 @@ def run_comparison(
         c_rec = comparison_files.get(logical)
 
         if b_rec and not c_rec:
+            status = Status.FILE_MISSING_FROM_COMPARISON
+            if b_rec.physical_path in expected_baseline_only:
+                status = Status.EXPECTED_REPO_SPECIFIC
             comparisons.append(
                 FileComparison(
                     logical_path=logical,
-                    status=Status.FILE_MISSING_FROM_COMPARISON,
+                    status=status,
                     baseline_physical=b_rec.physical_path,
                 )
             )
