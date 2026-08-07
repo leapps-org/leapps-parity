@@ -1,0 +1,65 @@
+name: Shared Rules and Skills Drift
+
+# Fails when a synced Claude Code rule or skill in a LEAPP repo no longer matches its
+# canonical copy. leapp-* is canonical here, lava-* is canonical in the LAVA repo.
+
+on:
+  push:
+    paths:
+      - "rules/**"
+      - "skills/**"
+      - "scanner/sync_shared.py"
+      - ".github/workflows/rules-drift.yml"
+  pull_request:
+    paths:
+      - "rules/**"
+      - "skills/**"
+      - "scanner/sync_shared.py"
+      - ".github/workflows/rules-drift.yml"
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner repo
+        uses: actions/checkout@v4
+        with:
+          path: leapps-parity
+
+      - name: Checkout iLEAPP
+        uses: actions/checkout@v4
+        with: { repository: abrignoni/iLEAPP, path: iLEAPP, fetch-depth: 1 }
+
+      - name: Checkout ALEAPP
+        uses: actions/checkout@v4
+        with: { repository: abrignoni/ALEAPP, path: ALEAPP, fetch-depth: 1 }
+
+      - name: Checkout RLEAPP
+        uses: actions/checkout@v4
+        with: { repository: abrignoni/RLEAPP, path: RLEAPP, fetch-depth: 1 }
+
+      - name: Checkout VLEAPP
+        uses: actions/checkout@v4
+        with: { repository: abrignoni/VLEAPP, path: VLEAPP, fetch-depth: 1 }
+
+      - name: Checkout DLEAPP
+        uses: actions/checkout@v4
+        with: { repository: abrignoni/DLEAPP, path: DLEAPP, fetch-depth: 1 }
+
+      - name: Checkout LAVA
+        uses: actions/checkout@v4
+        with: { repository: abrignoni/LAVA, path: LAVA, fetch-depth: 1 }
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check for rule drift
+        run: python3 leapps-parity/scanner/sync_shared.py --check --root "$GITHUB_WORKSPACE"
