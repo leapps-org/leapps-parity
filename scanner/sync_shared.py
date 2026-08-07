@@ -107,7 +107,10 @@ def main() -> int:
     self_repo = Path(__file__).resolve().parent.parent
     root = (args.root or self_repo.parent).resolve()
 
-    missing = [r for r in ALL_REPOS if not (root / r).is_dir()]
+    # A failed actions/checkout still creates its target directory, so an empty dir
+    # is not a checkout. Require the .git entry, which is a file in a worktree and a
+    # directory in a clone.
+    missing = [r for r in ALL_REPOS if not (root / r / ".git").exists()]
     if missing and not args.skip_missing:
         print(f"error: no checkout for {', '.join(missing)} under {root}", file=sys.stderr)
         print("hint: pass --root <dir containing the checkouts>, or --skip-missing",
