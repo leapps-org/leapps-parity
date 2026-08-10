@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-08-07T05:56:07.116613+00:00",
+  "generated_at": "2026-08-10T12:40:19.424856+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "0dfa5d6967f56729a64a9af0c743139be6d6d5e8",
-      "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/ileapp"
+      "commit": "cdc5311dcffa1a9c943ba8b2b98d007d36c628ad",
+      "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "215eebadf228ab028d1be8faa570716028d8b5ae",
-      "path": "/Users/alexisbrignoni/Documents/GitHub/leapps-parity/.work/repos/aleapp"
+      "commit": "b1de9754a43f65ed3d86466f80b4b09ece5c3b48",
+      "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 71,
+    "files_total": 72,
     "import_dependency_gaps": 3,
-    "expected_repo_specific": 22,
-    "file_extra_in_comparison": 6,
+    "expected_repo_specific": 21,
+    "file_extra_in_comparison": 7,
     "logic_changed": 20,
-    "same": 31,
+    "same": 32,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 23,
-    "symbol_missing_from_comparison": 55
+    "symbol_missing_from_comparison": 56
   },
   "import_dependency_gaps": [
     {
@@ -887,6 +887,12 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "_read_binary_plist_tolerantly",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _read_binary_plist_tolerantly(file_path)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "abxread",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
@@ -1160,6 +1166,16 @@
       ]
     },
     {
+      "logical_path": "scripts/mmkv_parser.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/mmkv_parser.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/modules_to_exclude.py",
       "status": "logic_changed",
       "baseline_physical": "scripts/modules_to_exclude.py",
@@ -1211,9 +1227,9 @@
     },
     {
       "logical_path": "scripts/realm_parser.py",
-      "status": "expected_repo_specific",
+      "status": "same",
       "baseline_physical": "scripts/realm_parser.py",
-      "comparison_physical": null,
+      "comparison_physical": "scripts/realm_parser.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,

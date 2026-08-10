@@ -1,15 +1,15 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1786082170.svg)
+![Parity summary](parity.1786365623.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-07T05:56:10.348998+00:00
+- **Generated**: 2026-08-10T12:40:23.899464+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `rleapp`
 
-- **ileapp**: `0dfa5d6967f5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **rleapp**: `27312405d6d7` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
+- **ileapp**: `cdc5311dcffa` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **rleapp**: `4b8b493ac3aa` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
 
 ## Overall counts
 
@@ -36,10 +36,10 @@
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 27 |
+| symbol_missing_from_comparison | 28 |
 | symbol_extra_in_comparison | 6 |
 | signature_changed | 1 |
-| logic_changed | 33 |
+| logic_changed | 32 |
 
 ## All compared files
 
@@ -72,9 +72,9 @@ Baseline files that import modules missing from the comparison repo (for example
 | `main_entry.py` | logic_changed | `ileapp.py` | `rleapp.py` | (3 symbol diffs)
 | `main_gui.py` | logic_changed | `ileappGUI.py` | `rleappGUI.py` | (5 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
-| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (8 symbol diffs)
+| `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (23 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (24 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (15 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (1 symbol diffs)
@@ -108,7 +108,6 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
 - only in ileapp: `Context.get_keychain_path` — `@@def get_keychain_path()`
 - only in ileapp: `Context.get_metadata` — `@@def get_metadata(collection)`
-- logic changed: `Context.get_relative_path`
 - only in ileapp: `Context.lookup_metadata` — `@@def lookup_metadata(collection, key, group=...)`
 - only in ileapp: `Context.set_installed_os_version` — `@@def set_installed_os_version(os_version)`
 - only in ileapp: `Context.set_keychain_path` — `@@def set_keychain_path(keychain_path)`
@@ -121,6 +120,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in rleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in rleapp: `_get_line_count` — `def _get_line_count(file)`
+- only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - logic changed: `artifact_processor`
 - only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - logic changed: `device_info`

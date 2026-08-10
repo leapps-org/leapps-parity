@@ -75,6 +75,7 @@
 - logic changed: `OutputParameters.__init__`
 - only in ileapp: `_batched` — `def _batched(iterable, size)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
+- only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
 - only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`

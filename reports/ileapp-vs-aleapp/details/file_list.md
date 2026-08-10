@@ -22,6 +22,7 @@
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
+| `scripts/mmkv_parser.py` | file_extra_in_comparison | `—` | `scripts/mmkv_parser.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
 | `scripts/ccl/ccl_bplist.py` | expected_repo_specific | `scripts/ccl/ccl_bplist.py` | `—` |
 | `scripts/ccl/ccl_segb1.py` | expected_repo_specific | `scripts/ccl/ccl_segb1.py` | `—` |
@@ -39,7 +40,6 @@
 | `scripts/ios_keychain.py` | expected_repo_specific | `scripts/ios_keychain.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | expected_repo_specific | `scripts/ktx/ios_ktx2png.py` | `—` |
 | `scripts/pyinstaller/unifiedlog_binary.py` | expected_repo_specific | `scripts/pyinstaller/unifiedlog_binary.py` | `—` |
-| `scripts/realm_parser.py` | expected_repo_specific | `scripts/realm_parser.py` | `—` |
 | `scripts/test_artifacts/__init__.py` | expected_repo_specific | `scripts/test_artifacts/__init__.py` | `—` |
 | `scripts/test_artifacts/image_list.py` | expected_repo_specific | `scripts/test_artifacts/image_list.py` | `—` |
 | `scripts/tz_offset.py` | expected_repo_specific | `scripts/tz_offset.py` | `—` |
@@ -74,4 +74,5 @@
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
 | `scripts/pyinstaller/hook-plugin_loader.py` | same | `scripts/pyinstaller/hook-plugin_loader.py` | `scripts/pyinstaller/hook-plugin_loader.py` |
+| `scripts/realm_parser.py` | same | `scripts/realm_parser.py` | `scripts/realm_parser.py` |
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |

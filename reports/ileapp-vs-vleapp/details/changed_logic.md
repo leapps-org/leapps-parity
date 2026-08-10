@@ -42,6 +42,7 @@
 - only in vleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in vleapp: `_get_line_count` — `def _get_line_count(file)`
+- only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - logic changed: `artifact_processor`
 - only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - logic changed: `device_info`

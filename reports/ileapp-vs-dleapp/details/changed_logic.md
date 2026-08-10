@@ -31,7 +31,6 @@
 - only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
 - only in ileapp: `Context.get_keychain_path` — `@@def get_keychain_path()`
 - only in ileapp: `Context.get_metadata` — `@@def get_metadata(collection)`
-- logic changed: `Context.get_relative_path`
 - only in ileapp: `Context.lookup_metadata` — `@@def lookup_metadata(collection, key, group=...)`
 - only in dleapp: `Context.set_app_secret` — `@@def set_app_secret(name, value)`
 - only in ileapp: `Context.set_installed_os_version` — `@@def set_installed_os_version(os_version)`
@@ -49,6 +48,7 @@
 - only in dleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in dleapp: `_get_line_count` — `def _get_line_count(file)`
+- only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - logic changed: `artifact_processor`
 - only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - logic changed: `device_info`
