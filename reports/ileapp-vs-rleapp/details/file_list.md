@@ -66,4 +66,3 @@
 | `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
-| `scripts/pyinstaller/hook-plugin_loader.py` | same | `scripts/pyinstaller/hook-plugin_loader.py` | `scripts/pyinstaller/hook-plugin_loader.py` |

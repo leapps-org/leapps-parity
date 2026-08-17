@@ -1,22 +1,22 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1786365619.svg)
+![Parity summary](parity.1786969119.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-10T12:40:19.424856+00:00
+- **Generated**: 2026-08-17T12:18:39.901806+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `cdc5311dcffa` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `b1de9754a43f` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `b943b635642f` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `061660f05738` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 72 |
-| Same | 32 |
+| Files scanned (union) | 71 |
+| Same | 31 |
 | Changed (logic/file) | 12 |
 | Missing from comparison | 0 |
 | Extra in comparison | 7 |
@@ -28,7 +28,7 @@
 
 | Status | Count |
 |---|---:|
-| same | 32 |
+| same | 31 |
 | logic_changed | 12 |
 | file_extra_in_comparison | 7 |
 | expected_repo_specific | 21 |
@@ -44,7 +44,7 @@
 
 ## All compared files
 
-72 file(s). See [details/file_list.md](details/file_list.md).
+71 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 

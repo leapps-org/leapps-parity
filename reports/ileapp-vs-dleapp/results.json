@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-08-10T12:40:32.792188+00:00",
+  "generated_at": "2026-08-17T12:18:53.385221+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "cdc5311dcffa1a9c943ba8b2b98d007d36c628ad",
+      "commit": "b943b635642f57e01f61baab898021c7f258fec9",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "c1d28fd21b61b3d92aa692cc5929092d4aee152a",
+      "commit": "d7a4f956f5bfad2bb52da73450996523bda64993",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/dleapp"
     }
   },
   "counts": {
-    "files_total": 80,
+    "files_total": 79,
     "import_dependency_gaps": 11,
     "expected_repo_specific": 33,
     "file_extra_in_comparison": 13,
     "logic_changed": 35,
-    "same": 23,
+    "same": 22,
     "signature_changed": 1,
     "symbol_extra_in_comparison": 11,
     "symbol_missing_from_comparison": 28
@@ -999,14 +999,14 @@
         {
           "qualified_name": "initialize_lava",
           "status": "logic_changed",
-          "baseline_signature": "def initialize_lava(input_path, output_path, input_type)",
-          "comparison_signature": "def initialize_lava(input_path, output_path, input_type)"
+          "baseline_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=...)",
+          "comparison_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=...)"
         },
         {
           "qualified_name": "lava_add_module",
           "status": "logic_changed",
-          "baseline_signature": "def lava_add_module(module_name, module_status, file_count=...)",
-          "comparison_signature": "def lava_add_module(module_name, module_status, file_count=...)"
+          "baseline_signature": "def lava_add_module(module_name, module_status, file_count=..., artifact_name=...)",
+          "comparison_signature": "def lava_add_module(module_name, module_status, file_count=..., artifact_name=...)"
         },
         {
           "qualified_name": "lava_create_sqlite_table",
@@ -1113,16 +1113,6 @@
       "status": "same",
       "baseline_physical": "scripts/plugin_loader.py",
       "comparison_physical": "scripts/plugin_loader.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/pyinstaller/hook-plugin_loader.py",
-      "status": "same",
-      "baseline_physical": "scripts/pyinstaller/hook-plugin_loader.py",
-      "comparison_physical": "scripts/pyinstaller/hook-plugin_loader.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
