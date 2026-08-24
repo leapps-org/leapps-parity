@@ -87,11 +87,12 @@
 - only in ileapp: `convert_plist_date_to_utc` — `def convert_plist_date_to_utc(plist_date)`
 - only in ileapp: `convert_ts_human_to_timezone_offset` — `def convert_ts_human_to_timezone_offset(ts, timezone_offset)`
 - only in ileapp: `convert_ts_int_to_timezone` — `def convert_ts_int_to_timezone(time, time_offset)`
-- logic changed: `convert_unix_ts_in_seconds`
+- logic changed: `convert_ts_int_to_utc`
 - only in ileapp: `convert_unix_ts_to_str` — `def convert_unix_ts_to_str(ts)`
 - only in ileapp: `convert_unix_ts_to_timezone` — `def convert_unix_ts_to_timezone(ts, timezone_offset)`
 - logic changed: `convert_unix_ts_to_utc`
 - only in aleapp: `decode_protobuf` — `def decode_protobuf(data, typedef=...)`
+- logic changed: `device_info`
 - only in ileapp: `generate_hexdump` — `def generate_hexdump(data, char_per_row=...)`
 - only in ileapp: `generate_thumbnail` — `def generate_thumbnail(imDirectory, imFilename, seeker, report_folder)`
 - only in aleapp: `get_binary_file_content` — `def get_binary_file_content(file_path)`
@@ -108,6 +109,7 @@
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`
 - only in ileapp: `lava_only_info` — `def lava_only_info(category, artifact_name, table_name, records)`
+- only in aleapp: `logdevinfo` — `def logdevinfo(message=...)`
 - only in ileapp: `strings` — `def strings(data)`
 - only in ileapp: `strings_raw` — `def strings_raw(data)`
 - only in aleapp: `timestampsconv` — `def timestampsconv(webkittime)`

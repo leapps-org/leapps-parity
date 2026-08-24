@@ -1,29 +1,30 @@
 {
-  "generated_at": "2026-08-17T12:18:48.955401+00:00",
+  "generated_at": "2026-08-24T12:22:29.149366+00:00",
   "baseline": "ileapp",
   "comparison": "vleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "b943b635642f57e01f61baab898021c7f258fec9",
+      "commit": "423798fa539db79b1654b38c31186f1fdaac9599",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "vleapp": {
       "url": "https://github.com/abrignoni/VLEAPP.git",
       "branch": "main",
-      "commit": "c0a972a8d6544dbea119bd99753eed18b1ff7171",
+      "commit": "354044004709ec6a65274170b0b300ecd0ccf633",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/vleapp"
     }
   },
   "counts": {
-    "files_total": 63,
+    "files_total": 64,
     "import_dependency_gaps": 11,
     "expected_repo_specific": 31,
+    "file_missing_from_comparison": 1,
     "logic_changed": 29,
     "same": 21,
     "signature_changed": 2,
-    "symbol_extra_in_comparison": 6,
+    "symbol_extra_in_comparison": 7,
     "symbol_missing_from_comparison": 28
   },
   "import_dependency_gaps": [
@@ -769,6 +770,12 @@
           "comparison_signature": "def ipgen(report_folder, data_list_ipaddress)"
         },
         {
+          "qualified_name": "logdevinfo",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def logdevinfo(message=...)"
+        },
+        {
           "qualified_name": "tsv",
           "status": "logic_changed",
           "baseline_signature": "def tsv(report_folder, data_headers, data_list, tsvname, source_file=...)",
@@ -902,6 +909,16 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/mmkv_parser.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/mmkv_parser.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/modules_to_exclude.py",

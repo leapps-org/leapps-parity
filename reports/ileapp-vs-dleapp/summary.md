@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1786969133.svg)
+![Parity summary](parity.1787574153.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-17T12:18:53.385221+00:00
+- **Generated**: 2026-08-24T12:22:33.867414+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `dleapp`
 
-- **ileapp**: `b943b635642f` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **dleapp**: `d7a4f956f5bf` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
+- **ileapp**: `423798fa539d` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **dleapp**: `90a198fd38fc` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 79 |
+| Files scanned (union) | 81 |
 | Same | 22 |
 | Changed (logic/file) | 11 |
-| Missing from comparison | 0 |
-| Extra in comparison | 13 |
+| Missing from comparison | 1 |
+| Extra in comparison | 14 |
 | Expected repo-specific | 33 |
 | Parse errors | 0 |
 | Import dependency gaps | 11 |
@@ -30,7 +30,8 @@
 |---|---:|
 | same | 22 |
 | logic_changed | 11 |
-| file_extra_in_comparison | 13 |
+| file_missing_from_comparison | 1 |
+| file_extra_in_comparison | 14 |
 | expected_repo_specific | 33 |
 
 ## Symbol-level summary
@@ -38,13 +39,13 @@
 | Status | Count |
 |---|---:|
 | symbol_missing_from_comparison | 28 |
-| symbol_extra_in_comparison | 11 |
+| symbol_extra_in_comparison | 12 |
 | signature_changed | 1 |
-| logic_changed | 35 |
+| logic_changed | 34 |
 
 ## All compared files
 
-79 file(s). See [details/file_list.md](details/file_list.md).
+81 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -81,6 +82,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (3 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
+| `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
 | `scripts/ccl/ccl_blink_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_blink_value_deserializer.py` |
 | `scripts/ccl/ccl_chromium_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_chromium_indexeddb.py` |
@@ -89,7 +91,6 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/ccl/ccl_v8_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_v8_value_deserializer.py` |
 | `scripts/ccl/indexeddb_to_json.py` | file_extra_in_comparison | `—` | `scripts/ccl/indexeddb_to_json.py` |
 | `scripts/ccl/wire_assets.py` | file_extra_in_comparison | `—` | `scripts/ccl/wire_assets.py` |
-| `scripts/chromium/__init__.py` | file_extra_in_comparison | `—` | `scripts/chromium/__init__.py` |
 
 ## Changed logic files
 
@@ -143,18 +144,18 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-0 file(s). See [details/missing_files.md](details/missing_files.md).
+1 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
-_None._
+- `scripts/mmkv_parser.py` (baseline: `scripts/mmkv_parser.py`)
 
 </details>
 
 ## Extra files
 
-13 file(s). See [details/extra_files.md](details/extra_files.md).
+14 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>

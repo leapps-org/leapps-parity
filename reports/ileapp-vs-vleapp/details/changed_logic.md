@@ -57,6 +57,7 @@
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`
 - only in vleapp: `ipgen` — `def ipgen(report_folder, data_list_ipaddress)`
+- only in vleapp: `logdevinfo` — `def logdevinfo(message=...)`
 - logic changed: `tsv`
 - only in vleapp: `usergen` — `def usergen(report_folder, data_list_usernames)`
 

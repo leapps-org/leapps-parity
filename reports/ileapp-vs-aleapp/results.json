@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-17T12:18:39.901806+00:00",
+  "generated_at": "2026-08-24T12:22:19.497288+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "b943b635642f57e01f61baab898021c7f258fec9",
+      "commit": "423798fa539db79b1654b38c31186f1fdaac9599",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "061660f05738eb3a40866a82b31bc0afdeeff971",
+      "commit": "075122c82684e19fac946689f47318646eabd405",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
@@ -20,11 +20,11 @@
     "files_total": 71,
     "import_dependency_gaps": 3,
     "expected_repo_specific": 21,
-    "file_extra_in_comparison": 7,
-    "logic_changed": 20,
-    "same": 31,
+    "file_extra_in_comparison": 6,
+    "logic_changed": 21,
+    "same": 32,
     "signature_changed": 3,
-    "symbol_extra_in_comparison": 23,
+    "symbol_extra_in_comparison": 24,
     "symbol_missing_from_comparison": 56
   },
   "import_dependency_gaps": [
@@ -959,10 +959,10 @@
           "comparison_signature": null
         },
         {
-          "qualified_name": "convert_unix_ts_in_seconds",
+          "qualified_name": "convert_ts_int_to_utc",
           "status": "logic_changed",
-          "baseline_signature": "def convert_unix_ts_in_seconds(ts)",
-          "comparison_signature": "def convert_unix_ts_in_seconds(ts)"
+          "baseline_signature": "def convert_ts_int_to_utc(ts)",
+          "comparison_signature": "def convert_ts_int_to_utc(ts)"
         },
         {
           "qualified_name": "convert_unix_ts_to_str",
@@ -987,6 +987,12 @@
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
           "comparison_signature": "def decode_protobuf(data, typedef=...)"
+        },
+        {
+          "qualified_name": "device_info",
+          "status": "logic_changed",
+          "baseline_signature": "def device_info(category, label, value, source_file=...)",
+          "comparison_signature": "def device_info(category, label, value, source_file=...)"
         },
         {
           "qualified_name": "generate_hexdump",
@@ -1085,6 +1091,12 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "logdevinfo",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def logdevinfo(message=...)"
+        },
+        {
           "qualified_name": "strings",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def strings(data)",
@@ -1167,8 +1179,8 @@
     },
     {
       "logical_path": "scripts/mmkv_parser.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
+      "status": "same",
+      "baseline_physical": "scripts/mmkv_parser.py",
       "comparison_physical": "scripts/mmkv_parser.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,

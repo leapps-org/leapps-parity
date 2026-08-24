@@ -1,24 +1,24 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1786969128.svg)
+![Parity summary](parity.1787574149.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-17T12:18:48.955401+00:00
+- **Generated**: 2026-08-24T12:22:29.149366+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `vleapp`
 
-- **ileapp**: `b943b635642f` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **vleapp**: `c0a972a8d654` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
+- **ileapp**: `423798fa539d` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **vleapp**: `354044004709` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 63 |
+| Files scanned (union) | 64 |
 | Same | 21 |
 | Changed (logic/file) | 11 |
-| Missing from comparison | 0 |
+| Missing from comparison | 1 |
 | Extra in comparison | 0 |
 | Expected repo-specific | 31 |
 | Parse errors | 0 |
@@ -30,6 +30,7 @@
 |---|---:|
 | same | 21 |
 | logic_changed | 11 |
+| file_missing_from_comparison | 1 |
 | expected_repo_specific | 31 |
 
 ## Symbol-level summary
@@ -37,13 +38,13 @@
 | Status | Count |
 |---|---:|
 | symbol_missing_from_comparison | 28 |
-| symbol_extra_in_comparison | 6 |
+| symbol_extra_in_comparison | 7 |
 | signature_changed | 2 |
 | logic_changed | 29 |
 
 ## All compared files
 
-63 file(s). See [details/file_list.md](details/file_list.md).
+64 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -74,12 +75,13 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (21 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (22 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (15 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
+| `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 
 ## Changed logic files
 
@@ -133,12 +135,12 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-0 file(s). See [details/missing_files.md](details/missing_files.md).
+1 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
-_None._
+- `scripts/mmkv_parser.py` (baseline: `scripts/mmkv_parser.py`)
 
 </details>
 

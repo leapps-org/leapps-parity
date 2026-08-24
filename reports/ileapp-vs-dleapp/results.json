@@ -1,30 +1,31 @@
 {
-  "generated_at": "2026-08-17T12:18:53.385221+00:00",
+  "generated_at": "2026-08-24T12:22:33.867414+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "b943b635642f57e01f61baab898021c7f258fec9",
+      "commit": "423798fa539db79b1654b38c31186f1fdaac9599",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "d7a4f956f5bfad2bb52da73450996523bda64993",
+      "commit": "90a198fd38fc54908ce1db31727a4ff60843b038",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/dleapp"
     }
   },
   "counts": {
-    "files_total": 79,
+    "files_total": 81,
     "import_dependency_gaps": 11,
     "expected_repo_specific": 33,
-    "file_extra_in_comparison": 13,
-    "logic_changed": 35,
+    "file_extra_in_comparison": 14,
+    "file_missing_from_comparison": 1,
+    "logic_changed": 34,
     "same": 22,
     "signature_changed": 1,
-    "symbol_extra_in_comparison": 11,
+    "symbol_extra_in_comparison": 12,
     "symbol_missing_from_comparison": 28
   },
   "import_dependency_gaps": [
@@ -552,6 +553,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/chatgpt_skysight.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/chatgpt_skysight.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/chromium/__init__.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
@@ -943,8 +954,8 @@
         },
         {
           "qualified_name": "logdevinfo",
-          "status": "logic_changed",
-          "baseline_signature": "def logdevinfo(message=...)",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def logdevinfo(message=...)"
         },
         {
@@ -1087,6 +1098,16 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/mmkv_parser.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/mmkv_parser.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/modules_to_exclude.py",

@@ -29,6 +29,7 @@
 - `scripts/ccl_segb/ccl_segb_common.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl_simplesnappy.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/chatgpt_skysight.py` (comparison: `scripts/chatgpt_skysight.py`)
 - `scripts/chromium/__init__.py` (comparison: `scripts/chromium/__init__.py`)
 - `scripts/chromium/blockfile_cache.py` (comparison: `scripts/chromium/blockfile_cache.py`)
 - `scripts/chromium/discord_api.py` (comparison: `scripts/chromium/discord_api.py`)

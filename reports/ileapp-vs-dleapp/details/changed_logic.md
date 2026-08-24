@@ -64,7 +64,7 @@
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`
 - only in dleapp: `ipgen` — `def ipgen(report_folder, data_list_ipaddress)`
-- logic changed: `logdevinfo`
+- only in dleapp: `logdevinfo` — `def logdevinfo(message=...)`
 - logic changed: `tsv`
 - only in dleapp: `usergen` — `def usergen(report_folder, data_list_usernames)`
 - logic changed: `write_device_info`

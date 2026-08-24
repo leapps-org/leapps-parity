@@ -15,6 +15,7 @@
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
 | `scripts/ccl/ccl_blink_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_blink_value_deserializer.py` |
 | `scripts/ccl/ccl_chromium_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_chromium_indexeddb.py` |
@@ -23,6 +24,7 @@
 | `scripts/ccl/ccl_v8_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_v8_value_deserializer.py` |
 | `scripts/ccl/indexeddb_to_json.py` | file_extra_in_comparison | `—` | `scripts/ccl/indexeddb_to_json.py` |
 | `scripts/ccl/wire_assets.py` | file_extra_in_comparison | `—` | `scripts/ccl/wire_assets.py` |
+| `scripts/chatgpt_skysight.py` | file_extra_in_comparison | `—` | `scripts/chatgpt_skysight.py` |
 | `scripts/chromium/__init__.py` | file_extra_in_comparison | `—` | `scripts/chromium/__init__.py` |
 | `scripts/chromium/blockfile_cache.py` | file_extra_in_comparison | `—` | `scripts/chromium/blockfile_cache.py` |
 | `scripts/chromium/discord_api.py` | file_extra_in_comparison | `—` | `scripts/chromium/discord_api.py` |

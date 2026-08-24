@@ -1,24 +1,24 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1786969124.svg)
+![Parity summary](parity.1787574144.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-17T12:18:44.477609+00:00
+- **Generated**: 2026-08-24T12:22:24.774075+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `rleapp`
 
-- **ileapp**: `b943b635642f` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **rleapp**: `2cfe61cf75cc` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
+- **ileapp**: `423798fa539d` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **rleapp**: `4c171455925e` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 62 |
+| Files scanned (union) | 63 |
 | Same | 21 |
 | Changed (logic/file) | 11 |
-| Missing from comparison | 0 |
+| Missing from comparison | 1 |
 | Extra in comparison | 0 |
 | Expected repo-specific | 30 |
 | Parse errors | 0 |
@@ -30,6 +30,7 @@
 |---|---:|
 | same | 21 |
 | logic_changed | 11 |
+| file_missing_from_comparison | 1 |
 | expected_repo_specific | 30 |
 
 ## Symbol-level summary
@@ -37,13 +38,13 @@
 | Status | Count |
 |---|---:|
 | symbol_missing_from_comparison | 28 |
-| symbol_extra_in_comparison | 6 |
+| symbol_extra_in_comparison | 7 |
 | signature_changed | 1 |
-| logic_changed | 32 |
+| logic_changed | 31 |
 
 ## All compared files
 
-62 file(s). See [details/file_list.md](details/file_list.md).
+63 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -80,6 +81,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (1 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
+| `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 
 ## Changed logic files
 
@@ -133,12 +135,12 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-0 file(s). See [details/missing_files.md](details/missing_files.md).
+1 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
-_None._
+- `scripts/mmkv_parser.py` (baseline: `scripts/mmkv_parser.py`)
 
 </details>
 
