@@ -13,6 +13,7 @@
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
 - logic changed: `pickModules`
 - logic changed: `process`
+- logic changed: `select_input`
 - only in ileapp: `select_keychain` — `def select_keychain()`
 
 ### `scripts/artifact_report.py`
@@ -98,6 +99,17 @@
 - only in ileapp: `FileSeekerItunes.build_files_list_from_manifest_mbdb` — `def build_files_list_from_manifest_mbdb(self, manifest_path)`
 - only in ileapp: `FileSeekerItunes.get_root_path_from_domain` — `def get_root_path_from_domain(self, domain)`
 - only in ileapp: `FileSeekerItunes.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
+- only in vleapp: `FileSeekerIva` — `class FileSeekerIva`
+- only in vleapp: `FileSeekerIva.__init__` — `def __init__(self, iva_path, data_folder, exclude=...)`
+- only in vleapp: `FileSeekerIva.cleanup` — `def cleanup(self)`
+- only in vleapp: `FileSeekerRaw` — `class FileSeekerRaw`
+- only in vleapp: `FileSeekerRaw.__init__` — `def __init__(self, image_path, data_folder, exclude=...)`
+- only in vleapp: `FileSeekerRaw.cleanup` — `def cleanup(self)`
+- only in vleapp: `_RawExtractProgress` — `class _RawExtractProgress`
+- only in vleapp: `_RawExtractProgress.__init__` — `def __init__(self, interval=..., clock=..., log=...)`
+- only in vleapp: `_RawExtractProgress.update` — `def update(self, event)`
+- only in vleapp: `_extract_image_volumes` — `def _extract_image_volumes(probe, image_path, staged_zip, exclude=...)`
+- only in vleapp: `_format_duration` — `def _format_duration(seconds)`
 - only in ileapp: `check_itunes_backup_status` — `def check_itunes_backup_status(directory, backup_type)`
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`

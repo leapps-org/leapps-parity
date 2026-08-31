@@ -16,6 +16,14 @@
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
+| `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
+| `scripts/ccl/ccl_blink_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_blink_value_deserializer.py` |
+| `scripts/ccl/ccl_chromium_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_chromium_indexeddb.py` |
+| `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
+| `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
+| `scripts/ccl/ccl_structures.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_structures.py` |
+| `scripts/ccl/ccl_v8_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_v8_value_deserializer.py` |
+| `scripts/vendor/qnxprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/qnxprobe.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
 | `scripts/alternate_artifacts/appInventory.py` | expected_repo_specific | `scripts/alternate_artifacts/appInventory.py` | `—` |
 | `scripts/blackboxprotobuf/__init__.py` | expected_repo_specific | `scripts/blackboxprotobuf/__init__.py` | `—` |

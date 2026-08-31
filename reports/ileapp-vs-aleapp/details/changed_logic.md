@@ -104,7 +104,6 @@
 - only in ileapp: `get_resolution_for_model_id` — `def get_resolution_for_model_id(model_id)`
 - only in aleapp: `get_results_with_extra_sourcepath_if_needed` — `def get_results_with_extra_sourcepath_if_needed(path_list, query, data_headers)`
 - logic changed: `get_sqlite_db_records`
-- only in ileapp: `get_sqlite_multiple_db_records` — `def get_sqlite_multiple_db_records(path_list, query, data_headers)`
 - only in ileapp: `iOS` — `class iOS`
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`

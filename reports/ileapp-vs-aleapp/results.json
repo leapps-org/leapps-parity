@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-24T12:22:19.497288+00:00",
+  "generated_at": "2026-08-31T18:19:55.391663+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "423798fa539db79b1654b38c31186f1fdaac9599",
+      "commit": "899709e099602c26712c82416e782a49e151889e",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "075122c82684e19fac946689f47318646eabd405",
+      "commit": "c27a3238d4b3eba2a47070e0e521fd3bba9ac078",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
@@ -25,7 +25,7 @@
     "same": 32,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 24,
-    "symbol_missing_from_comparison": 56
+    "symbol_missing_from_comparison": 55
   },
   "import_dependency_gaps": [
     {
@@ -1059,12 +1059,6 @@
           "status": "logic_changed",
           "baseline_signature": "def get_sqlite_db_records(path, query, attach_query=...)",
           "comparison_signature": "def get_sqlite_db_records(path, query, attach_query=...)"
-        },
-        {
-          "qualified_name": "get_sqlite_multiple_db_records",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def get_sqlite_multiple_db_records(path_list, query, data_headers)",
-          "comparison_signature": null
         },
         {
           "qualified_name": "iOS",
