@@ -53,6 +53,7 @@
 - logic changed: `get_plist_content`
 - logic changed: `get_plist_file_content`
 - logic changed: `get_resolution_for_model_id`
+- only in ileapp: `get_sysdiagnose_files` — `def get_sysdiagnose_files(files_found, target_file, text_mode=..., encoding=...)`
 - only in vleapp: `html2csv` — `def html2csv(reportfolderbase)`
 - only in ileapp: `iOS` — `class iOS`
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
@@ -110,10 +111,12 @@
 - only in vleapp: `_RawExtractProgress.update` — `def update(self, event)`
 - only in vleapp: `_extract_image_volumes` — `def _extract_image_volumes(probe, image_path, staged_zip, exclude=...)`
 - only in vleapp: `_format_duration` — `def _format_duration(seconds)`
+- only in vleapp: `_warn_incomplete_volumes` — `def _warn_incomplete_volumes(staged_zip)`
 - only in ileapp: `check_itunes_backup_status` — `def check_itunes_backup_status(directory, backup_type)`
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`
 - only in ileapp: `get_itunes_backup_type` — `def get_itunes_backup_type(directory)`
+- only in vleapp: `split_image_sibling` — `def split_image_sibling(image_path)`
 
 ### `scripts/version_info.py`
 

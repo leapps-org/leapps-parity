@@ -1,22 +1,22 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1788200395.svg)
+![Parity summary](parity.1788799567.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-08-31T18:19:55.391663+00:00
+- **Generated**: 2026-09-07T16:46:07.207760+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `899709e09960` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `c27a3238d4b3` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `edca4f6dbedc` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `002177b45abc` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 71 |
-| Same | 32 |
+| Files scanned (union) | 72 |
+| Same | 33 |
 | Changed (logic/file) | 12 |
 | Missing from comparison | 0 |
 | Extra in comparison | 6 |
@@ -28,7 +28,7 @@
 
 | Status | Count |
 |---|---:|
-| same | 32 |
+| same | 33 |
 | logic_changed | 12 |
 | file_extra_in_comparison | 6 |
 | expected_repo_specific | 21 |
@@ -37,14 +37,14 @@
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 55 |
+| symbol_missing_from_comparison | 56 |
 | symbol_extra_in_comparison | 24 |
 | signature_changed | 3 |
 | logic_changed | 21 |
 
 ## All compared files
 
-71 file(s). See [details/file_list.md](details/file_list.md).
+72 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -68,7 +68,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (43 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (44 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (2 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)

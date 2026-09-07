@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-08-31T18:19:55.391663+00:00",
+  "generated_at": "2026-09-07T16:46:07.207760+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "899709e099602c26712c82416e782a49e151889e",
+      "commit": "edca4f6dbedc0adb35657f02cece8ccfc923a492",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "c27a3238d4b3eba2a47070e0e521fd3bba9ac078",
+      "commit": "002177b45abca10338a2d3f1702e4b0beb2ec7b9",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 71,
+    "files_total": 72,
     "import_dependency_gaps": 3,
     "expected_repo_specific": 21,
     "file_extra_in_comparison": 6,
     "logic_changed": 21,
-    "same": 32,
+    "same": 33,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 24,
-    "symbol_missing_from_comparison": 55
+    "symbol_missing_from_comparison": 56
   },
   "import_dependency_gaps": [
     {
@@ -1061,6 +1061,12 @@
           "comparison_signature": "def get_sqlite_db_records(path, query, attach_query=...)"
         },
         {
+          "qualified_name": "get_sysdiagnose_files",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def get_sysdiagnose_files(files_found, target_file, text_mode=..., encoding=...)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "iOS",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "class iOS",
@@ -1324,6 +1330,16 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/snss_parser.py",
+      "status": "same",
+      "baseline_physical": "scripts/snss_parser.py",
+      "comparison_physical": "scripts/snss_parser.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/sqlcipher_decrypt.py",

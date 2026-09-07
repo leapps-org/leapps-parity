@@ -53,6 +53,7 @@
 - logic changed: `get_plist_content`
 - logic changed: `get_plist_file_content`
 - logic changed: `get_resolution_for_model_id`
+- only in ileapp: `get_sysdiagnose_files` — `def get_sysdiagnose_files(files_found, target_file, text_mode=..., encoding=...)`
 - only in rleapp: `html2csv` — `def html2csv(reportfolderbase)`
 - only in ileapp: `iOS` — `class iOS`
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
