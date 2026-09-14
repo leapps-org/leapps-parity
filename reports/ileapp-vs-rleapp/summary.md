@@ -1,22 +1,22 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1788799571.svg)
+![Parity summary](parity.1789405788.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-07T16:46:11.332578+00:00
+- **Generated**: 2026-09-14T17:09:48.571977+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `rleapp`
 
-- **ileapp**: `edca4f6dbedc` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **rleapp**: `955ea2ec50a8` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
+- **ileapp**: `30c3f369a8d5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **rleapp**: `36c79d4e690f` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 64 |
-| Same | 21 |
+| Files scanned (union) | 69 |
+| Same | 26 |
 | Changed (logic/file) | 11 |
 | Missing from comparison | 2 |
 | Extra in comparison | 0 |
@@ -28,7 +28,7 @@
 
 | Status | Count |
 |---|---:|
-| same | 21 |
+| same | 26 |
 | logic_changed | 11 |
 | file_missing_from_comparison | 2 |
 | expected_repo_specific | 30 |
@@ -39,12 +39,12 @@
 |---|---:|
 | symbol_missing_from_comparison | 29 |
 | symbol_extra_in_comparison | 7 |
-| signature_changed | 1 |
-| logic_changed | 31 |
+| signature_changed | 2 |
+| logic_changed | 32 |
 
 ## All compared files
 
-64 file(s). See [details/file_list.md](details/file_list.md).
+69 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -71,7 +71,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | Logical path | Status | Baseline file | Comparison file |
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `rleapp.py` | (3 symbol diffs)
-| `main_gui.py` | logic_changed | `ileappGUI.py` | `rleappGUI.py` | (5 symbol diffs)
+| `main_gui.py` | logic_changed | `ileappGUI.py` | `rleappGUI.py` | (7 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
@@ -99,6 +99,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - module-level logic changed
 - logic changed: `ValidateInput`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `finish_crunch`
 - logic changed: `pickModules`
 - logic changed: `process`
 - only in ileapp: `select_keychain` — `def select_keychain()`
@@ -130,7 +131,6 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in rleapp: `gather_hashes_in_file` — `def gather_hashes_in_file(file_found, regex)`
 - logic changed: `generate_hexdump`
 - logic changed: `generate_thumbnail`
-- logic changed: `get_plist_content`
 
 </details>
 
@@ -193,4 +193,4 @@ _None._
 
 ## Signature changes
 
-1 symbol(s). See [details/signature_changes.md](details/signature_changes.md).
+2 symbol(s). See [details/signature_changes.md](details/signature_changes.md).

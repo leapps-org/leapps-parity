@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1788799567.svg)
+![Parity summary](parity.1789405779.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-07T16:46:07.207760+00:00
+- **Generated**: 2026-09-14T17:09:39.605443+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `edca4f6dbedc` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `002177b45abc` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `30c3f369a8d5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `498491475597` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 72 |
-| Same | 33 |
+| Files scanned (union) | 75 |
+| Same | 38 |
 | Changed (logic/file) | 12 |
 | Missing from comparison | 0 |
-| Extra in comparison | 6 |
+| Extra in comparison | 4 |
 | Expected repo-specific | 21 |
 | Parse errors | 0 |
 | Import dependency gaps | 3 |
@@ -28,9 +28,9 @@
 
 | Status | Count |
 |---|---:|
-| same | 33 |
+| same | 38 |
 | logic_changed | 12 |
-| file_extra_in_comparison | 6 |
+| file_extra_in_comparison | 4 |
 | expected_repo_specific | 21 |
 
 ## Symbol-level summary
@@ -39,12 +39,12 @@
 |---|---:|
 | symbol_missing_from_comparison | 56 |
 | symbol_extra_in_comparison | 24 |
-| signature_changed | 3 |
-| logic_changed | 21 |
+| signature_changed | 4 |
+| logic_changed | 22 |
 
 ## All compared files
 
-72 file(s). See [details/file_list.md](details/file_list.md).
+75 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -63,7 +63,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | Logical path | Status | Baseline file | Comparison file |
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` | (3 symbol diffs)
-| `main_gui.py` | logic_changed | `ileappGUI.py` | `aleappGUI.py` | (7 symbol diffs)
+| `main_gui.py` | logic_changed | `ileappGUI.py` | `aleappGUI.py` | (9 symbol diffs)
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` | (17 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
@@ -74,8 +74,6 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
-| `leapp_functions/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/__init__.py` |
-| `leapp_functions/app/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/app/__init__.py` |
 | `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
@@ -98,6 +96,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - logic changed: `case_data`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
 - logic changed: `filter_modules`
+- logic changed: `finish_crunch`
 - logic changed: `pickModules`
 - logic changed: `process`
 - only in ileapp: `select_keychain` — `def select_keychain()`
@@ -127,7 +126,6 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in aleapp: `ArtifactHtmlReport.add_chat` — `def add_chat(self)`
 - only in aleapp: `ArtifactHtmlReport.add_chat_invisble` — `def add_chat_invisble(self, id, text)`
 - only in aleapp: `ArtifactHtmlReport.add_chat_window` — `def add_chat_window(self, head, body)`
-- only in aleapp: `ArtifactHtmlReport.add_heat_map` — `def add_heat_map(self, json)`
 
 </details>
 
@@ -144,13 +142,11 @@ _None._
 
 ## Extra files
 
-6 file(s). See [details/extra_files.md](details/extra_files.md).
+4 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
 
-- `leapp_functions/__init__.py` (comparison: `leapp_functions/__init__.py`)
-- `leapp_functions/app/__init__.py` (comparison: `leapp_functions/app/__init__.py`)
 - `leapp_functions/parsers/apple_atx.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_android_fcm_queued_messages.py` (comparison: `scripts/ccl/ccl_android_fcm_queued_messages.py`)
 - `scripts/ccl/ccl_bplist.py` _(expected repo-specific)_ (comparison: `None`)
@@ -169,6 +165,8 @@ _None._
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
 - `scripts/googleKeepNotes.py` _(expected repo-specific)_ (comparison: `scripts/googleKeepNotes.py`)
+- `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
 
 </details>
 
@@ -189,4 +187,4 @@ _None._
 
 ## Signature changes
 
-3 symbol(s). See [details/signature_changes.md](details/signature_changes.md).
+4 symbol(s). See [details/signature_changes.md](details/signature_changes.md).

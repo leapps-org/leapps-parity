@@ -64,6 +64,8 @@
 | `scripts/tz_offset.py` | expected_repo_specific | `scripts/tz_offset.py` | `—` |
 | `scripts/unifiedlogs.py` | expected_repo_specific | `scripts/unifiedlogs.py` | `—` |
 | `scripts/whatsapp.py` | expected_repo_specific | `—` | `scripts/whatsapp.py` |
+| `leapp_functions/__init__.py` | same | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
+| `leapp_functions/app/__init__.py` | same | `leapp_functions/app/__init__.py` | `leapp_functions/app/__init__.py` |
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
@@ -85,4 +87,7 @@
 | `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
+| `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |
+| `scripts/vendor/ewfprobe.py` | same | `scripts/vendor/ewfprobe.py` | `scripts/vendor/ewfprobe.py` |
+| `scripts/vendor/qnxprobe.py` | same | `scripts/vendor/qnxprobe.py` | `scripts/vendor/qnxprobe.py` |

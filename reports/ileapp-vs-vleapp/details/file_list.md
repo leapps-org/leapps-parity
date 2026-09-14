@@ -24,7 +24,6 @@
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
 | `scripts/ccl/ccl_structures.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_structures.py` |
 | `scripts/ccl/ccl_v8_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_v8_value_deserializer.py` |
-| `scripts/vendor/qnxprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/qnxprobe.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
 | `scripts/alternate_artifacts/appInventory.py` | expected_repo_specific | `scripts/alternate_artifacts/appInventory.py` | `—` |
 | `scripts/blackboxprotobuf/__init__.py` | expected_repo_specific | `scripts/blackboxprotobuf/__init__.py` | `—` |
@@ -56,6 +55,8 @@
 | `scripts/test_artifacts/image_list.py` | expected_repo_specific | `scripts/test_artifacts/image_list.py` | `—` |
 | `scripts/tz_offset.py` | expected_repo_specific | `scripts/tz_offset.py` | `—` |
 | `scripts/unifiedlogs.py` | expected_repo_specific | `scripts/unifiedlogs.py` | `—` |
+| `leapp_functions/__init__.py` | same | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
+| `leapp_functions/app/__init__.py` | same | `leapp_functions/app/__init__.py` | `leapp_functions/app/__init__.py` |
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
@@ -77,3 +78,6 @@
 | `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
+| `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
+| `scripts/vendor/ewfprobe.py` | same | `scripts/vendor/ewfprobe.py` | `scripts/vendor/ewfprobe.py` |
+| `scripts/vendor/qnxprobe.py` | same | `scripts/vendor/qnxprobe.py` | `scripts/vendor/qnxprobe.py` |

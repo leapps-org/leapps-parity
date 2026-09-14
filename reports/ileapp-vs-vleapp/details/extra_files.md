@@ -38,4 +38,3 @@
 - `scripts/test_artifacts/image_list.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/tz_offset.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/unifiedlogs.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/vendor/qnxprobe.py` (comparison: `scripts/vendor/qnxprobe.py`)

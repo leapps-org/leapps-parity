@@ -13,6 +13,7 @@
 - logic changed: `case_data`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
 - logic changed: `filter_modules`
+- logic changed: `finish_crunch`
 - logic changed: `pickModules`
 - logic changed: `process`
 - only in ileapp: `select_keychain` — `def select_keychain()`

@@ -11,6 +11,7 @@
 - module-level logic changed
 - logic changed: `ValidateInput`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `finish_crunch`
 - logic changed: `pickModules`
 - logic changed: `process`
 - logic changed: `select_input`
@@ -101,22 +102,13 @@
 - only in ileapp: `FileSeekerItunes.get_root_path_from_domain` — `def get_root_path_from_domain(self, domain)`
 - only in ileapp: `FileSeekerItunes.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
 - only in vleapp: `FileSeekerIva` — `class FileSeekerIva`
-- only in vleapp: `FileSeekerIva.__init__` — `def __init__(self, iva_path, data_folder, exclude=...)`
+- only in vleapp: `FileSeekerIva.__init__` — `def __init__(self, iva_path, data_folder)`
 - only in vleapp: `FileSeekerIva.cleanup` — `def cleanup(self)`
-- only in vleapp: `FileSeekerRaw` — `class FileSeekerRaw`
-- only in vleapp: `FileSeekerRaw.__init__` — `def __init__(self, image_path, data_folder, exclude=...)`
-- only in vleapp: `FileSeekerRaw.cleanup` — `def cleanup(self)`
-- only in vleapp: `_RawExtractProgress` — `class _RawExtractProgress`
-- only in vleapp: `_RawExtractProgress.__init__` — `def __init__(self, interval=..., clock=..., log=...)`
-- only in vleapp: `_RawExtractProgress.update` — `def update(self, event)`
-- only in vleapp: `_extract_image_volumes` — `def _extract_image_volumes(probe, image_path, staged_zip, exclude=...)`
-- only in vleapp: `_format_duration` — `def _format_duration(seconds)`
-- only in vleapp: `_warn_incomplete_volumes` — `def _warn_incomplete_volumes(staged_zip)`
+- only in vleapp: `FileSeekerIva.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
 - only in ileapp: `check_itunes_backup_status` — `def check_itunes_backup_status(directory, backup_type)`
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`
 - only in ileapp: `get_itunes_backup_type` — `def get_itunes_backup_type(directory)`
-- only in vleapp: `split_image_sibling` — `def split_image_sibling(image_path)`
 
 ### `scripts/version_info.py`
 

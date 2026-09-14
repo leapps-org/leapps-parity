@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-09-07T16:46:17.038118+00:00",
+  "generated_at": "2026-09-14T17:09:58.526405+00:00",
   "baseline": "ileapp",
   "comparison": "vleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "edca4f6dbedc0adb35657f02cece8ccfc923a492",
+      "commit": "30c3f369a8d547e30a8509f5fffc28f8446bbfbc",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "vleapp": {
       "url": "https://github.com/abrignoni/VLEAPP.git",
       "branch": "main",
-      "commit": "a7f1056b694ebcd27a97bed37a2e7643242e8554",
+      "commit": "5bb10cd2f13b868b963e66aeee8b2e8493f7da48",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/vleapp"
     }
   },
   "counts": {
-    "files_total": 73,
+    "files_total": 77,
     "import_dependency_gaps": 11,
     "expected_repo_specific": 31,
-    "file_extra_in_comparison": 8,
+    "file_extra_in_comparison": 7,
     "file_missing_from_comparison": 2,
-    "logic_changed": 30,
-    "same": 21,
-    "signature_changed": 2,
-    "symbol_extra_in_comparison": 20,
+    "logic_changed": 31,
+    "same": 26,
+    "signature_changed": 3,
+    "symbol_extra_in_comparison": 11,
     "symbol_missing_from_comparison": 29
   },
   "import_dependency_gaps": [
@@ -97,6 +97,26 @@
     }
   ],
   "files": [
+    {
+      "logical_path": "leapp_functions/__init__.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/__init__.py",
+      "comparison_physical": "leapp_functions/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/__init__.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/__init__.py",
+      "comparison_physical": "leapp_functions/app/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
     {
       "logical_path": "leapp_functions/app/history.py",
       "status": "same",
@@ -218,6 +238,12 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "finish_crunch",
+          "status": "logic_changed",
+          "baseline_signature": "def finish_crunch(crunch_successful, out_params)",
+          "comparison_signature": "def finish_crunch(crunch_successful, out_params)"
+        },
+        {
           "qualified_name": "pickModules",
           "status": "logic_changed",
           "baseline_signature": "def pickModules()",
@@ -228,6 +254,12 @@
           "status": "logic_changed",
           "baseline_signature": "def process(casedata)",
           "comparison_signature": "def process(casedata)"
+        },
+        {
+          "qualified_name": "run_crunch",
+          "status": "signature_changed",
+          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys)",
+          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info)"
         },
         {
           "qualified_name": "select_input",
@@ -1044,6 +1076,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/raw_image.py",
+      "status": "same",
+      "baseline_physical": "scripts/raw_image.py",
+      "comparison_physical": "scripts/raw_image.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/realm_parser.py",
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/realm_parser.py",
@@ -1141,7 +1183,7 @@
           "qualified_name": "FileSeekerIva.__init__",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
-          "comparison_signature": "def __init__(self, iva_path, data_folder, exclude=...)"
+          "comparison_signature": "def __init__(self, iva_path, data_folder)"
         },
         {
           "qualified_name": "FileSeekerIva.cleanup",
@@ -1150,58 +1192,10 @@
           "comparison_signature": "def cleanup(self)"
         },
         {
-          "qualified_name": "FileSeekerRaw",
+          "qualified_name": "FileSeekerIva.search",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
-          "comparison_signature": "class FileSeekerRaw"
-        },
-        {
-          "qualified_name": "FileSeekerRaw.__init__",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def __init__(self, image_path, data_folder, exclude=...)"
-        },
-        {
-          "qualified_name": "FileSeekerRaw.cleanup",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def cleanup(self)"
-        },
-        {
-          "qualified_name": "_RawExtractProgress",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "class _RawExtractProgress"
-        },
-        {
-          "qualified_name": "_RawExtractProgress.__init__",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def __init__(self, interval=..., clock=..., log=...)"
-        },
-        {
-          "qualified_name": "_RawExtractProgress.update",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def update(self, event)"
-        },
-        {
-          "qualified_name": "_extract_image_volumes",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def _extract_image_volumes(probe, image_path, staged_zip, exclude=...)"
-        },
-        {
-          "qualified_name": "_format_duration",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def _format_duration(seconds)"
-        },
-        {
-          "qualified_name": "_warn_incomplete_volumes",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def _warn_incomplete_volumes(staged_zip)"
+          "comparison_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)"
         },
         {
           "qualified_name": "check_itunes_backup_status",
@@ -1226,12 +1220,6 @@
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def get_itunes_backup_type(directory)",
           "comparison_signature": null
-        },
-        {
-          "qualified_name": "split_image_sibling",
-          "status": "symbol_extra_in_comparison",
-          "baseline_signature": null,
-          "comparison_signature": "def split_image_sibling(image_path)"
         }
       ]
     },
@@ -1296,9 +1284,19 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/vendor/ewfprobe.py",
+      "status": "same",
+      "baseline_physical": "scripts/vendor/ewfprobe.py",
+      "comparison_physical": "scripts/vendor/ewfprobe.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/vendor/qnxprobe.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
+      "status": "same",
+      "baseline_physical": "scripts/vendor/qnxprobe.py",
       "comparison_physical": "scripts/vendor/qnxprobe.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,

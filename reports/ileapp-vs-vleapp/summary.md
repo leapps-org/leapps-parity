@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1788799577.svg)
+![Parity summary](parity.1789405798.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-07T16:46:17.038118+00:00
+- **Generated**: 2026-09-14T17:09:58.526405+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `vleapp`
 
-- **ileapp**: `edca4f6dbedc` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **vleapp**: `a7f1056b694e` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
+- **ileapp**: `30c3f369a8d5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **vleapp**: `5bb10cd2f13b` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 73 |
-| Same | 21 |
+| Files scanned (union) | 77 |
+| Same | 26 |
 | Changed (logic/file) | 11 |
 | Missing from comparison | 2 |
-| Extra in comparison | 8 |
+| Extra in comparison | 7 |
 | Expected repo-specific | 31 |
 | Parse errors | 0 |
 | Import dependency gaps | 11 |
@@ -28,10 +28,10 @@
 
 | Status | Count |
 |---|---:|
-| same | 21 |
+| same | 26 |
 | logic_changed | 11 |
 | file_missing_from_comparison | 2 |
-| file_extra_in_comparison | 8 |
+| file_extra_in_comparison | 7 |
 | expected_repo_specific | 31 |
 
 ## Symbol-level summary
@@ -39,13 +39,13 @@
 | Status | Count |
 |---|---:|
 | symbol_missing_from_comparison | 29 |
-| symbol_extra_in_comparison | 20 |
-| signature_changed | 2 |
-| logic_changed | 30 |
+| symbol_extra_in_comparison | 11 |
+| signature_changed | 3 |
+| logic_changed | 31 |
 
 ## All compared files
 
-73 file(s). See [details/file_list.md](details/file_list.md).
+77 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -72,7 +72,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | Logical path | Status | Baseline file | Comparison file |
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `vleapp.py` | (3 symbol diffs)
-| `main_gui.py` | logic_changed | `ileappGUI.py` | `vleappGUI.py` | (6 symbol diffs)
+| `main_gui.py` | logic_changed | `ileappGUI.py` | `vleappGUI.py` | (8 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
@@ -80,7 +80,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (15 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
-| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (23 symbol diffs)
+| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (14 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
@@ -107,6 +107,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - module-level logic changed
 - logic changed: `ValidateInput`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `finish_crunch`
 - logic changed: `pickModules`
 - logic changed: `process`
 - logic changed: `select_input`
@@ -138,7 +139,6 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in vleapp: `gather_hashes_in_file` — `def gather_hashes_in_file(file_found, regex)`
 - logic changed: `generate_hexdump`
 - logic changed: `generate_thumbnail`
-- logic changed: `get_plist_content`
 
 </details>
 
@@ -156,7 +156,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-8 file(s). See [details/extra_files.md](details/extra_files.md).
+7 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -201,4 +201,4 @@ _None._
 
 ## Signature changes
 
-2 symbol(s). See [details/signature_changes.md](details/signature_changes.md).
+3 symbol(s). See [details/signature_changes.md](details/signature_changes.md).

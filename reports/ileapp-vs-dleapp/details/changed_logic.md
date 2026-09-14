@@ -13,6 +13,7 @@
 - logic changed: `ValidateInput`
 - only in dleapp: `_update_signal_key_status` — `def _update_signal_key_status(*_args)`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `finish_crunch`
 - only in dleapp: `open_signal_key_dialog` — `def open_signal_key_dialog()`
 - logic changed: `pickModules`
 - logic changed: `process`

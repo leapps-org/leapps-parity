@@ -1,7 +1,5 @@
 # Extra / repo-specific files
 
-- `leapp_functions/__init__.py` (comparison: `leapp_functions/__init__.py`)
-- `leapp_functions/app/__init__.py` (comparison: `leapp_functions/app/__init__.py`)
 - `leapp_functions/parsers/apple_atx.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_android_fcm_queued_messages.py` (comparison: `scripts/ccl/ccl_android_fcm_queued_messages.py`)
 - `scripts/ccl/ccl_bplist.py` _(expected repo-specific)_ (comparison: `None`)

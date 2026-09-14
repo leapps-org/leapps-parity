@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-07T16:46:07.207760+00:00",
+  "generated_at": "2026-09-14T17:09:39.605443+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "edca4f6dbedc0adb35657f02cece8ccfc923a492",
+      "commit": "30c3f369a8d547e30a8509f5fffc28f8446bbfbc",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "002177b45abca10338a2d3f1702e4b0beb2ec7b9",
+      "commit": "49849147559724cef3c779f2b433c8890d97f297",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 72,
+    "files_total": 75,
     "import_dependency_gaps": 3,
     "expected_repo_specific": 21,
-    "file_extra_in_comparison": 6,
-    "logic_changed": 21,
-    "same": 33,
-    "signature_changed": 3,
+    "file_extra_in_comparison": 4,
+    "logic_changed": 22,
+    "same": 38,
+    "signature_changed": 4,
     "symbol_extra_in_comparison": 24,
     "symbol_missing_from_comparison": 56
   },
@@ -50,8 +50,8 @@
   "files": [
     {
       "logical_path": "leapp_functions/__init__.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
+      "status": "same",
+      "baseline_physical": "leapp_functions/__init__.py",
       "comparison_physical": "leapp_functions/__init__.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
@@ -60,8 +60,8 @@
     },
     {
       "logical_path": "leapp_functions/app/__init__.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/__init__.py",
       "comparison_physical": "leapp_functions/app/__init__.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
@@ -201,6 +201,12 @@
           "comparison_signature": "def filter_modules(*args)"
         },
         {
+          "qualified_name": "finish_crunch",
+          "status": "logic_changed",
+          "baseline_signature": "def finish_crunch(crunch_successful, out_params)",
+          "comparison_signature": "def finish_crunch(crunch_successful, out_params)"
+        },
+        {
           "qualified_name": "pickModules",
           "status": "logic_changed",
           "baseline_signature": "def pickModules()",
@@ -211,6 +217,12 @@
           "status": "logic_changed",
           "baseline_signature": "def process(casedata)",
           "comparison_signature": "def process(casedata)"
+        },
+        {
+          "qualified_name": "run_crunch",
+          "status": "signature_changed",
+          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys)",
+          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info)"
         },
         {
           "qualified_name": "select_keychain",
@@ -1228,6 +1240,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/raw_image.py",
+      "status": "same",
+      "baseline_physical": "scripts/raw_image.py",
+      "comparison_physical": "scripts/raw_image.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/realm_parser.py",
       "status": "same",
       "baseline_physical": "scripts/realm_parser.py",
@@ -1386,6 +1408,26 @@
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/unifiedlogs.py",
       "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ewfprobe.py",
+      "status": "same",
+      "baseline_physical": "scripts/vendor/ewfprobe.py",
+      "comparison_physical": "scripts/vendor/ewfprobe.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/qnxprobe.py",
+      "status": "same",
+      "baseline_physical": "scripts/vendor/qnxprobe.py",
+      "comparison_physical": "scripts/vendor/qnxprobe.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,

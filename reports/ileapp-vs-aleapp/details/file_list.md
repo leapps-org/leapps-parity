@@ -16,8 +16,6 @@
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
-| `leapp_functions/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/__init__.py` |
-| `leapp_functions/app/__init__.py` | file_extra_in_comparison | `—` | `leapp_functions/app/__init__.py` |
 | `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
@@ -43,6 +41,8 @@
 | `scripts/test_artifacts/image_list.py` | expected_repo_specific | `scripts/test_artifacts/image_list.py` | `—` |
 | `scripts/tz_offset.py` | expected_repo_specific | `scripts/tz_offset.py` | `—` |
 | `scripts/unifiedlogs.py` | expected_repo_specific | `scripts/unifiedlogs.py` | `—` |
+| `leapp_functions/__init__.py` | same | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
+| `leapp_functions/app/__init__.py` | same | `leapp_functions/app/__init__.py` | `leapp_functions/app/__init__.py` |
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
@@ -73,6 +73,9 @@
 | `scripts/mmkv_parser.py` | same | `scripts/mmkv_parser.py` | `scripts/mmkv_parser.py` |
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
+| `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/realm_parser.py` | same | `scripts/realm_parser.py` | `scripts/realm_parser.py` |
 | `scripts/snss_parser.py` | same | `scripts/snss_parser.py` | `scripts/snss_parser.py` |
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |
+| `scripts/vendor/ewfprobe.py` | same | `scripts/vendor/ewfprobe.py` | `scripts/vendor/ewfprobe.py` |
+| `scripts/vendor/qnxprobe.py` | same | `scripts/vendor/qnxprobe.py` | `scripts/vendor/qnxprobe.py` |
