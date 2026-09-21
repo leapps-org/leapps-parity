@@ -17,6 +17,7 @@
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
+| `scripts/meta_records.py` | file_extra_in_comparison | `—` | `scripts/meta_records.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
 | `scripts/alternate_artifacts/appInventory.py` | expected_repo_specific | `scripts/alternate_artifacts/appInventory.py` | `—` |
 | `scripts/blackboxprotobuf/__init__.py` | expected_repo_specific | `scripts/blackboxprotobuf/__init__.py` | `—` |
@@ -49,6 +50,7 @@
 | `scripts/unifiedlogs.py` | expected_repo_specific | `scripts/unifiedlogs.py` | `—` |
 | `leapp_functions/__init__.py` | same | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
 | `leapp_functions/app/__init__.py` | same | `leapp_functions/app/__init__.py` | `leapp_functions/app/__init__.py` |
+| `leapp_functions/app/artifact_result.py` | same | `leapp_functions/app/artifact_result.py` | `leapp_functions/app/artifact_result.py` |
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |

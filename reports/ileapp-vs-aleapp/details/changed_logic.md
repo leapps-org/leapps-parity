@@ -74,12 +74,11 @@
 
 - module-level logic changed
 - logic changed: `OutputParameters.__init__`
-- only in ileapp: `_batched` — `def _batched(iterable, size)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
+- only in ileapp: `_is_appledouble` — `def _is_appledouble(path)`
 - only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
-- only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - only in aleapp: `checkabx` — `def checkabx(in_path)`
 - only in ileapp: `convert_bytes_to_unit` — `def convert_bytes_to_unit(size)`
 - only in ileapp: `convert_cocoa_core_data_ts_to_utc` — `def convert_cocoa_core_data_ts_to_utc(cocoa_core_data_ts)`
@@ -105,7 +104,7 @@
 - only in ileapp: `get_resolution_for_model_id` — `def get_resolution_for_model_id(model_id)`
 - only in aleapp: `get_results_with_extra_sourcepath_if_needed` — `def get_results_with_extra_sourcepath_if_needed(path_list, query, data_headers)`
 - logic changed: `get_sqlite_db_records`
-- only in ileapp: `get_sysdiagnose_files` — `def get_sysdiagnose_files(files_found, target_file, text_mode=..., encoding=...)`
+- only in ileapp: `get_sysdiagnose_files` — `def get_sysdiagnose_files(files_found, target, text_mode=..., encoding=...)`
 - only in ileapp: `iOS` — `class iOS`
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`
@@ -121,8 +120,7 @@
 ### `scripts/lavafuncs.py`
 
 - module-level logic changed
-- logic changed: `lava_insert_sqlite_data`
-- only in ileapp: `lava_update_record_count` — `def lava_update_record_count(category, tablename, record_count)`
+- logic changed: `_prepare_datetime_value`
 
 ### `scripts/modules_to_exclude.py`
 

@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-14T17:10:07.920560+00:00",
+  "generated_at": "2026-09-21T17:19:08.052892+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "30c3f369a8d547e30a8509f5fffc28f8446bbfbc",
+      "commit": "a3875fd3059b92d4c31aa6c838631bd50ba64c72",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "d7baa6be3bfe10ebb7b1e90711888fa02320f3f2",
+      "commit": "56dfaf7d3438a57a8023d2215213052ba41da8c8",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/dleapp"
     }
   },
   "counts": {
-    "files_total": 87,
+    "files_total": 90,
     "import_dependency_gaps": 11,
     "expected_repo_specific": 33,
-    "file_extra_in_comparison": 14,
+    "file_extra_in_comparison": 16,
     "file_missing_from_comparison": 2,
-    "logic_changed": 35,
-    "same": 27,
+    "logic_changed": 33,
+    "same": 28,
     "signature_changed": 2,
     "symbol_extra_in_comparison": 12,
-    "symbol_missing_from_comparison": 29
+    "symbol_missing_from_comparison": 27
   },
   "import_dependency_gaps": [
     {
@@ -112,6 +112,16 @@
       "status": "same",
       "baseline_physical": "leapp_functions/app/__init__.py",
       "comparison_physical": "leapp_functions/app/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/artifact_result.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/artifact_result.py",
+      "comparison_physical": "leapp_functions/app/artifact_result.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -865,12 +875,6 @@
           "comparison_signature": "def __init__(self, output_folder, custom_folder_name=...)"
         },
         {
-          "qualified_name": "_batched",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def _batched(iterable, size)",
-          "comparison_signature": null
-        },
-        {
           "qualified_name": "_count_generator",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
@@ -889,6 +893,12 @@
           "comparison_signature": "def _get_line_count(file)"
         },
         {
+          "qualified_name": "_is_appledouble",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _is_appledouble(path)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "_read_binary_plist_tolerantly",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def _read_binary_plist_tolerantly(file_path)",
@@ -899,12 +909,6 @@
           "status": "logic_changed",
           "baseline_signature": "def artifact_processor(func)",
           "comparison_signature": "def artifact_processor(func)"
-        },
-        {
-          "qualified_name": "artifact_processor_streaming",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def artifact_processor_streaming(func)",
-          "comparison_signature": null
         },
         {
           "qualified_name": "device_info",
@@ -957,7 +961,7 @@
         {
           "qualified_name": "get_sysdiagnose_files",
           "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def get_sysdiagnose_files(files_found, target_file, text_mode=..., encoding=...)",
+          "baseline_signature": "def get_sysdiagnose_files(files_found, target, text_mode=..., encoding=...)",
           "comparison_signature": null
         },
         {
@@ -1046,6 +1050,12 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
+          "qualified_name": "_prepare_datetime_value",
+          "status": "logic_changed",
+          "baseline_signature": "def _prepare_datetime_value(value)",
+          "comparison_signature": "def _prepare_datetime_value(value)"
+        },
+        {
           "qualified_name": "initialize_lava",
           "status": "logic_changed",
           "baseline_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=...)",
@@ -1100,12 +1110,6 @@
           "comparison_signature": "def lava_insert_sqlite_artifact_search_pattern(artifact_regex_id, module_name, artifact_name, regex)"
         },
         {
-          "qualified_name": "lava_insert_sqlite_data",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)",
-          "comparison_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)"
-        },
-        {
           "qualified_name": "lava_insert_sqlite_file_path",
           "status": "logic_changed",
           "baseline_signature": "def lava_insert_sqlite_file_path(file_id, file_path)",
@@ -1128,12 +1132,6 @@
           "status": "logic_changed",
           "baseline_signature": "def lava_process_artifact(category, module_name, artifact_name, data, record_count=..., func_name=..., data_views=..., artifact_icon=..., source_path=...)",
           "comparison_signature": "def lava_process_artifact(category, module_name, artifact_name, data, record_count=..., func_name=..., data_views=..., artifact_icon=..., source_path=...)"
-        },
-        {
-          "qualified_name": "lava_update_record_count",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def lava_update_record_count(category, tablename, record_count)",
-          "comparison_signature": null
         }
       ]
     },
@@ -1221,18 +1219,6 @@
           "status": "logic_changed",
           "baseline_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)",
           "comparison_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)"
-        },
-        {
-          "qualified_name": "generate_report",
-          "status": "logic_changed",
-          "baseline_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)",
-          "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)"
-        },
-        {
-          "qualified_name": "get_tabler_icon_names",
-          "status": "logic_changed",
-          "baseline_signature": "def get_tabler_icon_names()",
-          "comparison_signature": "def get_tabler_icon_names()"
         }
       ]
     },
@@ -1408,6 +1394,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/vendor/impacket_ese.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/impacket_ese.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/vendor/qnxprobe.py",
       "status": "same",
       "baseline_physical": "scripts/vendor/qnxprobe.py",
@@ -1439,6 +1435,16 @@
       "status": "expected_repo_specific",
       "baseline_physical": null,
       "comparison_physical": "scripts/whatsapp.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/windows_lnk.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/windows_lnk.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,

@@ -1,22 +1,22 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1789405798.svg)
+![Parity summary](parity.1790011138.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-14T17:09:58.526405+00:00
+- **Generated**: 2026-09-21T17:18:58.408418+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `vleapp`
 
-- **ileapp**: `30c3f369a8d5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **vleapp**: `5bb10cd2f13b` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
+- **ileapp**: `a3875fd3059b` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **vleapp**: `ac319bb611a9` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 77 |
-| Same | 26 |
+| Files scanned (union) | 78 |
+| Same | 27 |
 | Changed (logic/file) | 11 |
 | Missing from comparison | 2 |
 | Extra in comparison | 7 |
@@ -28,7 +28,7 @@
 
 | Status | Count |
 |---|---:|
-| same | 26 |
+| same | 27 |
 | logic_changed | 11 |
 | file_missing_from_comparison | 2 |
 | file_extra_in_comparison | 7 |
@@ -38,14 +38,14 @@
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 29 |
+| symbol_missing_from_comparison | 27 |
 | symbol_extra_in_comparison | 11 |
 | signature_changed | 3 |
 | logic_changed | 31 |
 
 ## All compared files
 
-77 file(s). See [details/file_list.md](details/file_list.md).
+78 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -76,8 +76,8 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (23 symbol diffs)
-| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (15 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (22 symbol diffs)
+| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (14 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (14 symbol diffs)
@@ -128,17 +128,17 @@ Baseline files that import modules missing from the comparison repo (for example
 - module-level logic changed
 ### `scripts/ilapfuncs.py`
 - module-level logic changed
-- only in ileapp: `_batched` — `def _batched(iterable, size)`
 - only in vleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in vleapp: `_get_line_count` — `def _get_line_count(file)`
+- only in ileapp: `_is_appledouble` — `def _is_appledouble(path)`
 - only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - logic changed: `artifact_processor`
-- only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - logic changed: `device_info`
 - only in vleapp: `gather_hashes_in_file` — `def gather_hashes_in_file(file_found, regex)`
 - logic changed: `generate_hexdump`
 - logic changed: `generate_thumbnail`
+- logic changed: `get_plist_content`
 
 </details>
 

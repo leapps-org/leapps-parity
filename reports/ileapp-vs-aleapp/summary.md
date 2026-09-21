@@ -1,26 +1,26 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1789405779.svg)
+![Parity summary](parity.1790011117.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-14T17:09:39.605443+00:00
+- **Generated**: 2026-09-21T17:18:37.869459+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `30c3f369a8d5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `498491475597` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `a3875fd3059b` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `6b032ce3cde1` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
 | Files scanned (union) | 75 |
-| Same | 38 |
+| Same | 39 |
 | Changed (logic/file) | 12 |
 | Missing from comparison | 0 |
 | Extra in comparison | 4 |
-| Expected repo-specific | 21 |
+| Expected repo-specific | 20 |
 | Parse errors | 0 |
 | Import dependency gaps | 3 |
 
@@ -28,16 +28,16 @@
 
 | Status | Count |
 |---|---:|
-| same | 38 |
+| same | 39 |
 | logic_changed | 12 |
 | file_extra_in_comparison | 4 |
-| expected_repo_specific | 21 |
+| expected_repo_specific | 20 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 56 |
+| symbol_missing_from_comparison | 54 |
 | symbol_extra_in_comparison | 24 |
 | signature_changed | 4 |
 | logic_changed | 22 |
@@ -68,8 +68,8 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (44 symbol diffs)
-| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (2 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (43 symbol diffs)
+| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (1 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
@@ -164,15 +164,15 @@ _None._
 - `scripts/ccl_simplesnappy.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
-- `scripts/googleKeepNotes.py` _(expected repo-specific)_ (comparison: `scripts/googleKeepNotes.py`)
 - `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/pyinstaller/unifiedlog_binary.py` _(expected repo-specific)_ (comparison: `None`)
 
 </details>
 
 ## Expected repo-specific files
 
-21 file(s).
+20 file(s).
 
 ## Parse errors
 

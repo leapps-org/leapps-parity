@@ -45,13 +45,12 @@
 
 - module-level logic changed
 - logic changed: `OutputParameters.__init__`
-- only in ileapp: `_batched` — `def _batched(iterable, size)`
 - only in dleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in dleapp: `_get_line_count` — `def _get_line_count(file)`
+- only in ileapp: `_is_appledouble` — `def _is_appledouble(path)`
 - only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - logic changed: `artifact_processor`
-- only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - logic changed: `device_info`
 - only in dleapp: `gather_hashes_in_file` — `def gather_hashes_in_file(file_found, regex)`
 - logic changed: `generate_hexdump`
@@ -60,7 +59,7 @@
 - logic changed: `get_plist_file_content`
 - logic changed: `get_resolution_for_model_id`
 - logic changed: `get_sqlite_db_records`
-- only in ileapp: `get_sysdiagnose_files` — `def get_sysdiagnose_files(files_found, target_file, text_mode=..., encoding=...)`
+- only in ileapp: `get_sysdiagnose_files` — `def get_sysdiagnose_files(files_found, target, text_mode=..., encoding=...)`
 - only in dleapp: `html2csv` — `def html2csv(reportfolderbase)`
 - only in ileapp: `iOS` — `class iOS`
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
@@ -74,6 +73,7 @@
 ### `scripts/lavafuncs.py`
 
 - module-level logic changed
+- logic changed: `_prepare_datetime_value`
 - logic changed: `initialize_lava`
 - logic changed: `lava_add_module`
 - logic changed: `lava_create_sqlite_table`
@@ -83,12 +83,10 @@
 - logic changed: `lava_get_media_references`
 - logic changed: `lava_insert_sqlite_artifact_link_pattern_to_file`
 - logic changed: `lava_insert_sqlite_artifact_search_pattern`
-- logic changed: `lava_insert_sqlite_data`
 - logic changed: `lava_insert_sqlite_file_path`
 - logic changed: `lava_insert_sqlite_media_item`
 - logic changed: `lava_insert_sqlite_media_references`
 - logic changed: `lava_process_artifact`
-- only in ileapp: `lava_update_record_count` — `def lava_update_record_count(category, tablename, record_count)`
 
 ### `scripts/modules_to_exclude.py`
 
@@ -98,8 +96,6 @@
 
 - module-level logic changed
 - logic changed: `create_index_html`
-- logic changed: `generate_report`
-- logic changed: `get_tabler_icon_names`
 
 ### `scripts/search_files.py`
 

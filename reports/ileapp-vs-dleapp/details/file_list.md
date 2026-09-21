@@ -31,6 +31,8 @@
 | `scripts/chromium/discord_api.py` | file_extra_in_comparison | `—` | `scripts/chromium/discord_api.py` |
 | `scripts/chromium/local_storage.py` | file_extra_in_comparison | `—` | `scripts/chromium/local_storage.py` |
 | `scripts/chromium/simple_cache.py` | file_extra_in_comparison | `—` | `scripts/chromium/simple_cache.py` |
+| `scripts/vendor/impacket_ese.py` | file_extra_in_comparison | `—` | `scripts/vendor/impacket_ese.py` |
+| `scripts/windows_lnk.py` | file_extra_in_comparison | `—` | `scripts/windows_lnk.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
 | `scripts/alternate_artifacts/appInventory.py` | expected_repo_specific | `scripts/alternate_artifacts/appInventory.py` | `—` |
 | `scripts/blackboxprotobuf/__init__.py` | expected_repo_specific | `scripts/blackboxprotobuf/__init__.py` | `—` |
@@ -66,6 +68,7 @@
 | `scripts/whatsapp.py` | expected_repo_specific | `—` | `scripts/whatsapp.py` |
 | `leapp_functions/__init__.py` | same | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
 | `leapp_functions/app/__init__.py` | same | `leapp_functions/app/__init__.py` | `leapp_functions/app/__init__.py` |
+| `leapp_functions/app/artifact_result.py` | same | `leapp_functions/app/artifact_result.py` | `leapp_functions/app/artifact_result.py` |
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |

@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1789405788.svg)
+![Parity summary](parity.1790011127.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-14T17:09:48.571977+00:00
+- **Generated**: 2026-09-21T17:18:47.636089+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `rleapp`
 
-- **ileapp**: `30c3f369a8d5` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **rleapp**: `36c79d4e690f` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
+- **ileapp**: `a3875fd3059b` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **rleapp**: `e8039242b1d4` on `main` ([https://github.com/abrignoni/RLEAPP.git](https://github.com/abrignoni/RLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 69 |
-| Same | 26 |
+| Files scanned (union) | 71 |
+| Same | 27 |
 | Changed (logic/file) | 11 |
 | Missing from comparison | 2 |
-| Extra in comparison | 0 |
+| Extra in comparison | 1 |
 | Expected repo-specific | 30 |
 | Parse errors | 0 |
 | Import dependency gaps | 11 |
@@ -28,23 +28,24 @@
 
 | Status | Count |
 |---|---:|
-| same | 26 |
+| same | 27 |
 | logic_changed | 11 |
 | file_missing_from_comparison | 2 |
+| file_extra_in_comparison | 1 |
 | expected_repo_specific | 30 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 29 |
+| symbol_missing_from_comparison | 27 |
 | symbol_extra_in_comparison | 7 |
 | signature_changed | 2 |
 | logic_changed | 32 |
 
 ## All compared files
 
-69 file(s). See [details/file_list.md](details/file_list.md).
+71 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -75,14 +76,15 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (25 symbol diffs)
-| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (15 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (24 symbol diffs)
+| `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (14 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (1 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
+| `scripts/meta_records.py` | file_extra_in_comparison | `—` | `scripts/meta_records.py` |
 
 ## Changed logic files
 
@@ -120,17 +122,17 @@ Baseline files that import modules missing from the comparison repo (for example
 ### `scripts/ilapfuncs.py`
 - module-level logic changed
 - logic changed: `OutputParameters.__init__`
-- only in ileapp: `_batched` — `def _batched(iterable, size)`
 - only in rleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in rleapp: `_get_line_count` — `def _get_line_count(file)`
+- only in ileapp: `_is_appledouble` — `def _is_appledouble(path)`
 - only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - logic changed: `artifact_processor`
-- only in ileapp: `artifact_processor_streaming` — `def artifact_processor_streaming(func)`
 - logic changed: `device_info`
 - only in rleapp: `gather_hashes_in_file` — `def gather_hashes_in_file(file_found, regex)`
 - logic changed: `generate_hexdump`
 - logic changed: `generate_thumbnail`
+- logic changed: `get_plist_content`
 
 </details>
 
@@ -148,7 +150,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-0 file(s). See [details/extra_files.md](details/extra_files.md).
+1 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>

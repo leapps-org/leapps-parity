@@ -46,4 +46,6 @@
 - `scripts/test_artifacts/image_list.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/tz_offset.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/unifiedlogs.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/vendor/impacket_ese.py` (comparison: `scripts/vendor/impacket_ese.py`)
 - `scripts/whatsapp.py` _(expected repo-specific)_ (comparison: `scripts/whatsapp.py`)
+- `scripts/windows_lnk.py` (comparison: `scripts/windows_lnk.py`)

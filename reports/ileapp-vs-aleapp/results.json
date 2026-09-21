@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-09-14T17:09:39.605443+00:00",
+  "generated_at": "2026-09-21T17:18:37.869459+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "30c3f369a8d547e30a8509f5fffc28f8446bbfbc",
+      "commit": "a3875fd3059b92d4c31aa6c838631bd50ba64c72",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "49849147559724cef3c779f2b433c8890d97f297",
+      "commit": "6b032ce3cde1d3e0bff0fd60e2b322021d58b106",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
     "files_total": 75,
     "import_dependency_gaps": 3,
-    "expected_repo_specific": 21,
+    "expected_repo_specific": 20,
     "file_extra_in_comparison": 4,
     "logic_changed": 22,
-    "same": 38,
+    "same": 39,
     "signature_changed": 4,
     "symbol_extra_in_comparison": 24,
-    "symbol_missing_from_comparison": 56
+    "symbol_missing_from_comparison": 54
   },
   "import_dependency_gaps": [
     {
@@ -63,6 +63,16 @@
       "status": "same",
       "baseline_physical": "leapp_functions/app/__init__.py",
       "comparison_physical": "leapp_functions/app/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/artifact_result.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/artifact_result.py",
+      "comparison_physical": "leapp_functions/app/artifact_result.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -842,16 +852,6 @@
       "symbol_diffs": []
     },
     {
-      "logical_path": "scripts/googleKeepNotes.py",
-      "status": "expected_repo_specific",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/googleKeepNotes.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
       "logical_path": "scripts/html_parts.py",
       "status": "logic_changed",
       "baseline_physical": "scripts/html_parts.py",
@@ -887,15 +887,15 @@
           "comparison_signature": "def __init__(self, output_folder, custom_folder_name=...)"
         },
         {
-          "qualified_name": "_batched",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def _batched(iterable, size)",
-          "comparison_signature": null
-        },
-        {
           "qualified_name": "_deserialize_nska",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def _deserialize_nska(data)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_is_appledouble",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _is_appledouble(path)",
           "comparison_signature": null
         },
         {
@@ -915,12 +915,6 @@
           "status": "logic_changed",
           "baseline_signature": "def artifact_processor(func)",
           "comparison_signature": "def artifact_processor(func)"
-        },
-        {
-          "qualified_name": "artifact_processor_streaming",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def artifact_processor_streaming(func)",
-          "comparison_signature": null
         },
         {
           "qualified_name": "checkabx",
@@ -1075,7 +1069,7 @@
         {
           "qualified_name": "get_sysdiagnose_files",
           "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def get_sysdiagnose_files(files_found, target_file, text_mode=..., encoding=...)",
+          "baseline_signature": "def get_sysdiagnose_files(files_found, target, text_mode=..., encoding=...)",
           "comparison_signature": null
         },
         {
@@ -1176,16 +1170,10 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "lava_insert_sqlite_data",
+          "qualified_name": "_prepare_datetime_value",
           "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)",
-          "comparison_signature": "def lava_insert_sqlite_data(table_name, data, object_columns, headers, column_map)"
-        },
-        {
-          "qualified_name": "lava_update_record_count",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def lava_update_record_count(category, tablename, record_count)",
-          "comparison_signature": null
+          "baseline_signature": "def _prepare_datetime_value(value)",
+          "comparison_signature": "def _prepare_datetime_value(value)"
         }
       ]
     },

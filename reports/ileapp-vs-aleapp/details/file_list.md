@@ -33,7 +33,6 @@
 | `scripts/ccl_simplesnappy.py` | expected_repo_specific | `scripts/ccl_simplesnappy.py` | `—` |
 | `scripts/chat_rendering.py` | expected_repo_specific | `scripts/chat_rendering.py` | `—` |
 | `scripts/geo_utils.py` | expected_repo_specific | `—` | `scripts/geo_utils.py` |
-| `scripts/googleKeepNotes.py` | expected_repo_specific | `—` | `scripts/googleKeepNotes.py` |
 | `scripts/ios_keychain.py` | expected_repo_specific | `scripts/ios_keychain.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | expected_repo_specific | `scripts/ktx/ios_ktx2png.py` | `—` |
 | `scripts/pyinstaller/unifiedlog_binary.py` | expected_repo_specific | `scripts/pyinstaller/unifiedlog_binary.py` | `—` |
@@ -43,6 +42,7 @@
 | `scripts/unifiedlogs.py` | expected_repo_specific | `scripts/unifiedlogs.py` | `—` |
 | `leapp_functions/__init__.py` | same | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
 | `leapp_functions/app/__init__.py` | same | `leapp_functions/app/__init__.py` | `leapp_functions/app/__init__.py` |
+| `leapp_functions/app/artifact_result.py` | same | `leapp_functions/app/artifact_result.py` | `leapp_functions/app/artifact_result.py` |
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
