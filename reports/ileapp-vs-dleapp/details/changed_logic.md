@@ -3,20 +3,28 @@
 ### `main_entry.py`
 
 - module-level logic changed
+- logic changed: `create_profile`
 - logic changed: `main`
+- only in dleapp: `profile_file_name` — `def profile_file_name(name)`
+- only in dleapp: `read_profile` — `def read_profile(filename)`
 - only in dleapp: `resolve_supplied_secret` — `def resolve_supplied_secret(value, label)`
 - logic changed: `validate_args`
+- only in dleapp: `write_profile` — `def write_profile(filename, plugins)`
 
 ### `main_gui.py`
 
 - module-level logic changed
 - logic changed: `ValidateInput`
 - only in dleapp: `_update_signal_key_status` — `def _update_signal_key_status(*_args)`
+- only in dleapp: `_update_threema_password_status` — `def _update_threema_password_status(*_args)`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
 - logic changed: `finish_crunch`
+- logic changed: `load_profile`
 - only in dleapp: `open_signal_key_dialog` — `def open_signal_key_dialog()`
+- only in dleapp: `open_threema_password_dialog` — `def open_threema_password_dialog()`
 - logic changed: `pickModules`
 - logic changed: `process`
+- logic changed: `save_profile`
 - only in ileapp: `select_keychain` — `def select_keychain()`
 
 ### `scripts/artifact_report.py`
@@ -110,6 +118,15 @@
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`
 - only in ileapp: `get_itunes_backup_type` — `def get_itunes_backup_type(directory)`
+
+### `scripts/unifiedlogs.py`
+
+- module-level logic changed
+- only in dleapp: `_extends` — `def _extends(shorter, longer, chunk_size=...)`
+- only in dleapp: `_pick_copy` — `def _pick_copy(paths, summary)`
+- only in dleapp: `_without_data_volume` — `def _without_data_volume(components)`
+- only in dleapp: `assemble_merged_archive` — `def assemble_merged_archive(diagnostics_dirs, uuidtext_dirs, workdir)`
+- only in dleapp: `store_copies` — `def store_copies(files_found, root)`
 
 ### `scripts/version_info.py`
 

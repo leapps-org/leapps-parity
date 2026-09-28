@@ -1,15 +1,15 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1790011138.svg)
+![Parity summary](parity.1790621574.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-21T17:18:58.408418+00:00
+- **Generated**: 2026-09-28T18:52:54.184008+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `vleapp`
 
-- **ileapp**: `a3875fd3059b` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **vleapp**: `ac319bb611a9` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
+- **ileapp**: `ea7358d65c45` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **vleapp**: `d1259f13bfdb` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
 
 ## Overall counts
 

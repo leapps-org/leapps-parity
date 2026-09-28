@@ -20,6 +20,7 @@
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
+| `scripts/vendor/exoprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/exoprobe.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
 | `scripts/ccl/ccl_bplist.py` | expected_repo_specific | `scripts/ccl/ccl_bplist.py` | `—` |
 | `scripts/ccl/ccl_segb1.py` | expected_repo_specific | `scripts/ccl/ccl_segb1.py` | `—` |

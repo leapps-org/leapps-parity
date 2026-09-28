@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-21T17:18:47.636089+00:00",
+  "generated_at": "2026-09-28T18:52:37.662769+00:00",
   "baseline": "ileapp",
   "comparison": "rleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "a3875fd3059b92d4c31aa6c838631bd50ba64c72",
+      "commit": "ea7358d65c454e9a20c8bc77d1aafc5764b7a31f",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "rleapp": {
       "url": "https://github.com/abrignoni/RLEAPP.git",
       "branch": "main",
-      "commit": "e8039242b1d4eef57e4003f28411034404821c57",
+      "commit": "851d916a9a5e2612a7ae2bf8ce34f908ee121bd5",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/rleapp"
     }
   },
@@ -209,8 +209,8 @@
         {
           "qualified_name": "crunch_artifacts",
           "status": "signature_changed",
-          "baseline_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=...)",
-          "comparison_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename)"
+          "baseline_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=...)",
+          "comparison_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=...)"
         },
         {
           "qualified_name": "main",
@@ -268,8 +268,8 @@
         {
           "qualified_name": "run_crunch",
           "status": "signature_changed",
-          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys)",
-          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info)"
+          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=...)",
+          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=...)"
         },
         {
           "qualified_name": "select_keychain",

@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1790011117.svg)
+![Parity summary](parity.1790621541.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-21T17:18:37.869459+00:00
+- **Generated**: 2026-09-28T18:52:21.689090+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `a3875fd3059b` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `6b032ce3cde1` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `ea7358d65c45` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `8e8c5d0f378f` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 75 |
+| Files scanned (union) | 76 |
 | Same | 39 |
 | Changed (logic/file) | 12 |
 | Missing from comparison | 0 |
-| Extra in comparison | 4 |
+| Extra in comparison | 5 |
 | Expected repo-specific | 20 |
 | Parse errors | 0 |
 | Import dependency gaps | 3 |
@@ -30,7 +30,7 @@
 |---|---:|
 | same | 39 |
 | logic_changed | 12 |
-| file_extra_in_comparison | 4 |
+| file_extra_in_comparison | 5 |
 | expected_repo_specific | 20 |
 
 ## Symbol-level summary
@@ -44,7 +44,7 @@
 
 ## All compared files
 
-75 file(s). See [details/file_list.md](details/file_list.md).
+76 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -78,6 +78,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
+| `scripts/vendor/exoprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/exoprobe.py` |
 
 ## Changed logic files
 
@@ -142,7 +143,7 @@ _None._
 
 ## Extra files
 
-4 file(s). See [details/extra_files.md](details/extra_files.md).
+5 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>

@@ -1,26 +1,26 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1790011148.svg)
+![Parity summary](parity.1790621591.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-09-21T17:19:08.052892+00:00
+- **Generated**: 2026-09-28T18:53:11.142538+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `dleapp`
 
-- **ileapp**: `a3875fd3059b` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **dleapp**: `56dfaf7d3438` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
+- **ileapp**: `ea7358d65c45` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **dleapp**: `f80b58fb68f7` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 90 |
-| Same | 28 |
-| Changed (logic/file) | 11 |
-| Missing from comparison | 2 |
-| Extra in comparison | 16 |
-| Expected repo-specific | 33 |
+| Files scanned (union) | 120 |
+| Same | 30 |
+| Changed (logic/file) | 12 |
+| Missing from comparison | 1 |
+| Extra in comparison | 46 |
+| Expected repo-specific | 31 |
 | Parse errors | 0 |
 | Import dependency gaps | 11 |
 
@@ -28,24 +28,24 @@
 
 | Status | Count |
 |---|---:|
-| same | 28 |
-| logic_changed | 11 |
-| file_missing_from_comparison | 2 |
-| file_extra_in_comparison | 16 |
-| expected_repo_specific | 33 |
+| same | 30 |
+| logic_changed | 12 |
+| file_missing_from_comparison | 1 |
+| file_extra_in_comparison | 46 |
+| expected_repo_specific | 31 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
 | symbol_missing_from_comparison | 27 |
-| symbol_extra_in_comparison | 12 |
+| symbol_extra_in_comparison | 22 |
 | signature_changed | 2 |
-| logic_changed | 33 |
+| logic_changed | 36 |
 
 ## All compared files
 
-90 file(s). See [details/file_list.md](details/file_list.md).
+120 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -71,8 +71,8 @@ Baseline files that import modules missing from the comparison repo (for example
 
 | Logical path | Status | Baseline file | Comparison file |
 |---|---|---|---|
-| `main_entry.py` | logic_changed | `ileapp.py` | `dleapp.py` | (4 symbol diffs)
-| `main_gui.py` | logic_changed | `ileappGUI.py` | `dleappGUI.py` | (9 symbol diffs)
+| `main_entry.py` | logic_changed | `ileapp.py` | `dleapp.py` | (8 symbol diffs)
+| `main_gui.py` | logic_changed | `ileappGUI.py` | `dleappGUI.py` | (13 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (9 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
@@ -81,38 +81,46 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (1 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (10 symbol diffs)
+| `scripts/unifiedlogs.py` | logic_changed | `scripts/unifiedlogs.py` | `scripts/unifiedlogs.py` | (5 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
-| `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
+| `scripts/bits_qmgr.py` | file_extra_in_comparison | `—` | `scripts/bits_qmgr.py` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
 | `scripts/ccl/ccl_blink_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_blink_value_deserializer.py` |
 | `scripts/ccl/ccl_chromium_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_chromium_indexeddb.py` |
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
 | `scripts/ccl/ccl_v8_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_v8_value_deserializer.py` |
-| `scripts/ccl/indexeddb_to_json.py` | file_extra_in_comparison | `—` | `scripts/ccl/indexeddb_to_json.py` |
 
 ## Changed logic files
 
-11 file(s). See [details/changed_logic.md](details/changed_logic.md).
+12 file(s). See [details/changed_logic.md](details/changed_logic.md).
 
 <details>
 <summary>Preview</summary>
 
 ### `main_entry.py`
 - module-level logic changed
+- logic changed: `create_profile`
 - logic changed: `main`
+- only in dleapp: `profile_file_name` — `def profile_file_name(name)`
+- only in dleapp: `read_profile` — `def read_profile(filename)`
 - only in dleapp: `resolve_supplied_secret` — `def resolve_supplied_secret(value, label)`
 - logic changed: `validate_args`
+- only in dleapp: `write_profile` — `def write_profile(filename, plugins)`
 ### `main_gui.py`
 - module-level logic changed
 - logic changed: `ValidateInput`
 - only in dleapp: `_update_signal_key_status` — `def _update_signal_key_status(*_args)`
+- only in dleapp: `_update_threema_password_status` — `def _update_threema_password_status(*_args)`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
 - logic changed: `finish_crunch`
+- logic changed: `load_profile`
 - only in dleapp: `open_signal_key_dialog` — `def open_signal_key_dialog()`
+- only in dleapp: `open_threema_password_dialog` — `def open_threema_password_dialog()`
 - logic changed: `pickModules`
 - logic changed: `process`
+- logic changed: `save_profile`
 - only in ileapp: `select_keychain` — `def select_keychain()`
 ### `scripts/artifact_report.py`
 - module-level logic changed
@@ -131,38 +139,30 @@ Baseline files that import modules missing from the comparison repo (for example
 ### `scripts/html_parts.py`
 - module-level logic changed
 ### `scripts/ilapfuncs.py`
-- module-level logic changed
-- logic changed: `OutputParameters.__init__`
-- only in dleapp: `_count_generator` — `def _count_generator(reader)`
-- only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
-- only in dleapp: `_get_line_count` — `def _get_line_count(file)`
-- only in ileapp: `_is_appledouble` — `def _is_appledouble(path)`
-- only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
-- logic changed: `artifact_processor`
 
 </details>
 
 ## Missing files
 
-2 file(s). See [details/missing_files.md](details/missing_files.md).
+1 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
 - `scripts/mmkv_parser.py` (baseline: `scripts/mmkv_parser.py`)
-- `scripts/snss_parser.py` (baseline: `scripts/snss_parser.py`)
 
 </details>
 
 ## Extra files
 
-16 file(s). See [details/extra_files.md](details/extra_files.md).
+46 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
 
 - `leapp_functions/parsers/apple_atx.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/alternate_artifacts/appInventory.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/bits_qmgr.py` (comparison: `scripts/bits_qmgr.py`)
 - `scripts/blackboxprotobuf/__init__.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/blackboxprotobuf/lib/__init__.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/blackboxprotobuf/lib/interface.py` _(expected repo-specific)_ (comparison: `None`)
@@ -180,13 +180,12 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/ccl/ccl_segb2.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_simplesnappy.py` (comparison: `scripts/ccl/ccl_simplesnappy.py`)
 - `scripts/ccl/ccl_v8_value_deserializer.py` (comparison: `scripts/ccl/ccl_v8_value_deserializer.py`)
-- `scripts/ccl/indexeddb_to_json.py` (comparison: `scripts/ccl/indexeddb_to_json.py`)
 
 </details>
 
 ## Expected repo-specific files
 
-33 file(s).
+31 file(s).
 
 ## Parse errors
 
