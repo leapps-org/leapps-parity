@@ -5,6 +5,7 @@
 - module-level logic changed
 - logic changed: `main`
 - logic changed: `validate_args`
+- only in ileapp: `version_readers_first` — `def version_readers_first(plugins)`
 
 ### `main_gui.py`
 
@@ -14,9 +15,29 @@
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
 - logic changed: `filter_modules`
 - logic changed: `finish_crunch`
+- logic changed: `open_settings_window`
 - logic changed: `pickModules`
 - logic changed: `process`
 - only in ileapp: `select_keychain` — `def select_keychain()`
+
+### `packaging/build.py`
+
+- module-level logic changed
+- only in aleapp: `_installed_msl_plugins` — `def _installed_msl_plugins() -> ...`
+- only in ileapp: `_unifiedlog_binary` — `def _unifiedlog_binary() -> ...`
+- logic changed: `appimage_desktop_entry`
+- logic changed: `build_exe`
+- only in ileapp: `bundle_binaries` — `def bundle_binaries() -> ...`
+- logic changed: `bundle_datas`
+- only in ileapp: `bundled_bin_dir` — `def bundled_bin_dir() -> ...`
+- only in aleapp: `bundled_root` — `def bundled_root() -> ...`
+- only in aleapp: `install_commands` — `def install_commands(python) -> ...`
+- logic changed: `smoke`
+
+### `packaging/entrypoint.py`
+
+- module-level logic changed
+- logic changed: `main`
 
 ### `scripts/alternate_artifacts/appInventory.py`
 
@@ -139,6 +160,8 @@
 - only in ileapp: `FileSeekerItunes.build_files_list_from_manifest_mbdb` — `def build_files_list_from_manifest_mbdb(self, manifest_path)`
 - only in ileapp: `FileSeekerItunes.get_root_path_from_domain` — `def get_root_path_from_domain(self, domain)`
 - only in ileapp: `FileSeekerItunes.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
+- only in ileapp: `_backup_file_plaintext` — `def _backup_file_plaintext(decrypted_contents, manifest_size, relative_path)`
+- only in ileapp: `_without_cbc_padding` — `def _without_cbc_padding(decrypted_contents)`
 - only in ileapp: `check_itunes_backup_status` — `def check_itunes_backup_status(directory, backup_type)`
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`

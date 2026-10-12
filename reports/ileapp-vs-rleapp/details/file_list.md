@@ -6,6 +6,8 @@
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `rleapp.py` |
 | `main_gui.py` | logic_changed | `ileappGUI.py` | `rleappGUI.py` |
+| `packaging/build.py` | logic_changed | `packaging/build.py` | `packaging/build.py` |
+| `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` |
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` |
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` |
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
@@ -15,6 +17,7 @@
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
 | `scripts/meta_records.py` | file_extra_in_comparison | `—` | `scripts/meta_records.py` |
@@ -41,7 +44,6 @@
 | `scripts/chat_rendering.py` | expected_repo_specific | `scripts/chat_rendering.py` | `—` |
 | `scripts/ios_keychain.py` | expected_repo_specific | `scripts/ios_keychain.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | expected_repo_specific | `scripts/ktx/ios_ktx2png.py` | `—` |
-| `scripts/pyinstaller/unifiedlog_binary.py` | expected_repo_specific | `scripts/pyinstaller/unifiedlog_binary.py` | `—` |
 | `scripts/realm_parser.py` | expected_repo_specific | `scripts/realm_parser.py` | `—` |
 | `scripts/sqlcipher_decrypt.py` | expected_repo_specific | `scripts/sqlcipher_decrypt.py` | `—` |
 | `scripts/test_artifacts/__init__.py` | expected_repo_specific | `scripts/test_artifacts/__init__.py` | `—` |
@@ -54,9 +56,11 @@
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
+| `leapp_functions/app/screen_log.py` | same | `leapp_functions/app/screen_log.py` | `leapp_functions/app/screen_log.py` |
 | `leapp_functions/data_sources/json_files.py` | same | `leapp_functions/data_sources/json_files.py` | `leapp_functions/data_sources/json_files.py` |
 | `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
+| `packaging/dmg_settings.py` | same | `packaging/dmg_settings.py` | `packaging/dmg_settings.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
 | `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
 | `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |

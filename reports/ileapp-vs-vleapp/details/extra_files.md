@@ -30,7 +30,6 @@
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/pyinstaller/unifiedlog_binary.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/realm_parser.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/report_icons.py` _(expected repo-specific)_ (comparison: `scripts/report_icons.py`)
 - `scripts/sqlcipher_decrypt.py` _(expected repo-specific)_ (comparison: `None`)

@@ -6,6 +6,8 @@
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` |
 | `main_gui.py` | logic_changed | `ileappGUI.py` | `aleappGUI.py` |
+| `packaging/build.py` | logic_changed | `packaging/build.py` | `packaging/build.py` |
+| `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` |
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` |
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` |
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` |
@@ -16,6 +18,7 @@
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
@@ -36,7 +39,6 @@
 | `scripts/geo_utils.py` | expected_repo_specific | `—` | `scripts/geo_utils.py` |
 | `scripts/ios_keychain.py` | expected_repo_specific | `scripts/ios_keychain.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | expected_repo_specific | `scripts/ktx/ios_ktx2png.py` | `—` |
-| `scripts/pyinstaller/unifiedlog_binary.py` | expected_repo_specific | `scripts/pyinstaller/unifiedlog_binary.py` | `—` |
 | `scripts/test_artifacts/__init__.py` | expected_repo_specific | `scripts/test_artifacts/__init__.py` | `—` |
 | `scripts/test_artifacts/image_list.py` | expected_repo_specific | `scripts/test_artifacts/image_list.py` | `—` |
 | `scripts/tz_offset.py` | expected_repo_specific | `scripts/tz_offset.py` | `—` |
@@ -47,9 +49,11 @@
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
+| `leapp_functions/app/screen_log.py` | same | `leapp_functions/app/screen_log.py` | `leapp_functions/app/screen_log.py` |
 | `leapp_functions/data_sources/json_files.py` | same | `leapp_functions/data_sources/json_files.py` | `leapp_functions/data_sources/json_files.py` |
 | `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
+| `packaging/dmg_settings.py` | same | `packaging/dmg_settings.py` | `packaging/dmg_settings.py` |
 | `scripts/blackboxprotobuf/__init__.py` | same | `scripts/blackboxprotobuf/__init__.py` | `scripts/blackboxprotobuf/__init__.py` |
 | `scripts/blackboxprotobuf/lib/__init__.py` | same | `scripts/blackboxprotobuf/lib/__init__.py` | `scripts/blackboxprotobuf/lib/__init__.py` |
 | `scripts/blackboxprotobuf/lib/interface.py` | same | `scripts/blackboxprotobuf/lib/interface.py` | `scripts/blackboxprotobuf/lib/interface.py` |

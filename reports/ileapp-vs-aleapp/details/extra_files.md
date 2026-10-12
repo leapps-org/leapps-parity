@@ -19,7 +19,6 @@
 - `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
 - `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/pyinstaller/unifiedlog_binary.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/test_artifacts/__init__.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/test_artifacts/image_list.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/tz_offset.py` _(expected repo-specific)_ (comparison: `None`)

@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-28T18:53:11.142538+00:00",
+  "generated_at": "2026-10-12T20:32:39.648158+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "ea7358d65c454e9a20c8bc77d1aafc5764b7a31f",
+      "commit": "d1846366757f49b0f353112f71ff1aa8d69ec2ad",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "f80b58fb68f791a228eef1a34795bf47b15894d9",
+      "commit": "5c4af750acd9eeeae491a1cfb9d37397fd89fc1d",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/dleapp"
     }
   },
   "counts": {
-    "files_total": 120,
-    "import_dependency_gaps": 11,
+    "files_total": 128,
+    "import_dependency_gaps": 12,
     "expected_repo_specific": 31,
-    "file_extra_in_comparison": 46,
-    "file_missing_from_comparison": 1,
-    "logic_changed": 36,
-    "same": 30,
+    "file_extra_in_comparison": 50,
+    "file_missing_from_comparison": 2,
+    "logic_changed": 43,
+    "same": 31,
     "signature_changed": 2,
     "symbol_extra_in_comparison": 22,
-    "symbol_missing_from_comparison": 27
+    "symbol_missing_from_comparison": 37
   },
   "import_dependency_gaps": [
     {
@@ -94,6 +94,12 @@
       "source_physical": "scripts/ccl_leveldb.py",
       "import_statement": "scripts.ccl_simplesnappy",
       "missing_logical_path": "scripts/ccl_simplesnappy.py"
+    },
+    {
+      "source_logical_path": "scripts/unifiedlogs.py",
+      "source_physical": "scripts/unifiedlogs.py",
+      "import_statement": "scripts.log_filter:accelerate_query",
+      "missing_logical_path": "scripts/log_filter.py"
     }
   ],
   "files": [
@@ -158,6 +164,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "leapp_functions/app/screen_log.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/screen_log.py",
+      "comparison_physical": "leapp_functions/app/screen_log.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "leapp_functions/data_sources/json_files.py",
       "status": "same",
       "baseline_physical": "leapp_functions/data_sources/json_files.py",
@@ -215,8 +231,8 @@
         {
           "qualified_name": "crunch_artifacts",
           "status": "signature_changed",
-          "baseline_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=...)",
-          "comparison_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=...)"
+          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=...)",
+          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=...)"
         },
         {
           "qualified_name": "main",
@@ -247,6 +263,12 @@
           "status": "logic_changed",
           "baseline_signature": "def validate_args(args)",
           "comparison_signature": "def validate_args(args)"
+        },
+        {
+          "qualified_name": "version_readers_first",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def version_readers_first(plugins)",
+          "comparison_signature": null
         },
         {
           "qualified_name": "write_profile",
@@ -290,6 +312,12 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "filter_modules",
+          "status": "logic_changed",
+          "baseline_signature": "def filter_modules(*args)",
+          "comparison_signature": "def filter_modules(*args)"
+        },
+        {
           "qualified_name": "finish_crunch",
           "status": "logic_changed",
           "baseline_signature": "def finish_crunch(crunch_successful, out_params)",
@@ -300,6 +328,12 @@
           "status": "logic_changed",
           "baseline_signature": "def load_profile()",
           "comparison_signature": "def load_profile()"
+        },
+        {
+          "qualified_name": "open_settings_window",
+          "status": "logic_changed",
+          "baseline_signature": "def open_settings_window()",
+          "comparison_signature": "def open_settings_window()"
         },
         {
           "qualified_name": "open_signal_key_dialog",
@@ -342,6 +376,68 @@
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def select_keychain()",
           "comparison_signature": null
+        }
+      ]
+    },
+    {
+      "logical_path": "packaging/build.py",
+      "status": "logic_changed",
+      "baseline_physical": "packaging/build.py",
+      "comparison_physical": "packaging/build.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "appimage_desktop_entry",
+          "status": "logic_changed",
+          "baseline_signature": "def appimage_desktop_entry() -> ...",
+          "comparison_signature": "def appimage_desktop_entry() -> ..."
+        },
+        {
+          "qualified_name": "build_exe",
+          "status": "logic_changed",
+          "baseline_signature": "def build_exe(onefile, clean_first) -> ...",
+          "comparison_signature": "def build_exe(onefile, clean_first) -> ..."
+        },
+        {
+          "qualified_name": "hidden_imports",
+          "status": "logic_changed",
+          "baseline_signature": "def hidden_imports() -> ...",
+          "comparison_signature": "def hidden_imports() -> ..."
+        },
+        {
+          "qualified_name": "read_version",
+          "status": "logic_changed",
+          "baseline_signature": "def read_version() -> ...",
+          "comparison_signature": "def read_version() -> ..."
+        }
+      ]
+    },
+    {
+      "logical_path": "packaging/dmg_settings.py",
+      "status": "same",
+      "baseline_physical": "packaging/dmg_settings.py",
+      "comparison_physical": "packaging/dmg_settings.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "packaging/entrypoint.py",
+      "status": "logic_changed",
+      "baseline_physical": "packaging/entrypoint.py",
+      "comparison_physical": "packaging/entrypoint.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "main",
+          "status": "logic_changed",
+          "baseline_signature": "def main()",
+          "comparison_signature": "def main()"
         }
       ]
     },
@@ -1013,6 +1109,42 @@
           "comparison_signature": "def __init__(self, output_folder, custom_folder_name=...)"
         },
         {
+          "qualified_name": "SqliteRecords",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "class SqliteRecords",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "SqliteRecords.__del__",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def __del__(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "SqliteRecords.__init__",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def __init__(self, db, cursor)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "SqliteRecords.__iter__",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def __iter__(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "SqliteRecords.__next__",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def __next__(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "SqliteRecords.close",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def close(self)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "_count_generator",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
@@ -1274,10 +1406,40 @@
       ]
     },
     {
+      "logical_path": "scripts/libedit_history.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/libedit_history.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/linux_links.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/linux_links.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/linux_syslog.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
       "comparison_physical": "scripts/linux_syslog.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/log_filter.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/log_filter.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1388,16 +1550,6 @@
       "status": "same",
       "baseline_physical": "scripts/plugin_loader.py",
       "comparison_physical": "scripts/plugin_loader.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/pyinstaller/unifiedlog_binary.py",
-      "status": "same",
-      "baseline_physical": "scripts/pyinstaller/unifiedlog_binary.py",
-      "comparison_physical": "scripts/pyinstaller/unifiedlog_binary.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1516,6 +1668,18 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "_backup_file_plaintext",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _backup_file_plaintext(decrypted_contents, manifest_size, relative_path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_without_cbc_padding",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _without_cbc_padding(decrypted_contents)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "check_itunes_backup_status",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def check_itunes_backup_status(directory, backup_type)",
@@ -1566,6 +1730,16 @@
       "status": "same",
       "baseline_physical": "scripts/sqlcipher_decrypt.py",
       "comparison_physical": "scripts/sqlcipher_decrypt.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/systemd_journal.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/systemd_journal.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1663,6 +1837,12 @@
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
           "comparison_signature": "def assemble_merged_archive(diagnostics_dirs, uuidtext_dirs, workdir)"
+        },
+        {
+          "qualified_name": "filtered_records",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def filtered_records(source_path, query, batch_size=..., interval=..., clock=..., log=...)",
+          "comparison_signature": null
         },
         {
           "qualified_name": "store_copies",
@@ -1768,6 +1948,16 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/webos_db8.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/webos_db8.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/whatsapp.py",

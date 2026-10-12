@@ -9,6 +9,7 @@
 - only in dleapp: `read_profile` — `def read_profile(filename)`
 - only in dleapp: `resolve_supplied_secret` — `def resolve_supplied_secret(value, label)`
 - logic changed: `validate_args`
+- only in ileapp: `version_readers_first` — `def version_readers_first(plugins)`
 - only in dleapp: `write_profile` — `def write_profile(filename, plugins)`
 
 ### `main_gui.py`
@@ -18,14 +19,29 @@
 - only in dleapp: `_update_signal_key_status` — `def _update_signal_key_status(*_args)`
 - only in dleapp: `_update_threema_password_status` — `def _update_threema_password_status(*_args)`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `filter_modules`
 - logic changed: `finish_crunch`
 - logic changed: `load_profile`
+- logic changed: `open_settings_window`
 - only in dleapp: `open_signal_key_dialog` — `def open_signal_key_dialog()`
 - only in dleapp: `open_threema_password_dialog` — `def open_threema_password_dialog()`
 - logic changed: `pickModules`
 - logic changed: `process`
 - logic changed: `save_profile`
 - only in ileapp: `select_keychain` — `def select_keychain()`
+
+### `packaging/build.py`
+
+- module-level logic changed
+- logic changed: `appimage_desktop_entry`
+- logic changed: `build_exe`
+- logic changed: `hidden_imports`
+- logic changed: `read_version`
+
+### `packaging/entrypoint.py`
+
+- module-level logic changed
+- logic changed: `main`
 
 ### `scripts/artifact_report.py`
 
@@ -53,6 +69,12 @@
 
 - module-level logic changed
 - logic changed: `OutputParameters.__init__`
+- only in ileapp: `SqliteRecords` — `class SqliteRecords`
+- only in ileapp: `SqliteRecords.__del__` — `def __del__(self)`
+- only in ileapp: `SqliteRecords.__init__` — `def __init__(self, db, cursor)`
+- only in ileapp: `SqliteRecords.__iter__` — `def __iter__(self)`
+- only in ileapp: `SqliteRecords.__next__` — `def __next__(self)`
+- only in ileapp: `SqliteRecords.close` — `def close(self)`
 - only in dleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in dleapp: `_get_line_count` — `def _get_line_count(file)`
@@ -114,6 +136,8 @@
 - only in ileapp: `FileSeekerItunes.build_files_list_from_manifest_mbdb` — `def build_files_list_from_manifest_mbdb(self, manifest_path)`
 - only in ileapp: `FileSeekerItunes.get_root_path_from_domain` — `def get_root_path_from_domain(self, domain)`
 - only in ileapp: `FileSeekerItunes.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
+- only in ileapp: `_backup_file_plaintext` — `def _backup_file_plaintext(decrypted_contents, manifest_size, relative_path)`
+- only in ileapp: `_without_cbc_padding` — `def _without_cbc_padding(decrypted_contents)`
 - only in ileapp: `check_itunes_backup_status` — `def check_itunes_backup_status(directory, backup_type)`
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`
@@ -126,6 +150,7 @@
 - only in dleapp: `_pick_copy` — `def _pick_copy(paths, summary)`
 - only in dleapp: `_without_data_volume` — `def _without_data_volume(components)`
 - only in dleapp: `assemble_merged_archive` — `def assemble_merged_archive(diagnostics_dirs, uuidtext_dirs, workdir)`
+- only in ileapp: `filtered_records` — `def filtered_records(source_path, query, batch_size=..., interval=..., clock=..., log=...)`
 - only in dleapp: `store_copies` — `def store_copies(files_found, root)`
 
 ### `scripts/version_info.py`

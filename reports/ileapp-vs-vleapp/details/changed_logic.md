@@ -5,17 +5,39 @@
 - module-level logic changed
 - logic changed: `main`
 - logic changed: `validate_args`
+- only in ileapp: `version_readers_first` — `def version_readers_first(plugins)`
 
 ### `main_gui.py`
 
 - module-level logic changed
 - logic changed: `ValidateInput`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
+- logic changed: `filter_modules`
 - logic changed: `finish_crunch`
+- logic changed: `open_settings_window`
 - logic changed: `pickModules`
 - logic changed: `process`
 - logic changed: `select_input`
 - only in ileapp: `select_keychain` — `def select_keychain()`
+
+### `packaging/build.py`
+
+- module-level logic changed
+- only in ileapp: `_onefile_members` — `def _onefile_members(exe) -> ...`
+- only in ileapp: `_unifiedlog_binary` — `def _unifiedlog_binary() -> ...`
+- logic changed: `appimage_desktop_entry`
+- logic changed: `build_exe`
+- only in ileapp: `bundle_binaries` — `def bundle_binaries() -> ...`
+- logic changed: `bundle_datas`
+- only in ileapp: `bundled_bin_dir` — `def bundled_bin_dir() -> ...`
+- logic changed: `hidden_imports`
+- logic changed: `read_version`
+- logic changed: `smoke`
+
+### `packaging/entrypoint.py`
+
+- module-level logic changed
+- logic changed: `main`
 
 ### `scripts/artifact_report.py`
 
@@ -103,6 +125,8 @@
 - only in vleapp: `FileSeekerIva.__init__` — `def __init__(self, iva_path, data_folder)`
 - only in vleapp: `FileSeekerIva.cleanup` — `def cleanup(self)`
 - only in vleapp: `FileSeekerIva.search` — `def search(self, filepattern, return_on_first_hit=..., force=...)`
+- only in ileapp: `_backup_file_plaintext` — `def _backup_file_plaintext(decrypted_contents, manifest_size, relative_path)`
+- only in ileapp: `_without_cbc_padding` — `def _without_cbc_padding(decrypted_contents)`
 - only in ileapp: `check_itunes_backup_status` — `def check_itunes_backup_status(directory, backup_type)`
 - only in ileapp: `decrypt_itunes_backup` — `def decrypt_itunes_backup(directory, passcode)`
 - only in ileapp: `get_itunes_backup_encryption` — `def get_itunes_backup_encryption(directory)`

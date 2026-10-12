@@ -6,6 +6,8 @@
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `dleapp.py` |
 | `main_gui.py` | logic_changed | `ileappGUI.py` | `dleappGUI.py` |
+| `packaging/build.py` | logic_changed | `packaging/build.py` | `packaging/build.py` |
+| `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` |
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` |
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` |
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
@@ -16,6 +18,7 @@
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/unifiedlogs.py` | logic_changed | `scripts/unifiedlogs.py` | `scripts/unifiedlogs.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/bits_qmgr.py` | file_extra_in_comparison | `—` | `scripts/bits_qmgr.py` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
@@ -40,6 +43,8 @@
 | `scripts/firefox_profiles.py` | file_extra_in_comparison | `—` | `scripts/firefox_profiles.py` |
 | `scripts/firefox_session.py` | file_extra_in_comparison | `—` | `scripts/firefox_session.py` |
 | `scripts/firefox_settings.py` | file_extra_in_comparison | `—` | `scripts/firefox_settings.py` |
+| `scripts/libedit_history.py` | file_extra_in_comparison | `—` | `scripts/libedit_history.py` |
+| `scripts/linux_links.py` | file_extra_in_comparison | `—` | `scripts/linux_links.py` |
 | `scripts/linux_syslog.py` | file_extra_in_comparison | `—` | `scripts/linux_syslog.py` |
 | `scripts/macos_biome.py` | file_extra_in_comparison | `—` | `scripts/macos_biome.py` |
 | `scripts/macos_dsstore.py` | file_extra_in_comparison | `—` | `scripts/macos_dsstore.py` |
@@ -50,6 +55,7 @@
 | `scripts/onedrive_odl.py` | file_extra_in_comparison | `—` | `scripts/onedrive_odl.py` |
 | `scripts/rdp_bitmap_cache.py` | file_extra_in_comparison | `—` | `scripts/rdp_bitmap_cache.py` |
 | `scripts/registry_recovery.py` | file_extra_in_comparison | `—` | `scripts/registry_recovery.py` |
+| `scripts/systemd_journal.py` | file_extra_in_comparison | `—` | `scripts/systemd_journal.py` |
 | `scripts/threema_desktop.py` | file_extra_in_comparison | `—` | `scripts/threema_desktop.py` |
 | `scripts/threema_keystorage.py` | file_extra_in_comparison | `—` | `scripts/threema_keystorage.py` |
 | `scripts/vendor/ccl_segb/__init__.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/__init__.py` |
@@ -58,6 +64,7 @@
 | `scripts/vendor/ccl_segb/ccl_segb2.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/ccl_segb2.py` |
 | `scripts/vendor/ccl_segb/ccl_segb_common.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/ccl_segb_common.py` |
 | `scripts/vendor/impacket_ese.py` | file_extra_in_comparison | `—` | `scripts/vendor/impacket_ese.py` |
+| `scripts/webos_db8.py` | file_extra_in_comparison | `—` | `scripts/webos_db8.py` |
 | `scripts/windows_evtx.py` | file_extra_in_comparison | `—` | `scripts/windows_evtx.py` |
 | `scripts/windows_lnk.py` | file_extra_in_comparison | `—` | `scripts/windows_lnk.py` |
 | `scripts/windows_messages.py` | file_extra_in_comparison | `—` | `scripts/windows_messages.py` |
@@ -100,9 +107,11 @@
 | `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
 | `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
+| `leapp_functions/app/screen_log.py` | same | `leapp_functions/app/screen_log.py` | `leapp_functions/app/screen_log.py` |
 | `leapp_functions/data_sources/json_files.py` | same | `leapp_functions/data_sources/json_files.py` | `leapp_functions/data_sources/json_files.py` |
 | `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
+| `packaging/dmg_settings.py` | same | `packaging/dmg_settings.py` | `packaging/dmg_settings.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
 | `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
 | `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |
@@ -118,7 +127,6 @@
 | `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
-| `scripts/pyinstaller/unifiedlog_binary.py` | same | `scripts/pyinstaller/unifiedlog_binary.py` | `scripts/pyinstaller/unifiedlog_binary.py` |
 | `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/snss_parser.py` | same | `scripts/snss_parser.py` | `scripts/snss_parser.py` |
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |

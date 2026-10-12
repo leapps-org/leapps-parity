@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-28T18:52:54.184008+00:00",
+  "generated_at": "2026-10-12T20:32:20.925857+00:00",
   "baseline": "ileapp",
   "comparison": "vleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "ea7358d65c454e9a20c8bc77d1aafc5764b7a31f",
+      "commit": "d1846366757f49b0f353112f71ff1aa8d69ec2ad",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "vleapp": {
       "url": "https://github.com/abrignoni/VLEAPP.git",
       "branch": "main",
-      "commit": "d1259f13bfdb14429f82d685d7d2282478cba63c",
+      "commit": "36be7610c416efb8a32ca5d884e22a7bd2f7cbbd",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/vleapp"
     }
   },
   "counts": {
-    "files_total": 78,
-    "import_dependency_gaps": 11,
-    "expected_repo_specific": 31,
+    "files_total": 82,
+    "import_dependency_gaps": 12,
+    "expected_repo_specific": 30,
     "file_extra_in_comparison": 7,
-    "file_missing_from_comparison": 2,
-    "logic_changed": 31,
-    "same": 27,
+    "file_missing_from_comparison": 3,
+    "logic_changed": 40,
+    "same": 29,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 11,
-    "symbol_missing_from_comparison": 27
+    "symbol_missing_from_comparison": 34
   },
   "import_dependency_gaps": [
     {
@@ -94,6 +94,12 @@
       "source_physical": "scripts/ccl_leveldb.py",
       "import_statement": "scripts.ccl_simplesnappy",
       "missing_logical_path": "scripts/ccl_simplesnappy.py"
+    },
+    {
+      "source_logical_path": "scripts/unifiedlogs.py",
+      "source_physical": "scripts/unifiedlogs.py",
+      "import_statement": "scripts.log_filter:accelerate_query",
+      "missing_logical_path": "scripts/log_filter.py"
     }
   ],
   "files": [
@@ -158,6 +164,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "leapp_functions/app/screen_log.py",
+      "status": "same",
+      "baseline_physical": "leapp_functions/app/screen_log.py",
+      "comparison_physical": "leapp_functions/app/screen_log.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "leapp_functions/data_sources/json_files.py",
       "status": "same",
       "baseline_physical": "leapp_functions/data_sources/json_files.py",
@@ -209,8 +225,8 @@
         {
           "qualified_name": "crunch_artifacts",
           "status": "signature_changed",
-          "baseline_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=...)",
-          "comparison_signature": "def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=...)"
+          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=...)",
+          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=...)"
         },
         {
           "qualified_name": "main",
@@ -223,6 +239,12 @@
           "status": "logic_changed",
           "baseline_signature": "def validate_args(args)",
           "comparison_signature": "def validate_args(args)"
+        },
+        {
+          "qualified_name": "version_readers_first",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def version_readers_first(plugins)",
+          "comparison_signature": null
         }
       ]
     },
@@ -248,10 +270,22 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "filter_modules",
+          "status": "logic_changed",
+          "baseline_signature": "def filter_modules(*args)",
+          "comparison_signature": "def filter_modules(*args)"
+        },
+        {
           "qualified_name": "finish_crunch",
           "status": "logic_changed",
           "baseline_signature": "def finish_crunch(crunch_successful, out_params)",
           "comparison_signature": "def finish_crunch(crunch_successful, out_params)"
+        },
+        {
+          "qualified_name": "open_settings_window",
+          "status": "logic_changed",
+          "baseline_signature": "def open_settings_window()",
+          "comparison_signature": "def open_settings_window()"
         },
         {
           "qualified_name": "pickModules",
@@ -282,6 +316,104 @@
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def select_keychain()",
           "comparison_signature": null
+        }
+      ]
+    },
+    {
+      "logical_path": "packaging/build.py",
+      "status": "logic_changed",
+      "baseline_physical": "packaging/build.py",
+      "comparison_physical": "packaging/build.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "_onefile_members",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _onefile_members(exe) -> ...",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_unifiedlog_binary",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _unifiedlog_binary() -> ...",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "appimage_desktop_entry",
+          "status": "logic_changed",
+          "baseline_signature": "def appimage_desktop_entry() -> ...",
+          "comparison_signature": "def appimage_desktop_entry() -> ..."
+        },
+        {
+          "qualified_name": "build_exe",
+          "status": "logic_changed",
+          "baseline_signature": "def build_exe(onefile, clean_first) -> ...",
+          "comparison_signature": "def build_exe(onefile, clean_first) -> ..."
+        },
+        {
+          "qualified_name": "bundle_binaries",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def bundle_binaries() -> ...",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "bundle_datas",
+          "status": "logic_changed",
+          "baseline_signature": "def bundle_datas() -> ...",
+          "comparison_signature": "def bundle_datas() -> ..."
+        },
+        {
+          "qualified_name": "bundled_bin_dir",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def bundled_bin_dir() -> ...",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "hidden_imports",
+          "status": "logic_changed",
+          "baseline_signature": "def hidden_imports() -> ...",
+          "comparison_signature": "def hidden_imports() -> ..."
+        },
+        {
+          "qualified_name": "read_version",
+          "status": "logic_changed",
+          "baseline_signature": "def read_version() -> ...",
+          "comparison_signature": "def read_version() -> ..."
+        },
+        {
+          "qualified_name": "smoke",
+          "status": "logic_changed",
+          "baseline_signature": "def smoke(onefile) -> ...",
+          "comparison_signature": "def smoke(onefile) -> ..."
+        }
+      ]
+    },
+    {
+      "logical_path": "packaging/dmg_settings.py",
+      "status": "same",
+      "baseline_physical": "packaging/dmg_settings.py",
+      "comparison_physical": "packaging/dmg_settings.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "packaging/entrypoint.py",
+      "status": "logic_changed",
+      "baseline_physical": "packaging/entrypoint.py",
+      "comparison_physical": "packaging/entrypoint.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "main",
+          "status": "logic_changed",
+          "baseline_signature": "def main()",
+          "comparison_signature": "def main()"
         }
       ]
     },
@@ -1024,6 +1156,16 @@
       ]
     },
     {
+      "logical_path": "scripts/log_filter.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/log_filter.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/mmkv_parser.py",
       "status": "file_missing_from_comparison",
       "baseline_physical": "scripts/mmkv_parser.py",
@@ -1058,16 +1200,6 @@
       "status": "same",
       "baseline_physical": "scripts/plugin_loader.py",
       "comparison_physical": "scripts/plugin_loader.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/pyinstaller/unifiedlog_binary.py",
-      "status": "expected_repo_specific",
-      "baseline_physical": "scripts/pyinstaller/unifiedlog_binary.py",
-      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1194,6 +1326,18 @@
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
           "comparison_signature": "def search(self, filepattern, return_on_first_hit=..., force=...)"
+        },
+        {
+          "qualified_name": "_backup_file_plaintext",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _backup_file_plaintext(decrypted_contents, manifest_size, relative_path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_without_cbc_padding",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _without_cbc_padding(decrypted_contents)",
+          "comparison_signature": null
         },
         {
           "qualified_name": "check_itunes_backup_status",
