@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1791837103.svg)
+![Parity summary](parity.1792432387.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-10-12T20:31:43.004709+00:00
+- **Generated**: 2026-10-19T17:53:07.200725+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `d1846366757f` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `a3e34b24b763` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `16f2bc480295` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `1eae6b9dcca1` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 80 |
+| Files scanned (union) | 84 |
 | Same | 41 |
 | Changed (logic/file) | 14 |
-| Missing from comparison | 1 |
-| Extra in comparison | 5 |
+| Missing from comparison | 3 |
+| Extra in comparison | 7 |
 | Expected repo-specific | 19 |
 | Parse errors | 0 |
 | Import dependency gaps | 4 |
@@ -30,8 +30,8 @@
 |---|---:|
 | same | 41 |
 | logic_changed | 14 |
-| file_missing_from_comparison | 1 |
-| file_extra_in_comparison | 5 |
+| file_missing_from_comparison | 3 |
+| file_extra_in_comparison | 7 |
 | expected_repo_specific | 19 |
 
 ## Symbol-level summary
@@ -45,7 +45,7 @@
 
 ## All compared files
 
-80 file(s). See [details/file_list.md](details/file_list.md).
+84 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -79,11 +79,11 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (12 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
+| `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
+| `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
 | `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
-| `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
-| `scripts/vendor/exoprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/exoprobe.py` |
 
 ## Changed logic files
 
@@ -137,18 +137,20 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-1 file(s). See [details/missing_files.md](details/missing_files.md).
+3 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
 - `scripts/log_filter.py` (baseline: `scripts/log_filter.py`)
+- `scripts/webkit_helpers.py` (baseline: `scripts/webkit_helpers.py`)
+- `scripts/webkit_media_cache.py` (baseline: `scripts/webkit_media_cache.py`)
 
 </details>
 
 ## Extra files
 
-5 file(s). See [details/extra_files.md](details/extra_files.md).
+7 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -169,10 +171,10 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/ccl_segb/ccl_segb_common.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl_simplesnappy.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/chromium_sync_data.py` (comparison: `scripts/chromium_sync_data.py`)
 - `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
 - `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/test_artifacts/__init__.py` _(expected repo-specific)_ (comparison: `None`)
 
 </details>
 

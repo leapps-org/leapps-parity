@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-12T20:32:20.925857+00:00",
+  "generated_at": "2026-10-19T17:54:04.026316+00:00",
   "baseline": "ileapp",
   "comparison": "vleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "d1846366757f49b0f353112f71ff1aa8d69ec2ad",
+      "commit": "16f2bc480295140b7fba3e7562082295ecdc2b38",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "vleapp": {
       "url": "https://github.com/abrignoni/VLEAPP.git",
       "branch": "main",
-      "commit": "36be7610c416efb8a32ca5d884e22a7bd2f7cbbd",
+      "commit": "9f46ffb2f1fb818ecc115ff5e474d85aecbdec15",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/vleapp"
     }
   },
   "counts": {
-    "files_total": 82,
+    "files_total": 84,
     "import_dependency_gaps": 12,
     "expected_repo_specific": 30,
     "file_extra_in_comparison": 7,
-    "file_missing_from_comparison": 3,
+    "file_missing_from_comparison": 5,
     "logic_changed": 40,
     "same": 29,
     "signature_changed": 3,
@@ -225,8 +225,8 @@
         {
           "qualified_name": "crunch_artifacts",
           "status": "signature_changed",
-          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=...)",
-          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=...)"
+          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=..., found_members=...)",
+          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=..., found_members=...)"
         },
         {
           "qualified_name": "main",
@@ -302,8 +302,8 @@
         {
           "qualified_name": "run_crunch",
           "status": "signature_changed",
-          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=...)",
-          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=...)"
+          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=..., found_members=...)",
+          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=..., found_members=...)"
         },
         {
           "qualified_name": "select_input",
@@ -1461,6 +1461,26 @@
           "comparison_signature": null
         }
       ]
+    },
+    {
+      "logical_path": "scripts/webkit_helpers.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/webkit_helpers.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/webkit_media_cache.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/webkit_media_cache.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     }
   ]
 }

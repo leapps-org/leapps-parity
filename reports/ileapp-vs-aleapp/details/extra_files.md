@@ -16,6 +16,7 @@
 - `scripts/ccl_segb/ccl_segb_common.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl_simplesnappy.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/chromium_sync_data.py` (comparison: `scripts/chromium_sync_data.py`)
 - `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
 - `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
@@ -23,4 +24,5 @@
 - `scripts/test_artifacts/image_list.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/tz_offset.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/unifiedlogs.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/vendor/chromiumcacheprobe.py` (comparison: `scripts/vendor/chromiumcacheprobe.py`)
 - `scripts/vendor/exoprobe.py` (comparison: `scripts/vendor/exoprobe.py`)

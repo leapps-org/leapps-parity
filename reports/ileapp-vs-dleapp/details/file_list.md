@@ -20,7 +20,10 @@
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
+| `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
+| `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/bits_qmgr.py` | file_extra_in_comparison | `—` | `scripts/bits_qmgr.py` |
+| `scripts/bsm_audit.py` | file_extra_in_comparison | `—` | `scripts/bsm_audit.py` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
 | `scripts/ccl/ccl_blink_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_blink_value_deserializer.py` |
 | `scripts/ccl/ccl_chromium_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_chromium_indexeddb.py` |
@@ -36,6 +39,9 @@
 | `scripts/chromium/discord_api.py` | file_extra_in_comparison | `—` | `scripts/chromium/discord_api.py` |
 | `scripts/chromium/local_storage.py` | file_extra_in_comparison | `—` | `scripts/chromium/local_storage.py` |
 | `scripts/chromium/simple_cache.py` | file_extra_in_comparison | `—` | `scripts/chromium/simple_cache.py` |
+| `scripts/chromium/sync_data.py` | file_extra_in_comparison | `—` | `scripts/chromium/sync_data.py` |
+| `scripts/ese_log.py` | file_extra_in_comparison | `—` | `scripts/ese_log.py` |
+| `scripts/ese_recovery.py` | file_extra_in_comparison | `—` | `scripts/ese_recovery.py` |
 | `scripts/ese_rows.py` | file_extra_in_comparison | `—` | `scripts/ese_rows.py` |
 | `scripts/firefox.py` | file_extra_in_comparison | `—` | `scripts/firefox.py` |
 | `scripts/firefox_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/firefox_indexeddb.py` |
@@ -64,10 +70,14 @@
 | `scripts/vendor/ccl_segb/ccl_segb2.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/ccl_segb2.py` |
 | `scripts/vendor/ccl_segb/ccl_segb_common.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/ccl_segb_common.py` |
 | `scripts/vendor/impacket_ese.py` | file_extra_in_comparison | `—` | `scripts/vendor/impacket_ese.py` |
+| `scripts/web_server_logs.py` | file_extra_in_comparison | `—` | `scripts/web_server_logs.py` |
 | `scripts/webos_db8.py` | file_extra_in_comparison | `—` | `scripts/webos_db8.py` |
+| `scripts/windows_app_settings.py` | file_extra_in_comparison | `—` | `scripts/windows_app_settings.py` |
+| `scripts/windows_defender_history.py` | file_extra_in_comparison | `—` | `scripts/windows_defender_history.py` |
 | `scripts/windows_evtx.py` | file_extra_in_comparison | `—` | `scripts/windows_evtx.py` |
 | `scripts/windows_lnk.py` | file_extra_in_comparison | `—` | `scripts/windows_lnk.py` |
 | `scripts/windows_messages.py` | file_extra_in_comparison | `—` | `scripts/windows_messages.py` |
+| `scripts/windows_notepad.py` | file_extra_in_comparison | `—` | `scripts/windows_notepad.py` |
 | `scripts/windows_ntfs.py` | file_extra_in_comparison | `—` | `scripts/windows_ntfs.py` |
 | `scripts/windows_registry.py` | file_extra_in_comparison | `—` | `scripts/windows_registry.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |

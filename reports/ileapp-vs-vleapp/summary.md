@@ -1,24 +1,24 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1791837140.svg)
+![Parity summary](parity.1792432444.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-10-12T20:32:20.925857+00:00
+- **Generated**: 2026-10-19T17:54:04.026316+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `vleapp`
 
-- **ileapp**: `d1846366757f` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **vleapp**: `36be7610c416` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
+- **ileapp**: `16f2bc480295` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **vleapp**: `9f46ffb2f1fb` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 82 |
+| Files scanned (union) | 84 |
 | Same | 29 |
 | Changed (logic/file) | 13 |
-| Missing from comparison | 3 |
+| Missing from comparison | 5 |
 | Extra in comparison | 7 |
 | Expected repo-specific | 30 |
 | Parse errors | 0 |
@@ -30,7 +30,7 @@
 |---|---:|
 | same | 29 |
 | logic_changed | 13 |
-| file_missing_from_comparison | 3 |
+| file_missing_from_comparison | 5 |
 | file_extra_in_comparison | 7 |
 | expected_repo_specific | 30 |
 
@@ -45,7 +45,7 @@
 
 ## All compared files
 
-82 file(s). See [details/file_list.md](details/file_list.md).
+84 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -88,10 +88,10 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
+| `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
+| `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
 | `scripts/ccl/ccl_blink_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_blink_value_deserializer.py` |
-| `scripts/ccl/ccl_chromium_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_chromium_indexeddb.py` |
-| `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 
 ## Changed logic files
 
@@ -145,7 +145,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-3 file(s). See [details/missing_files.md](details/missing_files.md).
+5 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -153,6 +153,8 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/log_filter.py` (baseline: `scripts/log_filter.py`)
 - `scripts/mmkv_parser.py` (baseline: `scripts/mmkv_parser.py`)
 - `scripts/snss_parser.py` (baseline: `scripts/snss_parser.py`)
+- `scripts/webkit_helpers.py` (baseline: `scripts/webkit_helpers.py`)
+- `scripts/webkit_media_cache.py` (baseline: `scripts/webkit_media_cache.py`)
 
 </details>
 

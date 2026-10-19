@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-12T20:31:43.004709+00:00",
+  "generated_at": "2026-10-19T17:53:07.200725+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "d1846366757f49b0f353112f71ff1aa8d69ec2ad",
+      "commit": "16f2bc480295140b7fba3e7562082295ecdc2b38",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "a3e34b24b763f0f96c5d73625bb3046fa888952f",
+      "commit": "1eae6b9dcca13bbc07ee879a276f0348738f6991",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 80,
+    "files_total": 84,
     "import_dependency_gaps": 4,
     "expected_repo_specific": 19,
-    "file_extra_in_comparison": 5,
-    "file_missing_from_comparison": 1,
+    "file_extra_in_comparison": 7,
+    "file_missing_from_comparison": 3,
     "logic_changed": 28,
     "same": 41,
     "signature_changed": 4,
@@ -177,8 +177,8 @@
         {
           "qualified_name": "crunch_artifacts",
           "status": "signature_changed",
-          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=...)",
-          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=...)"
+          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=..., found_members=...)",
+          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=..., found_members=...)"
         },
         {
           "qualified_name": "main",
@@ -260,8 +260,8 @@
         {
           "qualified_name": "run_crunch",
           "status": "signature_changed",
-          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=...)",
-          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=...)"
+          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=..., found_members=...)",
+          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=..., found_members=...)"
         },
         {
           "qualified_name": "select_keychain",
@@ -790,6 +790,16 @@
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/chat_rendering.py",
       "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/chromium_sync_data.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/chromium_sync_data.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1541,6 +1551,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/vendor/chromiumcacheprobe.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/chromiumcacheprobe.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/vendor/ewfprobe.py",
       "status": "same",
       "baseline_physical": "scripts/vendor/ewfprobe.py",
@@ -1578,6 +1598,26 @@
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": true,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/webkit_helpers.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/webkit_helpers.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/webkit_media_cache.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/webkit_media_cache.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
       "symbol_diffs": []
     }
   ]
