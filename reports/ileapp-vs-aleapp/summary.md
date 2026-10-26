@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1792432387.svg)
+![Parity summary](parity.1793036863.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-10-19T17:53:07.200725+00:00
+- **Generated**: 2026-10-26T17:47:43.066080+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `16f2bc480295` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `1eae6b9dcca1` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `e6f04b7a9065` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `9d45572ce082` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 84 |
-| Same | 41 |
+| Files scanned (union) | 90 |
+| Same | 42 |
 | Changed (logic/file) | 14 |
-| Missing from comparison | 3 |
-| Extra in comparison | 7 |
+| Missing from comparison | 6 |
+| Extra in comparison | 9 |
 | Expected repo-specific | 19 |
 | Parse errors | 0 |
 | Import dependency gaps | 4 |
@@ -28,24 +28,24 @@
 
 | Status | Count |
 |---|---:|
-| same | 41 |
+| same | 42 |
 | logic_changed | 14 |
-| file_missing_from_comparison | 3 |
-| file_extra_in_comparison | 7 |
+| file_missing_from_comparison | 6 |
+| file_extra_in_comparison | 9 |
 | expected_repo_specific | 19 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 60 |
+| symbol_missing_from_comparison | 61 |
 | symbol_extra_in_comparison | 27 |
 | signature_changed | 4 |
 | logic_changed | 28 |
 
 ## All compared files
 
-84 file(s). See [details/file_list.md](details/file_list.md).
+90 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -76,14 +76,14 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (1 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
-| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (12 symbol diffs)
+| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (13 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
+| `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
+| `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
 | `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
 | `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
-| `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
-| `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
-| `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
 
 ## Changed logic files
 
@@ -137,12 +137,15 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-3 file(s). See [details/missing_files.md](details/missing_files.md).
+6 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
+- `scripts/life360_common.py` (baseline: `scripts/life360_common.py`)
+- `scripts/life360_recovery.py` (baseline: `scripts/life360_recovery.py`)
 - `scripts/log_filter.py` (baseline: `scripts/log_filter.py`)
+- `scripts/sms_deep.py` (baseline: `scripts/sms_deep.py`)
 - `scripts/webkit_helpers.py` (baseline: `scripts/webkit_helpers.py`)
 - `scripts/webkit_media_cache.py` (baseline: `scripts/webkit_media_cache.py`)
 
@@ -150,7 +153,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-7 file(s). See [details/extra_files.md](details/extra_files.md).
+9 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -172,9 +175,9 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/ccl_simplesnappy.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chromium_sync_data.py` (comparison: `scripts/chromium_sync_data.py`)
+- `scripts/dumpstate_reader.py` (comparison: `scripts/dumpstate_reader.py`)
 - `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
 - `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
 
 </details>
 

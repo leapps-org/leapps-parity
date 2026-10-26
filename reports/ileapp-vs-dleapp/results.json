@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-19T17:54:32.539134+00:00",
+  "generated_at": "2026-10-26T17:48:58.578564+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "16f2bc480295140b7fba3e7562082295ecdc2b38",
+      "commit": "e6f04b7a906501704ae0ce87a812baf72d5af07e",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "d075745723b452c575e41c2d44dcea702b1f481d",
+      "commit": "0ffd7e1011a30508b3eff36c952c554b0e859bb4",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/dleapp"
     }
   },
   "counts": {
-    "files_total": 138,
+    "files_total": 144,
     "import_dependency_gaps": 12,
     "expected_repo_specific": 31,
-    "file_extra_in_comparison": 58,
-    "file_missing_from_comparison": 4,
+    "file_extra_in_comparison": 60,
+    "file_missing_from_comparison": 8,
     "logic_changed": 43,
     "same": 31,
     "signature_changed": 2,
     "symbol_extra_in_comparison": 22,
-    "symbol_missing_from_comparison": 37
+    "symbol_missing_from_comparison": 38
   },
   "import_dependency_gaps": [
     {
@@ -231,8 +231,8 @@
         {
           "qualified_name": "crunch_artifacts",
           "status": "signature_changed",
-          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=..., found_members=...)",
-          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=..., found_members=...)"
+          "baseline_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, time_offset, profile_filename, itunes_backup_password=..., decryption_keys=..., image_password=..., found_members=..., hash_files=...)",
+          "comparison_signature": "@@def crunch_artifacts(plugins, extracttype, input_path, out_params, wrap_text, loader, casedata, profile_filename, image_password=..., found_members=..., hash_files=...)"
         },
         {
           "qualified_name": "main",
@@ -362,8 +362,8 @@
         {
           "qualified_name": "run_crunch",
           "status": "signature_changed",
-          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=..., found_members=...)",
-          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=..., found_members=...)"
+          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=..., found_members=..., hash_files=...)",
+          "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=..., found_members=..., hash_files=...)"
         },
         {
           "qualified_name": "save_profile",
@@ -1422,8 +1422,8 @@
         {
           "qualified_name": "lava_insert_sqlite_file_path",
           "status": "logic_changed",
-          "baseline_signature": "def lava_insert_sqlite_file_path(file_id, file_path)",
-          "comparison_signature": "def lava_insert_sqlite_file_path(file_id, file_path)"
+          "baseline_signature": "def lava_insert_sqlite_file_path(file_id, file_path, sha256=..., kind=..., times=...)",
+          "comparison_signature": "def lava_insert_sqlite_file_path(file_id, file_path, sha256=..., kind=..., times=...)"
         },
         {
           "qualified_name": "lava_insert_sqlite_media_item",
@@ -1456,10 +1456,40 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/life360_common.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/life360_common.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/life360_recovery.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/life360_recovery.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/linux_links.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
       "comparison_physical": "scripts/linux_links.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/linux_locate.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/linux_locate.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1714,6 +1744,12 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "_manifest_times",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _manifest_times(metadata)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "_without_cbc_padding",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def _without_cbc_padding(decrypted_contents)",
@@ -1750,6 +1786,16 @@
       "status": "expected_repo_specific",
       "baseline_physical": null,
       "comparison_physical": "scripts/signal_desktop.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/sms_deep.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/sms_deep.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1893,6 +1939,16 @@
       ]
     },
     {
+      "logical_path": "scripts/vendor/c2paprobe.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/vendor/c2paprobe.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/vendor/ccl_segb/__init__.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
@@ -2034,6 +2090,16 @@
       "status": "expected_repo_specific",
       "baseline_physical": null,
       "comparison_physical": "scripts/whatsapp.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/whatsapp_web.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/whatsapp_web.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,

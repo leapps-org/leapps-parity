@@ -18,8 +18,12 @@
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/unifiedlogs.py` | logic_changed | `scripts/unifiedlogs.py` | `scripts/unifiedlogs.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
+| `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
+| `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
+| `scripts/vendor/c2paprobe.py` | file_missing_from_comparison | `scripts/vendor/c2paprobe.py` | `—` |
 | `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
 | `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/bits_qmgr.py` | file_extra_in_comparison | `—` | `scripts/bits_qmgr.py` |
@@ -51,6 +55,7 @@
 | `scripts/firefox_settings.py` | file_extra_in_comparison | `—` | `scripts/firefox_settings.py` |
 | `scripts/libedit_history.py` | file_extra_in_comparison | `—` | `scripts/libedit_history.py` |
 | `scripts/linux_links.py` | file_extra_in_comparison | `—` | `scripts/linux_links.py` |
+| `scripts/linux_locate.py` | file_extra_in_comparison | `—` | `scripts/linux_locate.py` |
 | `scripts/linux_syslog.py` | file_extra_in_comparison | `—` | `scripts/linux_syslog.py` |
 | `scripts/macos_biome.py` | file_extra_in_comparison | `—` | `scripts/macos_biome.py` |
 | `scripts/macos_dsstore.py` | file_extra_in_comparison | `—` | `scripts/macos_dsstore.py` |
@@ -72,6 +77,7 @@
 | `scripts/vendor/impacket_ese.py` | file_extra_in_comparison | `—` | `scripts/vendor/impacket_ese.py` |
 | `scripts/web_server_logs.py` | file_extra_in_comparison | `—` | `scripts/web_server_logs.py` |
 | `scripts/webos_db8.py` | file_extra_in_comparison | `—` | `scripts/webos_db8.py` |
+| `scripts/whatsapp_web.py` | file_extra_in_comparison | `—` | `scripts/whatsapp_web.py` |
 | `scripts/windows_app_settings.py` | file_extra_in_comparison | `—` | `scripts/windows_app_settings.py` |
 | `scripts/windows_defender_history.py` | file_extra_in_comparison | `—` | `scripts/windows_defender_history.py` |
 | `scripts/windows_evtx.py` | file_extra_in_comparison | `—` | `scripts/windows_evtx.py` |

@@ -18,7 +18,10 @@
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
+| `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
+| `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
 | `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
 | `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
@@ -26,6 +29,8 @@
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
 | `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
 | `scripts/chromium_sync_data.py` | file_extra_in_comparison | `—` | `scripts/chromium_sync_data.py` |
+| `scripts/dumpstate_reader.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_reader.py` |
+| `scripts/sqlite_wal.py` | file_extra_in_comparison | `—` | `scripts/sqlite_wal.py` |
 | `scripts/vendor/chromiumcacheprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/chromiumcacheprobe.py` |
 | `scripts/vendor/exoprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/exoprobe.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
@@ -86,5 +91,6 @@
 | `scripts/realm_parser.py` | same | `scripts/realm_parser.py` | `scripts/realm_parser.py` |
 | `scripts/snss_parser.py` | same | `scripts/snss_parser.py` | `scripts/snss_parser.py` |
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |
+| `scripts/vendor/c2paprobe.py` | same | `scripts/vendor/c2paprobe.py` | `scripts/vendor/c2paprobe.py` |
 | `scripts/vendor/ewfprobe.py` | same | `scripts/vendor/ewfprobe.py` | `scripts/vendor/ewfprobe.py` |
 | `scripts/vendor/qnxprobe.py` | same | `scripts/vendor/qnxprobe.py` | `scripts/vendor/qnxprobe.py` |

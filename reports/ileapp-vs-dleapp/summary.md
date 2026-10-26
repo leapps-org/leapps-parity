@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1792432472.svg)
+![Parity summary](parity.1793036938.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-10-19T17:54:32.539134+00:00
+- **Generated**: 2026-10-26T17:48:58.578564+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `dleapp`
 
-- **ileapp**: `16f2bc480295` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **dleapp**: `d075745723b4` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
+- **ileapp**: `e6f04b7a9065` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **dleapp**: `0ffd7e1011a3` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 138 |
+| Files scanned (union) | 144 |
 | Same | 31 |
 | Changed (logic/file) | 14 |
-| Missing from comparison | 4 |
-| Extra in comparison | 58 |
+| Missing from comparison | 8 |
+| Extra in comparison | 60 |
 | Expected repo-specific | 31 |
 | Parse errors | 0 |
 | Import dependency gaps | 12 |
@@ -30,22 +30,22 @@
 |---|---:|
 | same | 31 |
 | logic_changed | 14 |
-| file_missing_from_comparison | 4 |
-| file_extra_in_comparison | 58 |
+| file_missing_from_comparison | 8 |
+| file_extra_in_comparison | 60 |
 | expected_repo_specific | 31 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 37 |
+| symbol_missing_from_comparison | 38 |
 | symbol_extra_in_comparison | 22 |
 | signature_changed | 2 |
 | logic_changed | 43 |
 
 ## All compared files
 
-138 file(s). See [details/file_list.md](details/file_list.md).
+144 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -84,14 +84,14 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (14 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (1 symbol diffs)
-| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (12 symbol diffs)
+| `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (13 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` | (1 symbol diffs)
+| `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
+| `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
-| `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
-| `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
-| `scripts/bits_qmgr.py` | file_extra_in_comparison | `—` | `scripts/bits_qmgr.py` |
-| `scripts/bsm_audit.py` | file_extra_in_comparison | `—` | `scripts/bsm_audit.py` |
+| `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
+| `scripts/vendor/c2paprobe.py` | file_missing_from_comparison | `scripts/vendor/c2paprobe.py` | `—` |
 
 ## Changed logic files
 
@@ -145,13 +145,17 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-4 file(s). See [details/missing_files.md](details/missing_files.md).
+8 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
+- `scripts/life360_common.py` (baseline: `scripts/life360_common.py`)
+- `scripts/life360_recovery.py` (baseline: `scripts/life360_recovery.py`)
 - `scripts/log_filter.py` (baseline: `scripts/log_filter.py`)
 - `scripts/mmkv_parser.py` (baseline: `scripts/mmkv_parser.py`)
+- `scripts/sms_deep.py` (baseline: `scripts/sms_deep.py`)
+- `scripts/vendor/c2paprobe.py` (baseline: `scripts/vendor/c2paprobe.py`)
 - `scripts/webkit_helpers.py` (baseline: `scripts/webkit_helpers.py`)
 - `scripts/webkit_media_cache.py` (baseline: `scripts/webkit_media_cache.py`)
 
@@ -159,7 +163,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-58 file(s). See [details/extra_files.md](details/extra_files.md).
+60 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
