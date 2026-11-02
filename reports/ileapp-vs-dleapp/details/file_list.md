@@ -18,16 +18,20 @@
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/unifiedlogs.py` | logic_changed | `scripts/unifiedlogs.py` | `scripts/unifiedlogs.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/bluetooth_le_wal.py` | file_missing_from_comparison | `scripts/bluetooth_le_wal.py` | `—` |
+| `scripts/chromium_sync_data.py` | file_missing_from_comparison | `scripts/chromium_sync_data.py` | `—` |
+| `scripts/hive_parser.py` | file_missing_from_comparison | `scripts/hive_parser.py` | `—` |
 | `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
 | `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
-| `scripts/vendor/c2paprobe.py` | file_missing_from_comparison | `scripts/vendor/c2paprobe.py` | `—` |
+| `scripts/vendor/c2pareader.py` | file_missing_from_comparison | `scripts/vendor/c2pareader.py` | `—` |
 | `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
 | `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/bits_qmgr.py` | file_extra_in_comparison | `—` | `scripts/bits_qmgr.py` |
 | `scripts/bsm_audit.py` | file_extra_in_comparison | `—` | `scripts/bsm_audit.py` |
+| `scripts/cabinet.py` | file_extra_in_comparison | `—` | `scripts/cabinet.py` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
 | `scripts/ccl/ccl_blink_value_deserializer.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_blink_value_deserializer.py` |
 | `scripts/ccl/ccl_chromium_indexeddb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_chromium_indexeddb.py` |
@@ -44,6 +48,7 @@
 | `scripts/chromium/local_storage.py` | file_extra_in_comparison | `—` | `scripts/chromium/local_storage.py` |
 | `scripts/chromium/simple_cache.py` | file_extra_in_comparison | `—` | `scripts/chromium/simple_cache.py` |
 | `scripts/chromium/sync_data.py` | file_extra_in_comparison | `—` | `scripts/chromium/sync_data.py` |
+| `scripts/chromium/web_storage.py` | file_extra_in_comparison | `—` | `scripts/chromium/web_storage.py` |
 | `scripts/ese_log.py` | file_extra_in_comparison | `—` | `scripts/ese_log.py` |
 | `scripts/ese_recovery.py` | file_extra_in_comparison | `—` | `scripts/ese_recovery.py` |
 | `scripts/ese_rows.py` | file_extra_in_comparison | `—` | `scripts/ese_rows.py` |
@@ -67,6 +72,7 @@
 | `scripts/rdp_bitmap_cache.py` | file_extra_in_comparison | `—` | `scripts/rdp_bitmap_cache.py` |
 | `scripts/registry_recovery.py` | file_extra_in_comparison | `—` | `scripts/registry_recovery.py` |
 | `scripts/systemd_journal.py` | file_extra_in_comparison | `—` | `scripts/systemd_journal.py` |
+| `scripts/teleguard_desktop.py` | file_extra_in_comparison | `—` | `scripts/teleguard_desktop.py` |
 | `scripts/threema_desktop.py` | file_extra_in_comparison | `—` | `scripts/threema_desktop.py` |
 | `scripts/threema_keystorage.py` | file_extra_in_comparison | `—` | `scripts/threema_keystorage.py` |
 | `scripts/vendor/ccl_segb/__init__.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/__init__.py` |
@@ -74,6 +80,7 @@
 | `scripts/vendor/ccl_segb/ccl_segb1.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/ccl_segb1.py` |
 | `scripts/vendor/ccl_segb/ccl_segb2.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/ccl_segb2.py` |
 | `scripts/vendor/ccl_segb/ccl_segb_common.py` | file_extra_in_comparison | `—` | `scripts/vendor/ccl_segb/ccl_segb_common.py` |
+| `scripts/vendor/cimreader.py` | file_extra_in_comparison | `—` | `scripts/vendor/cimreader.py` |
 | `scripts/vendor/impacket_ese.py` | file_extra_in_comparison | `—` | `scripts/vendor/impacket_ese.py` |
 | `scripts/web_server_logs.py` | file_extra_in_comparison | `—` | `scripts/web_server_logs.py` |
 | `scripts/webos_db8.py` | file_extra_in_comparison | `—` | `scripts/webos_db8.py` |
@@ -146,5 +153,6 @@
 | `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/snss_parser.py` | same | `scripts/snss_parser.py` | `scripts/snss_parser.py` |
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |
+| `scripts/sqlite_wal.py` | same | `scripts/sqlite_wal.py` | `scripts/sqlite_wal.py` |
 | `scripts/vendor/ewfprobe.py` | same | `scripts/vendor/ewfprobe.py` | `scripts/vendor/ewfprobe.py` |
 | `scripts/vendor/qnxprobe.py` | same | `scripts/vendor/qnxprobe.py` | `scripts/vendor/qnxprobe.py` |

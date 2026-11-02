@@ -76,6 +76,10 @@
 - only in aleapp: `ArtifactHtmlReport.add_timeline_script` — `def add_timeline_script(self)`
 - only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
 
+### `scripts/chromium_sync_data.py`
+
+- module-level logic changed
+
 ### `scripts/context.py`
 
 - module-level logic changed
@@ -129,6 +133,7 @@
 - only in ileapp: `iOS` — `class iOS`
 - only in ileapp: `iOS.get_version` — `@@def get_version()`
 - only in ileapp: `iOS.set_version` — `@@def set_version(os_version)`
+- only in ileapp: `is_sysdiagnose_archive` — `def is_sysdiagnose_archive(path)`
 - only in ileapp: `lava_only_info` — `def lava_only_info(category, artifact_name, table_name, records)`
 - only in aleapp: `logdevinfo` — `def logdevinfo(message=...)`
 - only in ileapp: `strings` — `def strings(data)`

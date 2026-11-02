@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-26T17:48:33.356944+00:00",
+  "generated_at": "2026-11-02T20:58:30.827114+00:00",
   "baseline": "ileapp",
   "comparison": "vleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "e6f04b7a906501704ae0ce87a812baf72d5af07e",
+      "commit": "c3bfba409b8086fa0f96ae94c6f29766b8aba693",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "vleapp": {
       "url": "https://github.com/abrignoni/VLEAPP.git",
       "branch": "main",
-      "commit": "2b15989b20cc219ac9e253c7acf95fbd8dfb66e7",
+      "commit": "445728a013169a4147349c8b0079ebd03e5ed096",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/vleapp"
     }
   },
   "counts": {
-    "files_total": 88,
+    "files_total": 92,
     "import_dependency_gaps": 12,
     "expected_repo_specific": 30,
     "file_extra_in_comparison": 7,
-    "file_missing_from_comparison": 9,
+    "file_missing_from_comparison": 12,
     "logic_changed": 40,
-    "same": 29,
+    "same": 30,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 11,
-    "symbol_missing_from_comparison": 35
+    "symbol_missing_from_comparison": 36
   },
   "import_dependency_gaps": [
     {
@@ -525,6 +525,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/bluetooth_le_wal.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/bluetooth_le_wal.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/ccl/__init__.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
@@ -705,6 +715,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/chromium_sync_data.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/chromium_sync_data.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/context.py",
       "status": "logic_changed",
       "baseline_physical": "scripts/context.py",
@@ -878,6 +898,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/hive_parser.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/hive_parser.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/html_parts.py",
       "status": "logic_changed",
       "baseline_physical": "scripts/html_parts.py",
@@ -1019,6 +1049,12 @@
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
           "comparison_signature": "def ipgen(report_folder, data_list_ipaddress)"
+        },
+        {
+          "qualified_name": "is_sysdiagnose_archive",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def is_sysdiagnose_archive(path)",
+          "comparison_signature": null
         },
         {
           "qualified_name": "logdevinfo",
@@ -1422,6 +1458,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/sqlite_wal.py",
+      "status": "same",
+      "baseline_physical": "scripts/sqlite_wal.py",
+      "comparison_physical": "scripts/sqlite_wal.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/test_artifacts/__init__.py",
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/test_artifacts/__init__.py",
@@ -1462,9 +1508,9 @@
       "symbol_diffs": []
     },
     {
-      "logical_path": "scripts/vendor/c2paprobe.py",
+      "logical_path": "scripts/vendor/c2pareader.py",
       "status": "file_missing_from_comparison",
-      "baseline_physical": "scripts/vendor/c2paprobe.py",
+      "baseline_physical": "scripts/vendor/c2pareader.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,

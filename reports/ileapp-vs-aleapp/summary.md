@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1793036863.svg)
+![Parity summary](parity.1793653063.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-10-26T17:47:43.066080+00:00
+- **Generated**: 2026-11-02T20:57:43.719024+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `e6f04b7a9065` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `9d45572ce082` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `c3bfba409b80` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `00f7c4e0e9ad` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 90 |
-| Same | 42 |
-| Changed (logic/file) | 14 |
-| Missing from comparison | 6 |
-| Extra in comparison | 9 |
+| Files scanned (union) | 103 |
+| Same | 44 |
+| Changed (logic/file) | 15 |
+| Missing from comparison | 7 |
+| Extra in comparison | 18 |
 | Expected repo-specific | 19 |
 | Parse errors | 0 |
 | Import dependency gaps | 4 |
@@ -28,24 +28,24 @@
 
 | Status | Count |
 |---|---:|
-| same | 42 |
-| logic_changed | 14 |
-| file_missing_from_comparison | 6 |
-| file_extra_in_comparison | 9 |
+| same | 44 |
+| logic_changed | 15 |
+| file_missing_from_comparison | 7 |
+| file_extra_in_comparison | 18 |
 | expected_repo_specific | 19 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 61 |
+| symbol_missing_from_comparison | 62 |
 | symbol_extra_in_comparison | 27 |
 | signature_changed | 4 |
 | logic_changed | 28 |
 
 ## All compared files
 
-90 file(s). See [details/file_list.md](details/file_list.md).
+103 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -70,24 +70,24 @@ Baseline files that import modules missing from the comparison repo (for example
 | `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` | (1 symbol diffs)
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` | (17 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
+| `scripts/chromium_sync_data.py` | logic_changed | `scripts/chromium_sync_data.py` | `scripts/chromium_sync_data.py` |
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
-| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (43 symbol diffs)
+| `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (44 symbol diffs)
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` | (1 symbol diffs)
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` | (2 symbol diffs)
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` | (13 symbol diffs)
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/bluetooth_le_wal.py` | file_missing_from_comparison | `scripts/bluetooth_le_wal.py` | `—` |
 | `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
 | `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
-| `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
-| `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 
 ## Changed logic files
 
-14 file(s). See [details/changed_logic.md](details/changed_logic.md).
+15 file(s). See [details/changed_logic.md](details/changed_logic.md).
 
 <details>
 <summary>Preview</summary>
@@ -137,11 +137,12 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Missing files
 
-6 file(s). See [details/missing_files.md](details/missing_files.md).
+7 file(s). See [details/missing_files.md](details/missing_files.md).
 
 <details>
 <summary>Preview</summary>
 
+- `scripts/bluetooth_le_wal.py` (baseline: `scripts/bluetooth_le_wal.py`)
 - `scripts/life360_common.py` (baseline: `scripts/life360_common.py`)
 - `scripts/life360_recovery.py` (baseline: `scripts/life360_recovery.py`)
 - `scripts/log_filter.py` (baseline: `scripts/log_filter.py`)
@@ -153,12 +154,15 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-9 file(s). See [details/extra_files.md](details/extra_files.md).
+18 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
 
 - `leapp_functions/parsers/apple_atx.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/android_boot_reason.py` (comparison: `scripts/android_boot_reason.py`)
+- `scripts/android_recovery_history.py` (comparison: `scripts/android_recovery_history.py`)
+- `scripts/android_setup_flags.py` (comparison: `scripts/android_setup_flags.py`)
 - `scripts/ccl/ccl_android_fcm_queued_messages.py` (comparison: `scripts/ccl/ccl_android_fcm_queued_messages.py`)
 - `scripts/ccl/ccl_bplist.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_leveldb.py` (comparison: `scripts/ccl/ccl_leveldb.py`)
@@ -174,10 +178,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/ccl_segb/ccl_segb_common.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl_simplesnappy.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/chromium_sync_data.py` (comparison: `scripts/chromium_sync_data.py`)
-- `scripts/dumpstate_reader.py` (comparison: `scripts/dumpstate_reader.py`)
-- `scripts/geo_utils.py` _(expected repo-specific)_ (comparison: `scripts/geo_utils.py`)
-- `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/dumpstate_accountspower.py` (comparison: `scripts/dumpstate_accountspower.py`)
 
 </details>
 

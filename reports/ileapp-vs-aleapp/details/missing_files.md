@@ -1,5 +1,6 @@
 # Missing files
 
+- `scripts/bluetooth_le_wal.py` (baseline: `scripts/bluetooth_le_wal.py`)
 - `scripts/life360_common.py` (baseline: `scripts/life360_common.py`)
 - `scripts/life360_recovery.py` (baseline: `scripts/life360_recovery.py`)
 - `scripts/log_filter.py` (baseline: `scripts/log_filter.py`)

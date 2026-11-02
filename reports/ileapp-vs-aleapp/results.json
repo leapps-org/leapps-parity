@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-26T17:47:43.066080+00:00",
+  "generated_at": "2026-11-02T20:57:43.719024+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "e6f04b7a906501704ae0ce87a812baf72d5af07e",
+      "commit": "c3bfba409b8086fa0f96ae94c6f29766b8aba693",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "9d45572ce0827eaa304c6da44c4ab009eab54637",
+      "commit": "00f7c4e0e9ad6395df5e85108367e06112dc9f00",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
   "counts": {
-    "files_total": 90,
+    "files_total": 103,
     "import_dependency_gaps": 4,
     "expected_repo_specific": 19,
-    "file_extra_in_comparison": 9,
-    "file_missing_from_comparison": 6,
+    "file_extra_in_comparison": 18,
+    "file_missing_from_comparison": 7,
     "logic_changed": 28,
-    "same": 42,
+    "same": 44,
     "signature_changed": 4,
     "symbol_extra_in_comparison": 27,
-    "symbol_missing_from_comparison": 61
+    "symbol_missing_from_comparison": 62
   },
   "import_dependency_gaps": [
     {
@@ -483,6 +483,36 @@
       ]
     },
     {
+      "logical_path": "scripts/android_boot_reason.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/android_boot_reason.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/android_recovery_history.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/android_recovery_history.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/android_setup_flags.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/android_setup_flags.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/artifact_report.py",
       "status": "logic_changed",
       "baseline_physical": "scripts/artifact_report.py",
@@ -646,6 +676,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/bluetooth_le_wal.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/bluetooth_le_wal.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/ccl/ccl_android_fcm_queued_messages.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
@@ -797,12 +837,12 @@
     },
     {
       "logical_path": "scripts/chromium_sync_data.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
+      "status": "logic_changed",
+      "baseline_physical": "scripts/chromium_sync_data.py",
       "comparison_physical": "scripts/chromium_sync_data.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
-      "module_logic_changed": false,
+      "module_logic_changed": true,
       "symbol_diffs": []
     },
     {
@@ -859,10 +899,90 @@
       ]
     },
     {
+      "logical_path": "scripts/dumpstate_accountspower.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_accountspower.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/dumpstate_logscrash.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_logscrash.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/dumpstate_network.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_network.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/dumpstate_permissions.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_permissions.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/dumpstate_radios.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_radios.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/dumpstate_reader.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
       "comparison_physical": "scripts/dumpstate_reader.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/dumpstate_securitystorage.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_securitystorage.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/dumpstate_sensorsmedia.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_sensorsmedia.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/dumpstate_usagejobs.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/dumpstate_usagejobs.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -993,6 +1113,16 @@
       "status": "expected_repo_specific",
       "baseline_physical": null,
       "comparison_physical": "scripts/geo_utils.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/hive_parser.py",
+      "status": "same",
+      "baseline_physical": "scripts/hive_parser.py",
+      "comparison_physical": "scripts/hive_parser.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1235,6 +1365,12 @@
           "qualified_name": "iOS.set_version",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "@@def set_version(os_version)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "is_sysdiagnose_archive",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def is_sysdiagnose_archive(path)",
           "comparison_signature": null
         },
         {
@@ -1558,8 +1694,8 @@
     },
     {
       "logical_path": "scripts/sqlite_wal.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
+      "status": "same",
+      "baseline_physical": "scripts/sqlite_wal.py",
       "comparison_physical": "scripts/sqlite_wal.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
@@ -1607,10 +1743,10 @@
       "symbol_diffs": []
     },
     {
-      "logical_path": "scripts/vendor/c2paprobe.py",
+      "logical_path": "scripts/vendor/c2pareader.py",
       "status": "same",
-      "baseline_physical": "scripts/vendor/c2paprobe.py",
-      "comparison_physical": "scripts/vendor/c2paprobe.py",
+      "baseline_physical": "scripts/vendor/c2pareader.py",
+      "comparison_physical": "scripts/vendor/c2pareader.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,

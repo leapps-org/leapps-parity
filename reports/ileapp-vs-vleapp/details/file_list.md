@@ -17,13 +17,16 @@
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `scripts/bluetooth_le_wal.py` | file_missing_from_comparison | `scripts/bluetooth_le_wal.py` | `—` |
+| `scripts/chromium_sync_data.py` | file_missing_from_comparison | `scripts/chromium_sync_data.py` | `—` |
+| `scripts/hive_parser.py` | file_missing_from_comparison | `scripts/hive_parser.py` | `—` |
 | `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
 | `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/mmkv_parser.py` | file_missing_from_comparison | `scripts/mmkv_parser.py` | `—` |
 | `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
 | `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
-| `scripts/vendor/c2paprobe.py` | file_missing_from_comparison | `scripts/vendor/c2paprobe.py` | `—` |
+| `scripts/vendor/c2pareader.py` | file_missing_from_comparison | `scripts/vendor/c2pareader.py` | `—` |
 | `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
 | `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/ccl/__init__.py` | file_extra_in_comparison | `—` | `scripts/ccl/__init__.py` |
@@ -90,5 +93,6 @@
 | `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
 | `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
+| `scripts/sqlite_wal.py` | same | `scripts/sqlite_wal.py` | `scripts/sqlite_wal.py` |
 | `scripts/vendor/ewfprobe.py` | same | `scripts/vendor/ewfprobe.py` | `scripts/vendor/ewfprobe.py` |
 | `scripts/vendor/qnxprobe.py` | same | `scripts/vendor/qnxprobe.py` | `scripts/vendor/qnxprobe.py` |
