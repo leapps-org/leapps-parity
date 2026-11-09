@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-02T20:58:06.775256+00:00",
+  "generated_at": "2026-11-09T21:42:27.622742+00:00",
   "baseline": "ileapp",
   "comparison": "rleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "c3bfba409b8086fa0f96ae94c6f29766b8aba693",
+      "commit": "3701a57926759b73e6ba05d440474f30a1d02df0",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "rleapp": {
       "url": "https://github.com/abrignoni/RLEAPP.git",
       "branch": "main",
-      "commit": "d3254464c558c989d5c725eca272d60899201bfd",
+      "commit": "11f7fa399f1f6c2c525b6cfba7405a60d8952eec",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/rleapp"
     }
   },
   "counts": {
-    "files_total": 85,
+    "files_total": 86,
     "import_dependency_gaps": 12,
-    "expected_repo_specific": 29,
+    "expected_repo_specific": 27,
     "file_extra_in_comparison": 1,
-    "file_missing_from_comparison": 12,
+    "file_missing_from_comparison": 15,
     "logic_changed": 41,
     "same": 30,
     "signature_changed": 2,
     "symbol_extra_in_comparison": 7,
-    "symbol_missing_from_comparison": 36
+    "symbol_missing_from_comparison": 35
   },
   "import_dependency_gaps": [
     {
@@ -90,10 +90,10 @@
       "missing_logical_path": "scripts/blackboxprotobuf/lib/types/__init__.py"
     },
     {
-      "source_logical_path": "scripts/ccl_leveldb.py",
-      "source_physical": "scripts/ccl_leveldb.py",
-      "import_statement": "scripts.ccl_simplesnappy",
-      "missing_logical_path": "scripts/ccl_simplesnappy.py"
+      "source_logical_path": "scripts/chromium_sync_data.py",
+      "source_physical": "scripts/chromium_sync_data.py",
+      "import_statement": "scripts.vendor.ccl:ccl_leveldb",
+      "missing_logical_path": "scripts/vendor/ccl/__init__.py"
     },
     {
       "source_logical_path": "scripts/unifiedlogs.py",
@@ -323,12 +323,6 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "_onefile_members",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def _onefile_members(exe) -> ...",
-          "comparison_signature": null
-        },
-        {
           "qualified_name": "_unifiedlog_binary",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def _unifiedlog_binary() -> ...",
@@ -410,6 +404,16 @@
           "comparison_signature": "def main()"
         }
       ]
+    },
+    {
+      "logical_path": "packaging/licenses.py",
+      "status": "same",
+      "baseline_physical": "packaging/licenses.py",
+      "comparison_physical": "packaging/licenses.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/alternate_artifacts/appInventory.py",
@@ -559,16 +563,6 @@
       "symbol_diffs": []
     },
     {
-      "logical_path": "scripts/ccl_leveldb.py",
-      "status": "expected_repo_specific",
-      "baseline_physical": "scripts/ccl_leveldb.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
       "logical_path": "scripts/ccl_segb/__init__.py",
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/__init__.py",
@@ -612,16 +606,6 @@
       "logical_path": "scripts/ccl_segb/ccl_segb_common.py",
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/ccl_segb_common.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl_simplesnappy.py",
-      "status": "expected_repo_specific",
-      "baseline_physical": "scripts/ccl_simplesnappy.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
@@ -1050,8 +1034,8 @@
         {
           "qualified_name": "initialize_lava",
           "status": "logic_changed",
-          "baseline_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=...)",
-          "comparison_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=...)"
+          "baseline_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=..., case_data=...)",
+          "comparison_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=..., case_data=...)"
         },
         {
           "qualified_name": "lava_add_module",
@@ -1185,16 +1169,6 @@
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": true,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/parse3.py",
-      "status": "same",
-      "baseline_physical": "scripts/parse3.py",
-      "comparison_physical": "scripts/parse3.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
       "symbol_diffs": []
     },
     {
@@ -1417,6 +1391,36 @@
       "logical_path": "scripts/vendor/c2pareader.py",
       "status": "file_missing_from_comparison",
       "baseline_physical": "scripts/vendor/c2pareader.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/__init__.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/vendor/ccl/__init__.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/ccl_leveldb.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/vendor/ccl/ccl_leveldb.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/ccl_simplesnappy.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/vendor/ccl/ccl_simplesnappy.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,

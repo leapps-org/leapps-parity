@@ -18,6 +18,7 @@
 - logic changed: `ValidateInput`
 - only in dleapp: `_update_signal_key_status` — `def _update_signal_key_status(*_args)`
 - only in dleapp: `_update_threema_password_status` — `def _update_threema_password_status(*_args)`
+- only in dleapp: `_update_windows_user_password_status` — `def _update_windows_user_password_status(*_args)`
 - only in ileapp: `clear_keychain` — `def clear_keychain()`
 - logic changed: `filter_modules`
 - logic changed: `finish_crunch`
@@ -25,6 +26,7 @@
 - logic changed: `open_settings_window`
 - only in dleapp: `open_signal_key_dialog` — `def open_signal_key_dialog()`
 - only in dleapp: `open_threema_password_dialog` — `def open_threema_password_dialog()`
+- only in dleapp: `open_windows_user_password_dialog` — `def open_windows_user_password_dialog()`
 - logic changed: `pickModules`
 - logic changed: `process`
 - logic changed: `save_profile`

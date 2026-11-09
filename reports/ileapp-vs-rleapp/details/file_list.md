@@ -27,6 +27,9 @@
 | `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
 | `scripts/snss_parser.py` | file_missing_from_comparison | `scripts/snss_parser.py` | `—` |
 | `scripts/vendor/c2pareader.py` | file_missing_from_comparison | `scripts/vendor/c2pareader.py` | `—` |
+| `scripts/vendor/ccl/__init__.py` | file_missing_from_comparison | `scripts/vendor/ccl/__init__.py` | `—` |
+| `scripts/vendor/ccl/ccl_leveldb.py` | file_missing_from_comparison | `scripts/vendor/ccl/ccl_leveldb.py` | `—` |
+| `scripts/vendor/ccl/ccl_simplesnappy.py` | file_missing_from_comparison | `scripts/vendor/ccl/ccl_simplesnappy.py` | `—` |
 | `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
 | `scripts/webkit_media_cache.py` | file_missing_from_comparison | `scripts/webkit_media_cache.py` | `—` |
 | `scripts/meta_records.py` | file_extra_in_comparison | `—` | `scripts/meta_records.py` |
@@ -43,13 +46,11 @@
 | `scripts/ccl/ccl_bplist.py` | expected_repo_specific | `scripts/ccl/ccl_bplist.py` | `—` |
 | `scripts/ccl/ccl_segb1.py` | expected_repo_specific | `scripts/ccl/ccl_segb1.py` | `—` |
 | `scripts/ccl/ccl_segb2.py` | expected_repo_specific | `scripts/ccl/ccl_segb2.py` | `—` |
-| `scripts/ccl_leveldb.py` | expected_repo_specific | `scripts/ccl_leveldb.py` | `—` |
 | `scripts/ccl_segb/__init__.py` | expected_repo_specific | `scripts/ccl_segb/__init__.py` | `—` |
 | `scripts/ccl_segb/ccl_segb.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb.py` | `—` |
 | `scripts/ccl_segb/ccl_segb1.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb1.py` | `—` |
 | `scripts/ccl_segb/ccl_segb2.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb2.py` | `—` |
 | `scripts/ccl_segb/ccl_segb_common.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb_common.py` | `—` |
-| `scripts/ccl_simplesnappy.py` | expected_repo_specific | `scripts/ccl_simplesnappy.py` | `—` |
 | `scripts/chat_rendering.py` | expected_repo_specific | `scripts/chat_rendering.py` | `—` |
 | `scripts/ios_keychain.py` | expected_repo_specific | `scripts/ios_keychain.py` | `—` |
 | `scripts/ktx/ios_ktx2png.py` | expected_repo_specific | `scripts/ktx/ios_ktx2png.py` | `—` |
@@ -70,6 +71,7 @@
 | `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
 | `packaging/dmg_settings.py` | same | `packaging/dmg_settings.py` | `packaging/dmg_settings.py` |
+| `packaging/licenses.py` | same | `packaging/licenses.py` | `packaging/licenses.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
 | `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
 | `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |
@@ -83,7 +85,6 @@
 | `scripts/filetypes/text.py` | same | `scripts/filetypes/text.py` | `scripts/filetypes/text.py` |
 | `scripts/filetypes/video.py` | same | `scripts/filetypes/video.py` | `scripts/filetypes/video.py` |
 | `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
-| `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
 | `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/sqlite_wal.py` | same | `scripts/sqlite_wal.py` | `scripts/sqlite_wal.py` |

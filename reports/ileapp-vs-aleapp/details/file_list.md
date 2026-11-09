@@ -10,7 +10,6 @@
 | `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` |
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` |
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` |
-| `scripts/chromium_sync_data.py` | logic_changed | `scripts/chromium_sync_data.py` | `scripts/chromium_sync_data.py` |
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` |
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` |
@@ -30,9 +29,7 @@
 | `scripts/android_recovery_history.py` | file_extra_in_comparison | `—` | `scripts/android_recovery_history.py` |
 | `scripts/android_setup_flags.py` | file_extra_in_comparison | `—` | `scripts/android_setup_flags.py` |
 | `scripts/ccl/ccl_android_fcm_queued_messages.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_android_fcm_queued_messages.py` |
-| `scripts/ccl/ccl_leveldb.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_leveldb.py` |
 | `scripts/ccl/ccl_protobuff.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_protobuff.py` |
-| `scripts/ccl/ccl_simplesnappy.py` | file_extra_in_comparison | `—` | `scripts/ccl/ccl_simplesnappy.py` |
 | `scripts/dumpstate_accountspower.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_accountspower.py` |
 | `scripts/dumpstate_logscrash.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_logscrash.py` |
 | `scripts/dumpstate_network.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_network.py` |
@@ -48,13 +45,11 @@
 | `scripts/ccl/ccl_bplist.py` | expected_repo_specific | `scripts/ccl/ccl_bplist.py` | `—` |
 | `scripts/ccl/ccl_segb1.py` | expected_repo_specific | `scripts/ccl/ccl_segb1.py` | `—` |
 | `scripts/ccl/ccl_segb2.py` | expected_repo_specific | `scripts/ccl/ccl_segb2.py` | `—` |
-| `scripts/ccl_leveldb.py` | expected_repo_specific | `scripts/ccl_leveldb.py` | `—` |
 | `scripts/ccl_segb/__init__.py` | expected_repo_specific | `scripts/ccl_segb/__init__.py` | `—` |
 | `scripts/ccl_segb/ccl_segb.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb.py` | `—` |
 | `scripts/ccl_segb/ccl_segb1.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb1.py` | `—` |
 | `scripts/ccl_segb/ccl_segb2.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb2.py` | `—` |
 | `scripts/ccl_segb/ccl_segb_common.py` | expected_repo_specific | `scripts/ccl_segb/ccl_segb_common.py` | `—` |
-| `scripts/ccl_simplesnappy.py` | expected_repo_specific | `scripts/ccl_simplesnappy.py` | `—` |
 | `scripts/chat_rendering.py` | expected_repo_specific | `scripts/chat_rendering.py` | `—` |
 | `scripts/geo_utils.py` | expected_repo_specific | `—` | `scripts/geo_utils.py` |
 | `scripts/ios_keychain.py` | expected_repo_specific | `scripts/ios_keychain.py` | `—` |
@@ -74,6 +69,7 @@
 | `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
 | `packaging/dmg_settings.py` | same | `packaging/dmg_settings.py` | `packaging/dmg_settings.py` |
+| `packaging/licenses.py` | same | `packaging/licenses.py` | `packaging/licenses.py` |
 | `scripts/blackboxprotobuf/__init__.py` | same | `scripts/blackboxprotobuf/__init__.py` | `scripts/blackboxprotobuf/__init__.py` |
 | `scripts/blackboxprotobuf/lib/__init__.py` | same | `scripts/blackboxprotobuf/lib/__init__.py` | `scripts/blackboxprotobuf/lib/__init__.py` |
 | `scripts/blackboxprotobuf/lib/interface.py` | same | `scripts/blackboxprotobuf/lib/interface.py` | `scripts/blackboxprotobuf/lib/interface.py` |
@@ -82,6 +78,7 @@
 | `scripts/blackboxprotobuf/lib/types/length_delim.py` | same | `scripts/blackboxprotobuf/lib/types/length_delim.py` | `scripts/blackboxprotobuf/lib/types/length_delim.py` |
 | `scripts/blackboxprotobuf/lib/types/type_maps.py` | same | `scripts/blackboxprotobuf/lib/types/type_maps.py` | `scripts/blackboxprotobuf/lib/types/type_maps.py` |
 | `scripts/blackboxprotobuf/lib/types/varint.py` | same | `scripts/blackboxprotobuf/lib/types/varint.py` | `scripts/blackboxprotobuf/lib/types/varint.py` |
+| `scripts/chromium_sync_data.py` | same | `scripts/chromium_sync_data.py` | `scripts/chromium_sync_data.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
 | `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
 | `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |
@@ -97,7 +94,6 @@
 | `scripts/hive_parser.py` | same | `scripts/hive_parser.py` | `scripts/hive_parser.py` |
 | `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
 | `scripts/mmkv_parser.py` | same | `scripts/mmkv_parser.py` | `scripts/mmkv_parser.py` |
-| `scripts/parse3.py` | same | `scripts/parse3.py` | `scripts/parse3.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
 | `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/realm_parser.py` | same | `scripts/realm_parser.py` | `scripts/realm_parser.py` |
@@ -105,5 +101,8 @@
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |
 | `scripts/sqlite_wal.py` | same | `scripts/sqlite_wal.py` | `scripts/sqlite_wal.py` |
 | `scripts/vendor/c2pareader.py` | same | `scripts/vendor/c2pareader.py` | `scripts/vendor/c2pareader.py` |
+| `scripts/vendor/ccl/__init__.py` | same | `scripts/vendor/ccl/__init__.py` | `scripts/vendor/ccl/__init__.py` |
+| `scripts/vendor/ccl/ccl_leveldb.py` | same | `scripts/vendor/ccl/ccl_leveldb.py` | `scripts/vendor/ccl/ccl_leveldb.py` |
+| `scripts/vendor/ccl/ccl_simplesnappy.py` | same | `scripts/vendor/ccl/ccl_simplesnappy.py` | `scripts/vendor/ccl/ccl_simplesnappy.py` |
 | `scripts/vendor/ewfprobe.py` | same | `scripts/vendor/ewfprobe.py` | `scripts/vendor/ewfprobe.py` |
 | `scripts/vendor/qnxprobe.py` | same | `scripts/vendor/qnxprobe.py` | `scripts/vendor/qnxprobe.py` |

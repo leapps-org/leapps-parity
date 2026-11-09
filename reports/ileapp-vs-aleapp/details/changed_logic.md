@@ -24,14 +24,27 @@
 
 - module-level logic changed
 - only in aleapp: `_installed_msl_plugins` — `def _installed_msl_plugins() -> ...`
+- only in aleapp: `_require_folder_build` — `def _require_folder_build() -> ...`
+- only in aleapp: `_require_tool` — `def _require_tool(name, hint) -> ...`
+- only in aleapp: `_staged_files` — `def _staged_files(root) -> ...`
 - only in ileapp: `_unifiedlog_binary` — `def _unifiedlog_binary() -> ...`
 - logic changed: `appimage_desktop_entry`
+- only in aleapp: `build_deb` — `def build_deb() -> ...`
 - logic changed: `build_exe`
+- only in aleapp: `build_linux_packages` — `def build_linux_packages() -> ...`
+- only in aleapp: `build_rpm` — `def build_rpm() -> ...`
 - only in ileapp: `bundle_binaries` — `def bundle_binaries() -> ...`
 - logic changed: `bundle_datas`
 - only in ileapp: `bundled_bin_dir` — `def bundled_bin_dir() -> ...`
 - only in aleapp: `bundled_root` — `def bundled_root() -> ...`
+- only in aleapp: `deb_arch` — `def deb_arch(machine=...) -> ...`
+- only in aleapp: `debian_control` — `def debian_control(version, arch, installed_kib) -> ...`
+- only in aleapp: `debian_md5sums` — `def debian_md5sums(root) -> ...`
 - only in aleapp: `install_commands` — `def install_commands(python) -> ...`
+- only in aleapp: `linux_staging` — `def linux_staging(folder, root) -> ...`
+- logic changed: `main`
+- only in aleapp: `package_version` — `def package_version(version) -> ...`
+- only in aleapp: `rpm_spec` — `def rpm_spec(version, arch) -> ...`
 - logic changed: `smoke`
 
 ### `packaging/entrypoint.py`
@@ -75,10 +88,6 @@
 - only in aleapp: `ArtifactHtmlReport.add_timeline` — `def add_timeline(self, id, dataDict)`
 - only in aleapp: `ArtifactHtmlReport.add_timeline_script` — `def add_timeline_script(self)`
 - only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
-
-### `scripts/chromium_sync_data.py`
-
-- module-level logic changed
 
 ### `scripts/context.py`
 

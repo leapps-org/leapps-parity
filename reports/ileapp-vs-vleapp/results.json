@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-02T20:58:30.827114+00:00",
+  "generated_at": "2026-11-09T21:42:52.044406+00:00",
   "baseline": "ileapp",
   "comparison": "vleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "c3bfba409b8086fa0f96ae94c6f29766b8aba693",
+      "commit": "3701a57926759b73e6ba05d440474f30a1d02df0",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "vleapp": {
       "url": "https://github.com/abrignoni/VLEAPP.git",
       "branch": "main",
-      "commit": "445728a013169a4147349c8b0079ebd03e5ed096",
+      "commit": "d1b0d3a296a3cf92f42419bdb6a03a66d87dd77c",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/vleapp"
     }
   },
   "counts": {
     "files_total": 92,
-    "import_dependency_gaps": 12,
-    "expected_repo_specific": 30,
-    "file_extra_in_comparison": 7,
+    "import_dependency_gaps": 11,
+    "expected_repo_specific": 28,
+    "file_extra_in_comparison": 6,
     "file_missing_from_comparison": 12,
     "logic_changed": 40,
-    "same": 30,
+    "same": 33,
     "signature_changed": 3,
     "symbol_extra_in_comparison": 11,
-    "symbol_missing_from_comparison": 36
+    "symbol_missing_from_comparison": 35
   },
   "import_dependency_gaps": [
     {
@@ -88,12 +88,6 @@
       "source_physical": "scripts/blackboxprotobuf/lib/types/type_maps.py",
       "import_statement": "scripts.blackboxprotobuf.lib.types:varint",
       "missing_logical_path": "scripts/blackboxprotobuf/lib/types/__init__.py"
-    },
-    {
-      "source_logical_path": "scripts/ccl_leveldb.py",
-      "source_physical": "scripts/ccl_leveldb.py",
-      "import_statement": "scripts.ccl_simplesnappy",
-      "missing_logical_path": "scripts/ccl_simplesnappy.py"
     },
     {
       "source_logical_path": "scripts/unifiedlogs.py",
@@ -329,12 +323,6 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
-          "qualified_name": "_onefile_members",
-          "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def _onefile_members(exe) -> ...",
-          "comparison_signature": null
-        },
-        {
           "qualified_name": "_unifiedlog_binary",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def _unifiedlog_binary() -> ...",
@@ -416,6 +404,16 @@
           "comparison_signature": "def main()"
         }
       ]
+    },
+    {
+      "logical_path": "packaging/licenses.py",
+      "status": "same",
+      "baseline_physical": "packaging/licenses.py",
+      "comparison_physical": "packaging/licenses.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/alternate_artifacts/appInventory.py",
@@ -535,50 +533,10 @@
       "symbol_diffs": []
     },
     {
-      "logical_path": "scripts/ccl/__init__.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/ccl/__init__.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl/ccl_blink_value_deserializer.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/ccl/ccl_blink_value_deserializer.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
       "logical_path": "scripts/ccl/ccl_bplist.py",
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl/ccl_bplist.py",
       "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl/ccl_chromium_indexeddb.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/ccl/ccl_chromium_indexeddb.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl/ccl_leveldb.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/ccl/ccl_leveldb.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -598,46 +556,6 @@
       "logical_path": "scripts/ccl/ccl_segb2.py",
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl/ccl_segb2.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl/ccl_simplesnappy.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/ccl/ccl_simplesnappy.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl/ccl_structures.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/ccl/ccl_structures.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl/ccl_v8_value_deserializer.py",
-      "status": "file_extra_in_comparison",
-      "baseline_physical": null,
-      "comparison_physical": "scripts/ccl/ccl_v8_value_deserializer.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl_leveldb.py",
-      "status": "expected_repo_specific",
-      "baseline_physical": "scripts/ccl_leveldb.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
@@ -688,16 +606,6 @@
       "logical_path": "scripts/ccl_segb/ccl_segb_common.py",
       "status": "expected_repo_specific",
       "baseline_physical": "scripts/ccl_segb/ccl_segb_common.py",
-      "comparison_physical": null,
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/ccl_simplesnappy.py",
-      "status": "expected_repo_specific",
-      "baseline_physical": "scripts/ccl_simplesnappy.py",
       "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
@@ -1114,8 +1022,8 @@
         {
           "qualified_name": "initialize_lava",
           "status": "logic_changed",
-          "baseline_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=...)",
-          "comparison_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=...)"
+          "baseline_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=..., case_data=...)",
+          "comparison_signature": "def initialize_lava(input_path, output_path, input_type, profile_filename=..., case_data=...)"
         },
         {
           "qualified_name": "lava_add_module",
@@ -1239,16 +1147,6 @@
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": true,
-      "symbol_diffs": []
-    },
-    {
-      "logical_path": "scripts/parse3.py",
-      "status": "same",
-      "baseline_physical": "scripts/parse3.py",
-      "comparison_physical": "scripts/parse3.py",
-      "baseline_parse_error": null,
-      "comparison_parse_error": null,
-      "module_logic_changed": false,
       "symbol_diffs": []
     },
     {
@@ -1512,6 +1410,96 @@
       "status": "file_missing_from_comparison",
       "baseline_physical": "scripts/vendor/c2pareader.py",
       "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/__init__.py",
+      "status": "same",
+      "baseline_physical": "scripts/vendor/ccl/__init__.py",
+      "comparison_physical": "scripts/vendor/ccl/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/ccl_blink_value_deserializer.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/ccl/ccl_blink_value_deserializer.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/ccl_chromium_indexeddb.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/ccl/ccl_chromium_indexeddb.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/ccl_leveldb.py",
+      "status": "same",
+      "baseline_physical": "scripts/vendor/ccl/ccl_leveldb.py",
+      "comparison_physical": "scripts/vendor/ccl/ccl_leveldb.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/ccl_simplesnappy.py",
+      "status": "same",
+      "baseline_physical": "scripts/vendor/ccl/ccl_simplesnappy.py",
+      "comparison_physical": "scripts/vendor/ccl/ccl_simplesnappy.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/ccl_v8_value_deserializer.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/ccl/ccl_v8_value_deserializer.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/common.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/ccl/common.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/profile_folder_protocols.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/ccl/profile_folder_protocols.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/ccl/structures.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/ccl/structures.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,

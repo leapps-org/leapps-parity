@@ -22,7 +22,6 @@
 ### `packaging/build.py`
 
 - module-level logic changed
-- only in ileapp: `_onefile_members` — `def _onefile_members(exe) -> ...`
 - only in ileapp: `_unifiedlog_binary` — `def _unifiedlog_binary() -> ...`
 - logic changed: `appimage_desktop_entry`
 - logic changed: `build_exe`

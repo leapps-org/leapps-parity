@@ -1,44 +1,44 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1793653110.svg)
+![Parity summary](parity.1794260572.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-11-02T20:58:30.827114+00:00
+- **Generated**: 2026-11-09T21:42:52.044406+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `vleapp`
 
-- **ileapp**: `c3bfba409b80` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **vleapp**: `445728a01316` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
+- **ileapp**: `3701a5792675` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **vleapp**: `d1b0d3a296a3` on `main` ([https://github.com/abrignoni/VLEAPP.git](https://github.com/abrignoni/VLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
 | Files scanned (union) | 92 |
-| Same | 30 |
+| Same | 33 |
 | Changed (logic/file) | 13 |
 | Missing from comparison | 12 |
-| Extra in comparison | 7 |
-| Expected repo-specific | 30 |
+| Extra in comparison | 6 |
+| Expected repo-specific | 28 |
 | Parse errors | 0 |
-| Import dependency gaps | 12 |
+| Import dependency gaps | 11 |
 
 ## File-level summary
 
 | Status | Count |
 |---|---:|
-| same | 30 |
+| same | 33 |
 | logic_changed | 13 |
 | file_missing_from_comparison | 12 |
-| file_extra_in_comparison | 7 |
-| expected_repo_specific | 30 |
+| file_extra_in_comparison | 6 |
+| expected_repo_specific | 28 |
 
 ## Symbol-level summary
 
 | Status | Count |
 |---|---:|
-| symbol_missing_from_comparison | 36 |
+| symbol_missing_from_comparison | 35 |
 | symbol_extra_in_comparison | 11 |
 | signature_changed | 3 |
 | logic_changed | 40 |
@@ -51,7 +51,7 @@
 
 Baseline files that import modules missing from the comparison repo (for example `ilapfuncs.py` → `context.py`).
 
-12 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
+11 gap(s). See [details/import_dependency_gaps.md](details/import_dependency_gaps.md).
 
 | Baseline file | Import | Missing in comparison |
 |---|---|---|
@@ -65,7 +65,6 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/blackboxprotobuf/lib/types/type_maps.py` | `scripts.blackboxprotobuf.lib.types:fixed` | `scripts/blackboxprotobuf/lib/types/__init__.py` |
 | `scripts/blackboxprotobuf/lib/types/type_maps.py` | `scripts.blackboxprotobuf.lib.types:length_delim` | `scripts/blackboxprotobuf/lib/types/__init__.py` |
 | `scripts/blackboxprotobuf/lib/types/type_maps.py` | `scripts.blackboxprotobuf.lib.types:varint` | `scripts/blackboxprotobuf/lib/types/__init__.py` |
-| `scripts/ccl_leveldb.py` | `scripts.ccl_simplesnappy` | `scripts/ccl_simplesnappy.py` |
 | `scripts/unifiedlogs.py` | `scripts.log_filter:accelerate_query` | `scripts/log_filter.py` |
 
 ## Top mismatches
@@ -74,7 +73,7 @@ Baseline files that import modules missing from the comparison repo (for example
 |---|---|---|---|
 | `main_entry.py` | logic_changed | `ileapp.py` | `vleapp.py` | (4 symbol diffs)
 | `main_gui.py` | logic_changed | `ileappGUI.py` | `vleappGUI.py` | (10 symbol diffs)
-| `packaging/build.py` | logic_changed | `packaging/build.py` | `packaging/build.py` | (10 symbol diffs)
+| `packaging/build.py` | logic_changed | `packaging/build.py` | `packaging/build.py` | (9 symbol diffs)
 | `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` | (1 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (1 symbol diffs)
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
@@ -118,7 +117,6 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in ileapp: `select_keychain` — `def select_keychain()`
 ### `packaging/build.py`
 - module-level logic changed
-- only in ileapp: `_onefile_members` — `def _onefile_members(exe) -> ...`
 - only in ileapp: `_unifiedlog_binary` — `def _unifiedlog_binary() -> ...`
 - logic changed: `appimage_desktop_entry`
 - logic changed: `build_exe`
@@ -140,6 +138,7 @@ Baseline files that import modules missing from the comparison repo (for example
 - only in ileapp: `Context.get_installed_os_version` — `@@def get_installed_os_version()`
 - only in ileapp: `Context.get_keychain_path` — `@@def get_keychain_path()`
 - only in ileapp: `Context.get_metadata` — `@@def get_metadata(collection)`
+- only in ileapp: `Context.lookup_metadata` — `@@def lookup_metadata(collection, key, group=...)`
 
 </details>
 
@@ -167,7 +166,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-7 file(s). See [details/extra_files.md](details/extra_files.md).
+6 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>
@@ -182,22 +181,22 @@ Baseline files that import modules missing from the comparison repo (for example
 - `scripts/blackboxprotobuf/lib/types/length_delim.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/blackboxprotobuf/lib/types/type_maps.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/blackboxprotobuf/lib/types/varint.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/ccl/__init__.py` (comparison: `scripts/ccl/__init__.py`)
-- `scripts/ccl/ccl_blink_value_deserializer.py` (comparison: `scripts/ccl/ccl_blink_value_deserializer.py`)
 - `scripts/ccl/ccl_bplist.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/ccl/ccl_chromium_indexeddb.py` (comparison: `scripts/ccl/ccl_chromium_indexeddb.py`)
-- `scripts/ccl/ccl_leveldb.py` (comparison: `scripts/ccl/ccl_leveldb.py`)
 - `scripts/ccl/ccl_segb1.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl/ccl_segb2.py` _(expected repo-specific)_ (comparison: `None`)
-- `scripts/ccl/ccl_simplesnappy.py` (comparison: `scripts/ccl/ccl_simplesnappy.py`)
-- `scripts/ccl/ccl_structures.py` (comparison: `scripts/ccl/ccl_structures.py`)
-- `scripts/ccl/ccl_v8_value_deserializer.py` (comparison: `scripts/ccl/ccl_v8_value_deserializer.py`)
+- `scripts/ccl_segb/__init__.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb1.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb2.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ccl_segb/ccl_segb_common.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
 
 </details>
 
 ## Expected repo-specific files
 
-30 file(s).
+28 file(s).
 
 ## Parse errors
 

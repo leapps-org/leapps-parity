@@ -10,5 +10,5 @@
 - `scripts/blackboxprotobuf/lib/types/type_maps.py` imports `scripts.blackboxprotobuf.lib.types:fixed` → missing `scripts/blackboxprotobuf/lib/types/__init__.py`
 - `scripts/blackboxprotobuf/lib/types/type_maps.py` imports `scripts.blackboxprotobuf.lib.types:length_delim` → missing `scripts/blackboxprotobuf/lib/types/__init__.py`
 - `scripts/blackboxprotobuf/lib/types/type_maps.py` imports `scripts.blackboxprotobuf.lib.types:varint` → missing `scripts/blackboxprotobuf/lib/types/__init__.py`
-- `scripts/ccl_leveldb.py` imports `scripts.ccl_simplesnappy` → missing `scripts/ccl_simplesnappy.py`
+- `scripts/chromium_sync_data.py` imports `scripts.vendor.ccl:ccl_leveldb` → missing `scripts/vendor/ccl/__init__.py`
 - `scripts/unifiedlogs.py` imports `scripts.log_filter:accelerate_query` → missing `scripts/log_filter.py`
