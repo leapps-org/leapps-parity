@@ -10,6 +10,7 @@
 | `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` |
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` |
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` |
+| `scripts/chromium_sync_data.py` | logic_changed | `scripts/chromium_sync_data.py` | `scripts/chromium_sync_data.py` |
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` |
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` |
@@ -78,7 +79,6 @@
 | `scripts/blackboxprotobuf/lib/types/length_delim.py` | same | `scripts/blackboxprotobuf/lib/types/length_delim.py` | `scripts/blackboxprotobuf/lib/types/length_delim.py` |
 | `scripts/blackboxprotobuf/lib/types/type_maps.py` | same | `scripts/blackboxprotobuf/lib/types/type_maps.py` | `scripts/blackboxprotobuf/lib/types/type_maps.py` |
 | `scripts/blackboxprotobuf/lib/types/varint.py` | same | `scripts/blackboxprotobuf/lib/types/varint.py` | `scripts/blackboxprotobuf/lib/types/varint.py` |
-| `scripts/chromium_sync_data.py` | same | `scripts/chromium_sync_data.py` | `scripts/chromium_sync_data.py` |
 | `scripts/filetype.py` | same | `scripts/filetype.py` | `scripts/filetype.py` |
 | `scripts/filetypes/__init__.py` | same | `scripts/filetypes/__init__.py` | `scripts/filetypes/__init__.py` |
 | `scripts/filetypes/application.py` | same | `scripts/filetypes/application.py` | `scripts/filetypes/application.py` |

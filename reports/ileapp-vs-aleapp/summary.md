@@ -1,23 +1,23 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1794260525.svg)
+![Parity summary](parity.1794864120.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-11-09T21:42:05.391593+00:00
+- **Generated**: 2026-11-16T21:22:00.560563+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `aleapp`
 
-- **ileapp**: `3701a5792675` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **aleapp**: `86ae0f4d5de1` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
+- **ileapp**: `2fe5dfd4c8e7` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **aleapp**: `ed1b63d11400` on `main` ([https://github.com/abrignoni/aLEAPP.git](https://github.com/abrignoni/aLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
 | Files scanned (union) | 102 |
-| Same | 48 |
-| Changed (logic/file) | 14 |
+| Same | 47 |
+| Changed (logic/file) | 15 |
 | Missing from comparison | 7 |
 | Extra in comparison | 16 |
 | Expected repo-specific | 17 |
@@ -28,8 +28,8 @@
 
 | Status | Count |
 |---|---:|
-| same | 48 |
-| logic_changed | 14 |
+| same | 47 |
+| logic_changed | 15 |
 | file_missing_from_comparison | 7 |
 | file_extra_in_comparison | 16 |
 | expected_repo_specific | 17 |
@@ -69,6 +69,7 @@ Baseline files that import modules missing from the comparison repo (for example
 | `packaging/entrypoint.py` | logic_changed | `packaging/entrypoint.py` | `packaging/entrypoint.py` | (1 symbol diffs)
 | `scripts/alternate_artifacts/appInventory.py` | logic_changed | `scripts/alternate_artifacts/appInventory.py` | `scripts/alternate_artifacts/appInventory.py` | (17 symbol diffs)
 | `scripts/artifact_report.py` | logic_changed | `scripts/artifact_report.py` | `scripts/artifact_report.py` | (12 symbol diffs)
+| `scripts/chromium_sync_data.py` | logic_changed | `scripts/chromium_sync_data.py` | `scripts/chromium_sync_data.py` |
 | `scripts/context.py` | logic_changed | `scripts/context.py` | `scripts/context.py` | (7 symbol diffs)
 | `scripts/html_parts.py` | logic_changed | `scripts/html_parts.py` | `scripts/html_parts.py` |
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` | (44 symbol diffs)
@@ -82,11 +83,10 @@ Baseline files that import modules missing from the comparison repo (for example
 | `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
 | `scripts/sms_deep.py` | file_missing_from_comparison | `scripts/sms_deep.py` | `—` |
-| `scripts/webkit_helpers.py` | file_missing_from_comparison | `scripts/webkit_helpers.py` | `—` |
 
 ## Changed logic files
 
-14 file(s). See [details/changed_logic.md](details/changed_logic.md).
+15 file(s). See [details/changed_logic.md](details/changed_logic.md).
 
 <details>
 <summary>Preview</summary>

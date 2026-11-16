@@ -43,6 +43,7 @@
 | `scripts/chromium/discord_api.py` | file_extra_in_comparison | `—` | `scripts/chromium/discord_api.py` |
 | `scripts/chromium/http_cache.py` | file_extra_in_comparison | `—` | `scripts/chromium/http_cache.py` |
 | `scripts/chromium/local_storage.py` | file_extra_in_comparison | `—` | `scripts/chromium/local_storage.py` |
+| `scripts/chromium/mattermost_api.py` | file_extra_in_comparison | `—` | `scripts/chromium/mattermost_api.py` |
 | `scripts/chromium/simple_cache.py` | file_extra_in_comparison | `—` | `scripts/chromium/simple_cache.py` |
 | `scripts/chromium/sync_data.py` | file_extra_in_comparison | `—` | `scripts/chromium/sync_data.py` |
 | `scripts/chromium/web_storage.py` | file_extra_in_comparison | `—` | `scripts/chromium/web_storage.py` |
@@ -70,8 +71,11 @@
 | `scripts/macos_powerlog.py` | file_extra_in_comparison | `—` | `scripts/macos_powerlog.py` |
 | `scripts/macos_spotlight.py` | file_extra_in_comparison | `—` | `scripts/macos_spotlight.py` |
 | `scripts/macos_zsh.py` | file_extra_in_comparison | `—` | `scripts/macos_zsh.py` |
+| `scripts/mpenginedb.py` | file_extra_in_comparison | `—` | `scripts/mpenginedb.py` |
+| `scripts/ocsp.py` | file_extra_in_comparison | `—` | `scripts/ocsp.py` |
 | `scripts/onedrive_odl.py` | file_extra_in_comparison | `—` | `scripts/onedrive_odl.py` |
 | `scripts/onedrive_settings.py` | file_extra_in_comparison | `—` | `scripts/onedrive_settings.py` |
+| `scripts/outlook_pst.py` | file_extra_in_comparison | `—` | `scripts/outlook_pst.py` |
 | `scripts/rdp_bitmap_cache.py` | file_extra_in_comparison | `—` | `scripts/rdp_bitmap_cache.py` |
 | `scripts/registry_recovery.py` | file_extra_in_comparison | `—` | `scripts/registry_recovery.py` |
 | `scripts/shareaza.py` | file_extra_in_comparison | `—` | `scripts/shareaza.py` |
@@ -100,6 +104,7 @@
 | `scripts/vendor/dpapiprobe/primitives.py` | file_extra_in_comparison | `—` | `scripts/vendor/dpapiprobe/primitives.py` |
 | `scripts/vendor/dpapiprobe/registry_secrets.py` | file_extra_in_comparison | `—` | `scripts/vendor/dpapiprobe/registry_secrets.py` |
 | `scripts/vendor/impacket_ese.py` | file_extra_in_comparison | `—` | `scripts/vendor/impacket_ese.py` |
+| `scripts/vendor/pstprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/pstprobe.py` |
 | `scripts/vendor/regfprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/regfprobe.py` |
 | `scripts/web_server_logs.py` | file_extra_in_comparison | `—` | `scripts/web_server_logs.py` |
 | `scripts/webos_db8.py` | file_extra_in_comparison | `—` | `scripts/webos_db8.py` |

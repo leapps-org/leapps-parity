@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-09T21:43:15.142443+00:00",
+  "generated_at": "2026-11-16T21:23:08.798082+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "3701a57926759b73e6ba05d440474f30a1d02df0",
+      "commit": "2fe5dfd4c8e7d88f971af3ab53bfbaf82820975d",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "8672f3dbf3f781636a49e4481b6f5c387b2f4f12",
+      "commit": "b21c6edde4a635765cad60d128a8f1cd2a4c4832",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/dleapp"
     }
   },
   "counts": {
-    "files_total": 173,
+    "files_total": 178,
     "import_dependency_gaps": 11,
     "expected_repo_specific": 29,
-    "file_extra_in_comparison": 84,
+    "file_extra_in_comparison": 89,
     "file_missing_from_comparison": 11,
     "logic_changed": 43,
     "same": 35,
@@ -799,6 +799,16 @@
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
       "comparison_physical": "scripts/chromium/local_storage.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/chromium/mattermost_api.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/chromium/mattermost_api.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -1668,6 +1678,26 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/mpenginedb.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/mpenginedb.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/ocsp.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/ocsp.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/onedrive_odl.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
@@ -1682,6 +1712,16 @@
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
       "comparison_physical": "scripts/onedrive_settings.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/outlook_pst.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/outlook_pst.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -2295,6 +2335,16 @@
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
       "comparison_physical": "scripts/vendor/impacket_ese.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/vendor/pstprobe.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/vendor/pstprobe.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,

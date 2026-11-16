@@ -89,6 +89,10 @@
 - only in aleapp: `ArtifactHtmlReport.add_timeline_script` — `def add_timeline_script(self)`
 - only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
 
+### `scripts/chromium_sync_data.py`
+
+- module-level logic changed
+
 ### `scripts/context.py`
 
 - module-level logic changed

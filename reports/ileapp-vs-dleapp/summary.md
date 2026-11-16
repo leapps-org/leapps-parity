@@ -1,25 +1,25 @@
 # LEAPP Parity Report
 
-![Parity summary](parity.1794260595.svg)
+![Parity summary](parity.1794864188.svg)
 
 ## Scan metadata
 
-- **Generated**: 2026-11-09T21:43:15.142443+00:00
+- **Generated**: 2026-11-16T21:23:08.798082+00:00
 - **Baseline**: `ileapp`
 - **Comparison**: `dleapp`
 
-- **ileapp**: `3701a5792675` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
-- **dleapp**: `8672f3dbf3f7` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
+- **ileapp**: `2fe5dfd4c8e7` on `main` ([https://github.com/abrignoni/iLEAPP.git](https://github.com/abrignoni/iLEAPP.git))
+- **dleapp**: `b21c6edde4a6` on `main` ([https://github.com/abrignoni/DLEAPP.git](https://github.com/abrignoni/DLEAPP.git))
 
 ## Overall counts
 
 | Metric | Count |
 |---|---:|
-| Files scanned (union) | 173 |
+| Files scanned (union) | 178 |
 | Same | 35 |
 | Changed (logic/file) | 14 |
 | Missing from comparison | 11 |
-| Extra in comparison | 84 |
+| Extra in comparison | 89 |
 | Expected repo-specific | 29 |
 | Parse errors | 0 |
 | Import dependency gaps | 11 |
@@ -31,7 +31,7 @@
 | same | 35 |
 | logic_changed | 14 |
 | file_missing_from_comparison | 11 |
-| file_extra_in_comparison | 84 |
+| file_extra_in_comparison | 89 |
 | expected_repo_specific | 29 |
 
 ## Symbol-level summary
@@ -45,7 +45,7 @@
 
 ## All compared files
 
-173 file(s). See [details/file_list.md](details/file_list.md).
+178 file(s). See [details/file_list.md](details/file_list.md).
 
 ## Import dependency gaps
 
@@ -165,7 +165,7 @@ Baseline files that import modules missing from the comparison repo (for example
 
 ## Extra files
 
-84 file(s). See [details/extra_files.md](details/extra_files.md).
+89 file(s). See [details/extra_files.md](details/extra_files.md).
 
 <details>
 <summary>Preview</summary>

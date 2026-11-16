@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-09T21:42:05.391593+00:00",
+  "generated_at": "2026-11-16T21:22:00.560563+00:00",
   "baseline": "ileapp",
   "comparison": "aleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "3701a57926759b73e6ba05d440474f30a1d02df0",
+      "commit": "2fe5dfd4c8e7d88f971af3ab53bfbaf82820975d",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "aleapp": {
       "url": "https://github.com/abrignoni/aLEAPP.git",
       "branch": "main",
-      "commit": "86ae0f4d5de1384d0d462e8f382f66e5abb145c9",
+      "commit": "ed1b63d1140090a7029e6021cbf8409743ef4505",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/aleapp"
     }
   },
@@ -23,7 +23,7 @@
     "file_extra_in_comparison": 16,
     "file_missing_from_comparison": 7,
     "logic_changed": 29,
-    "same": 48,
+    "same": 47,
     "signature_changed": 4,
     "symbol_extra_in_comparison": 39,
     "symbol_missing_from_comparison": 62
@@ -879,12 +879,12 @@
     },
     {
       "logical_path": "scripts/chromium_sync_data.py",
-      "status": "same",
+      "status": "logic_changed",
       "baseline_physical": "scripts/chromium_sync_data.py",
       "comparison_physical": "scripts/chromium_sync_data.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
-      "module_logic_changed": false,
+      "module_logic_changed": true,
       "symbol_diffs": []
     },
     {
