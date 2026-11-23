@@ -4,6 +4,10 @@
 
 | Logical path | Status | Baseline | Comparison |
 |---|---|---|---|
+| `leapp_functions/__init__.py` | logic_changed | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
+| `leapp_functions/app/history.py` | logic_changed | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
+| `leapp_functions/app/output.py` | logic_changed | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
+| `leapp_functions/data_sources/json_files.py` | logic_changed | `leapp_functions/data_sources/json_files.py` | `leapp_functions/data_sources/json_files.py` |
 | `main_entry.py` | logic_changed | `ileapp.py` | `aleapp.py` |
 | `main_gui.py` | logic_changed | `ileappGUI.py` | `aleappGUI.py` |
 | `packaging/build.py` | logic_changed | `packaging/build.py` | `packaging/build.py` |
@@ -16,10 +20,35 @@
 | `scripts/ilapfuncs.py` | logic_changed | `scripts/ilapfuncs.py` | `scripts/ilapfuncs.py` |
 | `scripts/lavafuncs.py` | logic_changed | `scripts/lavafuncs.py` | `scripts/lavafuncs.py` |
 | `scripts/modules_to_exclude.py` | logic_changed | `scripts/modules_to_exclude.py` | `scripts/modules_to_exclude.py` |
+| `scripts/raw_image.py` | logic_changed | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/report.py` | logic_changed | `scripts/report.py` | `scripts/report.py` |
 | `scripts/search_files.py` | logic_changed | `scripts/search_files.py` | `scripts/search_files.py` |
 | `scripts/version_info.py` | logic_changed | `scripts/version_info.py` | `scripts/version_info.py` |
+| `leapp_functions/app/artifact_list.py` | file_missing_from_comparison | `leapp_functions/app/artifact_list.py` | `—` |
+| `leapp_functions/app/disk.py` | file_missing_from_comparison | `leapp_functions/app/disk.py` | `—` |
+| `leapp_functions/app/gui/app_state.py` | file_missing_from_comparison | `leapp_functions/app/gui/app_state.py` | `—` |
+| `leapp_functions/app/gui/artifacts.py` | file_missing_from_comparison | `leapp_functions/app/gui/artifacts.py` | `—` |
+| `leapp_functions/app/gui/case.py` | file_missing_from_comparison | `leapp_functions/app/gui/case.py` | `—` |
+| `leapp_functions/app/gui/custom_widgets.py` | file_missing_from_comparison | `leapp_functions/app/gui/custom_widgets.py` | `—` |
+| `leapp_functions/app/gui/header.py` | file_missing_from_comparison | `leapp_functions/app/gui/header.py` | `—` |
+| `leapp_functions/app/gui/images.py` | file_missing_from_comparison | `leapp_functions/app/gui/images.py` | `—` |
+| `leapp_functions/app/gui/quick_exit.py` | file_missing_from_comparison | `leapp_functions/app/gui/quick_exit.py` | `—` |
+| `leapp_functions/app/gui/results.py` | file_missing_from_comparison | `leapp_functions/app/gui/results.py` | `—` |
+| `leapp_functions/app/gui/review.py` | file_missing_from_comparison | `leapp_functions/app/gui/review.py` | `—` |
+| `leapp_functions/app/gui/run.py` | file_missing_from_comparison | `leapp_functions/app/gui/run.py` | `—` |
+| `leapp_functions/app/gui/settings.py` | file_missing_from_comparison | `leapp_functions/app/gui/settings.py` | `—` |
+| `leapp_functions/app/gui/source.py` | file_missing_from_comparison | `leapp_functions/app/gui/source.py` | `—` |
+| `leapp_functions/app/gui/status_bar.py` | file_missing_from_comparison | `leapp_functions/app/gui/status_bar.py` | `—` |
+| `leapp_functions/app/gui/steps.py` | file_missing_from_comparison | `leapp_functions/app/gui/steps.py` | `—` |
+| `leapp_functions/app/gui/themes.py` | file_missing_from_comparison | `leapp_functions/app/gui/themes.py` | `—` |
+| `leapp_functions/app/gui/window_area.py` | file_missing_from_comparison | `leapp_functions/app/gui/window_area.py` | `—` |
+| `leapp_functions/app/input_type.py` | file_missing_from_comparison | `leapp_functions/app/input_type.py` | `—` |
+| `leapp_functions/app/new_run.py` | file_missing_from_comparison | `leapp_functions/app/new_run.py` | `—` |
+| `leapp_functions/app/run_worker.py` | file_missing_from_comparison | `leapp_functions/app/run_worker.py` | `—` |
+| `leapp_functions/app/unlock.py` | file_missing_from_comparison | `leapp_functions/app/unlock.py` | `—` |
+| `scripts/biome_stream_records.py` | file_missing_from_comparison | `scripts/biome_stream_records.py` | `—` |
 | `scripts/bluetooth_le_wal.py` | file_missing_from_comparison | `scripts/bluetooth_le_wal.py` | `—` |
+| `scripts/findmy_cache.py` | file_missing_from_comparison | `scripts/findmy_cache.py` | `—` |
 | `scripts/life360_common.py` | file_missing_from_comparison | `scripts/life360_common.py` | `—` |
 | `scripts/life360_recovery.py` | file_missing_from_comparison | `scripts/life360_recovery.py` | `—` |
 | `scripts/log_filter.py` | file_missing_from_comparison | `scripts/log_filter.py` | `—` |
@@ -39,7 +68,9 @@
 | `scripts/dumpstate_reader.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_reader.py` |
 | `scripts/dumpstate_securitystorage.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_securitystorage.py` |
 | `scripts/dumpstate_sensorsmedia.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_sensorsmedia.py` |
+| `scripts/dumpstate_shortcuts.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_shortcuts.py` |
 | `scripts/dumpstate_usagejobs.py` | file_extra_in_comparison | `—` | `scripts/dumpstate_usagejobs.py` |
+| `scripts/signal_backup.py` | file_extra_in_comparison | `—` | `scripts/signal_backup.py` |
 | `scripts/vendor/chromiumcacheprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/chromiumcacheprobe.py` |
 | `scripts/vendor/exoprobe.py` | file_extra_in_comparison | `—` | `scripts/vendor/exoprobe.py` |
 | `leapp_functions/parsers/apple_atx.py` | expected_repo_specific | `leapp_functions/parsers/apple_atx.py` | `—` |
@@ -59,14 +90,10 @@
 | `scripts/test_artifacts/image_list.py` | expected_repo_specific | `scripts/test_artifacts/image_list.py` | `—` |
 | `scripts/tz_offset.py` | expected_repo_specific | `scripts/tz_offset.py` | `—` |
 | `scripts/unifiedlogs.py` | expected_repo_specific | `scripts/unifiedlogs.py` | `—` |
-| `leapp_functions/__init__.py` | same | `leapp_functions/__init__.py` | `leapp_functions/__init__.py` |
 | `leapp_functions/app/__init__.py` | same | `leapp_functions/app/__init__.py` | `leapp_functions/app/__init__.py` |
 | `leapp_functions/app/artifact_result.py` | same | `leapp_functions/app/artifact_result.py` | `leapp_functions/app/artifact_result.py` |
-| `leapp_functions/app/history.py` | same | `leapp_functions/app/history.py` | `leapp_functions/app/history.py` |
-| `leapp_functions/app/output.py` | same | `leapp_functions/app/output.py` | `leapp_functions/app/output.py` |
 | `leapp_functions/app/platform.py` | same | `leapp_functions/app/platform.py` | `leapp_functions/app/platform.py` |
 | `leapp_functions/app/screen_log.py` | same | `leapp_functions/app/screen_log.py` | `leapp_functions/app/screen_log.py` |
-| `leapp_functions/data_sources/json_files.py` | same | `leapp_functions/data_sources/json_files.py` | `leapp_functions/data_sources/json_files.py` |
 | `leapp_functions/data_sources/text_files.py` | same | `leapp_functions/data_sources/text_files.py` | `leapp_functions/data_sources/text_files.py` |
 | `leapp_functions/lava_launcher.py` | same | `leapp_functions/lava_launcher.py` | `leapp_functions/lava_launcher.py` |
 | `packaging/dmg_settings.py` | same | `packaging/dmg_settings.py` | `packaging/dmg_settings.py` |
@@ -95,7 +122,6 @@
 | `scripts/html_safe.py` | same | `scripts/html_safe.py` | `scripts/html_safe.py` |
 | `scripts/mmkv_parser.py` | same | `scripts/mmkv_parser.py` | `scripts/mmkv_parser.py` |
 | `scripts/plugin_loader.py` | same | `scripts/plugin_loader.py` | `scripts/plugin_loader.py` |
-| `scripts/raw_image.py` | same | `scripts/raw_image.py` | `scripts/raw_image.py` |
 | `scripts/realm_parser.py` | same | `scripts/realm_parser.py` | `scripts/realm_parser.py` |
 | `scripts/snss_parser.py` | same | `scripts/snss_parser.py` | `scripts/snss_parser.py` |
 | `scripts/sqlcipher_decrypt.py` | same | `scripts/sqlcipher_decrypt.py` | `scripts/sqlcipher_decrypt.py` |

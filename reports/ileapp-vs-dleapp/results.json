@@ -1,34 +1,502 @@
 {
-  "generated_at": "2026-11-16T21:23:08.798082+00:00",
+  "generated_at": "2026-11-23T23:01:28.850106+00:00",
   "baseline": "ileapp",
   "comparison": "dleapp",
   "repos": {
     "ileapp": {
       "url": "https://github.com/abrignoni/iLEAPP.git",
       "branch": "main",
-      "commit": "2fe5dfd4c8e7d88f971af3ab53bfbaf82820975d",
+      "commit": "62731d27b79867da1a492ed2c7274b79987e564d",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/ileapp"
     },
     "dleapp": {
       "url": "https://github.com/abrignoni/DLEAPP.git",
       "branch": "main",
-      "commit": "b21c6edde4a635765cad60d128a8f1cd2a4c4832",
+      "commit": "b812dfc6bcb12e9aa54367bca3fdf9f8d21b4bfc",
       "path": "/home/runner/work/leapps-parity/leapps-parity/.work/repos/dleapp"
     }
   },
   "counts": {
-    "files_total": 178,
-    "import_dependency_gaps": 11,
+    "files_total": 204,
+    "import_dependency_gaps": 105,
     "expected_repo_specific": 29,
-    "file_extra_in_comparison": 89,
-    "file_missing_from_comparison": 11,
-    "logic_changed": 43,
-    "same": 35,
-    "signature_changed": 2,
-    "symbol_extra_in_comparison": 24,
-    "symbol_missing_from_comparison": 39
+    "file_extra_in_comparison": 91,
+    "file_missing_from_comparison": 35,
+    "logic_changed": 39,
+    "same": 30,
+    "signature_changed": 4,
+    "symbol_extra_in_comparison": 60,
+    "symbol_missing_from_comparison": 75
   },
   "import_dependency_gaps": [
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.disk:FILE",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.disk:FOLDER",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.disk:MISSING",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.disk:PENDING",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.disk:SILENT",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.disk:ask",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.disk:path_status",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.unlock:UNLOCKERS",
+      "missing_logical_path": "leapp_functions/app/unlock.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/app_state.py",
+      "source_physical": "leapp_functions/app/gui/app_state.py",
+      "import_statement": "leapp_functions.app.unlock:Unlock",
+      "missing_logical_path": "leapp_functions/app/unlock.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:by_title",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:group_by_category",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:load_profile",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:profile_artifacts",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:profile_for_report",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:search",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:toggle",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.artifact_list:write_profile",
+      "missing_logical_path": "leapp_functions/app/artifact_list.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Caption",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Card",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Field",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:GAP",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:LabeledEntry",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:OutlineButton",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:SIDE_WIDTH",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:open_menu",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/artifacts.py",
+      "source_physical": "leapp_functions/app/gui/artifacts.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:show_example",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.app_state:CASE_KEYS",
+      "missing_logical_path": "leapp_functions/app/gui/app_state.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Caption",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Card",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Field",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:FileField",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:GAP",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:LabeledEntry",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:OutlineButton",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:two_columns",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/case.py",
+      "source_physical": "leapp_functions/app/gui/case.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:wrap_to_width",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/results.py",
+      "source_physical": "leapp_functions/app/gui/results.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Card",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/results.py",
+      "source_physical": "leapp_functions/app/gui/results.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:OutlineButton",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/results.py",
+      "source_physical": "leapp_functions/app/gui/results.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:mark_line",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/results.py",
+      "source_physical": "leapp_functions/app/gui/results.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:open_menu",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/results.py",
+      "source_physical": "leapp_functions/app/gui/results.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:two_columns",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/results.py",
+      "source_physical": "leapp_functions/app/gui/results.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:wrap_to_width",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.app_state:SECRETS",
+      "missing_logical_path": "leapp_functions/app/gui/app_state.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.app_state:is_waiting",
+      "missing_logical_path": "leapp_functions/app/gui/app_state.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.artifacts:unknown_text",
+      "missing_logical_path": "leapp_functions/app/gui/artifacts.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Caption",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Card",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:GAP",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:mark_line",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:two_columns",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/review.py",
+      "source_physical": "leapp_functions/app/gui/review.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:wrap_to_width",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/run.py",
+      "source_physical": "leapp_functions/app/gui/run.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Card",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/run.py",
+      "source_physical": "leapp_functions/app/gui/run.py",
+      "import_statement": "leapp_functions.app.run_worker:RunWorker",
+      "missing_logical_path": "leapp_functions/app/run_worker.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/settings.py",
+      "source_physical": "leapp_functions/app/gui/settings.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Caption",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/settings.py",
+      "source_physical": "leapp_functions/app/gui/settings.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Card",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/settings.py",
+      "source_physical": "leapp_functions/app/gui/settings.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:GAP",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/settings.py",
+      "source_physical": "leapp_functions/app/gui/settings.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:MARGIN",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/settings.py",
+      "source_physical": "leapp_functions/app/gui/settings.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:OutlineButton",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.disk:FILE",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.disk:PENDING",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.disk:SILENT",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.disk:path_status",
+      "missing_logical_path": "leapp_functions/app/disk.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.app_state:SECRETS",
+      "missing_logical_path": "leapp_functions/app/gui/app_state.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.app_state:WAITING",
+      "missing_logical_path": "leapp_functions/app/gui/app_state.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Caption",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Card",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Field",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:FileField",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:GAP",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:LabeledEntry",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:OutlineButton",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:Tooltip",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:mark_line",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:open_menu",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:show_example",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/source.py",
+      "source_physical": "leapp_functions/app/gui/source.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:two_columns",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/status_bar.py",
+      "source_physical": "leapp_functions/app/gui/status_bar.py",
+      "import_statement": "leapp_functions.app.gui.app_state:is_waiting",
+      "missing_logical_path": "leapp_functions/app/gui/app_state.py"
+    },
+    {
+      "source_logical_path": "leapp_functions/app/gui/status_bar.py",
+      "source_physical": "leapp_functions/app/gui/status_bar.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:OutlineButton",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
     {
       "source_logical_path": "main_entry.py",
       "source_physical": "ileapp.py",
@@ -38,8 +506,92 @@
     {
       "source_logical_path": "main_gui.py",
       "source_physical": "ileappGUI.py",
-      "import_statement": "scripts.tz_offset:tzvalues",
-      "missing_logical_path": "scripts/tz_offset.py"
+      "import_statement": "leapp_functions.app.gui.app_state:AppState",
+      "missing_logical_path": "leapp_functions/app/gui/app_state.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.artifacts:ArtifactsScreen",
+      "missing_logical_path": "leapp_functions/app/gui/artifacts.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.case:CaseScreen",
+      "missing_logical_path": "leapp_functions/app/gui/case.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:MARGIN",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.custom_widgets:ScrollArea",
+      "missing_logical_path": "leapp_functions/app/gui/custom_widgets.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.header:Header",
+      "missing_logical_path": "leapp_functions/app/gui/header.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.results:ResultsScreen",
+      "missing_logical_path": "leapp_functions/app/gui/results.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.review:ReviewScreen",
+      "missing_logical_path": "leapp_functions/app/gui/review.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.run:RunControl",
+      "missing_logical_path": "leapp_functions/app/gui/run.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.run:RunScreen",
+      "missing_logical_path": "leapp_functions/app/gui/run.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.settings:SettingsControl",
+      "missing_logical_path": "leapp_functions/app/gui/settings.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.source:SourceScreen",
+      "missing_logical_path": "leapp_functions/app/gui/source.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.status_bar:StatusBar",
+      "missing_logical_path": "leapp_functions/app/gui/status_bar.py"
+    },
+    {
+      "source_logical_path": "main_gui.py",
+      "source_physical": "ileappGUI.py",
+      "import_statement": "leapp_functions.app.gui.steps:Steps",
+      "missing_logical_path": "leapp_functions/app/gui/steps.py"
+    },
+    {
+      "source_logical_path": "scripts/biome_stream_records.py",
+      "source_physical": "scripts/biome_stream_records.py",
+      "import_statement": "scripts.ccl_segb.ccl_segb:read_segb_file",
+      "missing_logical_path": "scripts/ccl_segb/ccl_segb.py"
     },
     {
       "source_logical_path": "scripts/blackboxprotobuf/__init__.py",
@@ -90,6 +642,18 @@
       "missing_logical_path": "scripts/blackboxprotobuf/lib/types/__init__.py"
     },
     {
+      "source_logical_path": "scripts/findmy_cache.py",
+      "source_physical": "scripts/findmy_cache.py",
+      "import_statement": "scripts.ios_keychain:active_keychain_path",
+      "missing_logical_path": "scripts/ios_keychain.py"
+    },
+    {
+      "source_logical_path": "scripts/findmy_cache.py",
+      "source_physical": "scripts/findmy_cache.py",
+      "import_statement": "scripts.ios_keychain:find_keychain_secrets",
+      "missing_logical_path": "scripts/ios_keychain.py"
+    },
+    {
       "source_logical_path": "scripts/unifiedlogs.py",
       "source_physical": "scripts/unifiedlogs.py",
       "import_statement": "scripts.log_filter:accelerate_query",
@@ -99,19 +663,36 @@
   "files": [
     {
       "logical_path": "leapp_functions/__init__.py",
-      "status": "same",
+      "status": "logic_changed",
       "baseline_physical": "leapp_functions/__init__.py",
       "comparison_physical": "leapp_functions/__init__.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "load_config",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def load_config()",
+          "comparison_signature": null
+        }
+      ]
     },
     {
       "logical_path": "leapp_functions/app/__init__.py",
       "status": "same",
       "baseline_physical": "leapp_functions/app/__init__.py",
       "comparison_physical": "leapp_functions/app/__init__.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/artifact_list.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/artifact_list.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -128,10 +709,213 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "leapp_functions/app/disk.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/disk.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/app_state.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/app_state.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/artifacts.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/artifacts.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/case.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/case.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/custom_widgets.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/custom_widgets.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/header.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/header.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/images.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/images.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/quick_exit.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/quick_exit.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/results.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/results.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/review.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/review.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/run.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/run.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/settings.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/settings.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/source.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/source.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/status_bar.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/status_bar.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/steps.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/steps.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/themes.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/themes.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/gui/window_area.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/gui/window_area.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "leapp_functions/app/history.py",
-      "status": "same",
+      "status": "logic_changed",
       "baseline_physical": "leapp_functions/app/history.py",
       "comparison_physical": "leapp_functions/app/history.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "get_appearance",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def get_appearance(leapp_id)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "set_appearance",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def set_appearance(leapp_id, appearance)",
+          "comparison_signature": null
+        }
+      ]
+    },
+    {
+      "logical_path": "leapp_functions/app/input_type.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/input_type.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/new_run.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/new_run.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -139,19 +923,36 @@
     },
     {
       "logical_path": "leapp_functions/app/output.py",
-      "status": "same",
+      "status": "logic_changed",
       "baseline_physical": "leapp_functions/app/output.py",
       "comparison_physical": "leapp_functions/app/output.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "default_output_folder_name",
+          "status": "logic_changed",
+          "baseline_signature": "def default_output_folder_name()",
+          "comparison_signature": "def default_output_folder_name()"
+        }
+      ]
     },
     {
       "logical_path": "leapp_functions/app/platform.py",
       "status": "same",
       "baseline_physical": "leapp_functions/app/platform.py",
       "comparison_physical": "leapp_functions/app/platform.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/app/run_worker.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/run_worker.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
@@ -168,14 +969,37 @@
       "symbol_diffs": []
     },
     {
-      "logical_path": "leapp_functions/data_sources/json_files.py",
-      "status": "same",
-      "baseline_physical": "leapp_functions/data_sources/json_files.py",
-      "comparison_physical": "leapp_functions/data_sources/json_files.py",
+      "logical_path": "leapp_functions/app/unlock.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "leapp_functions/app/unlock.py",
+      "comparison_physical": null,
       "baseline_parse_error": null,
       "comparison_parse_error": null,
       "module_logic_changed": false,
       "symbol_diffs": []
+    },
+    {
+      "logical_path": "leapp_functions/data_sources/json_files.py",
+      "status": "logic_changed",
+      "baseline_physical": "leapp_functions/data_sources/json_files.py",
+      "comparison_physical": "leapp_functions/data_sources/json_files.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "convert_json_file_to_namedtuple",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def convert_json_file_to_namedtuple(json_file_path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "save_content_to_json_file",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def save_content_to_json_file(file_path, data)",
+          "comparison_signature": null
+        }
+      ]
     },
     {
       "logical_path": "leapp_functions/data_sources/text_files.py",
@@ -216,6 +1040,12 @@
       "comparison_parse_error": null,
       "module_logic_changed": true,
       "symbol_diffs": [
+        {
+          "qualified_name": "create_casedata",
+          "status": "logic_changed",
+          "baseline_signature": "def create_casedata(path)",
+          "comparison_signature": "def create_casedata(path)"
+        },
         {
           "qualified_name": "create_profile",
           "status": "logic_changed",
@@ -282,10 +1112,136 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
+          "qualified_name": "MainWindow",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "class MainWindow",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.__init__",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def __init__(self, show=...)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.activate_application",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def activate_application(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.build",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def build(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.close",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def close(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.colors",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "@@def colors(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.destroy",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def destroy(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.fix_size",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def fix_size(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.focus_field",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def focus_field(self, method)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.go",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def go(self, step)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.go_back",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def go_back(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.go_next",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def go_next(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.on_focus",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def on_focus(self, event)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.on_touchpad",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def on_touchpad(self, event)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.on_wheel",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def on_wheel(self, event)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.redraw",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def redraw(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.refresh_steps",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def refresh_steps(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.show_screen",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def show_screen(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "MainWindow.watch_unlock",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def watch_unlock(self)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "OnFocusIn",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def OnFocusIn(event)"
+        },
+        {
           "qualified_name": "ValidateInput",
-          "status": "logic_changed",
-          "baseline_signature": "def ValidateInput()",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def ValidateInput()"
+        },
+        {
+          "qualified_name": "_update_exodus_password_status",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def _update_exodus_password_status(*_args)"
         },
         {
           "qualified_name": "_update_signal_key_status",
@@ -306,33 +1262,117 @@
           "comparison_signature": "def _update_windows_user_password_status(*_args)"
         },
         {
-          "qualified_name": "clear_keychain",
+          "qualified_name": "allow_output_folder_name_chars",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def allow_output_folder_name_chars(proposed)"
+        },
+        {
+          "qualified_name": "case_data",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def case_data()"
+        },
+        {
+          "qualified_name": "center_main_window_macos",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def center_main_window_macos(window, width, height)"
+        },
+        {
+          "qualified_name": "close_main_window",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def close_main_window()"
+        },
+        {
+          "qualified_name": "crunch",
           "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def clear_keychain()",
+          "baseline_signature": "def crunch(request)",
           "comparison_signature": null
         },
         {
+          "qualified_name": "deselect_all",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def deselect_all()"
+        },
+        {
+          "qualified_name": "explore_lava",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def explore_lava()"
+        },
+        {
           "qualified_name": "filter_modules",
-          "status": "logic_changed",
-          "baseline_signature": "def filter_modules(*args)",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def filter_modules(*args)"
         },
         {
           "qualified_name": "finish_crunch",
-          "status": "logic_changed",
-          "baseline_signature": "def finish_crunch(crunch_successful, out_params)",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def finish_crunch(crunch_successful, out_params)"
         },
         {
+          "qualified_name": "geometry_offset",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def geometry_offset(value)"
+        },
+        {
+          "qualified_name": "get_selected_modules",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def get_selected_modules()"
+        },
+        {
+          "qualified_name": "input_paths",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def input_paths()"
+        },
+        {
           "qualified_name": "load_profile",
-          "status": "logic_changed",
-          "baseline_signature": "def load_profile()",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def load_profile()"
         },
         {
+          "qualified_name": "module_matches_filter",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def module_matches_filter(module_infos, filter_term=...)"
+        },
+        {
+          "qualified_name": "open_exodus_password_dialog",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def open_exodus_password_dialog()"
+        },
+        {
+          "qualified_name": "open_folder",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def open_folder(output_path)"
+        },
+        {
+          "qualified_name": "open_lava",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def open_lava(project_path, launcher)"
+        },
+        {
+          "qualified_name": "open_report",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def open_report(report_path)"
+        },
+        {
           "qualified_name": "open_settings_window",
-          "status": "logic_changed",
-          "baseline_signature": "def open_settings_window()",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def open_settings_window()"
         },
         {
@@ -348,6 +1388,12 @@
           "comparison_signature": "def open_threema_password_dialog()"
         },
         {
+          "qualified_name": "open_website",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def open_website(url)"
+        },
+        {
           "qualified_name": "open_windows_user_password_dialog",
           "status": "symbol_extra_in_comparison",
           "baseline_signature": null,
@@ -355,33 +1401,81 @@
         },
         {
           "qualified_name": "pickModules",
-          "status": "logic_changed",
-          "baseline_signature": "def pickModules()",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def pickModules()"
         },
         {
+          "qualified_name": "poll_crunch",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def poll_crunch(message_queue, out_params)"
+        },
+        {
           "qualified_name": "process",
-          "status": "logic_changed",
-          "baseline_signature": "def process(casedata)",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def process(casedata)"
         },
         {
+          "qualified_name": "resource_path",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def resource_path(filename)"
+        },
+        {
           "qualified_name": "run_crunch",
-          "status": "signature_changed",
-          "baseline_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, time_offset, decryption_keys, image_password=..., found_members=..., hash_files=...)",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=..., found_members=..., hash_files=...)"
         },
         {
           "qualified_name": "save_profile",
-          "status": "logic_changed",
-          "baseline_signature": "def save_profile()",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
           "comparison_signature": "def save_profile()"
         },
         {
-          "qualified_name": "select_keychain",
+          "qualified_name": "scroll",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def scroll(event)"
+        },
+        {
+          "qualified_name": "select_all",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def select_all()"
+        },
+        {
+          "qualified_name": "select_input",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def select_input(button_type)"
+        },
+        {
+          "qualified_name": "select_output",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def select_output()"
+        },
+        {
+          "qualified_name": "selfcheck",
           "status": "symbol_missing_from_comparison",
-          "baseline_signature": "def select_keychain()",
+          "baseline_signature": "def selfcheck()",
           "comparison_signature": null
+        },
+        {
+          "qualified_name": "set_input_selection",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def set_input_selection(paths)"
+        },
+        {
+          "qualified_name": "show_history_menu",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def show_history_menu(button, path_type)"
         }
       ]
     },
@@ -411,6 +1505,12 @@
           "status": "logic_changed",
           "baseline_signature": "def hidden_imports() -> ...",
           "comparison_signature": "def hidden_imports() -> ..."
+        },
+        {
+          "qualified_name": "read_config",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def read_config(field) -> ...",
+          "comparison_signature": null
         },
         {
           "qualified_name": "read_version",
@@ -483,6 +1583,16 @@
           "comparison_signature": "def start_artifact_report(self, report_folder, artifact_file_name, artifact_description=...)"
         }
       ]
+    },
+    {
+      "logical_path": "scripts/biome_stream_records.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/biome_stream_records.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
     },
     {
       "logical_path": "scripts/bits_qmgr.py",
@@ -980,6 +2090,26 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/exodus_bip39_english.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/exodus_bip39_english.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
+      "logical_path": "scripts/exodus_wallet.py",
+      "status": "file_extra_in_comparison",
+      "baseline_physical": null,
+      "comparison_physical": "scripts/exodus_wallet.py",
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/filetype.py",
       "status": "same",
       "baseline_physical": "scripts/filetype.py",
@@ -1100,6 +2230,16 @@
       "symbol_diffs": []
     },
     {
+      "logical_path": "scripts/findmy_cache.py",
+      "status": "file_missing_from_comparison",
+      "baseline_physical": "scripts/findmy_cache.py",
+      "comparison_physical": null,
+      "baseline_parse_error": null,
+      "comparison_parse_error": null,
+      "module_logic_changed": false,
+      "symbol_diffs": []
+    },
+    {
       "logical_path": "scripts/firefox.py",
       "status": "file_extra_in_comparison",
       "baseline_physical": null,
@@ -1209,6 +2349,12 @@
       "module_logic_changed": true,
       "symbol_diffs": [
         {
+          "qualified_name": "GuiWindow.end_worker_run",
+          "status": "logic_changed",
+          "baseline_signature": "@@def end_worker_run()",
+          "comparison_signature": "@@def end_worker_run()"
+        },
+        {
           "qualified_name": "OutputParameters.__init__",
           "status": "logic_changed",
           "baseline_signature": "def __init__(self, output_folder, custom_folder_name=...)",
@@ -1275,6 +2421,12 @@
           "comparison_signature": null
         },
         {
+          "qualified_name": "_is_unrepresentable_cocoa_year_one",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _is_unrepresentable_cocoa_year_one(seconds, helper)",
+          "comparison_signature": null
+        },
+        {
           "qualified_name": "_read_binary_plist_tolerantly",
           "status": "symbol_missing_from_comparison",
           "baseline_signature": "def _read_binary_plist_tolerantly(file_path)",
@@ -1309,6 +2461,12 @@
           "status": "logic_changed",
           "baseline_signature": "def generate_thumbnail(imDirectory, imFilename, seeker, report_folder)",
           "comparison_signature": "def generate_thumbnail(imDirectory, imFilename, seeker, report_folder)"
+        },
+        {
+          "qualified_name": "get_birthdate",
+          "status": "logic_changed",
+          "baseline_signature": "def get_birthdate(date)",
+          "comparison_signature": "def get_birthdate(date)"
         },
         {
           "qualified_name": "get_plist_content",
@@ -1395,6 +2553,12 @@
           "comparison_signature": "def usergen(report_folder, data_list_usernames)"
         },
         {
+          "qualified_name": "webkit_timestampsconv",
+          "status": "logic_changed",
+          "baseline_signature": "def webkit_timestampsconv(webkittime)",
+          "comparison_signature": "def webkit_timestampsconv(webkittime)"
+        },
+        {
           "qualified_name": "write_device_info",
           "status": "logic_changed",
           "baseline_signature": "def write_device_info()",
@@ -1467,8 +2631,8 @@
         },
         {
           "qualified_name": "lava_finalize_output",
-          "status": "logic_changed",
-          "baseline_signature": "def lava_finalize_output(output_path)",
+          "status": "signature_changed",
+          "baseline_signature": "def lava_finalize_output(output_path, processing_status=...)",
           "comparison_signature": "def lava_finalize_output(output_path)"
         },
         {
@@ -1739,13 +2903,92 @@
     },
     {
       "logical_path": "scripts/raw_image.py",
-      "status": "same",
+      "status": "logic_changed",
       "baseline_physical": "scripts/raw_image.py",
       "comparison_physical": "scripts/raw_image.py",
       "baseline_parse_error": null,
       "comparison_parse_error": null,
-      "module_logic_changed": false,
-      "symbol_diffs": []
+      "module_logic_changed": true,
+      "symbol_diffs": [
+        {
+          "qualified_name": "DialogAsker",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "class DialogAsker",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "DialogAsker.__init__",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def __init__(self, parent, confirm=...)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "DialogAsker.ask_file",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def ask_file(self, title, filetypes)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "DialogAsker.ask_secret",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def ask_secret(self, title, prompt)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "DialogAsker.confirm_members",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def confirm_members(self, search)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "DialogAsker.show_error",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def show_error(self, title, message)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "DialogAsker.show_info",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def show_info(self, title, message)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_gui_image_key",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def _gui_image_key(parent, path)"
+        },
+        {
+          "qualified_name": "_gui_volume_keys",
+          "status": "symbol_extra_in_comparison",
+          "baseline_signature": null,
+          "comparison_signature": "def _gui_volume_keys(parent, name, image, keys)"
+        },
+        {
+          "qualified_name": "_image_key",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _image_key(asker, path)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "_volume_keys",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def _volume_keys(asker, name, image, keys)",
+          "comparison_signature": null
+        },
+        {
+          "qualified_name": "ask_raw_input",
+          "status": "logic_changed",
+          "baseline_signature": "def ask_raw_input(parent, input_path, look_beside=..., confirm=...)",
+          "comparison_signature": "def ask_raw_input(parent, input_path, look_beside=..., confirm=...)"
+        },
+        {
+          "qualified_name": "unlock_raw_input",
+          "status": "symbol_missing_from_comparison",
+          "baseline_signature": "def unlock_raw_input(input_path, asker, look_beside=...)",
+          "comparison_signature": null
+        }
+      ]
     },
     {
       "logical_path": "scripts/rdp_bitmap_cache.py",
@@ -1788,9 +3031,15 @@
       "symbol_diffs": [
         {
           "qualified_name": "create_index_html",
-          "status": "logic_changed",
-          "baseline_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)",
+          "status": "signature_changed",
+          "baseline_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only, stopped_note=...)",
           "comparison_signature": "def create_index_html(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, nav_list_data, casedata, profile_filename, lava_only)"
+        },
+        {
+          "qualified_name": "generate_report",
+          "status": "signature_changed",
+          "baseline_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only, stopped_note=...)",
+          "comparison_signature": "def generate_report(reportfolderbase, time_in_secs, time_hms, extraction_type, image_input_path, casedata, profile_filename, icons, lava_only)"
         }
       ]
     },

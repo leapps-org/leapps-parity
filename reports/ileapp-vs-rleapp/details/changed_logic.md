@@ -1,8 +1,32 @@
 # Changed logic files
 
+### `leapp_functions/__init__.py`
+
+- module-level logic changed
+- only in ileapp: `load_config` — `def load_config()`
+
+### `leapp_functions/app/history.py`
+
+- module-level logic changed
+- only in ileapp: `get_appearance` — `def get_appearance(leapp_id)`
+- only in ileapp: `set_appearance` — `def set_appearance(leapp_id, appearance)`
+
+### `leapp_functions/app/output.py`
+
+- module-level logic changed
+- logic changed: `default_output_folder_name`
+
+### `leapp_functions/data_sources/json_files.py`
+
+- module-level logic changed
+- only in ileapp: `convert_json_file_to_namedtuple` — `def convert_json_file_to_namedtuple(json_file_path)`
+- only in ileapp: `save_content_to_json_file` — `def save_content_to_json_file(file_path, data)`
+
 ### `main_entry.py`
 
 - module-level logic changed
+- logic changed: `create_casedata`
+- logic changed: `create_profile`
 - logic changed: `main`
 - logic changed: `validate_args`
 - only in ileapp: `version_readers_first` — `def version_readers_first(plugins)`
@@ -10,14 +34,59 @@
 ### `main_gui.py`
 
 - module-level logic changed
-- logic changed: `ValidateInput`
-- only in ileapp: `clear_keychain` — `def clear_keychain()`
-- logic changed: `filter_modules`
-- logic changed: `finish_crunch`
-- logic changed: `open_settings_window`
-- logic changed: `pickModules`
-- logic changed: `process`
-- only in ileapp: `select_keychain` — `def select_keychain()`
+- only in ileapp: `MainWindow` — `class MainWindow`
+- only in ileapp: `MainWindow.__init__` — `def __init__(self, show=...)`
+- only in ileapp: `MainWindow.activate_application` — `def activate_application(self)`
+- only in ileapp: `MainWindow.build` — `def build(self)`
+- only in ileapp: `MainWindow.close` — `def close(self)`
+- only in ileapp: `MainWindow.colors` — `@@def colors(self)`
+- only in ileapp: `MainWindow.destroy` — `def destroy(self)`
+- only in ileapp: `MainWindow.fix_size` — `def fix_size(self)`
+- only in ileapp: `MainWindow.focus_field` — `def focus_field(self, method)`
+- only in ileapp: `MainWindow.go` — `def go(self, step)`
+- only in ileapp: `MainWindow.go_back` — `def go_back(self)`
+- only in ileapp: `MainWindow.go_next` — `def go_next(self)`
+- only in ileapp: `MainWindow.on_focus` — `def on_focus(self, event)`
+- only in ileapp: `MainWindow.on_touchpad` — `def on_touchpad(self, event)`
+- only in ileapp: `MainWindow.on_wheel` — `def on_wheel(self, event)`
+- only in ileapp: `MainWindow.redraw` — `def redraw(self)`
+- only in ileapp: `MainWindow.refresh_steps` — `def refresh_steps(self)`
+- only in ileapp: `MainWindow.show_screen` — `def show_screen(self)`
+- only in ileapp: `MainWindow.watch_unlock` — `def watch_unlock(self)`
+- only in rleapp: `OnFocusIn` — `def OnFocusIn(event)`
+- only in rleapp: `ValidateInput` — `def ValidateInput()`
+- only in rleapp: `allow_output_folder_name_chars` — `def allow_output_folder_name_chars(proposed)`
+- only in rleapp: `case_data` — `def case_data()`
+- only in rleapp: `center_main_window_macos` — `def center_main_window_macos(window, width, height)`
+- only in rleapp: `close_main_window` — `def close_main_window()`
+- only in ileapp: `crunch` — `def crunch(request)`
+- only in rleapp: `deselect_all` — `def deselect_all()`
+- only in rleapp: `explore_lava` — `def explore_lava()`
+- only in rleapp: `filter_modules` — `def filter_modules(*args)`
+- only in rleapp: `finish_crunch` — `def finish_crunch(crunch_successful, out_params)`
+- only in rleapp: `geometry_offset` — `def geometry_offset(value)`
+- only in rleapp: `get_selected_modules` — `def get_selected_modules()`
+- only in rleapp: `input_paths` — `def input_paths()`
+- only in rleapp: `load_profile` — `def load_profile()`
+- only in rleapp: `module_matches_filter` — `def module_matches_filter(module_infos, filter_term=...)`
+- only in rleapp: `open_folder` — `def open_folder(output_path)`
+- only in rleapp: `open_lava` — `def open_lava(project_path, launcher)`
+- only in rleapp: `open_report` — `def open_report(report_path)`
+- only in rleapp: `open_settings_window` — `def open_settings_window()`
+- only in rleapp: `open_website` — `def open_website(url)`
+- only in rleapp: `pickModules` — `def pickModules()`
+- only in rleapp: `poll_crunch` — `def poll_crunch(message_queue, out_params)`
+- only in rleapp: `process` — `def process(casedata)`
+- only in rleapp: `resource_path` — `def resource_path(filename)`
+- only in rleapp: `run_crunch` — `def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=..., found_members=..., hash_files=...)`
+- only in rleapp: `save_profile` — `def save_profile()`
+- only in rleapp: `scroll` — `def scroll(event)`
+- only in rleapp: `select_all` — `def select_all()`
+- only in rleapp: `select_input` — `def select_input(button_type)`
+- only in rleapp: `select_output` — `def select_output()`
+- only in ileapp: `selfcheck` — `def selfcheck()`
+- only in rleapp: `set_input_selection` — `def set_input_selection(paths)`
+- only in rleapp: `show_history_menu` — `def show_history_menu(button, path_type)`
 
 ### `packaging/build.py`
 
@@ -29,6 +98,7 @@
 - logic changed: `bundle_datas`
 - only in ileapp: `bundled_bin_dir` — `def bundled_bin_dir() -> ...`
 - logic changed: `hidden_imports`
+- only in ileapp: `read_config` — `def read_config(field) -> ...`
 - logic changed: `read_version`
 - logic changed: `smoke`
 
@@ -60,17 +130,20 @@
 ### `scripts/ilapfuncs.py`
 
 - module-level logic changed
+- logic changed: `GuiWindow.end_worker_run`
 - logic changed: `OutputParameters.__init__`
 - only in rleapp: `_count_generator` — `def _count_generator(reader)`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in rleapp: `_get_line_count` — `def _get_line_count(file)`
 - only in ileapp: `_is_appledouble` — `def _is_appledouble(path)`
+- only in ileapp: `_is_unrepresentable_cocoa_year_one` — `def _is_unrepresentable_cocoa_year_one(seconds, helper)`
 - only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - logic changed: `artifact_processor`
 - logic changed: `device_info`
 - only in rleapp: `gather_hashes_in_file` — `def gather_hashes_in_file(file_found, regex)`
 - logic changed: `generate_hexdump`
 - logic changed: `generate_thumbnail`
+- logic changed: `get_birthdate`
 - logic changed: `get_plist_content`
 - logic changed: `get_plist_file_content`
 - logic changed: `get_resolution_for_model_id`
@@ -84,6 +157,7 @@
 - only in rleapp: `logdevinfo` — `def logdevinfo(message=...)`
 - logic changed: `tsv`
 - only in rleapp: `usergen` — `def usergen(report_folder, data_list_usernames)`
+- logic changed: `webkit_timestampsconv`
 - logic changed: `write_device_info`
 
 ### `scripts/lavafuncs.py`
@@ -93,7 +167,6 @@
 - logic changed: `initialize_lava`
 - logic changed: `lava_add_module`
 - logic changed: `lava_create_sqlite_table`
-- logic changed: `lava_finalize_output`
 - logic changed: `lava_get_full_media_info`
 - logic changed: `lava_get_media_item`
 - logic changed: `lava_get_media_references`
@@ -108,10 +181,26 @@
 
 - module-level logic changed
 
+### `scripts/raw_image.py`
+
+- module-level logic changed
+- only in ileapp: `DialogAsker` — `class DialogAsker`
+- only in ileapp: `DialogAsker.__init__` — `def __init__(self, parent, confirm=...)`
+- only in ileapp: `DialogAsker.ask_file` — `def ask_file(self, title, filetypes)`
+- only in ileapp: `DialogAsker.ask_secret` — `def ask_secret(self, title, prompt)`
+- only in ileapp: `DialogAsker.confirm_members` — `def confirm_members(self, search)`
+- only in ileapp: `DialogAsker.show_error` — `def show_error(self, title, message)`
+- only in ileapp: `DialogAsker.show_info` — `def show_info(self, title, message)`
+- only in rleapp: `_gui_image_key` — `def _gui_image_key(parent, path)`
+- only in rleapp: `_gui_volume_keys` — `def _gui_volume_keys(parent, name, image, keys)`
+- only in ileapp: `_image_key` — `def _image_key(asker, path)`
+- only in ileapp: `_volume_keys` — `def _volume_keys(asker, name, image, keys)`
+- logic changed: `ask_raw_input`
+- only in ileapp: `unlock_raw_input` — `def unlock_raw_input(input_path, asker, look_beside=...)`
+
 ### `scripts/report.py`
 
 - module-level logic changed
-- logic changed: `create_index_html`
 
 ### `scripts/search_files.py`
 

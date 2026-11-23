@@ -1,8 +1,32 @@
 # Changed logic files
 
+### `leapp_functions/__init__.py`
+
+- module-level logic changed
+- only in ileapp: `load_config` — `def load_config()`
+
+### `leapp_functions/app/history.py`
+
+- module-level logic changed
+- only in ileapp: `get_appearance` — `def get_appearance(leapp_id)`
+- only in ileapp: `set_appearance` — `def set_appearance(leapp_id, appearance)`
+
+### `leapp_functions/app/output.py`
+
+- module-level logic changed
+- logic changed: `default_output_folder_name`
+
+### `leapp_functions/data_sources/json_files.py`
+
+- module-level logic changed
+- only in ileapp: `convert_json_file_to_namedtuple` — `def convert_json_file_to_namedtuple(json_file_path)`
+- only in ileapp: `save_content_to_json_file` — `def save_content_to_json_file(file_path, data)`
+
 ### `main_entry.py`
 
 - module-level logic changed
+- logic changed: `create_casedata`
+- logic changed: `create_profile`
 - logic changed: `main`
 - logic changed: `validate_args`
 - only in ileapp: `version_readers_first` — `def version_readers_first(plugins)`
@@ -10,15 +34,62 @@
 ### `main_gui.py`
 
 - module-level logic changed
-- logic changed: `ValidateInput`
-- logic changed: `case_data`
-- only in ileapp: `clear_keychain` — `def clear_keychain()`
-- logic changed: `filter_modules`
-- logic changed: `finish_crunch`
-- logic changed: `open_settings_window`
-- logic changed: `pickModules`
-- logic changed: `process`
-- only in ileapp: `select_keychain` — `def select_keychain()`
+- only in ileapp: `MainWindow` — `class MainWindow`
+- only in ileapp: `MainWindow.__init__` — `def __init__(self, show=...)`
+- only in ileapp: `MainWindow.activate_application` — `def activate_application(self)`
+- only in ileapp: `MainWindow.build` — `def build(self)`
+- only in ileapp: `MainWindow.close` — `def close(self)`
+- only in ileapp: `MainWindow.colors` — `@@def colors(self)`
+- only in ileapp: `MainWindow.destroy` — `def destroy(self)`
+- only in ileapp: `MainWindow.fix_size` — `def fix_size(self)`
+- only in ileapp: `MainWindow.focus_field` — `def focus_field(self, method)`
+- only in ileapp: `MainWindow.go` — `def go(self, step)`
+- only in ileapp: `MainWindow.go_back` — `def go_back(self)`
+- only in ileapp: `MainWindow.go_next` — `def go_next(self)`
+- only in ileapp: `MainWindow.on_focus` — `def on_focus(self, event)`
+- only in ileapp: `MainWindow.on_touchpad` — `def on_touchpad(self, event)`
+- only in ileapp: `MainWindow.on_wheel` — `def on_wheel(self, event)`
+- only in ileapp: `MainWindow.redraw` — `def redraw(self)`
+- only in ileapp: `MainWindow.refresh_steps` — `def refresh_steps(self)`
+- only in ileapp: `MainWindow.show_screen` — `def show_screen(self)`
+- only in ileapp: `MainWindow.watch_unlock` — `def watch_unlock(self)`
+- only in aleapp: `OnFocusIn` — `def OnFocusIn(event)`
+- only in aleapp: `ValidateInput` — `def ValidateInput()`
+- only in aleapp: `allow_output_folder_name_chars` — `def allow_output_folder_name_chars(proposed)`
+- only in aleapp: `ask_signal_recovery_key` — `def ask_signal_recovery_key(parent)`
+- only in aleapp: `case_data` — `def case_data()`
+- only in aleapp: `center_main_window_macos` — `def center_main_window_macos(window, width, height)`
+- only in aleapp: `close_main_window` — `def close_main_window()`
+- only in ileapp: `crunch` — `def crunch(request)`
+- only in aleapp: `deselect_all` — `def deselect_all()`
+- only in aleapp: `explore_lava` — `def explore_lava()`
+- only in aleapp: `filter_modules` — `def filter_modules(*args)`
+- only in aleapp: `finish_crunch` — `def finish_crunch(crunch_successful, out_params)`
+- only in aleapp: `geometry_offset` — `def geometry_offset(value)`
+- only in aleapp: `get_selected_modules` — `def get_selected_modules()`
+- only in aleapp: `input_paths` — `def input_paths()`
+- only in aleapp: `load_profile` — `def load_profile()`
+- only in aleapp: `module_matches_filter` — `def module_matches_filter(module_infos, filter_term=...)`
+- only in aleapp: `open_folder` — `def open_folder(output_path)`
+- only in aleapp: `open_lava` — `def open_lava(project_path, launcher)`
+- only in aleapp: `open_report` — `def open_report(report_path)`
+- only in aleapp: `open_settings_window` — `def open_settings_window()`
+- only in aleapp: `open_website` — `def open_website(url)`
+- only in aleapp: `pickModules` — `def pickModules()`
+- only in aleapp: `poll_crunch` — `def poll_crunch(message_queue, out_params)`
+- only in aleapp: `process` — `def process(casedata)`
+- only in aleapp: `resource_path` — `def resource_path(filename)`
+- only in aleapp: `run_crunch` — `def run_crunch(message_queue, selected_modules, extracttype, input_path, out_params, wrap_text, case_info, image_password=..., found_members=..., hash_files=...)`
+- only in aleapp: `save_profile` — `def save_profile()`
+- only in aleapp: `scroll` — `def scroll(event)`
+- only in aleapp: `select_all` — `def select_all()`
+- only in aleapp: `select_input` — `def select_input(button_type)`
+- only in aleapp: `select_output` — `def select_output()`
+- only in ileapp: `selfcheck` — `def selfcheck()`
+- only in aleapp: `set_input_selection` — `def set_input_selection(paths)`
+- only in aleapp: `set_signal_key` — `def set_signal_key()`
+- only in aleapp: `show_history_menu` — `def show_history_menu(button, path_type)`
+- only in aleapp: `show_signal_key_state` — `def show_signal_key_state()`
 
 ### `packaging/build.py`
 
@@ -44,6 +115,8 @@
 - only in aleapp: `linux_staging` — `def linux_staging(folder, root) -> ...`
 - logic changed: `main`
 - only in aleapp: `package_version` — `def package_version(version) -> ...`
+- only in ileapp: `read_config` — `def read_config(field) -> ...`
+- logic changed: `read_version`
 - only in aleapp: `rpm_spec` — `def rpm_spec(version, arch) -> ...`
 - logic changed: `smoke`
 
@@ -88,6 +161,7 @@
 - only in aleapp: `ArtifactHtmlReport.add_timeline` — `def add_timeline(self, id, dataDict)`
 - only in aleapp: `ArtifactHtmlReport.add_timeline_script` — `def add_timeline_script(self)`
 - only in aleapp: `ArtifactHtmlReport.filter_by_date` — `def filter_by_date(self, id, col1)`
+- logic changed: `ArtifactHtmlReport.start_artifact_report`
 
 ### `scripts/chromium_sync_data.py`
 
@@ -111,9 +185,11 @@
 ### `scripts/ilapfuncs.py`
 
 - module-level logic changed
+- logic changed: `GuiWindow.end_worker_run`
 - logic changed: `OutputParameters.__init__`
 - only in ileapp: `_deserialize_nska` — `def _deserialize_nska(data)`
 - only in ileapp: `_is_appledouble` — `def _is_appledouble(path)`
+- only in ileapp: `_is_unrepresentable_cocoa_year_one` — `def _is_unrepresentable_cocoa_year_one(seconds, helper)`
 - only in ileapp: `_read_binary_plist_tolerantly` — `def _read_binary_plist_tolerantly(file_path)`
 - only in aleapp: `abxread` — `def abxread(in_path, multi_root)`
 - logic changed: `artifact_processor`
@@ -160,14 +236,33 @@
 
 - module-level logic changed
 - logic changed: `_prepare_datetime_value`
+- logic changed: `initialize_lava`
 
 ### `scripts/modules_to_exclude.py`
 
 - module-level logic changed
 
+### `scripts/raw_image.py`
+
+- module-level logic changed
+- only in ileapp: `DialogAsker` — `class DialogAsker`
+- only in ileapp: `DialogAsker.__init__` — `def __init__(self, parent, confirm=...)`
+- only in ileapp: `DialogAsker.ask_file` — `def ask_file(self, title, filetypes)`
+- only in ileapp: `DialogAsker.ask_secret` — `def ask_secret(self, title, prompt)`
+- only in ileapp: `DialogAsker.confirm_members` — `def confirm_members(self, search)`
+- only in ileapp: `DialogAsker.show_error` — `def show_error(self, title, message)`
+- only in ileapp: `DialogAsker.show_info` — `def show_info(self, title, message)`
+- only in aleapp: `_gui_image_key` — `def _gui_image_key(parent, path)`
+- only in aleapp: `_gui_volume_keys` — `def _gui_volume_keys(parent, name, image, keys)`
+- only in ileapp: `_image_key` — `def _image_key(asker, path)`
+- only in ileapp: `_volume_keys` — `def _volume_keys(asker, name, image, keys)`
+- logic changed: `ask_raw_input`
+- only in ileapp: `unlock_raw_input` — `def unlock_raw_input(input_path, asker, look_beside=...)`
+
 ### `scripts/report.py`
 
 - module-level logic changed
+- logic changed: `processed_files_tab_content`
 
 ### `scripts/search_files.py`
 

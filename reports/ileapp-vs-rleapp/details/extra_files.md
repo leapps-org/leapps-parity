@@ -19,6 +19,7 @@
 - `scripts/ccl_segb/ccl_segb2.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ccl_segb/ccl_segb_common.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/chat_rendering.py` _(expected repo-specific)_ (comparison: `None`)
+- `scripts/html_body_text.py` (comparison: `scripts/html_body_text.py`)
 - `scripts/ios_keychain.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/ktx/ios_ktx2png.py` _(expected repo-specific)_ (comparison: `None`)
 - `scripts/meta_records.py` (comparison: `scripts/meta_records.py`)
